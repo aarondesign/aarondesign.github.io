@@ -17,89 +17,113 @@
   <meta property="og:url" content="aarondesign.github.io"/>
   <meta property="og:site_name" content="aaron's resume"/>
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-  <link rel="stylesheet" href="css/animate.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="scripts/wow.min.js"></script>
   <script>new WOW().init();</script>
-  <!--firebase--> 
-  <script src="https://www.gstatic.com/firebasejs/3.6.9/firebase.js"></script>
-  <script>
-    // Initialize Firebase
-    var config = {
-      apiKey: "AIzaSyBbm5PTn-NFugqe238yj9CajVw0o73rnp0",
-      authDomain: "aarondesign-7100a.firebaseapp.com",
-      databaseURL: "https://aarondesign-7100a.firebaseio.com",
-      storageBucket: "aarondesign-7100a.appspot.com",
-      messagingSenderId: "440307015805"
-    };
-    firebase.initializeApp(config);
+  <script type="text/javascript">
+
+      $(window).scroll(function() {
+         if($(window).scrollTop() + $(window).height() == $(document).height()) {
+             $('#footer').fadeIn();
+         }
+      });
+    $(window).scroll(function() {
+         if($(window).scrollTop() > 128) {
+             $("#navi").css({'background':'#2b2e4a',"transition":".5s",'opacity':'1'});
+             $("#portfolio").css({'color':'var(--global-color)',"border-bottom":"0","transition":".5s"});
+             $("#about").css({'color':'#fff'});
+
+         }
+        else {
+          $("#navi").css({'background':'#fff',"transition":".5s",'opacity':'1'});
+          $("#portfolio").css({'color':'#000',"border-bottom":"4px solid var(--global-color)","transition":".5s"});
+          $("#about").css({'color':'#000'});
+
+        }
+      });
   </script>
   <style>
-    /* Remove the navbar's default margin-bottom and rounded borders */ 
-    .navbar {
-      margin-bottom: 0;
-      border-radius: 0;
-    }
-    
-    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-    .row.content {height: 450px}
-    
-    /* Set gray background color and 100% height */
-    .sidenav {
-      padding-top: 20px;
-      background-color: #f1f1f1;
-      height: 100%;
-    }
-    
-    /* Set black background color, white text and some padding */
-    footer {
-      color: lightgrey;
-      padding: 15px;
 
-    }
-    
-    /* On small screens, set height to 'auto' for sidenav and grid */
-    @media screen and (max-width: 767px) {
-      .sidenav {
-        height: auto;
-        padding: 15px;
-      }
-      .row.content {height:auto;} 
-    }
+  :root {
+  --global-color: #e84545;
+  }
+
+
+  #navi{
+    width: 100%;
+    height: 64px;
+    background: #fff;
+    position: fixed;
+    top:0;
+    z-index: 100;
+  }
+   #logo{
+    width: 64px;
+    height: 64px;
+    float: left;
+   }
+   #about, #portfolio{
+    float:right;
+    height: 100%;
+    color:black;
+    line-height: 28px;
+    padding: 16px 32px 5px 32px;
+    cursor: pointer;
+   }
+
+   .a_active{
+     color:#e84545;
+   }
+   #welcome{
+      height: calc(100vh - 64px);
+      
+   }
+
+   #footer{
+    display: none;
+   }
   </style>
+  }
 </head>
 <body>
-
-<nav class="navbar navbar-inverse">
+  
+<div id="navi">
   <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">Logo</a>
+    <div class="row"  >
+      <div class="col-sm-2 " style="padding-left: 0;margin-left: 0;" > 
+      </div>
+      <div class="col-sm-8 ">
+        <div id="logo">
+        </div>
+        <div id="about">
+            <p>About</p>
+        </div>
+        <div id="portfolio" style="border-bottom: 4px solid #e84545;font-weight: 800;">
+            <p>Projects</p>
+        </div>
+      </div>
+      <div class="col-sm-2 ">
+      </div>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-       
-      </ul>
-      <ul class="nav navbar-nav navbar-right ">
-          <li class="active"><a data-toggle="tab" href="#portfolio">Portfolio</a></li>
-          <li><a data-toggle="tab" href="#resume">Resume</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+   </div> 
+</div>
 <div class='tab-content'> 
-  <div class="container-fluid text-center tab-pane fade in active"  id="portfolio" >    
+  <div class="container-fluid text-center tab-pane fade in active"  >    
     <div class="row content "  >
       <div class="col-sm-2 ">
       </div>
-      <div class="col-sm-8 text-left"> 
+      <div class="col-sm-8 text-left">
+        <div class="row">
+          <div id="welcome">
+            <div style="margin-top:128px;font-family: 'Playfair Display;'">
+              <h1 style="color:var(--global-color);font-family: 'Playfair Display;'">Hello</h1>
+              <h3>I'm</h3>
+            </div>
+          </div>
+        </div> 
         <div class="row">
           <h1>Projects</h1>
           <hr>
@@ -129,46 +153,13 @@
   <!--Resume start-->  
   <div class="container-fluid text-center tab-pane fade "  id="resume" >
     <div class="row content "  >
-      <div class="col-sm-2 ">
-      </div>
-      <div class="col-sm-8 text-left"> 
-        <div class="row">
-          <h1 class="text-center">Hi, I'm Aaron</h1>
-          <hr>
-           <h3 class="margin:0 auto">Job Experience </h3>
-           <hr>
-          <div class="col-sm-6">
-            <h4>iXenor <span style="font-weight: lighter;color: grey;">2016.10 ~ Now</span></h4>
-            <h5>Projects:</h5>
-            <ul>
-              <li>Everline(LH Surge Test Product)</li>
-              <li>PixoTest(Glucose Test Product)</li>  
-            </ul>
-          </div>
-          <div class="col-sm-6">
-            <h4>Foxconn Group <span style="font-weight: lighter;color: grey;">2012.12 ~ 2016.7</span></h4>
-            <h5>Projects:</h5>
-            <ul>
-              <li>Virtue Desktop Product</li>
-              <li>Files Share Product</li>
-              <li>Cloud Computing Platform</li>
-              <li>Intellectual Properties</li>  
-            </ul>
-          </div>
-          
-        </div>
-
-        
-      </div>
-      <div class="col-sm-2 ">
-       
-      </div>
+     
     </div>
   </div>
 </div>
 
 
-<footer class="container-fluid text-center">
+<footer class="container-fluid text-center" id="footer">
   <p>Design with curiosity</p>
 </footer>
 
