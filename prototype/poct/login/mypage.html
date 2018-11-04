@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Andy Wang</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+</head>
+<style type="text/css">
+	:root {
+    		--main-bg-color:#CDD6E3;
+    		--theme-color:#4390FC; 
+    		--theme-color2:#CADFFC;
+    		--theme-color-re:#45CB85;
+	}
+
+	body{
+		min-width: 1024px;
+		overflow-x: hidden;
+		font-family:'Roboto';
+
+	}
+
+	p{
+		line-height: 1.4em !important;
+	}
+	.navhead{
+		width: 100%;
+		height: 64px;
+		background-color:transparent;
+		position: fixed;
+		float: left;
+		top:0px;
+		color: white;
+		z-index: 999;
+
+
+	}
+
+	.btn-print{
+		width: 200px;
+		background: var(--theme-color-re);
+		position: relative;
+		float: right;
+		color:white;
+		top:-60px;
+		right:16px;
+		z-index: 999;
+		transition: .5s;
+	}
+
+	.btn-print:hover{
+		background-color: var(--theme-color);
+		transition: .5s;
+
+	}
+
+	.name-card{
+		width: 100%;
+		height: 316px;
+		background-color:white;
+		border-radius: 4px;
+		border:1px solid white;
+	}
+
+	.comments{
+		width: 100%;
+		height: 316px;
+		background-color: white;
+		border-radius: 4px;
+	}
+
+	.avatar-container{
+		height: 180px;
+		width: 100%;
+		border-radius: 4px 4px 0 0;
+		background-color: var(--theme-color2);
+		background-size: 100%;
+		border-bottom: 1px solid lightgrey;
+		z-index: 1;
+	}
+
+	.avatar{
+		height: 128px;
+		width: 128px;
+		border-radius: 64px;
+		border:4px solid white;
+		background-image: url('../img/management/avatar_0.png');
+		margin: 0 auto;
+		position: relative;
+		top:32px;
+		filter:none;
+		z-index: 999;
+	}
+
+	.icon-record{
+		height: 64px;
+		width: 64px;
+		position: relative;
+		display: inline;
+		padding:8px;
+		text-align: center;
+		cursor: pointer;
+		transition: .2s;
+	}
+
+	.icon-record:hover{
+		opacity: .8;
+		transition: .2s;
+	}
+
+	#listview{
+
+	}
+
+	#chartview{
+		display: none;
+
+	}
+
+
+	.record-title{
+		width:100%;
+		height: 64px;
+		background-color: black;
+		border-radius: 4px;
+		margin: 4px 0;
+		color: white;
+		font-size: .8em;
+		font-weight: light;
+		
+	}
+
+	.record-title-active{
+		width:100%;
+		height: 64px;
+		background-color: var(--theme-color);
+		border-radius: 4px;
+		margin: 4px 0;
+		
+
+	}
+	.record-list{
+		width:100%;
+		height: 64px;
+		background-color: #f5f5f5;
+		border-radius: 4px;
+		margin: 4px 0;
+		color:var(--theme-color);
+		transition: .5s ease-in-out;
+
+	}
+
+	.record-list:hover{
+		background-color: #fff;
+		transition: .5s ease-in-out;
+	}
+
+	.record-title-cell,.chart-title-cell{
+		position: relative;
+		float: left;
+		display: inline;
+		text-align: center;
+		color: white;
+		line-height: 64px;
+		font-weight: bold;
+	}
+
+	.record-title-cell{
+
+		width: 20%;
+	}
+
+	.chart-title-cell{
+		width: 25%;
+	}
+
+	.record-cell,.chart-cell{
+		position: relative;
+		float: left;
+		width: 20%;
+		display: inline;
+		text-align: center;
+		border-right:1px solid lightgrey;
+		height: 32px;
+		color: black;
+		margin-top: 16px;
+		font-weight: bold;
+		font-weight: 100;
+		line-height: 32px;
+	}
+
+	.record-cell{
+		width: 20%;
+	}
+
+	.chart-cell{
+		width: 25%;
+		background-color: white;
+		height: 272px;
+		border-radius:4px;
+		
+	}
+
+
+	.record-cell-active{
+		position: relative;
+		float: left;
+		width: 20%;
+		display: inline;
+		text-align: center;
+		border-right:1px solid lightgrey;
+		height: 32px;
+		color:white;
+		margin-top: 16px;
+		font-weight: bold;
+		line-height: 32px;
+	}
+
+	.product-card{
+		height: 460px;
+		width: 100%;
+		background-color: white;
+		border-radius: 4px;
+		transition: .3s ease-in-out;
+	}
+
+	.product-card:hover{
+		box-shadow: 0 0 8px 1px grey;
+		border: 1px solid var(--theme-color2);
+		transition: .3s ease-in-out;
+	}
+
+	.num-badge{
+		position: absolute;
+		height: 64px;
+		width: 64px;
+		border-radius: 32px;
+		left: 24px;
+		top:8px;
+		text-align: center;
+		line-height: 64px;
+		background-color: var(--theme-color2);
+		font-weight: bold;
+		z-index:800;
+	}
+	.img-content{
+		margin: 0 auto;
+		height: 228px;
+		left: calc((100% - 200px)/2);
+		position: relative;
+		top:24px;
+	}
+
+	.product-content{
+		padding: 0 16px;
+	}
+	.product-title{
+		color: var(--theme-color);
+	}
+	.product-description{
+		line-height: 16px;
+		color:grey;
+		max-height: 96px;
+		white-space: pre-line;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	.product-price{
+		color: #E67223;
+	}
+	.hidden{
+		display: none;
+	}
+
+	.record-selected{
+		background-color: white;
+	}
+
+
+
+</style>
+
+<script type="text/javascript">
+
+	//tooltips
+	$(document).ready(function(){
+	    $('[data-toggle="tooltip"]').tooltip();   
+	});
+
+	//navi
+	$(function(){
+	  $(window).scroll(function(){
+	    if($(this).scrollTop() > 72){
+	        $('#navi').css({"background-color":"#333"});
+	        $(".avatar").css({"position":"fixed","transform":"scale(0.4, 0.4)","top":"-32px","left":"-20px"});
+	        $("#name-label").animate({left:"96px",opacity:"1"},1);
+
+	    }
+
+	    else{
+	    	 $('#navi').css({"background-color":"transparent"});
+	    	 $("#name-label").animate({left:"16px",opacity:"0"},1);
+	    	 $(".avatar").css({"position":"relative","transform":"scale(1,1)","top":"32px","left":"0px"});
+	    }
+	  });
+	});
+
+	//lipid
+	$(function(){
+		$("#icon_chart").click(function(){
+			$("#listview").hide();
+			$("#chartview").show();
+			$("#list_img").attr("src","../img/management/icon_list_unselected.png");
+			$("#chart_img").attr("src","../img/management/icon_chart.png");  
+		});
+
+		$("#icon_list").click(function(){
+			$("#listview").show();
+			$("#chartview").hide();
+			$("#list_img").attr("src","../img/management/icon_list.png");
+			$("#chart_img").attr("src","../img/management/icon_chart_unselected.png");  
+		});
+	});
+
+	//a1c
+	$(function(){
+		$("#icon_chart_2").click(function(){
+			$("#listview_2").hide();
+			$("#chartview_2").show();
+			$("#list_img_2").attr("src","../img/management/icon_list_unselected.png");
+			$("#chart_img_2").attr("src","../img/management/icon_chart.png");  
+		});
+
+		$("#icon_list_2").click(function(){
+			$("#listview_2").show();
+			$("#chartview_2").hide();
+			$("#list_img_2").attr("src","../img/management/icon_list.png");
+			$("#chart_img_2").attr("src","../img/management/icon_chart_unselected.png");  
+		});
+	});
+
+</script>
+<body style="background: #CDD6E3">
+	<div class="navhead" id="navi">
+		<h4 id="name-label" style="line-height: 64px;left: 16px;position: relative;opacity:0">Andy Wang</h4>
+		<button class="btn btn-print">Print</button>
+	</div>
+	<div class="container-fluid" style="margin-top:80px;">
+  		<div class="row">
+  			<div class="col-4">
+  				<div  class="name-card">
+  					<div class="avatar-container">
+  						<div class="avatar"></div>
+  					</div>
+  					<ul style="list-style: none;padding-left:10px;font-size: 14px;padding-top:18px;text-align: center; ">
+  						<li><h5 style="line-height:10px;">Andy Wang</h5></li>
+  						<li>Jun 31, 1972</li>
+ 						<br>
+  						<li>0918 312 123</li>
+  						<li>andywang@email.com</li>
+  					</ul>
+  				</div>
+			</div>
+			<div class="col-8"  >
+				<div class="comments">
+					<div style="padding:16px;">
+						<h4>Hi Andy, your are health.</h4><hr>
+						<p style="color:grey">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br><br>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+					</div>
+				</div>
+			</div>  	  	
+		</div>
+	</div>
+	<br><hr>
+	<h4 class="text-center">Lipid Results</h4>
+	<div class="container-fluid">
+		<div >
+			<div class="icon-record"  id="icon_list" style="border-right:1px solid #bbb" ><img id="list_img" src="../img/management/icon_list.png"></div>
+			<div class="icon-record"  id="icon_chart" ><img  id="chart_img" src="../img/management/icon_chart_unselected.png"></div>
+		</div>
+		<div id="listview">
+			<div class="record-title">
+				<div class="record-title-cell">
+					Date
+				</div>
+				<div class="record-title-cell">TC</div>
+				<div class="record-title-cell">TG</div>
+				<div class="record-title-cell">HDL</div>
+				<div class="record-title-cell">LDL</div>
+			</div>
+			<div class="record-list" >
+				<div class="record-cell">Jun 30, 2018</div>
+				<div class="record-cell" id="tc1">312 mg/dl</div>
+				<div class="record-cell">196 mg/dl</div>
+				<div class="record-cell">258 mg/dl</div>
+				<div class="record-cell">98 mg/dl</div>
+			</div>
+			<div class="record-list">
+				<div class="record-cell">Jan 21, 2018</div>
+				<div class="record-cell" id="tc2">298 mg/dl</div>
+				<div class="record-cell">183 mg/dl</div>
+				<div class="record-cell">200 mg/dl</div>
+				<div class="record-cell">86 mg/dl</div>
+			</div>
+			<div class="record-list">
+				<div class="record-cell">Dec 12, 2017</div>
+				<div class="record-cell" id="tc3">183 mg/dl</div>
+				<div class="record-cell">298 mg/dl</div>
+				<div class="record-cell">138 mg/dl</div>
+				<div class="record-cell">86 mg/dl</div>
+			</div>
+		</div>
+		<div id="chartview">
+			<div class="record-title">
+				<div class="chart-title-cell">TC</div>
+				<div class="chart-title-cell">TG</div>
+				<div class="chart-title-cell">HDL</div>
+				<div class="chart-title-cell">LDL</div>
+			</div>
+			<div style="height:256px;width: 100%;top:-16px;position: relative;">
+				<div class="chart-cell"><img src="../img/management/chart_tc.png"></div>
+				<div class="chart-cell"><img src="../img/management/chart_tg.png"></div>
+				<div class="chart-cell"><img src="../img/management/chart_hdl.png"></div>
+				<div class="chart-cell"><img src="../img/management/chart_ldl.png"></div>
+			</div>
+			<br>
+		</div>	
+
+	</div>
+	<br><hr>
+	<h4 class="text-center">A1c Results</h4>
+	<div class="container-fluid">
+			<div id="icon_list_2" class="icon-record" style="border-right:1px solid #bbb" ><img id="list_img_2" src="../img/management/icon_list.png"></div>
+			<div id="icon_chart_2" class="icon-record" ><img id="chart_img_2" src="../img/management/icon_chart_unselected.png"></div>
+			<div id="listview_2">
+				<div class="record-title">
+					<div class="record-title-cell">
+						Date
+					</div>
+					<div class="record-title-cell">A1c</div>
+					<div class="record-title-cell"></div>
+					<div class="record-title-cell"></div>
+					<div class="record-title-cell"></div>
+				</div>
+				<div class="record-list" >
+					<div class="record-cell">Jun 30, 2018</div>
+					<div class="record-cell">7.5%</div>
+					<div class="record-cell hidden"></div>
+					<div class="record-cell hidden"></div>
+					<div class="record-cell hidden"></div>
+				</div>
+				<div class="record-list">
+					<div class="record-cell">May 21, 2018</div>
+					<div class="record-cell">6.8%</div>
+					<div class="record-cell hidden"></div>
+					<div class="record-cell hidden"></div>
+					<div class="record-cell hidden"></div>
+				</div>
+				<div class="record-list">
+					<div class="record-cell">Dec 12, 2017</div>
+					<div class="record-cell">7.2%</div>
+					<div class="record-cell hidden"></div>
+					<div class="record-cell hidden"></div>
+					<div class="record-cell hidden"></div>
+				</div>
+			</div>
+			<div id="chartview_2" style="display:none">
+				<div class="record-title">
+					<div class="record-title-cell"><p></p></div>
+					<div class="record-title-cell"><p></p></div>
+					<div class="record-title-cell text-center">A1c</div>
+					<div class="record-title-cell"><p></p></div>
+					<div class="record-title-cell"><p></p></div>
+				</div>
+				<div  class="text-center" style="height:256px;width: 100%;top:0px;position: relative;background-color:white;border-radius:4px;">
+					<img src="../img/management/chart_a1c.png">
+				</div>
+				<br>
+			</div>
+
+	</div>
+	<br><hr>
+	<div class="container-fluid" >
+		<h4 class="text-center" style="background:height:64px;line-height:64px; ">Recommendations for you, Andy</h4>
+		<div class="row">
+			<div class="col-3 ">
+				<div class="product-card">
+					<div class="num-badge">1</div>
+					<div class="img-content">
+						<img src="../img/management/product_1.png">
+					</div>
+					<hr>
+					<div class="product-content">
+						<h5 class="product-title">Probiotics</h5>
+						<p class="product-description">Nature Made Women’s Dual Action Probiotics + Multivitamins lets you simplify your vitamin routine with a probiotic and a multivitamin in one convenient package. </p>
+						<p class="product-price">$299.99</p>
+					</div>
+					
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="product-card">
+					<div class="num-badge">2</div>
+					<div class="img-content">
+						<img src="../img/management/product_2.png">
+					</div>
+					<hr>
+					<div class="product-content">
+						<h5 class="product-title">Magnesium</h5>
+						<p class="product-description">Magnesium is the eighth most abundant element in Earth’s crust (about 2.5 percent) and is, after aluminum and iron, the third most plentiful structural metal.</p>
+						<p class="product-price">$299.99</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="product-card">
+					<div class="num-badge">3</div>
+					<div class="img-content">
+						<img src="../img/management/product_3.png">
+					</div>
+					<hr>
+					<div class="product-content">
+						<h5 class="product-title">Multi-Daily</h5>
+						<p class="product-description">Nature Made Multi Daily is a multivitamin with 14 key vitamins and minerals for daily nutritional support. This formula is rich in: Calcium- Helps build and support strong bones.</p>
+						<p class="product-price">$299.99</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="product-card">
+					<div class="num-badge">4</div>
+					<div class="img-content">
+						<img src="../img/management/product_4.png">
+					</div>
+					<hr>
+					<div class="product-content">
+						
+						<h5 class="product-title">Fish Oil</h5>
+						<p class="product-description">State-of-the-art purification processes are used to remove PCBs, dioxins and furans, and mercury to ensure purity levels below 0.09 ppm, 2 ppt WHO TEQs, and 0.1 ppm respectively.</p>
+						<p class="product-price">$299.99</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br><br>
+	</div>
+	<br><br>
+	
+	<p class="text-center" style="color:grey">Company@2018</p>
+	<br>  
+			
+</body>
+</html>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Standalone_Al1c" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Control-Soluton-A1c" transform="translate(-156.000000, -256.000000)">
+            <g id="Group" transform="translate(156.000000, 256.000000)">
+                <g id="background/darkgrey" fill="#7F949E">
+                    <rect id="Rectangle-4" x="0" y="0" width="48" height="48" rx="5"></rect>
+                </g>
+                <g id="icon/test/a1c" transform="translate(8.000000, 8.000000)" fill="#FFFFFF">
+                    <path d="M4.39052429,19.7042328 L18.5326599,5.56209717 C20.6154561,3.47930094 23.992336,3.47930094 26.0751322,5.56209717 C28.1579285,7.64489339 28.1579285,11.0217733 26.0751322,13.1045695 L11.9329966,27.2467051 C11.4122976,27.7674042 10.5680776,27.7674042 10.0473785,27.2467051 L4.39052429,21.5898509 C3.86982524,21.0691518 3.86982524,20.2249318 4.39052429,19.7042328 Z M12.8758057,21.5898509 C13.6568542,20.8088023 13.6568542,19.5424723 12.8758057,18.7614237 C12.0947571,17.9803752 10.8284271,17.9803752 10.0473785,18.7614237 C9.26632996,19.5424723 9.26632996,20.8088023 10.0473785,21.5898509 C10.8284271,22.3708995 12.0947571,22.3708995 12.8758057,21.5898509 Z" id="Combined-Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

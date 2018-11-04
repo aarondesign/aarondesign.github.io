@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Login</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+</head>
+<script type="text/javascript">
+ $( document ).ready(function() {
+    $('#usr').keydown(function() {
+        if ($("#usr").val() != " "){
+           $('#usr_label').animate({top:"42px",opacity:".5",fontSize:"12px"});
+        }
+
+        else {
+          $('#usr_label').animate({top:"0px",opacity:"1"});
+        }
+       
+    });
+
+    $('#pwd').keydown(function() {
+        if ($("#pwd").val() != " "){
+           $('#pwd_label').animate({top:"42px",opacity:".5",fontSize:"12px"});
+        }
+
+        else {
+          $('#pwd_label').animate({top:"0px",opacity:"1"});
+        }
+       
+    });
+});
+
+
+$(function(){
+    $('#login').click(function(){
+        $(".error-message").slideToggle();
+        $(".icon-question").toggleClass("icon-question-active");
+        $("#usr,#pwd").toggleClass("error-text");
+    });
+});   
+</script>
+<style type="text/css">
+  :root {
+    --main-bg-color:#CDD6E3;
+    --theme-color:#4390FC; 
+    --theme-color-re:#45CB85;
+}
+  body{
+  background-color: var(--main-bg-color);
+  font-family:'Roboto';
+}
+  .input-container{
+    position: relative;
+    top:24px;
+  }
+  .error-message{
+    
+    text-align: center;
+    background-color: #E62325;
+    color:white;
+    border: 1px solid #E62325;
+     width: calc(100% - 32px);
+     margin: 0 auto;
+     border-radius: 4px;
+     position: relative;
+     display: none;
+     padding: 8px 0;
+  }
+
+  .error-text{
+    color: #E62325;
+  }
+
+  .login-bg{
+    height: 365px;
+    width: 100%;
+    background-image: linear-gradient(#78C3FE, #4390FC);
+    border-radius: 8px;
+    position:relative;
+    top:calc((100vh - 365px) / 2);
+    z-index: 9;
+  }
+
+  .login-bg-content{
+    width: 50%;
+    float:left;
+    text-align: center;
+  }
+
+  .login-input{
+    height: 500px;
+    width: 50%;
+    background-image: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,1));
+    border-radius: 8px;
+    position:relative;
+    float: right;
+    top:calc((100vh - 500px) / 2);
+    right:16px;
+    box-shadow: 0   2px 8px  0 grey;
+    z-index: 99;
+  }
+
+  .login-input > input[type='text']{
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    caret-color:var(--theme-color);
+  }
+
+  input[type="text"],input[type="password"]{
+    position: relative;
+    width: calc(100% - 32px);
+    left: 16px;
+    margin: 8px 0;
+    height: 64px;
+    padding-top: 18px;
+    caret-color:var(--theme-color);
+  }
+
+  .btn-primary{
+    width: calc(100% - 32px);
+    margin: 0 auto;
+    position: relative;
+    left: 16px;
+    height: 64px;
+    border-radius: 4px;
+    background-color: var(--theme-color-re);
+  }
+
+  .btn-primary:hover{
+    background-color: var(--theme-color);
+  }
+
+  .icon-question{
+    position: relative;
+    float: right;
+    right: 16px;
+    bottom: -170px;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+    background-color: white;
+    border-radius: 50%;
+    opacity: .5;
+  }
+
+  .icon-question-active{
+      bottom: 256px;
+      opacity: 1;
+      animation-timing-function: cubic-bezier(.86, .03, .53, 1.01);
+
+  }
+
+  .icon-question:hover{
+    opacity: .5;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+  }
+
+</style>
+<body>
+  
+<div class="container">
+  <div class="row">
+    <div class="col-sm-2">
+      
+    </div>
+    <div class="col-sm-8">
+      <div class="login-input">
+        <div class="input-container">
+          <div class="error-message">
+            There is something wrong with account or password.
+          </div>
+          <div class="form-group">
+          <label id="usr_label" style="position:relative;left:30px;top:60px;z-index: 100;opacity:0.5;">Account</label>
+          <input type="text" class="form-control" id="usr" placeholder="" autofocus>
+        </div>
+        <div class="form-group" style="top:-40px;position: relative;">
+          <label id="pwd_label" style="position:relative;left:30px;top:60px;z-index: 100;opacity:0.5;">Password</label>
+          <input type="password" class="form-control" id="pwd" >
+        </div>
+        <div class="form-check" style="position: relative;left: 16px;top:-40px;">
+          <label class="form-check-label">
+            <input type="checkbox" class="form-check-input" value="">Remember Me
+          </label>
+        </div>
+        <button  id="login" type="submit" class="btn btn-primary">Log in</button>
+          <div class="icon-question">
+            <svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="Web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Log-in-Copy" transform="translate(-788.000000, -585.000000)">
+                        <circle id="Oval" stroke="#000000" cx="801" cy="598" r="12"></circle>
+                        <path d="M799.52577,601.957031 C799.53228,601.045568 799.66737,600.378257 799.931043,599.955078 C800.194716,599.531899 800.720427,599.017581 801.508192,598.412109 C801.970434,598.034503 802.339896,597.627606 802.61659,597.191406 C802.893284,596.755206 803.031629,596.26693 803.031629,595.726562 C803.031629,595.127601 802.873753,594.658856 802.557996,594.320312 C802.24224,593.981769 801.791398,593.8125 801.205457,593.8125 C800.723684,593.8125 800.31516,593.955728 799.979871,594.242188 C799.644583,594.528647 799.473687,594.948565 799.467176,595.501953 L796.693739,595.501953 L796.674207,595.443359 C796.654676,594.193353 797.066456,593.236331 797.909559,592.572266 C798.752662,591.9082 799.851284,591.576172 801.205457,591.576172 C802.663798,591.576172 803.807992,591.945634 804.638075,592.68457 C805.468157,593.423506 805.883192,594.427728 805.883192,595.697266 C805.883192,596.524093 805.640681,597.289059 805.155653,597.992188 C804.670624,598.695316 804.063534,599.284503 803.334364,599.759766 C802.937226,600.065757 802.676812,600.373371 802.553114,600.682617 C802.429415,600.991864 802.367567,601.416664 802.367567,601.957031 L799.52577,601.957031 Z M802.387098,606 L799.516004,606 L799.516004,603.558594 L802.387098,603.558594 L802.387098,606 Z" id="?" fill="#000000"></path>
+                    </g>
+                </g>
+            </svg>
+          </div>
+      </div>
+      </div>
+      <div class="login-bg">
+        <div>
+            <h4 style="text-align: center;color:white;padding-top:144px;">Customers Management<br> <span style="font-weight: 100;">Platform</span> </h4>
+            <p style="text-align: center;color: white;position:relative;top:96px;font-size:12px;font-weight: 100;">V 1.0.1(23)</p>
+        </div>
+      </div>
+        
+    </div>
+    <div class="col-sm-2">
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

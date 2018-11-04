@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Management Platform</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+</head>
+<style type="text/css">
+	:root {
+    		--main-bg-color:#CDD6E3;
+    		--theme-color:#4390FC; 
+    		--theme-color2:#CADFFC;
+        --theme-color-re:#45CB85;
+	}
+
+	body{
+		background-color: var(--main-bg-color);
+		overflow-y:hidden; 
+		min-width: 1024px;
+		overflow-x:hidden; 
+    font-family:'Roboto';
+
+	}
+
+	li,p{
+		text-overflow:ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+	}
+
+	.navhead{
+		width: 100%;
+		height: 64px;
+		background-color: black;
+	}
+ 	
+ 	.btn-adduser{
+ 		height: 48px;
+ 		width: 96px;
+ 		background: var(--theme-color-re);
+ 		float: left;
+ 		top:8px;
+ 		left: 8px;
+    transition: .5s ease-in-out;
+ 		position: relative;
+
+ 	}
+
+  .btn-adduser:hover{
+    background-color: var(--theme-color);
+    transition: .5s ease-in-out;
+  }
+
+ 	#col-left{
+ 		height: calc(100vh - 64px);
+ 		background-color: rgba(255,255,255,.5);
+ 		padding-left:8px;
+ 		padding-right:8px;
+ 		overflow-y:scroll;
+ 		position: relative;
+ 		
+ 	}
+
+ 	.search-container{
+ 		height: 112px;
+ 		min-width: 270px;
+ 		width:26%;
+ 		left: -8px;
+ 		float: left; 
+ 		background-color: white;
+ 		box-shadow: -2px 4px 8px 0px lightgrey;
+ 		position:fixed;
+ 		z-index: 100;
+ 	}
+
+ 	.btn-search{
+ 		border-radius: 8px;
+ 		border: 1px solid lightgrey;
+ 		padding: 0 16px;
+ 		border-left: 0;
+ 	}
+ 	#name{
+
+ 		position: relative;
+ 		top:112px;
+
+ 	}
+ 	.nav-link{
+ 		height: 72px;
+ 		margin-top:4px;
+ 		transition: .5s ease-in-out;
+
+ 	}
+
+ 	.nav-link:hover{
+ 		opacity: .5;
+ 		transition: .5s ease-in-out;
+ 	}
+
+ 	.nav-link h5{
+ 		position: relative;
+ 		left: 16px;
+ 		font-weight: 400;
+ 	}
+ 	.id-num p{
+ 		position: relative;
+ 		margin-top:-4px;
+ 		left: 16px;
+ 	}
+
+ 	li {list-style: none;}
+
+ 	.nav-pills .nav-link, .nav-pills .show>.nav-link{
+ 		background-color: white;
+ 		color:black;
+ 		font-weight: 100; 
+ 	}
+
+  .nav-icon{
+    float: right;
+    position: relative;
+    padding: 16px;
+    right: 16px;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+  }
+
+  .nav-icon:hover{
+    opacity: .8;
+    transition: .4s ease-in-out;
+  }
+
+  #settings:hover{
+    transform: rotate(45deg);
+  }
+
+ 	.avatar{
+ 		height: 56px;
+ 		width: 56px;
+
+ 		border-radius: 28px;
+ 		background-color: #CADFFC;
+ 		float: left;
+ 		position: relative;
+ 		margin-left:-8px;
+ 	}
+
+ 	.avatar_large{
+ 		height: 84px;
+ 		width: 84px;
+ 		border-radius: 42px;
+ 		background-color: #CADFFC;
+ 		float: left;
+ 		position: relative;
+ 		margin-left:32px;
+ 		top:16px;
+
+ 	}
+
+ 	/* scroll bar */
+ 	/* width */
+ 	::-webkit-scrollbar {
+ 	    width: 12px;
+ 	    padding: 4px;
+ 	}
+
+ 	/* Track */
+ 	::-webkit-scrollbar-track {
+ 	    box-shadow: inset 0 0 4px grey; 
+ 	    border-radius: 0px;
+ 	    width: 18px;
+ 	}
+ 	 
+ 	/* Handle */
+ 	::-webkit-scrollbar-thumb {
+ 	    background:#CADFFC;
+ 	    width: 4px;
+ 	    padding: 4px;
+ 	    border-radius: 10px;
+ 	}
+
+ 	/* Handle on hover */
+ 	::-webkit-scrollbar-thumb:hover {
+ 	   background:var(--theme-color);
+ 	   opacity: .5;
+ 	   transition: .5s ease-in-out;
+ 	}
+
+
+ 	/*right column */
+ 	#col-right{
+ 		padding: 0 0px;
+
+
+ 	}
+ 	.name-banner{
+ 		height: 112px;
+ 		width: 100%;
+ 		background: rgba(255,255,255,.8);
+ 		z-index: 110;
+
+ 	}
+ 	
+ 	.btn-edit{
+ 		height: 32px;
+ 		width: 102px;
+ 		border: 1px solid var(--theme-color);
+ 		position: relative;
+ 		float: right;
+ 		top:calc((112px - 32px)/2);
+ 		right: 32px;
+ 		line-height: 16px;
+ 		color:var(--theme-color);
+ 	}
+
+  .btn-info{
+    height: 32px;
+    width: 102px;
+    background: var(--theme-color);
+    position: relative;
+    float: right;
+    top:-32px;
+    right: 32px;
+    line-height: 16px;
+    color:white;
+  }
+
+ 	.basic-info{
+ 		padding: 0 32px;
+ 		margin-top: 32px;
+ 	}
+ 	.basic-info-title{
+ 		font-weight: 100;
+ 		position: relative;
+ 		float: left;
+ 		width: 20%;
+ 	}
+ 	
+ 	.list-group-item{
+ 		height: 48px;
+ 		margin: 1px 0;
+ 		
+ 	}
+
+ 	.record-list{
+    width: calc(100% - 64px);
+ 		height: 84px;
+    float: left;
+    display: block;
+    position: relative;
+ 		background-color: white;
+ 		margin:4px 32px;
+ 		border-radius: 4px;
+  
+ 	}
+
+ 	.rocord-list-title{ 	
+ 		color: var(--theme-color);
+ 		font-weight: bold;
+ 	}
+
+ 	.rocord-list-content{
+ 		
+ 		color: black;
+ 		font-size: 1em;
+ 		
+ 	}
+
+</style>
+
+
+
+<body>
+	<div class="navhead">
+		<button class="btn btn-adduser">
+			<div style="margin: 0 auto;">
+				<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+				    <defs></defs>
+				    <g id="Web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+				        <g id="Desktop" transform="translate(-42.000000, -18.000000)" fill="#FFFFFF">
+				            <path d="M54,30 L54,20 C54,18.8954305 54.8954305,18 56,18 C57.1045695,18 58,18.8954305 58,20 L58,30 L68,30 C69.1045695,30 70,30.8954305 70,32 C70,33.1045695 69.1045695,34 68,34 L58,34 L58,44 C58,45.1045695 57.1045695,46 56,46 C54.8954305,46 54,45.1045695 54,44 L54,34 L44,34 C42.8954305,34 42,33.1045695 42,32 C42,30.8954305 42.8954305,30 44,30 L54,30 Z" id="Combined-Shape"></path>
+				        </g>
+				    </g>
+				</svg>
+			</div>
+		</button>
+		<span style="color:white;line-height: 64px;left: 16px;position: relative;">Create Account</span>
+    <div class="nav-icon">
+        <img src="../img/management/account.png">
+    </div>
+    <div class="nav-icon" id="settings">
+        <img src="../img/management/settings.png">
+    </div>
+    
+	</div>
+	<div class="container-fluid">
+  		<div class="row">
+  			<div class="col-3" id="col-left" >
+  				<div class="search-container">
+  					<div class="searchbox">
+  						<div class="input-group mb-3" style="width:calc(100% - 32px);margin: 0 auto;top:16px;left: 4px;">
+  						    <input type="text" class="form-control" placeholder="Search" style="height: 56px;">
+  						    <div class="input-group-append">
+  						      <button class="btn btn-search" type="submit">
+  						      		<div style="position: relative;float: left;height: 24px;width: 1px;background: var(--theme-color2);left: -20px;"></div>
+  						      		<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  						      		    <defs></defs>
+  						      		    <g id="Web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+  						      		        <g id="Desktop" transform="translate(-276.000000, -96.000000)" fill="#4390FC">
+  						      		            <g id="Group-3" transform="translate(0.000000, 64.000000)">
+  						      		                <path d="M289.707107,45.7071068 C290.097631,45.3165825 290.730796,45.3165825 291.12132,45.7071068 L298.899495,53.4852814 C299.290019,53.8758057 299.290019,54.5089706 298.899495,54.8994949 C298.508971,55.2900192 297.875806,55.2900192 297.485281,54.8994949 L289.707107,47.1213203 C289.316582,46.7307961 289.316582,46.0976311 289.707107,45.7071068 Z M284,48 C279.581722,48 276,44.418278 276,40 C276,35.581722 279.581722,32 284,32 C288.418278,32 292,35.581722 292,40 C292,44.418278 288.418278,48 284,48 Z M284,46 C287.313708,46 290,43.3137085 290,40 C290,36.6862915 287.313708,34 284,34 C280.686292,34 278,36.6862915 278,40 C278,43.3137085 280.686292,46 284,46 Z" id="Combined-Shape"></path>
+  						      		            </g>
+  						      		        </g>
+  						      		    </g>
+  						      		</svg>
+  						      </button>  
+  						     </div>
+  						  </div>
+  						  <ul class="nav " style="margin-left: 16px;">
+  						    <li class="nav-item">
+  						      <a class="nav-link active" style="border-bottom: 4px solid var(--theme-color);height: 36px;" data-toggle="pill" href="#home">Alphabet</a>
+  						    </li>
+  						    <li class="nav-item">
+  						      <a class="nav-link" data-toggle="pill" href="#menu1" style="color:grey">Active</a>
+  						    </li>
+  						  </ul>
+  					</div>
+  				</div>
+  				<ul class="nav nav-pills flex-column" role="tablist" id="name">
+  				 </ul>
+  			</div>
+  			<div class="col-9" id="col-right">
+  				<div class="tab-content" id="data">
+  				    
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+  	<script>
+  	  var names = ["Andy", "Christine", "Danny", "Henry", "James", "Kenny","Claire","Emma","Justin"];
+  	  var family = ["Wang", "Lin", "Yang", "Ford", "Fiat", "Audi","Lin","Chang","Ng"];
+  	  var gender= ["Male","Female","Female","Male","Female","Male","Male","Male","Male"]	
+  	  var listid= ["1","2","3","4","5","6","7","8","9","10"]
+  	  var namelist = "";
+  	  var datalist = "";
+  	  var i;
+
+  	 
+
+  	  names.sort();
+
+  	  for (i = 0; i < names.length; i++) {
+  	  	 var ids=Math.floor(Math.random() * 699) + 100;
+  	  	 var phone=Math.floor(Math.random()* 99999999);
+  	  	 var tc=Math.floor(Math.random()* 200)+120;
+  	  	 var tg=Math.floor(Math.random()* 200)+100;
+  	  	 var hdl=Math.floor(Math.random()* 100)+50;
+  	  	 var ldl=tc - hdl
+  	  	 var A1c=(Math.floor(Math.random()* 50)+40)/10;
+
+  	  	if(i<1){
+  	      namelist += '<li class="nav-item"><a class="nav-link active" data-toggle="pill" href="#list'+listid[i]+'"><div class="avatar"><img style="height:56px;width:56px;border-radius:28px;border: 2px solid white;" src="../img/management/avatar_'+i+'.png"></div><ul><li><h5>'+names[i]+" "+family[i]+'</h5></li><li class="id-num"><p>123-758-'+ids+'</p></li></ul></a> </li>';
+
+  	      datalist +=
+  	      	'<div class="tab-pane active" id="list'+listid[i]+'" >'+
+  	      	  '<div class="name-banner">'+
+  	      	  	'<div class="avatar_large"><img style="height:84px;width:84px;border-radius:42px;" src="../img/management/avatar_'+i+'.png"></div>'+
+  	      	  	'<h4 style="line-height:112px;float:left;position: relative;left: 32px;">'+names[i]+' '+family[i]+'</h4>'+
+  	      	  	'<button class="btn btn-edit">Edit</button>'+
+  	      		'</div>'+
+  	      		'<div class="basic-info" >'+
+  	      			'<div class="list-group">'+
+  	      			    '<a href="#" class="list-group-item list-group-item-action">'+
+  	      			    	'<span class="basic-info-title">Member ID</span>'+
+  	      			    	'<span class="basic-info-content" id="memberid">123-758-'+ids+'</span>'+
+  	      			    '</a>'+
+  	      			    '<a href="#" class="list-group-item list-group-item-action">'+
+  	      			    	'<span class="basic-info-title">Given Name</span>'+
+  	      			    	'<span class="basic-info-content" id="givenname">'+names[i]+'</span>'+
+  	      			    '</a>'+
+  	      			    '<a href="#" class="list-group-item list-group-item-action">'+
+  	      			    	'<span class="basic-info-title">family Name</span>'+
+  	      			    	'<span class="basic-info-content" id="familyname">'+family[i]+'</span>'+
+  	      			    '</a>'+
+  	      			    '<a href="#" class="list-group-item list-group-item-action">'+
+  	      			    	'<span class="basic-info-title">Gender</span>'+
+  	      			    	'<span class="basic-info-content" id="gender">'+gender[i]+'</span>'+
+  	      			    '</a>'+
+  	      			    '<a href="#" class="list-group-item list-group-item-action">'+
+  	      			    	'<span class="basic-info-title">Email</span>'+
+  	      			    	'<span class="basic-info-content" id="email" style="text-transform:lowercase">'+names[i]+family[i]+'@email.com</span>'+
+  	      			    '</a>'+
+  	      			    
+  	      			  '</div>'+
+  	      		'</div>'+
+  	      		'<hr >'+
+              '<div>'+
+              '<h6 style="padding-left: 32px">Test Records</h6>'+
+              '<button class="btn btn-info">More</button>'+
+              '</div>'+
+  	      		'<div class="record-list" style="top:-24px;">'+
+  	      			'<div class="container-fluid" >'+
+  	      				'<div class="row text-center" style="padding-top:24px " >'+
+  	      					'<div class="col-3 col-sm-3 " style="padding-left:0;">'+
+                      '<div style="float:left;margin:-6px 16px;"><img src="../img/management/lipid.png"></div>'+
+  	      						'<ul style="border-right:1px solid  lightgrey;">'+
+  	      							'<li style="color:var(--theme-color);font-size: 1.2em;">Lipid Test</li>'+
+  	      							'<li style="opacity: .5;font-size: 0.8em;">Jun 30, 2018</li>'+
+  	      						'</ul>'+
+  	      					'</div>'+
+  	      					'<div class="col-2 col-sm-2" style="padding-left:0;">'+
+  	      						'<ul>'+
+  	      							'<li class="rocord-list-title">TC</li>'+
+  	      							'<li class="rocord-list-content" id="tc">'+tc+' mg/dl</li>'+
+  	      						'</ul>'+
+  	      					'</div>'+
+  	      					'<div class="col-2 col-sm-2" style="padding-left:0;">'+
+  	      						'<ul>'+
+  	      							'<li class="rocord-list-title">TG</li>'+
+  	      							'<li class="rocord-list-content" id="tg">'+tg+' mg/dl</li>'+
+  	      						'</ul>'+
+  	      					'</div>'+
+  	      					'<div class="col-2 col-sm-2" style="padding-left:0;">'+
+  	      						'<ul>'+
+  	      							'<li class="rocord-list-title">HDL</li>'+
+  	      							'<li class="rocord-list-content" id="hdl">'+hdl+' mg/dl</li>'+
+  	      						'</ul>'+
+  	      					'</div>'+
+  	      					'<div class="col-2 col-sm-2" style="padding-left:0;">'+
+  	      						'<ul>'+
+  	      							'<li class="rocord-list-title">LDL</li>'+
+  	      							'<li class="rocord-list-content" id="ldl">'+ldl+' mg/dl</li>'+
+  	      						'</ul>'+
+  	      					'</div>'+
+  	      				'</div>'+
+  	      			'</div>'+
+  	      		'</div>'+
+  	      		
+  	      		'<div class="record-list" style="top:-24px;">'+
+  	      			'<div class="container-fluid" >'+
+  	      				'<div class="row text-center" style="padding-top:24px " >'+
+  	      					'<div class="col-3 col-sm-3 " style="padding-left:0;">'+
+                      '<div style="float:left;margin:-6px 16px;"><img src="../img/management/a1c.png"></div>'+
+  	      						'<ul style="border-right:1px solid  lightgrey;">'+
+  	      							'<li style="color:var(--theme-color);font-size: 1.2em;">A1c Test</li>'+
+  	      							'<li style="opacity: .5;font-size: 0.8em;">Jun 30, 2018</li>'+
+  	      						'</ul>'+
+  	      					'</div>'+
+  	      					'<div class="col-2 col-sm-2" style="padding-left:0;">'+
+  	      						'<ul>'+
+  	      							'<li class="rocord-list-title">A1C</li>'+
+  	      							'<li class="rocord-list-content" id="tc">'+A1c+' %</li>'+
+  	      						'</ul>'+
+  	      					'</div>'+
+  	      					'<div class="col-2 col-sm-2" style="padding-left:0;">'+
+  	      						'<ul>'+
+  	      							'<li class="rocord-list-title"></li>'+
+  	      							'<li class="rocord-list-content" id="tg"></li>'+
+  	      						'</ul>'+
+  	      					'</div>'+
+  	      					'<div class="col-2 col-sm-2" style="padding-left:0;">'+
+  	      						'<ul>'+
+  	      							'<li class="rocord-list-title"></li>'+
+  	      							'<li class="rocord-list-content" id="hdl"></li>'+
+  	      						'</ul>'+
+  	      					'</div>'+
+  	      					'<div class="col-2 col-sm-2" style="padding-left:0;">'+
+  	      						'<ul>'+
+  	      							'<li class="rocord-list-title"></li>'+
+  	      							'<li class="rocord-list-content" id="ldl"></li>'+
+  	      						'</ul>'+
+  	      					'</div>'+
+  	      				'</div>'+
+  	      			'</div>'+
+  	      		'</div>'+
+  	      		
+  	      		'</div>';
+
+  	      //datalist +='<div id="list'+listid[i]+'" class="container tab-pane active" ><br><h3>'+names[i]+'</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>';
+  	  	}
+  	  	else{
+  	  		namelist += '<li class="nav-item"><a class="nav-link " data-toggle="pill" href="#list'+listid[i]+'"><div class="avatar"><img style="height:56px;width:56px;border-radius:28px;border: 2px solid white;" src="../img/management/avatar_'+i+'.png"></div><ul><li><h5>'+names[i]+" "+family[i]+'</h5></li><li class="id-num"><p>123-758-'+ids+'</p></li></ul></a> </li>';
+
+  	  		datalist +=
+  	  			'<div class="tab-pane " id="list'+listid[i]+'" >'+
+  	  			  '<div class="name-banner">'+
+  	  			  	'<div class="avatar_large"><img style="height:84px;width:84px;border-radius:42px;border: 2px solid white;" src="../img/management/avatar_'+i+'.png"></div>'+
+  	  			  	'<h4 style="line-height:112px;float:left;position: relative;left: 32px;">'+names[i]+' '+family[i]+'</h4>'+
+                '<button class="btn btn-edit">Edit</button>'+
+  	  				'</div>'+
+  	  				'<div class="basic-info">'+
+  	  					'<div class="list-group">'+
+  	  					    '<a href="#" class="list-group-item list-group-item-action">'+
+  	  					    	'<span class="basic-info-title">Member ID</span>'+
+  	  					    	'<span class="basic-info-content" id="memberid">123-758-'+ids+'</span>'+
+  	  					    '</a>'+
+  	  					    '<a href="#" class="list-group-item list-group-item-action">'+
+  	  					    	'<span class="basic-info-title">Given Name</span>'+
+  	  					    	'<span class="basic-info-content" id="givenname">'+names[i]+'</span>'+
+  	  					    '</a>'+
+  	  					    '<a href="#" class="list-group-item list-group-item-action">'+
+  	  					    	'<span class="basic-info-title">Family Name</span>'+
+  	  					    	'<span class="basic-info-content" id="familyname">'+family[i]+'</span>'+
+  	  					    '</a>'+
+  	  					    '<a href="#" class="list-group-item list-group-item-action">'+
+  	  					    	'<span class="basic-info-title">Gender</span>'+
+  	  					    	'<span class="basic-info-content" id="gender">'+gender[i]+'</span>'+
+  	  					    '</a>'+
+  	  					    '<a href="#" class="list-group-item list-group-item-action">'+
+  	  					    	'<span class="basic-info-title">Email</span>'+
+  	  					    	'<span class="basic-info-content" id="email" style="text-transform:lowercase">'+names[i]+family[i]+'@email.com</span>'+
+  	  					    '</a>'+
+  	  					  '</div>'+
+  	  				'</div>'+
+  	  				'<hr>'+
+              '<div>'+
+  	  				'<h6 style="padding-left: 32px">Test Records</h6>'+
+              '<button class="btn btn-info">More</button>'+
+              '</div>'+
+  	  				'<div class="record-list" style="top:-24px;">'+
+  	  					'<div class="container-fluid" >'+
+  	  						'<div class="row text-center" style="padding-top:24px " >'+
+  	  							'<div class="col-3 col-sm-3 " style="padding-left:0;">'+
+                      '<div style="float:left;margin:-6px 16px;"><img src="../img/management/lipid.png"></div>'+
+  	  								'<ul style="border-right:1px solid  lightgrey;" >'+
+  	  									'<li style="color:var(--theme-color);font-size: 1.2em;">Lipid Test</li>'+
+  	  									'<li style="opacity: .5;font-size: 0.8em;">Jun 30, 2018</li>'+
+  	  								'</ul>'+
+  	  							'</div>'+
+  	  							'<div class="col-2 col-sm-2" style="padding-left:0;">'+
+  	  								'<ul>'+
+  	  									'<li class="rocord-list-title">TC</li>'+
+  	  									'<li class="rocord-list-content" id="tc">'+tc+' mg/dl</li>'+
+  	  								'</ul>'+
+  	  							'</div>'+
+  	  							'<div class="col-2 col-sm-2" style="padding-left:0;">'+
+  	  								'<ul>'+
+  	  									'<li class="rocord-list-title">TG</li>'+
+  	  									'<li class="rocord-list-content" id="tg">'+tg+' mg/dl</li>'+
+  	  								'</ul>'+
+  	  							'</div>'+
+  	  							'<div class="col-2 col-sm-2" style="padding-left:0;">'+
+  	  								'<ul>'+
+  	  									'<li class="rocord-list-title">HDL</li>'+
+  	  									'<li class="rocord-list-content" id="hdl">'+hdl+' mg/dl</li>'+
+  	  								'</ul>'+
+  	  							'</div>'+
+  	  							'<div class="col-2 col-sm-2" style="padding-left:0;">'+
+  	  								'<ul>'+
+  	  									'<li class="rocord-list-title">LDL</li>'+
+  	  									'<li class="rocord-list-content" id="ldl">'+ldl+' mg/dl</li>'+
+  	  								'</ul>'+
+  	  							'</div>'+
+  	  						'</div>'+
+  	  					'</div>'+
+  	  					
+  	  				'</div>'+
+  	   
+  	  				'<div class="record-list" style="top:-24px;">'+
+  	  					'<div class="container-fluid" >'+
+  	  						'<div class="row text-center" style="padding-top:24px " >'+
+  	  							'<div class="col-3 col-sm-3 " style="padding-left:0;">'+
+                      '<div style="float:left;margin:-6px 16px;"><img src="../img/management/a1c.png"></div>'+
+  	  								'<ul style="border-right:1px solid  lightgrey;">'+
+  	  									'<li style="color:var(--theme-color);font-size: 1.2em;">A1c Test</li>'+
+  	  									'<li style="opacity: .5;font-size: 0.8em;">Jun 30, 2018</li>'+
+  	  								'</ul>'+
+  	  							'</div>'+
+  	  							'<div class="col-2 col-sm-2" style="padding-left:0;">'+
+  	  								'<ul>'+
+  	  									'<li class="rocord-list-title">A1c</li>'+
+  	  									'<li class="rocord-list-content" id="tc">'+A1c+' %</li>'+
+  	  								'</ul>'+
+  	  							'</div>'+
+  	  							'<div class="col-2 col-sm-2" style="padding-left:0;">'+
+  	  								'<ul>'+
+  	  									'<li class="rocord-list-title"></li>'+
+  	  									'<li class="rocord-list-content" id="tg"></li>'+
+  	  								'</ul>'+
+  	  							'</div>'+
+  	  							'<div class="col-2 col-sm-2" style="padding-left:0;">'+
+  	  								'<ul>'+
+  	  									'<li class="rocord-list-title"></li>'+
+  	  									'<li class="rocord-list-content" id="hdl"></li>'+
+  	  								'</ul>'+
+  	  							'</div>'+
+  	  							'<div class="col-2 col-sm-2" style="padding-left:0;">'+
+  	  								'<ul>'+
+  	  									'<li class="rocord-list-title"></li>'+
+  	  									'<li class="rocord-list-content" id="ldl"></li>'+
+  	  								'</ul>'+
+  	  							'</div>'+
+  	  						'</div>'+
+  	  					'</div>'+
+  	  				'</div></div>';
+  	  		 
+
+  	  	}
+  	  }
+
+  	  document.getElementById("name").innerHTML = namelist;
+  	  document.getElementById("data").innerHTML = datalist;
+  	  
+  	</script>	
+</body>
+</html>
