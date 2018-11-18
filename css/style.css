@@ -17,7 +17,7 @@
 
     /*sideproject page*/
     .sideproject-content{
-		border-radius: 8px;
+		border-radius: 16px;
 		margin:16px 0px;
 		padding: 8px;
 		transition: .5s ease-in-out;
@@ -42,7 +42,7 @@
 	}
     /*sideproject page end*/
 
-    
+
 	.navhead{
 		top: 0;
 		height: 72px;
