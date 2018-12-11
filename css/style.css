@@ -13,9 +13,15 @@
 	.row{
 		padding:0 144px; 
 	}
+    /*index*/
+    .project-image{
+        height:360px;
+        width: 100%;
+        background-color: lightgrey;
+    }
 
-   
-
+    /*index-end */
+    
     /*sideproject page*/
     .sideproject-content{
 		border-radius: 16px;
