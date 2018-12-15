@@ -14,9 +14,19 @@
 		padding:0 144px; 
 	}
     /*index*/
-    .project-image{
-       
+    .project-image > img{
+       border-radius: 8px;
+       box-shadow:0 0 4px 0 grey;
+       cursor: pointer;
+       transition:1s ease-in-out;
     }
+
+    .project-image > img:hover{
+        
+        box-shadow:0 0 16px 0 grey;
+        transition:1s ease-in-out;
+     }
+
     .btn-dark{
         color:white;
     }
@@ -24,7 +34,7 @@
         background-color:grey;
         padding: 4px;
         color:white;
-        font-size: .2em;
+        font-size: 14px;
         margin-left: 8px;
     }
     /*index-end */
