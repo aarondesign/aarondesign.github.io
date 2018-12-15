@@ -14,13 +14,19 @@
 		padding:0 144px; 
 	}
     /*index*/
-    .project-image{
-        
-        width: 100%;
-        background-color: lightgrey;
+    .project-image>img{
+        border-radius: 16px;
+        box-shadow: 0 0 16px 0 lightgrey;
     }
     .btn-dark{
         color:white;
+    }
+    .badge{
+        background-color:grey;
+        padding: 4px;
+        color:white;
+        font-size: .2em;
+        margin-left: 8px;
     }
     /*index-end */
     
