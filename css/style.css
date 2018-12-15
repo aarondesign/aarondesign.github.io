@@ -19,7 +19,9 @@
         width: 100%;
         background-color: lightgrey;
     }
-
+    .btn-dark{
+        color:white;
+    }
     /*index-end */
     
     /*sideproject page*/
