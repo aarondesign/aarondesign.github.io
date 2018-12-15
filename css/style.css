@@ -17,6 +17,7 @@
     .project-image>img{
         border-radius: 16px;
         box-shadow: 0 0 16px 0 lightgrey;
+        width: 100%;
     }
     .btn-dark{
         color:white;
