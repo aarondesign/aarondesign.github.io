@@ -1,4 +1,19 @@
-    body{
+	
+	:root {
+		--primary-color:#00bcd4;
+		--primary-color-light:#62efff;
+		--primary-color-dark:#008ba3; 
+		--secondary-color:#ff8a65;
+		--secondary-color-light:#ffbb93;
+		--secondary-color-dark:#c75b39;
+		--grey-normal:#546e7a;
+		--grey-dark:#29434e;
+		--grey-light:#819ca9;
+
+	}
+	
+	
+	body{
 		font-family: 'Roboto',sans-Serif;
 	}
 	ul{
@@ -6,32 +21,50 @@
 		padding:0;
 		margin-left: -14px;
 	}
+
+	h1{
+		font-weight:900;
+	}
+
 	h2{
 		font-weight:900;
+	}
+
+	p{
+		color:var(--grey-dark);
 	}
 
 	.row{
 		padding:0 144px; 
 	}
     /*index*/
-    .project-image > img{
+    .project-image > a > img{
        border-radius: 8px;
        box-shadow:0 0 4px 0 grey;
        cursor: pointer;
        transition:1s ease-in-out;
     }
 
-    .project-image > img:hover{
+    .project-image > a >img:hover{
         
         box-shadow:0 0 16px 0 grey;
         transition:1s ease-in-out;
      }
 
     .btn-dark{
-        color:white;
-    }
+		color:white;
+		background-color: var(--secondary-color);
+		border-color:var(--secondary-color-dark);
+		transition:.5s ease-in-out;
+	}
+	
+	.btn-dark:hover{
+		background-color: var(--primary-color);
+		border-color:var(--primary-color-dark);
+		transition:.5s ease-in-out;
+	}
     .badge{
-        background-color:grey;
+        background-color:var(--primary-color);
         padding: 4px;
         color:white;
         font-size: 14px;
@@ -66,6 +99,25 @@
 	}
     /*sideproject page end*/
 
+
+    /* projects*/
+    .next-project{
+        width: 100%;
+        height:72px;
+        background-color:var(--primary-color);
+        position: fixed;
+        color:white;
+        bottom:0;
+        cursor: pointer;
+        transition: 1s ease-in-out;
+    }
+
+    .next-project:hover{
+        background-color:var(--primary-color-light);
+        transition: 1s ease-in-out;
+    }
+
+    /*projects end*/
 
 	.navhead{
 		top: 0;
