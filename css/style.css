@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
 	
 	:root {
 		--primary-color:#00bcd4;
@@ -14,7 +15,7 @@
 	
 	
 	body{
-		font-family: 'Roboto',sans-Serif;
+		font-family: 'lato',sans-Serif;
 	}
 	ul{
 		list-style: none;
