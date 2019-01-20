@@ -12,6 +12,19 @@
 		--grey-light:#819ca9;
 
 	}
+
+	#nav_desktop{
+		position: fixed;
+	}
+
+
+	@media screen and (max-width: 800px) {
+		#nav_desktop{
+		  position: relative;
+		}
+
+		
+	  }
 	
 	
 	body{
