@@ -14,13 +14,13 @@
 	}
 
 	#nav_desktop{
-		position: fixed;
+		position: fixed !important;
 	}
 
 
 	@media screen and (max-width: 800px) {
 		#nav_desktop{
-		  position: relative;
+		  position: relative !important;
 		}
 
 		
