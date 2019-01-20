@@ -17,6 +17,9 @@
 		position: fixed !important;
 	}
 
+	.opacity{
+		opacity: .5;
+	}
 
 	@media screen and (max-width: 800px) {
 		#nav_desktop{

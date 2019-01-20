@@ -23,14 +23,41 @@
 
     gtag('config', 'UA-131020506-1');
   </script>
+  <script>
+        $(window).scroll(function () {
+                last = $("body").height() - $(window).height() - 50;
+
+                if ($(window).scrollTop() >= 100) {
+                    $("nav").animate({ opacity: ".8" }, 100);
+                    $("#aaron_logo").fadeIn();
+                    $("#aaron_logo_2").hide();
+                }
+
+                else {
+                    $("nav").animate({ opacity: "1" }, 100);
+                    $("#aaron_logo").fadeOut();
+                    $("#aaron_logo_2").show();
+                }
+
+            });
+
+        $(window).scroll(function () {
+                last = $("body").height() - $(window).height() - 50;
+
+                if ($(window).scrollTop() >= last) {
+                    $("footer").fadeIn(1000);
+                }
+
+
+            });
+  </script>
 
 </head>
 
 <body>
-    
     <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
         <div id="nav_desktop">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="index.html" id="aaron_logo" style="display:none">
                 <img src="images/aaron_logo.png" alt="logo" style="width:40px;">
             </a>
             <a class="navbar-brand " href="index.html">Aaron Hsu</a>
@@ -56,16 +83,25 @@
             </ul>
         </div>
     </nav>
-      <div class="container-fluid" style="margin-top:120px;">
-          <div class="row">
-          <div class="col-sm-12" style="padding-bottom:64px">
-               
-               <h1 class="text-center">Hello, I'm Aaron</h1>
-               <p class="text-center">Have 6 years of user interface design experience and highly skilled in web and mobile UX, interaction design, and prototyping.Beside my job, I also join some conferences and workshops to broaden my horizon. Feel free to download my resume.</p>
-               <div class="text-center">
-                  <a href="about.html" style="color:white"><button class="btn btn-dark center" >Check my experiences</button></a>
-               </div>
-            </div>
+      <div class="container-fluid" style="margin-top:56px;">
+        <div class="row" style="background:whitesmoke;padding-top:32px;padding-bottom:32px">
+        <div class="col-sm-2 col-xs-0 text-center">
+        </div>
+        <div class="col-sm-8 col-xs-12 text-center">
+            <img id="aaron_logo_2" src="images/aaron_logo_b.png"  style="height:64px;margin:0 auto;margin:16px"> 
+            <h1 class="text-center">Hello, I'm Aaron</h1>
+            <p class="text-center">Have 6 years of user interface design experience and highly skilled in web and mobile UX,
+                interaction design, and prototyping.Beside my job, I also join some conferences and workshops to broaden my
+                horizon. Feel free to download my <a href="files/aaron_resume.pdf" target="_blank">resume</a>.</p>
+            <div class="text-center">
+                <a href="about.html" style="color:white"><button class="btn btn-dark center">Check my experiences</button></a>
+            </div><br>
+            <a href="mailto:aaron.zl.hsu@gmail.com?subject=Jobs&body=Hire you" style="padding:16px">Contact me</a>
+        </div>
+        <div class="col-sm-2 col-xs-0">
+        </div>
+        </div><br>
+        <div class="row">
             <div class="col-sm-12">
                 <h3 class="text-center">Projects</h3><br>
                <div class="project-image" >
@@ -97,7 +133,7 @@
           </div>
       </div>
       
-      <footer>
+      <footer style="display:none">
           aaron.zl.hsu@gmail.com
       </footer>
 </body>
