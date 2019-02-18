@@ -88,7 +88,14 @@
         margin-left: 8px;
     }
     /*index-end */
-    
+	/*poct*/
+		.title{
+			text-align: center;
+			padding:8px;
+			margin-bottom:8px;
+			background-color:#FED766;
+		}
+	/*poct*/
     /*sideproject page*/
     .sideproject-content{
 		border-radius: 16px;
