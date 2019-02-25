@@ -53,7 +53,7 @@
 	}
 
 	.row{
-		padding:56px 144px; 
+		padding:96px 144px; 
 	}
     /*index*/
     .project-image > a > img{
@@ -138,12 +138,20 @@
 		
     }
 
-    .next-project:hover,.previous-project:hover{
+    .previous-project:hover{
         background-color:var(--primary-color-light);
 		transition: 1s ease-in-out;
 		box-shadow: 0 20px 20px -10px rgba(0,0,0,.2);
 	}
 	
+	
+	.next-project:hover{
+        background-color:var(--secondary-color);
+		transition: 1s ease-in-out;
+		box-shadow: 0 20px 20px -10px rgba(0,0,0,.2);
+	}
+
+
 	.next-project{
 		color:black;
 		font-weight:800;
@@ -190,6 +198,18 @@
 
 	@media screen and (max-width: 992px) {
 	  .row{
-		padding:16px;
-	    }
+		padding:32px 16px;
+		}
+		
+		.col-sm-6{
+			padding:32px 16px;
+		}
+
+		.title{
+			text-align: center;
+			padding:8px;
+			margin:16px 0;
+			background-color:transparent;
+			font-size:2.2em;
+		}
 	}
