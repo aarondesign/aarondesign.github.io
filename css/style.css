@@ -32,6 +32,7 @@
 	
 	body{
 		font-family: 'lato',sans-Serif;
+		overflow-x: hidden;
 	}
 	ul{
 		list-style: none;
@@ -125,23 +126,33 @@
 
 
     /* projects*/
-    .next-project{
+    .next-project,.previous-project{
 		height:72px;
-        background-color:grey;
         position: relative;
-		color:white;
         bottom:0px;
         cursor: pointer;
 		transition: 1s ease-in-out;
 		line-height: 72px;
-		width:200px;;
+		width:180px;;
 		border-radius:64px;
+		
     }
 
-    .next-project:hover{
+    .next-project:hover,.previous-project:hover{
         background-color:var(--primary-color-light);
-        transition: 1s ease-in-out;
-    }
+		transition: 1s ease-in-out;
+		box-shadow: 0 20px 20px -10px rgba(0,0,0,.2);
+	}
+	
+	.next-project{
+		color:black;
+		font-weight:800;
+	}
+
+
+	.previous-project{
+		color:grey;
+	}
 
     /*projects end*/
 
