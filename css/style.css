@@ -186,6 +186,9 @@
 		line-height: 1.8em;
 	}
 
+	.mobile-alert{
+		display:none;
+	}
   footer{
     height: 64px;
     background-color: black;
@@ -225,6 +228,10 @@
 			color:white;
 			padding:8px;
 			margin: 8px;
+			position: fixed;
+			bottom:0;
+			display: block;
+			z-index: 999;
 		}
 
 		.mobile-alert>.row{
