@@ -24,10 +24,34 @@
 
         gtag('config', 'UA-131020506-1');
     </script>
+    <script>
+        var lastScrollTop = 0;
+        $(window).scroll(function (event) {
+            var st = $(this).scrollTop();
+            if (st > lastScrollTop) {
+                $("nav").animate({ top: "-64px", opacity: "0" }, {
+                    duration: 100
+                });
+
+
+            } else {
+                $("nav").animate({ top: "0px", opacity: "1" }, {
+                    duration: 1
+                });
+            }
+            lastScrollTop = st;
+        });
+
+
+
+
+    </script>
 
 </head>
 
 <body>
+    <div style="position:fixed;width:100%;height:56px;background:rgba(67,144,252,.8);top:0;z-index:999;text-align: center;line-height:56px;color:white">Project
+        : POCT</div>
     <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
         <div id="nav_desktop">
             <a class="navbar-brand" href="index.html">
@@ -65,9 +89,10 @@
                 <p class="text-left" style="background-color: whitesmoke;padding:8px;border-bottom:4px solid #4a90e2">Point
                     of care test project includes a portable device and web platforms. The object of this
                     product is to measure the patients’ lipid and Alc level in the blood. In this project, <b>my job is
-                         to design the app
+                        to design the app
                         and web system including flows and user interface.</b><br><br>
-                    Not only design the product, but I also go to the hospital to observe and interview with some patients.
+                    Not only design the product, but I also go to the hospital to observe and interview with some
+                    patients.
                     Then report
                     some usability issues to the managers and give some suggestions about how to improve the product.
                 </p>
@@ -87,11 +112,13 @@
                     be used by what
                     kind of people and what kind of benefit we can provide.
                     <br><br>
-                    In this project, the healthcare center will buy this product to measure the customs’ blood. According
-                     to the test result,
+                    In this project, the healthcare center will buy this product to measure the customs’ blood.
+                    According
+                    to the test result,
                     the system will give custom health advice, health supplements, and test records.
                     <br><br>
-                    After some months, the system will remind customs to come back for follow up at the healthcare center.
+                    After some months, the system will remind customs to come back for follow up at the healthcare
+                    center.
 
 
                 </p>
@@ -202,17 +229,23 @@
             </div>
         </div>
     </div>
-    <div >
-        <div class="row" >
-            <div class="col-6 " >
-               <a href="about.html"> <div class="text-center previous-project" >
-                        <span style="float:left;padding-left:16px;" ><img src="images/arrow_left.png" style="height:24px;width:24px;"></span>about me
-                </div></a>
+    <div>
+        <div class="row">
+            <div class="col-6 ">
+                <a href="about.html">
+                    <div class="text-center previous-project">
+                        <span style="float:left;padding-left:16px;"><img src="images/arrow_left.png" style="height:24px;width:24px;"></span>about
+                        me
+                    </div>
+                </a>
             </div>
             <div class="col-6">
-                    <a href="lh.html"><div class="text-center next-project" style="float:right">
-                            <span style="float:right;padding-right:16px;" ><img src="images/arrow_right.png" style="height:24px;width:24px;"></span>Project LH
-                    </div></a>
+                <a href="lh.html">
+                    <div class="text-center next-project" style="float:right">
+                        <span style="float:right;padding-right:16px;"><img src="images/arrow_right.png" style="height:24px;width:24px;"></span>Project
+                        LH
+                    </div>
+                </a>
             </div>
         </div>
     </div>

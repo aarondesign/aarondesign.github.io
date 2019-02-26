@@ -73,6 +73,12 @@
 
 
         });
+
+        $(document).ready(function () {
+            $("#close-msg").click(function () {
+                $(".mobile-alert").fadeOut();
+            });
+        });
     </script>
 
 </head>
@@ -118,9 +124,10 @@
                 <h1 class="text-center">Hello, I'm Aaron</h1>
                 <p class="text-center">As an UI Designer.</p>
                 <div class="text-center">
-                    <a href="about.html" style="color:white"><button class="btn btn-dark center">Check my experiences </button></a>
+                    <a href="about.html" style="color:white"><button class="btn btn-dark center">Check my experiences
+                        </button></a>
                 </div><br>
-                
+
             </div>
             <div class="col-sm-2 col-xs-0">
             </div>
@@ -134,7 +141,7 @@
                 <h5>Point of Care System(POCT)<span class="badge">Mobile / Web</span></h5>
                 <p>POCT includes mobile device and web platform, it provides pharmacies to measure customs' lipid and
                     Hba1c. The system will show the results in a few minutes.</p>
-                    <a href="poct.html" style="color:white"><button class="btn btn-dark center">Learn More </button></a>
+                <a href="poct.html" style="color:white"><button class="btn btn-dark center">Learn More </button></a>
                 <hr>
             </div>
 
@@ -154,12 +161,18 @@
                 </div><br>
                 <h5>Sideprojects</h5>
                 <p>In my spare time, I practice some tools to improve my ability. </p>
-                <a href="sideprojects.html" style="color:white"><button class="btn btn-dark center"> Learn More </button></a>
+                <a href="sideprojects.html" style="color:white"><button class="btn btn-dark center"> Learn More
+                    </button></a>
                 <hr>
             </div>
         </div>
     </div>
-
+    <div class="mobile-alert">
+        <div class="row">
+            <div class="col-9">Suggest use desktop or laptop see more information and get a better experience.</div>
+            <div class="col-3"><img src="images/home/cancel.png" style="background-color:rgba(255,255,255,.5);width:32px;height:32px;float:right;border-radius:16px" id="close-msg"></div>
+        </div>
+    </div>
     <footer style="display:none">
         aaron.zl.hsu@gmail.com
     </footer>

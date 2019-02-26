@@ -21,9 +21,29 @@
 
 		gtag('config', 'UA-131020506-1');
 	</script>
+	<script>
+		var lastScrollTop = 0;
+		$(window).scroll(function (event) {
+			var st = $(this).scrollTop();
+			if (st > lastScrollTop) {
+				$("nav").animate({ top: "-64px", opacity: "0" }, {
+					duration: 100
+				});
+
+
+			} else {
+				$("nav").animate({ top: "0px", opacity: "1" }, {
+					duration: 1
+				});
+			}
+			lastScrollTop = st;
+		});
+	</script>
+
 </head>
 
 <body style="background-color:rgba(0,0,0,.05)">
+		<div style="position:fixed;width:100%;height:56px;background:rgba(255,138,101,.9);top:0;z-index:999;text-align: center;line-height:56px;color:white">Side Projects</div>
 	<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
 		<div id="nav_desktop">
 			<a class="navbar-brand" href="index.html">
@@ -53,11 +73,11 @@
 		</div>
 	</nav>
 	<div class="container-fluid">
-		<div class="row" style="padding-bottom:32px;"> 
+		<div class="row" style="padding-bottom:32px;">
 			<div class="col-sm-6 col-12">
-					<h1 class="text-left" >Side Projects</h1>
-					<p>In my spare time, I practice some tools to improve my ability.
-							Using interactive prototypes can present my thought of ideas. </p>
+				<h1 class="text-left">Side Projects</h1>
+				<p>In my spare time, I practice some tools to improve my ability.
+					Using interactive prototypes can present my thought of ideas. </p>
 			</div>
 			<div class="col-sm-6 col-0">
 
@@ -201,19 +221,24 @@
 	</div>
 	</div>
 	<div>
-            <div class="row" >
-                <div class="col-6 " >
-                   <a href="lh.html"> <div class="text-center previous-project" >
-                            <span style="float:left;padding-left:16px;" ><img src="images/arrow_left.png" style="height:24px;width:24px;"></span>Project LH
-                    </div></a>
-                </div>
-                <div class="col-6">
-                        <a href="index.html"><div class="text-center next-project" style="float:right">
-                                <span style="float:right;padding-right:16px;" ><img src="images/arrow_right.png" style="height:24px;width:24px;"></span>Home
-                        </div></a>
-                </div>
-            </div>
-        </div>
+		<div class="row">
+			<div class="col-6 ">
+				<a href="lh.html">
+					<div class="text-center previous-project">
+						<span style="float:left;padding-left:16px;"><img src="images/arrow_left.png" style="height:24px;width:24px;"></span>Project
+						LH
+					</div>
+				</a>
+			</div>
+			<div class="col-6">
+				<a href="index.html">
+					<div class="text-center next-project" style="float:right">
+						<span style="float:right;padding-right:16px;"><img src="images/arrow_right.png" style="height:24px;width:24px;"></span>Home
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
 
 	<footer>
 		aaron.zl.hsu@gmail.com

@@ -18,9 +18,30 @@
 
 		gtag('config', 'UA-131020506-1');
 	</script>
+	<script>
+		var lastScrollTop = 0;
+		$(window).scroll(function (event) {
+			var st = $(this).scrollTop();
+			if (st > lastScrollTop) {
+				$("nav").animate({top:"-64px",opacity:"0"},{
+    duration: 100});
+				
+
+			} else {
+				$("nav").animate({top:"0px",opacity:"1"},{
+    duration: 100});
+			}
+			lastScrollTop = st;
+		});
+		
+
+
+	
+	</script>
 </head>
 
 <body>
+	<div style="position:fixed;width:100%;height:56px;background:rgba(0,0,0,.8);top:0;z-index:999;text-align: center;line-height:56px;color:white">About</div>
 	<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
 		<div id="nav_desktop">
 			<a class="navbar-brand" href="index.html">
@@ -50,25 +71,27 @@
 		</div>
 	</nav>
 	<div class="container-fluid" style="margin-top:120px;">
-		<div class="row align-middle " >
+		<div class="row align-middle ">
 			<div class="col-sm-4 align-middle">
 				<img class="img-fluid align-middle" style="border-radius:50%; " src="images/about/profile.png">
 			</div>
 			<div class="col-sm-8 ">
 				<br>
 				<h3><b>Aaron Hsu, UI Designer </h3>
-				<p>Have 6 years of user interface design experience and highly skilled in web and mobile UX, interaction design, and prototyping. Besides my job, I also join some conferences and workshops to broaden my horizon (ex: H.spectrum, HPX, IXDA, UX days Tokyo...).<br>Please feel free to download my resume or contact me.⬇️</p>
-				<a href="files/aaron_resume.pdf" target="_blank">🧾Resume</a><br>
-				<a href="mailto:aaron.zl.hsu@gmail.com?subject=Jobs&body=Hire you" >📮Contact me</a>
+				<p>Have 6 years of user interface design experience and highly skilled in web and mobile UX, interaction design,
+					and prototyping. Besides my job, I also join some conferences and workshops to broaden my horizon (ex: H.spectrum,
+					HPX, IXDA, UX days Tokyo...).<br>Please feel free to download my resume or contact me.⬇️</p><hr>
+				<a href="files/aaron_resume.pdf" target="_blank"><button class="btn btn-dark">🧾 My Resume</button></a><br><br>
+				<a href="mailto:aaron.zl.hsu@gmail.com"><button class="btn btn-dark">📮 Contact me</button></a>
 			</div>
-		
+
 		</div>
 		<hr>
 		<div class="row">
-		    <div class="col-sm-12" style="padding-left:0;">
-					<h2 >👨‍💻 Work</h2>
+			<div class="col-sm-12" style="padding-left:0;">
+				<h2>👨‍💻 Work</h2>
 			</div>
-			<div class="col-sm-6">	
+			<div class="col-sm-6">
 				<ul>
 					<li>
 						<h5><b>iXensor</b>, UI Designer</h5>
@@ -98,19 +121,20 @@
 				<ul>
 					<li>
 						<h6>Glucose Monitor Project
-									<h6>
+							<h6>
 					</li>
 					<li class="list-item">- Mobile Device User Interface ( iOS )</li>
 					<li class="list-item">- Web System Interface</li>
 				</ul><br>
 				<br><br>
 			</div>
-			<div class="col-sm-6">	
+			<div class="col-sm-6">
 				<ul>
 					<li>
 						<h5><b>Foxconn (Hon Hai) Group</b>, UI Designer</h5>
 					</li>
-					<li class="list-year">Dec. 2012 - Jul. 2016 <li><hr>
+					<li class="list-year">Dec. 2012 - Jul. 2016 <li>
+						<hr>
 					<li>
 						<h6>Virtual Desktop Infra- structure Project<a></h6>
 					</li>
@@ -202,19 +226,24 @@
 		<!--tools-->
 	</div>
 	<div>
-            <div class="row" >
-                <div class="col-6 " >
-                   <a href="index.html"> <div class="text-center previous-project" >
-                            <span style="float:left;padding-left:16px;" ><img src="images/arrow_left.png" style="height:24px;width:24px;"></span>Home
-                    </div></a>
-                </div>
-                <div class="col-6">
-                        <a href="poct.html"><div class="text-center next-project" style="float:right">
-                                <span style="float:right;padding-right:16px;" ><img src="images/arrow_right.png" style="height:24px;width:24px;"></span>Project POCT
-                        </div></a>
-                </div>
-            </div>
-        </div>
+		<div class="row">
+			<div class="col-6 ">
+				<a href="index.html">
+					<div class="text-center previous-project">
+						<span style="float:left;padding-left:16px;"><img src="images/arrow_left.png" style="height:24px;width:24px;"></span>Home
+					</div>
+				</a>
+			</div>
+			<div class="col-6">
+				<a href="poct.html">
+					<div class="text-center next-project" style="float:right">
+						<span style="float:right;padding-right:16px;"><img src="images/arrow_right.png" style="height:24px;width:24px;"></span>Project
+						POCT
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
 	<footer>
 		aaron.zl.hsu@gmail.com
 	</footer>

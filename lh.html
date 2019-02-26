@@ -24,10 +24,35 @@
 
         gtag('config', 'UA-131020506-1');
     </script>
+    <script>
+        var lastScrollTop = 0;
+        $(window).scroll(function (event) {
+            var st = $(this).scrollTop();
+            if (st > lastScrollTop) {
+                $("nav").animate({ top: "-64px", opacity: "0" }, {
+                    duration: 100
+                });
+
+
+            } else {
+                $("nav").animate({ top: "0px", opacity: "1" }, {
+                    duration: 1
+                });
+            }
+            lastScrollTop = st;
+        });
+
+
+
+
+    </script>
+
 
 </head>
 
 <body>
+    <div style="position:fixed;width:100%;height:56px;background:rgba(255,176,192,.9);top:0;z-index:999;text-align: center;line-height:56px;color:white">Project
+        : LH</div>
     <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
         <div id="nav_desktop">
             <a class="navbar-brand" href="index.html">
@@ -163,26 +188,26 @@
 
     </div>
 
-    
-        <div class="row">
-            <div class="col-6 ">
-                <a href="poct.html">
-                    <div class="text-center previous-project">
-                        <span style="float:left;margin-left:16px;"><img src="images/arrow_left.png" style="height:24px;width:24px;"></span>Project
-                        POCT
-                    </div>
-                </a>
-            </div>
-            <div class="col-6">
-                <a href="sideprojects.html">
-                    <div class="text-center next-project" style="float:right">
-                        <span style="float:right;margin-right:16px;"><img src="images/arrow_right.png" style="height:24px;width:24px;"></span>Side
-                        Projects
-                    </div>
-                </a>
-            </div>
+
+    <div class="row">
+        <div class="col-6 ">
+            <a href="poct.html">
+                <div class="text-center previous-project">
+                    <span style="float:left;margin-left:16px;"><img src="images/arrow_left.png" style="height:24px;width:24px;"></span>Project
+                    POCT
+                </div>
+            </a>
         </div>
-    
+        <div class="col-6">
+            <a href="sideprojects.html">
+                <div class="text-center next-project" style="float:right">
+                    <span style="float:right;margin-right:16px;"><img src="images/arrow_right.png" style="height:24px;width:24px;"></span>Side
+                    Projects
+                </div>
+            </a>
+        </div>
+    </div>
+
     <footer>
         aaron.zl.hsu@gmail.com
     </footer>
