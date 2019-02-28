@@ -55,7 +55,10 @@
 	.row{
 		padding:96px 144px; 
 	}
-    /*index*/
+	/*index*/
+	.index-title{
+		font-size: 5em;
+	}
     .project-image > a > img{
        border-radius: 8px;
        box-shadow:0 0 4px 0 grey;

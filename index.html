@@ -47,7 +47,7 @@
         })(window, document, 'script', 'dataLayer', 'GTM-K88K22L');</script>
     <!-- End Google Tag Manager -->
     <script>
-        $(window).scroll(function () {
+        /*$(window).scroll(function () {
             last = $("body").height() - $(window).height() - 50;
 
             if ($(window).scrollTop() >= 100) {
@@ -62,7 +62,7 @@
                 $("#aaron_logo_2").show();
             }
 
-        });
+        });*/
 
         $(window).scroll(function () {
             last = $("body").height() - $(window).height() - 50;
@@ -73,6 +73,16 @@
 
 
         });
+
+        $(document).on('click', 'a[href^="#"]', function (event) {
+            event.preventDefault();
+
+            $('html, body').animate({
+                scrollTop: $($.attr(this, 'href')).offset().top
+                ,
+  easing: "easeinOutCubic"}, 1000);
+        });
+
 
         $(document).ready(function () {
             $("#close-msg").click(function () {
@@ -116,25 +126,26 @@
         </div>
     </nav>
     <div class="container-fluid" style="margin-top:56px;">
-        <div class="row" style="background:whitesmoke;padding-top:32px;padding-bottom:32px">
-            <div class="col-sm-2 col-xs-0 text-center">
-            </div>
-            <div class="col-sm-8 col-xs-12 text-center">
+        <div class="row" style="background:whitesmoke;height:100vh;">
+
+            <div class="col-sm-12 col-xs-12">
                 <img id="aaron_logo_2" src="images/aaron_logo_b.png" style="height:64px;margin:0 auto;margin:16px">
-                <h1 class="text-center">Hello, I'm Aaron</h1>
-                <p class="text-center">As an UI Designer.</p>
-                <div class="text-center">
+                <h1 class="text-left index-title">Hello, I'm Aaron</h1>
+                <p class="text-left">As an UI Designer.</p>
+                <div class="text-left">
                     <a href="about.html" style="color:white"><button class="btn btn-dark center">Check my experiences
                         </button></a>
                 </div><br>
-
-            </div>
-            <div class="col-sm-2 col-xs-0">
+                <a href="#project">
+                    <div style="margin:0 auto;height:56px;width:56px;background:red">
+                        hi
+                    </div>
+                </a>
             </div>
         </div><br>
         <div class="row">
             <div class="col-sm-12">
-                <h3 class="text-center">Projects</h3><br>
+                <h3 class="text-left" id="project">Projects</h3><br>
                 <div class="project-image">
                     <a href="poct.html"><img class="img-fluid" src="images/home/POCT_banner.jpg"></a>
                 </div><br>
@@ -170,7 +181,8 @@
     <div class="mobile-alert">
         <div class="row">
             <div class="col-9">Suggest use desktop or laptop see more information and get a better experience.</div>
-            <div class="col-3"><img src="images/home/cancel.png" style="background-color:rgba(255,255,255,.5);width:32px;height:32px;float:right;border-radius:16px" id="close-msg"></div>
+            <div class="col-3"><img src="images/home/cancel.png" style="background-color:rgba(255,255,255,.5);width:32px;height:32px;float:right;border-radius:16px"
+                    id="close-msg"></div>
         </div>
     </div>
     <footer style="display:none">
