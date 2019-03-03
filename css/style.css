@@ -56,11 +56,30 @@
 		padding:96px 144px; 
 	}
 	/*index*/
+	.scrolldown{
+		width:56px;
+		height: 56px;
+		background-color: var(--primary-color);
+		margin:0 auto;
+		border-radius:28px;
+		
+	}
+	#arrow_down{
+		animation-name: arrow;
+		animation-duration: 2s;
+		animation-iteration-count: infinite;
+		animation-timing-function: ease-in-out;
+	}
+	@keyframes arrow{
+		from{top:16;opacity:1;}
+		to{top:24px;opacity:.5;}
+	}
+
 	.index-title{
 		font-size: 5em;
 	}
     .project-image > a > img{
-       border-radius: 8px;
+       border-radius: 4px;
        box-shadow:0 0 4px 0 grey;
        cursor: pointer;
        transition:1s ease-in-out;
@@ -119,7 +138,7 @@
 		}
 
 		.card{
-			margin:56px 0;border:solid lightgrey 1px;
+			margin:32px 0;border:solid lightgrey 1px;
 			padding:24px;border-radius:8px;background-color:white;
 			transition:.5s ease-in-out;
 		}
