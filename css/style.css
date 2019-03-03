@@ -91,7 +91,25 @@
         font-size: 14px;
         margin-left: 8px;
     }
-    /*index-end */
+	/*index-end */
+	
+	/* about*/
+	.card2{
+			margin:16px 0;
+			border:solid lightgrey 1px;
+			padding:24px 32px;border-radius:8px;background-color:white;
+			transition:.5s ease-in-out;
+	}
+
+	.card2:hover{
+		box-shadow: 0 0 20px 0 lightgrey;
+		transition:.5s ease-in-out;
+	}
+
+	/* about end*/
+	
+	
+	
 	/*poct*/
 		.title{
 			text-align: center;
@@ -99,6 +117,18 @@
 			margin:16px 0;
 			background-color:#FED766;
 		}
+
+		.card{
+			margin:56px 0;border:solid lightgrey 1px;
+			padding:24px;border-radius:8px;background-color:white;
+			transition:.5s ease-in-out;
+		}
+
+		.card:hover{
+			box-shadow: 0 0 20px 0 lightgrey;
+			transition:.5s ease-in-out;
+		}
+
 	/*poct*/
     /*sideproject page*/
     .sideproject-content{
