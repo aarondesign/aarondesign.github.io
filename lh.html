@@ -41,6 +41,16 @@
             }
             lastScrollTop = st;
         });
+
+         $(document).on('click', 'a[href^="#"]', function (event) {
+            event.preventDefault();
+
+            $('html, body').animate({
+                scrollTop: $($.attr(this, 'href')).offset().top
+                ,
+                easing: "easeinOutCubic"
+            }, 1000);
+        });
     </script>
 
 
@@ -83,7 +93,7 @@
                 <h1 class="text-left title">Luteinizing hormone
                     Test Project</h1>
                 <p class="text-left" style="background-color: whitesmoke;padding:8px;border-bottom:4px solid #4a90e2">Point
-
+                    
                 </p>
             </div>
             <div class="col-sm-8">
@@ -100,8 +110,6 @@
                     Before designing the UI flows, the first thing is to figure out the scenario that this product will
                     be used by what
                     kind of people and what kind of benefit we can provide.
-
-
                 </p>
             </div>
         </div>
@@ -132,12 +140,12 @@
                 
                 <div class="card2">
                         <img class="img-fluid" style="padding-bottom:8px" src="images/lh/lh_screenshots_1.png">
-                        <h5>UI Screenshots</h5>
-                        <p>hi</p>
+                        <h5>On boarding</h5>
+                        <p>Shows different steps on preparing for pregnancy, I design some tiny animation on each screen, watch <a href="#movie1">here.</a></p>
                 </div>
                 <div class="card2">
                         <img class="img-fluid" style="padding-bottom:8px" src="images/lh/lh_screenshots_2.png">
-                        <h5>UI Screenshots</h5>
+                        <h5>Initializing</h5>
                         <p>hi</p>
                 </div>
                 
