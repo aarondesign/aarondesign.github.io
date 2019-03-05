@@ -11,9 +11,13 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-	<script src="scripts/wow.min.js"></script>
-	<script>new WOW().init();</script>
+	<script src="scripts/jquery.lazyload.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script>
+		$("img.lazy").lazyload({
+			effect: "fadeIn"
+		});
+	</script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag() { dataLayer.push(arguments); }
@@ -43,7 +47,8 @@
 </head>
 
 <body style="background-color:rgba(0,0,0,.05)">
-		<div style="position:fixed;width:100%;height:56px;background:rgba(255,138,101,.9);top:0;z-index:999;text-align: center;line-height:56px;color:white">Side Projects</div>
+	<div style="position:fixed;width:100%;height:56px;background:rgba(255,138,101,.9);top:0;z-index:999;text-align: center;line-height:56px;color:white">Side
+		Projects</div>
 	<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
 		<div id="nav_desktop">
 			<a class="navbar-brand" href="index.html">
@@ -86,7 +91,7 @@
 		<div class="row">
 			<div class="col-sm-6 text-center">
 				<div class="sideproject-content">
-					<a href="https://framer.cloud/toVWX/" target="_blank"><img class="wow fadeIn img-fluid" src="images/sideprojects/framer/meters.gif"></a>
+					<a href="https://framer.cloud/toVWX/" target="_blank"><img class="lazy img-fluid" data-original="images/sideprojects/framer/meters.gif"></a>
 				</div></a>
 				<h5 class="text-left">
 					Speed Meter
@@ -96,7 +101,7 @@
 			</div>
 			<div class="col-sm-6 text-center">
 				<div class="sideproject-content">
-					<a href="https://framer.cloud/KPLPh/" target="_blank"><img class="wow fadeIn img-fluid" src="images/sideprojects/framer/emoji.gif"></a>
+					<a href="https://framer.cloud/KPLPh/" target="_blank"><img class="lazy img-fluid" data-original="images/sideprojects/framer/emoji.gif"></a>
 				</div>
 				<h5 class="text-left">
 					Don't Eat Me
@@ -106,7 +111,7 @@
 			</div>
 			<div class="col-sm-6 text-center">
 				<div class="sideproject-content">
-					<a href="https://framer.cloud/EaNDF/" target="_blank"><img class="wow fadeIn img-fluid" src="images/sideprojects/framer/switch.gif"></a>
+					<a href="https://framer.cloud/EaNDF/" target="_blank"><img class="lazy img-fluid" data-original="images/sideprojects/framer/switch.gif"></a>
 				</div>
 				<h5 class="text-left">
 					Color Switch
@@ -116,7 +121,7 @@
 			</div>
 			<div class="col-sm-6 text-center">
 				<div class="sideproject-content">
-					<a href="https://framer.cloud/yfVPc/" target="_blank"><img class="wow fadeIn     img-fluid" src="images/sideprojects/framer/rain.gif"></a>
+					<a href="https://framer.cloud/yfVPc/" target="_blank"><img class=" lazy    img-fluid" data-original="images/sideprojects/framer/rain.gif"></a>
 				</div>
 				<h5 class="text-left">
 					Raining
@@ -126,7 +131,7 @@
 			</div>
 			<div class="col-sm-6 text-center">
 				<div class="sideproject-content">
-					<a href="https://framer.cloud/jWzUP/" target="_blank"><img class="wow fadeIn img-fluid" src="images/sideprojects/framer/list.gif"></a>
+					<a href="https://framer.cloud/jWzUP/" target="_blank"><img class=" lazy img-fluid" data-original="images/sideprojects/framer/list.gif"></a>
 				</div>
 				<h5 class="text-left">
 					List Effects
@@ -136,7 +141,7 @@
 			</div>
 			<div class="col-sm-6 text-center">
 				<div class="sideproject-content">
-					<a href="https://framer.cloud/twlPQ/" target="_blank"><img class="wow fadeIn img-fluid" src="images/sideprojects/framer/grids.gif"></a>
+					<a href="https://framer.cloud/twlPQ/" target="_blank"><img class=" lazy img-fluid" data-original="images/sideprojects/framer/grids.gif"></a>
 				</div>
 				<h5 class="text-left">
 					Cubes
@@ -146,7 +151,7 @@
 			</div>
 			<div class="col-sm-6 text-center">
 				<div class="sideproject-content">
-					<a href="https://framer.cloud/gwRTv/" target="_blank"><img class="wow fadeIn img-fluid" src="images/sideprojects/framer/spiral.gif"></a>
+					<a href="https://framer.cloud/gwRTv/" target="_blank"><img class=" lazy img-fluid" data-original="images/sideprojects/framer/spiral.gif"></a>
 				</div>
 				<h5 class="text-left">
 					Spiral Dots
@@ -156,7 +161,7 @@
 			</div>
 			<div class="col-sm-6 text-center">
 				<div class="sideproject-content">
-					<a href="https://framer.cloud/asQYX/" target="_blank"><img class="wow fadeIn img-fluid" src="images/sideprojects/framer/rotate_flower.gif"></a>
+					<a href="https://framer.cloud/asQYX/" target="_blank"><img class=" lazy img-fluid" data-original="images/sideprojects/framer/rotate_flower.gif"></a>
 				</div>
 				<h5 class="text-left">
 					Spiral Dots 2
@@ -166,7 +171,7 @@
 			</div>
 			<div class="col-sm-6 text-center">
 				<div class="sideproject-content">
-					<a href="https://framer.cloud/DXytW/" target="_blank"><img class="wow fadeIn img-fluid" src="images/sideprojects/framer/frog.gif"></a>
+					<a href="https://framer.cloud/DXytW/" target="_blank"><img class=" lazy img-fluid" data-original="images/sideprojects/framer/frog.gif"></a>
 				</div>
 				<h5 class="text-left">
 					Frog
@@ -176,7 +181,7 @@
 			</div>
 			<div class="col-sm-6 text-center">
 				<div class="sideproject-content">
-					<a href="files/sideprojects/Clock.htm"><img class="wow fadeIn img-fluid" src="images/sideprojects/framer/timer.gif"></a>
+					<a href="files/sideprojects/Clock.htm"><img class=" lazy img-fluid" data-original="images/sideprojects/framer/timer.gif"></a>
 				</div>
 				<h5 class="text-left">
 					Speed Meter
@@ -186,7 +191,7 @@
 			</div>
 			<div class="col-sm-6 text-center">
 				<div class="sideproject-content">
-					<a href="files/sideprojects/login.htm" target="_blank"><img class="wow fadeIn img-fluid" src="images/sideprojects/framer/login.gif"></a>
+					<a href="files/sideprojects/login.htm" target="_blank"><img class=" lazy img-fluid" data-original="images/sideprojects/framer/login.gif"></a>
 				</div>
 				<h5 class="text-left">
 					Login Page
@@ -197,7 +202,7 @@
 			<div class="col-sm-6 text-center">
 				<a href="files/sideprojects/calc.htm" target="_blank">
 					<div class="sideproject-content">
-						<img class="wow fadeIn img-fluid" src="images/sideprojects/framer/calculator.gif">
+						<img class=" lazy img-fluid" data-original="images/sideprojects/framer/calculator.gif">
 				</a>
 			</div>
 			<h5 class="text-left">
@@ -208,7 +213,7 @@
 		</div>
 		<div class="col-sm-6 text-center">
 			<div class="sideproject-content">
-				<a href="https://youtu.be/cz0tUTKLMdY" target="_blank"><img class="img-fluid" src="images/sideprojects/framer/robot.gif"></a>
+				<a href="https://youtu.be/cz0tUTKLMdY" target="_blank"><img class="img-fluid" data-original="images/sideprojects/framer/robot.gif"></a>
 			</div>
 			<h5 class="text-left">
 				Robot Faces
@@ -225,7 +230,7 @@
 			<div class="col-6 ">
 				<a href="lh.html">
 					<div class="text-center previous-project">
-						<span style="float:left;padding-left:16px;"><img src="images/arrow_left.png" style="height:24px;width:24px;"></span>Project
+						<span style="float:left;padding-left:16px;"><img data-original="images/arrow_left.png" style="height:24px;width:24px;"></span>Project
 						LH
 					</div>
 				</a>
@@ -233,7 +238,7 @@
 			<div class="col-6">
 				<a href="index.html">
 					<div class="text-center next-project" style="float:right">
-						<span style="float:right;padding-right:16px;"><img src="images/arrow_right.png" style="height:24px;width:24px;"></span>Home
+						<span style="float:right;padding-right:16px;"><img data-original="images/arrow_right.png" style="height:24px;width:24px;"></span>Home
 					</div>
 				</a>
 			</div>
