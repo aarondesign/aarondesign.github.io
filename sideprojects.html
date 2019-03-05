@@ -13,12 +13,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 	<script src="scripts/jquery.lazyload.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script>
-		$("img.lazy").lazyload({
-			effect: "fadeIn"
-		});
 	
-	</script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag() { dataLayer.push(arguments); }
@@ -92,7 +87,7 @@
 		<div class="row">
 			<div class="col-sm-6 text-center">
 				<div class="sideproject-content">
-					<a href="https://framer.cloud/toVWX/" target="_blank"><img class="lazy" data-src="images/sideprojects/framer/meters.gif"></a>
+					<a href="https://framer.cloud/toVWX/" target="_blank"><img class="lazy img-fluid" data-original="images/sideprojects/framer/meters.gif"></a>
 				</div></a>
 				<h5 class="text-left">
 					Speed Meter
@@ -102,7 +97,7 @@
 			</div>
 			<div class="col-sm-6 text-center">
 				<div class="sideproject-content">
-					<a href="https://framer.cloud/KPLPh/" target="_blank"><img class="lazy img-fluid" data-src="images/poct/poct_intro.png"></a>
+					<a href="https://framer.cloud/KPLPh/" target="_blank"><img class="lazy img-fluid" data-original="images/sideprojects/framer/emoji.gif"></a>
 				</div>
 				<h5 class="text-left">
 					Don't Eat Me
@@ -214,7 +209,7 @@
 		</div>
 		<div class="col-sm-6 text-center">
 			<div class="sideproject-content">
-				<a href="https://youtu.be/cz0tUTKLMdY" target="_blank"><img class="img-fluid" data-original="images/sideprojects/framer/robot.gif"></a>
+				<a href="https://youtu.be/cz0tUTKLMdY" target="_blank"><img class="lazy img-fluid" data-original="images/sideprojects/framer/robot.gif"></a>
 			</div>
 			<h5 class="text-left">
 				Robot Faces
@@ -231,7 +226,7 @@
 			<div class="col-6 ">
 				<a href="lh.html">
 					<div class="text-center previous-project">
-						<span style="float:left;padding-left:16px;"><img data-original="images/arrow_left.png" style="height:24px;width:24px;"></span>Project
+						<span style="float:left;padding-left:16px;"><img  src="images/arrow_left.png" style="height:24px;width:24px;"></span>Project
 						LH
 					</div>
 				</a>
@@ -239,7 +234,7 @@
 			<div class="col-6">
 				<a href="index.html">
 					<div class="text-center next-project" style="float:right">
-						<span style="float:right;padding-right:16px;"><img data-original="images/arrow_right.png" style="height:24px;width:24px;"></span>Home
+						<span style="float:right;padding-right:16px;"><img src="images/arrow_right.png" style="height:24px;width:24px;"></span>Home
 					</div>
 				</a>
 			</div>
@@ -252,3 +247,9 @@
 </body>
 
 </html>
+<script>
+		$("img.lazy").lazyload({
+			effect: "fadeIn"
+		});
+	
+	</script>

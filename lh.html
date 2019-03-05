@@ -15,6 +15,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="scripts/jquery.lazyload.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131020506-1"></script>
     <script>
@@ -42,7 +43,7 @@
             lastScrollTop = st;
         });
 
-         $(document).on('click', 'a[href^="#"]', function (event) {
+        $(document).on('click', 'a[href^="#"]', function (event) {
             event.preventDefault();
 
             $('html, body').animate({
@@ -93,16 +94,16 @@
                 <h1 class="text-left title">Luteinizing hormone
                     Test Project</h1>
                 <p class="text-left" style="background-color: whitesmoke;padding:8px;border-bottom:4px solid #4a90e2">Point
-                    
+
                 </p>
             </div>
             <div class="col-sm-8">
-                <img class="img-fluid" src="images/lh/lh_top.png">
+                <img class="lazy img-fluid" data-original="images/lh/lh_top.png">
             </div>
         </div>
         <div class="row" style="background-color:whitesmoke;padding-top:24px;">
             <div class="col-sm-8">
-                <img class="img-fluid" src="images/lh/lh_journey.png">
+                <img class="lazy img-fluid" data-original="images/lh/lh_journey.png">
             </div>
             <div class="col-sm-4">
                 <h1 class="title">User's Journey</h1>
@@ -117,61 +118,63 @@
             <h1 class="mx-auto d-block title">Portable Device UI</h1>
             <div class="col-sm-12">
                 <hr>
-                <img class="img-fluid" src="images/lh/lh_flow.png" style="padding-bottom:16px">
+                <img class="lazy img-fluid" data-original="images/lh/lh_flow.png" style="padding-bottom:16px">
                 <h3>UI Flow</h3>
                 <p>This flowchart shows the steps from setting up the device to measure the blood process.(It just show
                     the main flow of this app. )
                 </p>
             </div>
-        </div><hr>
+        </div>
+        <hr>
         <div class="row">
-                <div class="col-sm-4 col-4">
-                        <img class="img-fluid" src="images/lh/lh hand.png">
-                    </div>
-                    <div class="col-sm-8 col-8">
-                        <img class="img-fluid" src="images/lh/lh_place.png">
-                    </div>
+            <div class="col-sm-4 col-4">
+                <img class="lazy img-fluid" data-original="images/lh/lh hand.png">
+            </div>
+            <div class="col-sm-8 col-8">
+                <img class="lazy img-fluid" data-original="images/lh/lh_place.png">
+            </div>
         </div>
         <div class="row" style="background-color:whitesmoke">
             <div class="col-sm-12 ">
                 <h3>UI Screenshots</h3>
                 <p>Including screenshots of setting up, home, measure and misc. For more information, please check
                     prototype <a href="#movie1"> movie.</a>⬇️ </p>
-                
+
                 <div class="card2">
-                        <img class="img-fluid" style="padding-bottom:8px" src="images/lh/lh_screenshots_1.png">
-                        <h5>On boarding</h5>
-                        <p>Shows different steps on preparing for pregnancy, I design some tiny animation on each screen, watch <a href="#movie1">here.</a></p>
+                    <img class="lazy img-fluid" style="padding-bottom:8px" data-original="images/lh/lh_screenshots_1.png">
+                    <h5>On boarding</h5>
+                    <p>Shows different steps on preparing for pregnancy, I design some tiny animation on each screen,
+                        watch <a href="#movie1">here.</a></p>
                 </div>
                 <div class="card2">
-                        <img class="img-fluid" style="padding-bottom:8px" src="images/lh/lh_screenshots_2.png">
-                        <h5>Initializing</h5>
-                        <p>hi</p>
+                    <img class="lazy img-fluid" style="padding-bottom:8px" data-original="images/lh/lh_screenshots_2.png">
+                    <h5>Initializing</h5>
+                    <p>hi</p>
                 </div>
-                
+
                 <div class="card2">
-                        <img class="img-fluid" style="padding-bottom:8px" src="images/lh/lh_screenshots_3.png">
-                        <h5>UI Screenshots</h5>
-                        <p>hi</p>
-                </div>
-                <div class="card2">
-                        <img class="img-fluid" style="padding-bottom:8px" src="images/lh/lh_screenshots_4.png">
-                        <h5>UI Screenshots</h5>
-                        <p>hi</p>
+                    <img class="lazy img-fluid" style="padding-bottom:8px" data-original="images/lh/lh_screenshots_3.png">
+                    <h5>UI Screenshots</h5>
+                    <p>hi</p>
                 </div>
                 <div class="card2">
-                        <img class="img-fluid" style="padding-bottom:8px" src="images/lh/lh_screenshots_5.png">
-                        <h5>UI Screenshots</h5>
+                    <img class="lazy img-fluid" style="padding-bottom:8px" data-original="images/lh/lh_screenshots_4.png">
+                    <h5>UI Screenshots</h5>
+                    <p>hi</p>
                 </div>
                 <div class="card2">
-                    <img class="img-fluid" style="padding-bottom:8px" src="images/lh/lh_screenshots_6.png">
-                <h5>UI Screenshots</h5>
-                <p>hi</p>
+                    <img class="lazy img-fluid" style="padding-bottom:8px" data-original="images/lh/lh_screenshots_5.png">
+                    <h5>UI Screenshots</h5>
                 </div>
-                
-               
-               
-                
+                <div class="card2">
+                    <img class="lazy img-fluid" style="padding-bottom:8px" data-original="images/lh/lh_screenshots_6.png">
+                    <h5>UI Screenshots</h5>
+                    <p>hi</p>
+                </div>
+
+
+
+
 
             </div>
 
@@ -183,7 +186,7 @@
                     for making sure the flow and add some animation effects,
                     check the video to see the prototype.
                 </p>
-                <img class="img-fluid" src="images/poct/poct_origami.gif" style="border-radius:8px">
+                <img class="lazy img-fluid" data-original="images/poct/poct_origami.gif" style="border-radius:8px">
             </div>
 
             <div class="col-sm-6" id="movie1">
@@ -199,7 +202,7 @@
                     for making sure the flow and add some animation effects,
                     check the video to see the prototype.
                 </p>
-                <img class="img-fluid" src="images/lh/lh_screenshots_7.png" style="border-radius:8px">
+                <img class="lazy img-fluid" data-original="images/lh/lh_screenshots_7.png" style="border-radius:8px">
             </div>
 
             <div class="col-sm-6">
@@ -236,3 +239,9 @@
 </body>
 
 </html>
+<script>
+    $("img.lazy").lazyload({
+        effect: "fadeIn"
+    });
+
+</script>

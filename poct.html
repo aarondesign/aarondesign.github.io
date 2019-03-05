@@ -17,6 +17,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131020506-1"></script>
+    <script src="scripts/jquery.lazyload.js"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
@@ -98,12 +99,12 @@
                 </p>
             </div>
             <div class="col-sm-8">
-                <img class="img-fluid" src="images/poct/poct_intro.png">
+                <img class="lazy img-fluid" data-original="images/poct/poct_intro.png">
             </div>
         </div>
         <div class="row" style="background-color:whitesmoke;padding-top:24px;">
             <div class="col-sm-8">
-                <img class="img-fluid" src="images/poct/poct_jounery.png">
+                <img class="lazy img-fluid" data-original="images/poct/poct_jounery.png">
             </div>
             <div class="col-sm-4">
                 <h1 class="title">User's Journey</h1>
@@ -129,7 +130,7 @@
             <h1 class="mx-auto d-block title">Portable Device UI</h1>
             <div class="col-sm-12 ">
                 <hr>
-                <img class="img-fluid" src="images/poct/poct_flow.png" style="padding-bottom:16px">
+                <img class="lazy img-fluid" data-original="images/poct/poct_flow.png" style="padding-bottom:16px">
 
             </div>
             <div class="col-sm-6 col-0">
@@ -145,10 +146,10 @@
         <hr>
         <div class="row">
             <div class="col-sm-6">
-                <img class="img-fluid" style="padding-bottom:8px" src="images/poct/poct_why0.png">
+                <img class="lazy img-fluid" style="padding-bottom:8px" data-original="images/poct/poct_why0.png">
             </div>
             <div class="col-sm-6">
-                <img class="img-fluid" style="padding-bottom:8px" src="images/poct/poct_why.png">
+                <img class="lazy img-fluid" style="padding-bottom:8px" data-original="images/poct/poct_why.png">
             </div>
             <div class="col-sm-6 col-12">
                 <h3>Design Concept</h3>
@@ -169,29 +170,29 @@
                 <p>Including screenshots of setting up, home, measure and misc. For more information, please check
                     prototype movie.⬇️ </p>
                 <div class="card2">
-                    <img class="img-fluid" style="padding-bottom:8px" src="images/poct/poct_screenshot_1.png">
+                    <img class="lazy img-fluid" style="padding-bottom:8px" data-original="images/poct/poct_screenshot_1.png">
                     <h5>Initializing</h5>
                     <p>Settings steps for on boarding.</p>
                 </div>
                 <div class="card2">
-                    <img class="img-fluid" style="padding-bottom:8px" src="images/poct/poct_screenshot_2.png">
+                    <img class="lazy img-fluid" style="padding-bottom:8px" data-original="images/poct/poct_screenshot_2.png">
                     <h5>Home</h5>
                     <p>Home screen and show status to calibrate  device or  version update. </p>
                 </div>
                 <div class="card2">
-                    <img class="img-fluid" style="padding-bottom:8px" src="images/poct/poct_screenshot_3.png">
+                    <img class="lazy img-fluid" style="padding-bottom:8px" data-original="images/poct/poct_screenshot_3.png">
                     <h5>Prepare for measurement</h5>
                     <p>Input patients' ID or scan membership card, then select which biomarker to measure.</p>
                 </div>
                 <div class="card2">
-                    <img class="img-fluid" style="padding-bottom:8px" src="images/poct/poct_screenshot_4.png">
+                    <img class="lazy img-fluid" style="padding-bottom:8px" data-original="images/poct/poct_screenshot_4.png">
                     <h5>Measurement</h5>
                     <p>Insert the test strip into the device and drop the patient's blood on the test, then tap the measure button. Wait a moment, the device will show the result.
                     </p>
                 </div>
 
                 <div class="card2">
-                    <img class="img-fluid" style="padding-bottom:8px" src="images/poct/poct_screenshot_5.png">
+                    <img class="lazy img-fluid" style="padding-bottom:8px" data-original="images/poct/poct_screenshot_5.png">
                     <h5>Misc.</h5>
                     <p>Low battery status / Charging / Power menu / Dialog</p>
                 </div>
@@ -209,7 +210,7 @@
                     for making sure the flow and add some animation effects,
                     check the video to see the prototype.
                 </p>
-                <img class="img-fluid" src="images/poct/poct_origami.gif" style="border-radius:8px">
+                <img class="lazy img-fluid" data-original="images/poct/poct_origami.gif" style="border-radius:8px">
             </div>
 
             <div class="col-sm-6">
@@ -221,7 +222,7 @@
         </div>
         <div class="row">
             <div class="col-sm-6">
-                <img class="img-fluid" style="padding-bottom:8px" src="images/poct/poct_app_changed.png">
+                <img class="lazy img-fluid" style="padding-bottom:8px" data-original="images/poct/poct_app_changed.png">
             </div>
             <div class="col-sm-6">
                 <h3>Design Review</h3>
@@ -236,7 +237,7 @@
             <h1 class="mx-auto d-block title">Web Platform UI</h1>
 
             <div class="col-sm-12">
-                <img class="img-fluid" src="images/poct/poct_web_flow.png">
+                <img class="lazy img-fluid" data-original="images/poct/poct_web_flow.png">
             </div>
             <div class="col-sm-6 col-12" style="margin-top:24px">
                 <h3>UI Flow</h3>
@@ -255,8 +256,8 @@
                 <h5>
                     Log in
                 </h5>
-                <a href="prototype/poct/login/poct_login.html" target="_blank"><img class="img-fluid mx-auto d-block"
-                        src="images/poct/poct_web_login.png"></a>
+                <a href="prototype/poct/login/poct_login.html" target="_blank"><img class="lazy img-fluid mx-auto d-block"
+                    data-original="images/poct/poct_web_login.png"></a>
                 <br>
 
                 <p>Using HTML to layout the prototype of the login page.</p>
@@ -267,7 +268,7 @@
             </div>
             <div class="col-sm-12 card">
                 <h5>Members' Info</h5>
-                <a href="prototype/poct/login/poct_management.html" target="_blank"><img class="img-fluid mx-auto d-block" src="images/poct/poct_web_members.png"></a>
+                <a href="prototype/poct/login/poct_management.html" target="_blank"><img class="lazy img-fluid mx-auto d-block" data-original="images/poct/poct_web_members.png"></a>
 
                 <p>This page shows the members' list, their basic info, and the latest test result. I design the layout with bootstrap to communicate with stakeholders.  </p>
                 <a href="prototype/poct/login/poct_management.html" target="_blank"><button class="btn btn-dark">Play
@@ -275,7 +276,7 @@
             </div>
             <div class="col-sm-12 card">
                 <h5>Records (details)</h5>
-                <a href="prototype/poct/login/mypage.html" target="_blank"><img class="img-fluid mx-auto d-block  project-image" src="images/poct/poct_web_person.png"></a>
+                <a href="prototype/poct/login/mypage.html" target="_blank"><img class="lazy img-fluid mx-auto d-block  project-image" data-original="images/poct/poct_web_person.png"></a>
 
                 <p>The  personal full results show on this page. </p>
                 <a href="prototype/poct/login/mypage.html" target="_blank"><button class="btn btn-dark">Play
@@ -309,3 +310,9 @@
 </body>
 
 </html>
+<script>
+		$("img.lazy").lazyload({
+			effect: "fadeIn"
+		});
+	
+	</script>
