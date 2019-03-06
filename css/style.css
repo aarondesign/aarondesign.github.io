@@ -317,6 +317,7 @@
         width: 100%;
         height: auto;
         display: block;
-        
-     
+		background-image: url('images/loading.gif');
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
     }
