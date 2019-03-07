@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=PT+Serif');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 	
 	:root {
 		--primary-color:#00bcd4;
@@ -31,13 +32,15 @@
 	
 	
 	body{
-		font-family: 'lato',sans-Serif;
 		overflow-x: hidden;
 	}
 	ul{
 		list-style: none;
 		padding:0;
 		margin-left: -14px;
+	}
+	h1,h2,h3,h4,h5{
+		font-family: 'PT Serif', Serif;
 	}
 
 	h1{
@@ -49,6 +52,7 @@
 	}
 
 	p{
+		font-family: 'roboto',sans-Serif;
 		color:var(--grey-dark);
 	}
 
@@ -76,7 +80,7 @@
 	}
 
 	.index-title{
-		font-size: 5em;
+		font-size: 6rem;
 	}
     .project-image > a > img{
        border-radius: 4px;
