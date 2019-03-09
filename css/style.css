@@ -1,5 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 @import url('https://fonts.googleapis.com/css?family=PT+Serif');
-@import url('https://fonts.googleapis.com/css?family=Roboto');
 	
 	:root {
 		--primary-color:#00bcd4;
@@ -37,10 +37,11 @@
 	ul{
 		list-style: none;
 		padding:0;
-		margin-left: -14px;
+		margin-left:0px;
 	}
 	h1,h2,h3,h4,h5{
-		font-family: 'PT Serif', Serif;
+		font-family: 'Source Sans Pro', 'Sans Serif';
+		font-weight: 800;
 	}
 
 	h1{
@@ -51,9 +52,10 @@
 		font-weight:900;
 	}
 
-	p{
-		font-family: 'roboto',sans-Serif;
+	p,ul,li{
+		font-family: 'PT Serif',sans-Serif;
 		color:var(--grey-dark);
+		font-size: 18px;
 	}
 
 	.row{
@@ -138,7 +140,7 @@
 			text-align: center;
 			padding:8px;
 			margin:16px 0;
-			background-color:#FED766;
+			
 		}
 
 		.card{
@@ -314,6 +316,8 @@
 			padding:4px;
 			margin-left: 0px;
 		}
+
+		
 
 	}
 
