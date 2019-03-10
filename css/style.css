@@ -16,6 +16,12 @@
 
 	#nav_desktop{
 		position: fixed !important;
+		left: 144px;
+	}
+
+	.logo{
+		width: 36px;
+		font-family:'PT Serif','Sans Serif';
 	}
 
 	.opacity{
@@ -42,6 +48,7 @@
 	h1,h2,h3,h4,h5{
 		font-family: 'Source Sans Pro', 'Sans Serif';
 		font-weight: 800;
+		margin-top: 16px;
 	}
 
 	h1{
@@ -53,9 +60,12 @@
 	}
 
 	p,ul,li{
-		font-family: 'PT Serif',sans-Serif !important;
+		font-family: 'Source Sans Pro',sans-Serif !important;
 		color:var(--grey-dark) !important;
 		font-size: 18px !important;
+		line-height: 26px !important;
+		font-weight:200;
+		margin-top:-4px;
 	}
 
 	.row{
@@ -144,7 +154,7 @@
 	/*poct*/
 		.title{
 			text-align: center;
-			padding:8px;
+			padding:8px 0;
 			margin:16px 0;
 			
 		}
@@ -282,17 +292,19 @@
 		.col-sm-6{
 			padding:32px 16px;
 		}
-
+		#nav_desktop{
+			left:4px;
+		}
 		.title{
 			text-align: center;
 			padding:8px;
 			margin:16px 0;
 			background-color:transparent;
-			font-size:2.2em;
+			font-size:2.6em;
 		}
 
 		.index-title{
-			font-size: 3em;
+			font-size: 4em;
 		}
 		
 
@@ -346,14 +358,15 @@
 			box-shadow: none;
 		}
 	
-
+		p{
+			line-height:26px;
+			font-size: 14px;
+		}
 	}
 
 	img.lazy {
         width: 100%;
         height: auto;
         display: block;
-		background-image: url('images/loading.gif');
-        background-repeat: no-repeat;
-        background-position: 50% 50%;
+		
     }
