@@ -335,7 +335,16 @@
 					-moz-column-count: 1; 
 					column-count: 1;
 		}
-	
+		
+
+		.btn-dark,.btn-secondary{
+			color:white;
+			border:1px solid var(--secondary-color);
+			background:var(--secondary-color);
+			transition:.5s ease-in-out;
+			font-family: 'PT Serif',sans-Serif !important;
+			box-shadow: none;
+		}
 	
 
 	}
