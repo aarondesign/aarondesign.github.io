@@ -20,25 +20,7 @@
 
 		gtag('config', 'UA-131020506-1');
 	</script>
-	<script>
-		var lastScrollTop = 0;
-		$(window).scroll(function (event) {
-			var st = $(this).scrollTop();
-			if (st > lastScrollTop) {
-				$("nav").animate({ top: "-64px", opacity: "0" }, {
-					duration: 100
-				});
-
-
-			} else {
-				$("nav").animate({ top: "0px", opacity: "1" }, {
-					duration: 1
-				});
-			}
-			lastScrollTop = st;
-		});
-	</script>
-
+	
 </head>
 
 <body style="background-color:rgba(0,0,0,.05)">
