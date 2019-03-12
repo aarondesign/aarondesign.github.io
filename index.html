@@ -13,7 +13,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-    
+
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131020506-1"></script>
@@ -80,7 +80,8 @@
             $('html, body').animate({
                 scrollTop: $($.attr(this, 'href')).offset().top
                 ,
-  easing: "easeinOutCubic"}, 1000);
+                easing: "easeinOutCubic"
+            }, 1000);
         });
 
 
@@ -98,58 +99,57 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K88K22L" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
-            <div id="nav_desktop">
-                <a class="navbar-brand" href="index.html">
-                    <img class="logo" src="images/aaron_logo.png" alt="logo" >
-                </a>
-                <a class="navbar-brand " href="index.html">Aaron Hsu</a>
-            </div>
-    
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse text-center" id="collapsibleNavbar">
-                <ul class="navbar-nav text-center" style="margin:0 auto;">
-                    
-                    <li class="nav-item">
-                        <a class="nav-link " href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="poct.html">Project:POCT</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link  " href="lh.html">Project:LH</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="sideprojects.html">Side Projects</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+        <div id="nav_desktop">
+            <a class="navbar-brand" href="index.html">
+                <img class="logo" src="images/aaron_logo.png" alt="logo">
+            </a>
+            <a class="navbar-brand " href="index.html">Aaron Hsu</a>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-center" id="collapsibleNavbar">
+            <ul class="navbar-nav text-center" style="margin:0 auto;">
+
+                <li class="nav-item">
+                    <a class="nav-link " href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="poct.html">Project:POCT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link  " href="lh.html">Project:LH</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sideprojects.html">Side Projects</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <div class="container-fluid" style="margin-top:56px;">
         <div class="row" style="height:100vh;  ">
-                
-                <div style="width:100%;height:100vh;z-index:0;opacity:.5;">
-                        <div id="circle">
-                
-                            </div>
-                </div>
-                <script>
-                    var text = "";
-                    var i;
-                    var n;
-                    var d = new Date();
-                    var s = d.getSeconds();
 
-                    for (i = 0; i < 40; i++) {
-                        for (n = 0; n < 54; n++) {
-                            text += "<div class='circle' style='width:" + (i + n%i) + "px;height:" + n * 20 / n + "px;left:" + i * 50 + "px;top:" + n * 50 + "px;transform: rotate(" + i * n / 2 + "deg);transform-origin:" + 50 + "% " + 50 + "%;background-color:rgba(" + n % i * 10 + ",0," + i * n + "," + (i%n)*4/(n*i) + "); '></div>";
-                        }
+            <div style="width:100%;height:100vh;z-index:0;opacity:.5;">
+                <div id="circle">
+                </div>
+            </div>
+            <script>
+                var text = "";
+                var i;
+                var n;
+                var d = new Date();
+                var s = d.getSeconds();
+
+                for (i = 0; i < 40; i++) {
+                    for (n = 0; n < 54; n++) {
+                        text += "<div class='circle' style='width:" + (i + n % i) + "px;height:" + n * 20 / n + "px;left:" + i * 50 + "px;top:" + n * 50 + "px;transform: rotate(" + i * n / 2 + "deg);transform-origin:" + 50 + "% " + 50 + "%;background-color:rgba(" + n % i * 10 + ",0," + i * n + "," + (i % n) * 4 / (n * i) + "); '></div>";
                     }
-                    document.getElementById("circle").innerHTML = text;
-                </script>
+                }
+                document.getElementById("circle").innerHTML = text;
+            </script>
             <div class="col-sm-12 col-xs-12 text-center" style="z-index:999;top:-100vh">
-                   
+
                 <h1 class="text-center index-title">Hey,<br> I'm <b><span> Aaron</span></b></h1>
                 <h5 class="text-center">An UI Designer.</h5><br>
                 <div class="text-center">
@@ -157,10 +157,10 @@
                         </button></a>
                 </div><br>
                 <div style="border-top:1px solid lightgrey;width:200px;margin:0 auto;height:24px;"></div>
-                <p >Or look up my projects</p>
+                <p>Or look up my projects</p>
                 <a href="#project">
                     <div class="scrolldown">
-                        <img  id="arrow_down" src="images/arrow_down.png" height="24" width="24" style="position:relative;top:16px">
+                        <img id="arrow_down" src="images/arrow_down.png" height="24" width="24" style="position:relative;top:16px">
                     </div>
                 </a>
             </div>
@@ -174,7 +174,7 @@
                 <p>POCT includes mobile device and web platform, it provides pharmacies to measure customs' lipid and
                     Hba1c. The system will show the results in a few minutes.</p>
                 <a href="poct.html" style="color:white"><button class="btn btn-dark center">Learn More </button></a>
-                
+
             </div>
 
             <div class="col-sm-12 card">
@@ -182,7 +182,8 @@
                     <a href="lh.html"><img class="img-fluid" src="images/home/eveline_banner.jpg"></a>
                 </div><br>
                 <h5>Luteinizing Hormone (LH) Test Project</h5>
-                <p>Using the phone camera to read the test strip that absorbs the woman's urine, then the application will show the level of luteinizing hormone to info user when is the best fertile window.</p>
+                <p>Using the phone camera to read the test strip that absorbs the woman's urine, then the application
+                    will show the level of luteinizing hormone to info user when is the best fertile window.</p>
                 <a href="lh.html" style="color:white"><button class="btn btn-dark center">Learn More</button></a>
             </div>
 
@@ -205,7 +206,7 @@
         </div>
     </div>
     <footer style="display:none">
-            <img src="images/aaron_logo.png" alt="logo" style="width:24px;opacity:.5;"> aaron.zl.hsu@gmail.com
+        <img src="images/aaron_logo.png" alt="logo" style="width:24px;opacity:.5;"> aaron.zl.hsu@gmail.com
     </footer>
 </body>
 
