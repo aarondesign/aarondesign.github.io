@@ -92,6 +92,27 @@
 		to{top:24px;opacity:.5;}
 	}
 
+	.circle {
+        position: absolute;
+        border-radius: 100px;
+		animation: mymove 5s infinite;
+        animation-timing-function: ease-in-out;
+        animation-direction:alternate-reverse;
+        z-index: 1;
+        
+    }
+
+    @keyframes mymove {
+        from {
+			transform-origin: -50% -50%;
+			
+        }
+
+        to {
+            transform-origin: 50% 50%;
+        }
+    }
+
 	.index-title{
 		font-size: 6rem;
 	}
