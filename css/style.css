@@ -250,7 +250,7 @@
     }
 
     .dialog-content {
-        height: 50vh;
+        height: 60vh;
         background-color:white;
 		overflow-y:auto;
 		border-radius: 16px;
