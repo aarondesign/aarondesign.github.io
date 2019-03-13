@@ -340,7 +340,9 @@
 			display: block;
 			z-index: 900;
 		}
-
+		.circle {
+			display: none;
+		}
 		.download{
 			text-align: center;
 		}
