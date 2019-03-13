@@ -20,28 +20,21 @@
 
 		gtag('config', 'UA-131020506-1');
 	</script>
-	<!--script>
-		var lastScrollTop = 0;
-		$(window).scroll(function (event) {
-			var st = $(this).scrollTop();
-			if (st > lastScrollTop) {
-				$("nav").animate({ top: "-64px", opacity: "0" }, {
-					duration: 100
-				});
-
-
-			} else {
-				$("nav").animate({ top: "0px", opacity: "1" }, {
-					duration: 100
-				});
-			}
-			lastScrollTop = st;
+	<script>
+		$(document).ready(function () {
+			$("#welcome").fadeIn();
+			$("#question1").click(function () {
+				$("#content").append(" <div class='dialog-list'><div class='dialog dialog-right'>安安幾歲住哪</div></div><br>");
+				$("#content").append(" <div id='1111' class='dialog-list'><div class='dialog dialog-left'> 12</div></div><br>");
+				$("#content").scrollTop(100000);
+			});
+			$("#question2").click(function () {
+				$("#content").append(" <div class='dialog-list'><div class='dialog dialog-right'>今天過得好嗎，hifljfldsjfldsjfldsjf</div></div><br>");
+				$("#content").append(" <div class='dialog-list'><div class='dialog dialog-left'>Hey, I'm Aaron. Welcome to here, you can ask me something</div></div><br><br>");
+				$("#content").scrollTop(100000);
+			});
 		});
-
-
-
-
-	</script-->
+	</script>
 </head>
 
 <body>
@@ -82,6 +75,19 @@
 			</div>
 			<div class="col-sm-8 ">
 				<br>
+				<div class="dialog-content" id="content">
+						<div id="welcome" class='dialog-list'>
+							<div class='dialog dialog-left'>Hey, I'm Aaron. Welcome to here, you can ask me something</div>
+						</div><br>
+				
+					</div>
+					<div id="question1">
+						<button class="btn btn-default">hi</button>
+					</div>
+					<div id="question2">
+						<button class="btn btn-default">hi2</button>
+					</div>
+				
 				<h3><b>Aaron Hsu, UI Designer </h3>
 				<p>Have 6 years of user interface design experience and highly skilled in web and mobile UX, interaction design,
 					and prototyping. Besides my job, I also join some conferences and workshops to broaden my horizon (ex: H.spectrum,
