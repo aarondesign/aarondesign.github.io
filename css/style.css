@@ -85,7 +85,7 @@
 		
 		/* Handle */
 		::-webkit-scrollbar-thumb {
-			background: #888; 
+			background:lightgrey; 
 			border-radius: 10px;
 		}
 		
@@ -197,19 +197,20 @@
 	.dialog-list {
         width: 100% !important;
         position: relative;
-        min-height: 56px;
-        margin: 8px 0;
-        padding: 8px;
+		min-height: 56px;
+		max-height:200px;
+		padding:0 8px;
+		display:inline-block;
     }
 
     .dialog {
-        text-align: center;
-        padding: 24px;
+        
+        padding: 12px;
         display: inline-block;
         position: relative;
         left: 0px;
-        margin: 8px 0;
-		border:1px whitesmoke solid;
+        margin: 4px 0;
+		border:2px whitesmoke solid;
     }
 
     .dialog-left {
@@ -220,21 +221,21 @@
         border-radius: 28px 28px 28px 4px;
         animation: dialog2 1s;
         animation-timing-function: ease-in-out;
-        background: linear-gradient(-90deg, #ccc, #fff);
-        background-size:200% 200%;
-        -webkit-animation:Gradient 1s ease-in-out ;
-        -moz-animation: Gradient 1s ease-in-out ;
-        animation: Gradient 1s ease-in-out ;
+        background:linear-gradient(-90deg, #ccc, #fff);
+		background-size:200% 200%;	
+		-webkit-animation:Gradient 1s ease-in-out ;
+		-moz-animation: Gradient 1s ease-in-out ;
+		animation: Gradient 1s ease-in-out ;
     	}
 
     .dialog-right {
         text-align: left;
         max-width: 50%;
         border-radius: 28px 28px 4px 28px;
-
+		color:white;
         min-width: 0%;
         float: right;
-        background-color: cadetblue;
+        background-color: var(--primary-color);
         animation: dialog .2s;
         animation-timing-function: ease-in-out;
 
@@ -250,21 +251,42 @@
 
     .dialog-content {
         height: 50vh;
-        background-color:whitesmoke;
+        background-color:white;
 		overflow-y:auto;
 		border-radius: 16px;
-
-    }
+		margin-bottom:8px;
+	}
+	
+	.btn-question{
+		width:100%;
+		background-color: var(--primary-color);
+		color:white;
+		font-size: 14px;
+	}
 
     @keyframes dialog {
-        from {
+        0%{
             opacity: 0;
-            padding: 12px;
+			padding: 12px;
+			color:white;
         }
 
-        to {
+		50% {
+            opacity: .2;
+			padding: 12px;
+			color:white;
+        }
+
+		90% {
             opacity: 1;
-            padding: 24px;
+			padding: 12px;
+			color:lightgrey;
+        }
+
+        100% {
+            opacity: 1;
+			padding: 12px;
+			color:black;
         }
 
     }
@@ -273,66 +295,68 @@
 		0% {
 	        background-position: 0% 50%;
 			color:rgba(0,0,0,0);
-			padding: 24px 0;
+			padding: 0px 0;
 			border-radius: 0px;
-	    	}
-	    50% {
+			}
+		50% {
 	        background-position:100% 50%;
 			color:rgba(0,0,0,0);
-			padding: 24px 24px;
+			padding: 12px 12px;
 			border-radius: 0px;
-	    	}
-	    100%{
+		}
+		100%{
 	        background-position: 0% 50%;
 			color:rgba(0,0,0,1);
-			padding: 24px 24px;
+			padding: 12px 12px;
 			border-radius: 28px 28px 28px 4px;
-	    }
+		}
 	}
 
-@-moz-keyframes Gradient {
-    0% {
-        background-position: 0% 50%;
-        color:rgba(0,0,0,0);
-        padding: 24px 0;
-        border-radius: 0px;
-    }
-    50% {
-        background-position: 100% 50%;
-        color:rgba(0,0,0,0);
-        padding: 24px 24px;
-        border-radius: 0px;
-    }
-    100% {
-        background-position: 0% 50%;
-        color:rgba(0,0,0,1);
-        padding: 24px 24px;
-        border-radius: 28px 28px 28px 4px;
-    }
-}
+	@-moz-keyframes Gradient {
+		0%{
+	        background-position: 0% 50%;
+			color:rgba(0,0,0,0);
+			padding:0px 0;
+			border-radius:0px;
+		}
+		50%{
+	        background-position: 100% 50%;
+			color:rgba(0,0,0,0);
+			padding: 12px 12px;
+			border-radius: 0px;
+		}
+		100% {
+	        background-position: 0% 50%;
+			color:rgba(0,0,0,1);
+			padding: 12px 12px;
+			border-radius: 28px 28px 28px 4px;
+		}
+	}
 
-@keyframes Gradient {
-    0% {
-        background-position: 0% 50%;
-        color:rgba(0,0,0,0);
-        padding: 24px 0;
-        border-radius: 0px;
-    }
-    50% {
-        background-position: 100% 50%;
-        color:rgba(0,0,0,0);
-        padding: 24px 24px;
-        border-radius: 0px;
-    }
-    100% {
-        background-position: 0% 50%;
-        color:rgba(0,0,0,1);
-        padding: 24px 24px;
-        border-radius: 28px 28px 28px 4px;
-    }
-}
+	@keyframes Gradient {
+		0% {
+	        background-position: 0% 50%;
+			color:rgba(0,0,0,0);
+			padding: 0px 0;
+			border-radius: 0px;
+		}
+		50% {
+	        background-position: 100% 50%;
+			color:rgba(0,0,0,0);
+			padding: 12px 12px;
+			border-radius: 0px;
+		}
+		100% {
+	        background-position: 0% 50%;
+			color:rgba(0,0,0,1);
+			padding: 12px 12px;
+			border-radius: 28px 28px 28px 4px;
+		}
+	}
 
-
+	#about-mobile{
+		display:none;
+	}
 	
 
 	/* about end*/
@@ -555,6 +579,20 @@
 		p{
 			line-height:26px;
 			font-size: 14px;
+		}
+
+		#about-desktop{
+			display:none;
+		}
+		
+		#about-mobile{
+			display:block;
+		}
+
+		.profile-image{
+			width: 50%;
+			height:auto;
+			margin-top:25px;
 		}
 	}
 
