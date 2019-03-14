@@ -129,7 +129,7 @@
         
     }
 
-    /*@keyframes mymove {
+    @keyframes mymove {
         from {
 			transform-origin: -50% -50%;
 			
@@ -138,7 +138,7 @@
         to {
             transform-origin: 50% 50%;
         }
-    }*/
+    }
 
 	.index-title{
 		font-size: 6rem;
