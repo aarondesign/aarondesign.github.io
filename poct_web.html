@@ -1,0 +1,133 @@
+<!--Welcome to check the page-->
+<!--May you have a nice day-->
+<!--copyright@aaron.zl.hsu@gmail.com-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Aaron Hsu - Poct Web</title>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="scripts/jquery.lazyload.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131020506-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-131020506-1');
+    </script>
+    <script>
+
+        $(document).on('click', 'a[href^="#"]', function (event) {
+            event.preventDefault();
+
+            $('html, body').animate({
+                scrollTop: $($.attr(this, 'href')).offset().top
+                ,
+                easing: "easeinOutCubic"
+            }, 1000);
+        });
+    </script>
+
+
+</head>
+
+<body>
+    <div class="container-fluid">
+            
+        <div class="row" style="background-color:whitesmoke">
+            <div class="co-sm-12">
+                    <h1>Web Management Platform</h1>
+                    <ul>
+                        <li>Including three parts:</li>
+                        <li>1.Login</li>
+                        <li>2.Members' List</li>
+                        <li>3.Member's Page</li>
+                    </ul>
+            </div>
+            <div class="col-sm-12 card">
+                    <h5>Log in </h5>
+                    <p>Shows the happy path of the login proecess, and the rest password process.</p>
+                    <p></p> <a href="prototype/poct/login/poct_login.html" target="_blank"><button class="btn btn-dark ">Play
+                            </button></a>
+                    <br>
+                    <img class="lazy img-fluid" style="padding-bottom:0px;box-shadow: 0 0 10px 0 lightgrey;border-radius:8px;"
+                    data-original="images/poct/web/login_1.png"><br><p>Input nothing status.</p><br>
+                    <img class="lazy img-fluid" style="padding-bottom:0px;box-shadow: 0 0 10px 0 lightgrey;border-radius:8px;"
+                    data-original="images/poct/web/login_2.png"><br><p>Input something status.</p><br>
+                    <img class="lazy img-fluid" style="padding-bottom:0px;box-shadow: 0 0 10px 0 lightgrey;border-radius:8px;"
+                    data-original="images/poct/web/login_3.png"><br><p>Account or password error</p><br>
+                    <a href="prototype/poct/login/poct_login.html" target="_blank"><button class="btn btn-dark ">Play
+                            it</button></a>
+    
+                    <br><hr>
+                    <h5>Reset Password</h5><br>
+                    <img class="lazy img-fluid" style="padding-bottom:0px;box-shadow: 0 0 10px 0 lightgrey;border-radius:8px;"
+                    data-original="images/poct/web/login_4.png"><br><p>Input Email Address</p><br>
+                    <img class="lazy img-fluid" style="padding-bottom:0px;box-shadow: 0 0 10px 0 lightgrey;border-radius:8px;"
+                    data-original="images/poct/web/login_5.png"><br><p>Check inbox, user will receive a verfication mail with a link.</p><br>
+                    <img class="lazy img-fluid" style="padding-bottom:0px;box-shadow: 0 0 10px 0 lightgrey;border-radius:8px;"
+                    data-original="images/poct/web/login_6.png"><br><p>Reset password, UI will indicate the password strength.</p><br>
+                    <img class="lazy img-fluid" style="padding-bottom:0px;box-shadow: 0 0 10px 0 lightgrey;border-radius:8px;"
+                    data-original="images/poct/web/login_7.png"><br><p>Error message</p><br>
+                    <img class="lazy img-fluid" style="padding-bottom:0px;box-shadow: 0 0 10px 0 lightgrey;border-radius:8px;"
+                    data-original="images/poct/web/login_8.png"><br><p>Reseted, system will link to main page</p><br>
+            </div>
+            <div class="col-sm-12 card">
+                    <h5>Main Page</h5>
+                    <p>Display the members' list, their basic information and recent test records.
+                    Here shows the main page layout with bootstrap, and the del member's process</p>
+                    <img class="lazy img-fluid" style="padding-bottom:0px;box-shadow: 0 0 10px 0 lightgrey;border-radius:8px;"
+                    data-original="images/poct/web/home_1.png"><br>
+                    <p>
+                        Main page
+                    </p><a href="prototype/poct/login/poct_management.html" target="_blank"><button class="btn btn-dark">Play
+                            it</button></a><br><hr>
+                    <img class="lazy img-fluid" style="padding-bottom:0px;box-shadow: 0 0 10px 0 lightgrey;border-radius:8px;"
+                    data-original="images/poct/web/home_2.png"><br><p>Edit member's info or delete member</p><br>
+                    <img class="lazy img-fluid" style="padding-bottom:0px;box-shadow: 0 0 10px 0 lightgrey;border-radius:8px;"
+                    data-original="images/poct/web/home_3.png"><br><p>Confirm to delete.</p><br>
+                    <img class="lazy img-fluid" style="padding-bottom:0px;box-shadow: 0 0 10px 0 lightgrey;border-radius:8px;"
+                    data-original="images/poct/web/home_4.png"><br><p>The last chance to abort the process</p><br>
+            </div>
+            <div class="col-sm-12 card">
+                    <h5>Records (details)</h5>
+                    <p>The personal full results show on this page. The system will suggest the health supplements for member according the results. </p>
+                    <a href="prototype/poct/login/mypage.html" target="_blank"><button class="btn btn-dark">Play
+                            it</button></a><br>
+                    <a href="prototype/poct/login/mypage.html" target="_blank"><img class="lazy img-fluid mx-auto d-block  project-image"
+                            data-original="images/poct/poct_web_person.png"></a>
+                    
+                </div>
+            
+        </div>
+    </div>
+
+    <footer>
+        <img src="images/aaron_logo.png" alt="logo" style="width:24px;opacity:.5;"> aaron.zl.hsu@gmail.com
+    </footer>
+</body>
+
+</html>
+<script>
+    $("img.lazy").lazyload({
+        effect: "fadeIn"
+
+    });
+    $(function () {
+        $('.lazy').lazy({
+            placeholder: "data:image/gif;base64,R0lGODlhEALAPQAPzl5uLr9Nrl8e7..."
+        });
+    });
+
+</script>
