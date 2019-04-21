@@ -37,7 +37,31 @@
             }, 1000);
         });
     </script>
-
+    <style>
+        /* scrollbar*/
+		/* width */
+		::-webkit-scrollbar-track
+		{
+			
+			border-radius: 10px;
+			background-color: black;
+		}
+		
+		::-webkit-scrollbar
+		{
+			width: 12px;
+			background-color:black;
+		}
+		
+		::-webkit-scrollbar-thumb
+		{
+			border-radius: 10px;
+			
+			background-color: #FCBAD3;
+		}
+	
+	/*Scrollbar*/
+    </style>
 
 </head>
 
@@ -88,6 +112,12 @@
                     I also introduced the usability test and users' interview in our organization. In the result, the
                     users' voice entered our meeting room, and we improve some of the issues.
                 </p>
+                <h5>What I do</h5>
+                <ul>
+                    <li> 1. <a href="#ui1">APP UI/UX</a></li>
+                    <li> 2. <a href="#ui2">Redesign APP UI/UX</a></li>
+                    <li> 3. <a href="#ui3">Web Platform UI/UX</a></li>
+                </ul>
                 <h5>Achievements</h5>
                 <ul>
 
@@ -140,7 +170,7 @@
     <div class="row" style="background-color:whitesmoke">
         <div class="col-sm-12 ">
             <h1>App Design</h1>
-            <h3>Current version UI design </h3>
+            <h3 id="ui1">Current version UI design </h3>
             <p>The current version doesn't look well, and there some elements are inconsisten. I redesign another
                 version <a href="#redesign">below</a>.<br>
                 Please feel free to download current version: <a href="https://play.google.com/store/apps/details?id=com.ixensor.lh&hl=zh_TW"
@@ -201,7 +231,7 @@
 
         </div>
     </div>
-    <div class="row">
+    <div class="row" id="ui2">
 
         <div class="col-sm-12">
             <h1>UI Redesign</h1>
@@ -228,10 +258,15 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-sm-6 col-6">
-            <img class="lazy img-fluid" data-original="images/lh/lh_test_matrix.png">
+        <div class="col-sm-6 ">
+            <img class="lazy img-fluid" data-original="images/lh/lh_usability_test.png">
+            
         </div>
-        <div class="col-sm-6 col-6">
+        <div class="col-sm-6 ">
+               
+                <img class="lazy img-fluid" data-original="images/lh/lh_test_matrix.png">
+            </div>
+        <div class="col-sm-12 col-12">
             <h3>Usability Test</h3>
             <p>Before releasing the formal version, I will find some test in our organization.<br>
                 Before the test, I will tell the testees about the scenario and allocate missions to them and request
@@ -340,7 +375,7 @@
         </div>
     </div>
     <div class="row" style="background-color:whitesmoke">
-        <h5>Compare with previous APP UI</h5>
+        <h3>Compare with previous APP UI</h3>
         <ul style="list-style-type: circle;">
             <li>Let the onboarding steps easier by asking people essential questions.</li>
             <li>Using dark background on analyzing steps only, let people know they enter a different process</li>
@@ -351,8 +386,8 @@
                 start date/ Pink: test result/ Hollow purple: upcoming perid day.</li>
         </ul>
     </div>
-    <div class="row">
-        <div class="col-sm-12 ">
+    <div class="row" >
+        <div class="col-sm-12 " id="ui3">
             <h1>Web Platform</h1>
             <p>
                 In this project, I designed two web platform:<br>

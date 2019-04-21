@@ -43,6 +43,31 @@
             lastScrollTop = st;
         });
     </script-->
+    <style>
+            /* scrollbar*/
+            /* width */
+            ::-webkit-scrollbar-track
+            {
+                
+                border-radius: 10px;
+                background-color: black;
+            }
+            
+            ::-webkit-scrollbar
+            {
+                width: 12px;
+                background-color:black;
+            }
+            
+            ::-webkit-scrollbar-thumb
+            {
+                border-radius: 10px;
+                
+                background-color: #4390FC;
+            }
+        
+        /*Scrollbar*/
+        </style>
 
 </head>
 
@@ -89,8 +114,9 @@
             <div class="col-sm-6">
                 <img class="lazy img-fluid " data-original="images/poct/poct_intro.png">
             </div>
-            <div class="co-sm-6">
-                <p class="text-left column">Point
+            <div class="col-sm-6">
+                <p class="text-left">
+                    Point
                     of care test project includes a portable device and web platforms. The object of this
                     product is to measure the patients’ lipid and Alc level in the blood. In this project, <b>my job is
                         to design the app
@@ -101,6 +127,11 @@
                         some usability issues to the managers and give some suggestions about how to improve the
                         product.
                 </p>
+                <h5>What I do</h5>
+                <ul>
+                    <li> 1. <a href="#ui1">Mobile Device UI/UX</a></li>
+                    <li> 2. <a href="#ui2">Web Platform UI/UX</a></li>
+                </ul>
             </div>
         </div>
         <div class="row" style="background-color:#4390FC">
@@ -135,7 +166,7 @@
         </div>
 
         <div class="row">
-            <h1 class="mx-auto d-block title">Portable Device UI</h1>
+            <h1 class="mx-auto d-block title" id="ui1">Portable Device UI</h1>
             <div class="col-sm-12 ">
                 <hr>
                 <img class="lazy img-fluid" data-original="images/poct/poct_flow.png" style="padding-bottom:16px">
@@ -174,10 +205,11 @@
                 </p>
 
             </div>
-        </div><hr>
+        </div>
+        <hr>
         <div class="row">
             <div class="col-sm-6">
-                <!--<img class="lazy img-fluid" style="padding-bottom:8px" data-original="images/poct/poct_usability_1.png">-->
+                <img class="lazy img-fluid" style="padding-bottom:8px" data-original="images/poct/poct_usability_1.png">
             </div>
             <div class="col-sm-6">
                 <img class="lazy img-fluid" style="padding-bottom:8px" data-original="images/poct/poct_usability_2.png">
@@ -202,7 +234,7 @@
                 <p>Including screenshots of setting up, home, measure and misc. For more information, please check
                     prototype movie.⬇️ </p>
                 <img class="lazy img-fluid" style="padding-bottom:8px" data-original="images/poct/poct_ui_system.png">
-                <div >
+                <div>
                     <div style="width:50%;float: left;position: relative;">
                         <img class="lazy img-fluid" style="padding-bottom:8px" data-original="images/poct/poct_baseline_1.png">
                     </div>
@@ -302,7 +334,7 @@
             </div>
         </div>
         <hr>
-        <div class="row">
+        <div class="row" id="ui2">
             <div class="col-sm-6 col-12">
                 <h3>Web UI and Prototypes</h3>
                 <p>Here show the web app screenshots and HTML prototypes. I like to layout the web by using
