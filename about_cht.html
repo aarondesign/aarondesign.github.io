@@ -26,24 +26,24 @@
 		$(document).ready(function () {
 			$("#welcome").fadeIn();
 			$("#question1").click(function () {
-				$("#content").append(" <div class='dialog-list'><div class='dialog dialog-right'>Tell me about your job.</div></div><br>");
-				$("#content").append(" <div id='1111' class='dialog-list'><div class='dialog dialog-left'>Have 7 years of user interface design experience and highly skilled in web and mobile UX, interaction design, and prototyping, <b><a href='#work'>Click</a> to learn more.</b> </div></div><br>");
+				$("#content").append(" <div class='dialog-list'><div class='dialog dialog-right'>可以跟我說說你的工作經驗嗎？</div></div><br>");
+				$("#content").append(" <div id='1111' class='dialog-list'><div class='dialog dialog-left'>從事 UI 設計多年，經手過的案子包含[1]商用軟體系統(虛擬化桌面/檔案加密管理系統)的 UI/GUI 設計、[2]手機 App( iOS/Android )的 UI/GUI 設計、[3]管理後台Web的設計。<b><a href='#work'>點我</a>了解我的工作經驗.</b> </div></div><br>");
 				$("#content").scrollTop(100000);
 			});
 			$("#question2").click(function () {
-				$("#content").append(" <div class='dialog-list'><div class='dialog dialog-right'>What kinds of skills do you have?</div></div><br>");
-				$("#content").append(" <div class='dialog-list'><div class='dialog dialog-left'>I like to make prototypes to validate my ideas, and I learn essential<b> code skill to make prototypes </b>more interested, <a href='#skills'>click</a> to know more.</div></div><br>");
+				$("#content").append(" <div class='dialog-list'><div class='dialog dialog-right'>你會用的工具？</div></div><br>");
+				$("#content").append(" <div class='dialog-list'><div class='dialog dialog-left'>我會在設計的過程加入低高擬真的原型設計，利用的工具包含:HTML / CSS / jQuery與 Origami Stuio，與利害關係人溝通想法。另外也會測試關鍵體驗流程的易用性，確保產品的可用性。 </div></div><br>");
 				$("#content").scrollTop(100000);
 			});
 			$("#question3").click(function () {
-				$("#content").append(" <div class='dialog-list'><div class='dialog dialog-right'>How do you improve yourself ?</div></div><br>");
-				$("#content").append(" <div class='dialog-list'><div class='dialog dialog-left'>In my spare time, I will go to <b>meetups or attend workshops</b> (ex: HPX, IXDA) to learn more about new things and share that with my colleagues. In the first half of 2018, I join H.Sptrum, an incubator program to learn about bio start-ups knowledge.  </div></div><br>");
+				$("#content").append(" <div class='dialog-list'><div class='dialog dialog-right'>平常如何自我學習？</div></div><br>");
+				$("#content").append(" <div class='dialog-list'><div class='dialog dialog-left'>在工作之餘，會參加相關社群所舉辦的聚會或工作坊如:HPX、IXDA、Agile Community，並帶回公司內分享給同事。  </div></div><br>");
 				$("#content").scrollTop(100000);
 			});
 			$("#question4").click(function () {
-				$("#content").append(" <div class='dialog-list'><div class='dialog dialog-right'>How to contact with you?</div></div><br>");
-				$("#content").append(" <div class='dialog-list'><div class='dialog dialog-left'> My email address is : <a  class='mailtoui' href='mailto:aaron.zl.hsu@gmail.com' >aaron.zl.hsu@gmail.com</a>, please feel free to contact with me.</a> </div></div><br>");
-				$("#content").append(" <div class='dialog-list'><div class='dialog dialog-left'>You also could download my <a href='files/aaron_resume.pdf' target='_blank'>resume.</a> </div></div><br>");
+				$("#content").append(" <div class='dialog-list'><div class='dialog dialog-right'>如何聯絡你</div></div><br>");
+				$("#content").append(" <div class='dialog-list'><div class='dialog dialog-left'> 我的Email是 <a  class='mailtoui' href='mailto:aaron.zl.hsu@gmail.com' >aaron.zl.hsu@gmail.com</a>如有任何需要，歡迎聯絡我</a> </div></div><br>");
+				$("#content").append(" <div class='dialog-list'><div class='dialog dialog-left'>你也可以下載我的<a href='files/aaron_resume.pdf' target='_blank'>簡歷</a> </div></div><br>");
 				$("#content").scrollTop(100000);
 			});
 		});
@@ -82,22 +82,23 @@
 		</button>
 		<div class="collapse navbar-collapse text-center" id="collapsibleNavbar">
 			<ul class="navbar-nav text-center" style="margin:0 auto;">
-				<li class="nav-item">
-					<a class="nav-link active" href="about.html">About</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="poct.html">Project:POCT</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="lh.html">Project:LH</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="sideprojects.html">Side Projects</a>
-				</li>
+					<li class="nav-item">
+							<a class="nav-link active" href="about_cht.html">關於我</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link " href="poct_cht.html">定點照護血液檢驗系統</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link  " href="lh.html">女性黃體檢測系統</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="sideprojects.html">其他小專案</a>
+						</li>
+						
 			</ul>
 			<ul class="navbar-nav" >
 					<li class="nav-item" style="border-bottom:1px solid grey;">
-							<a class="nav-link" href="about_cht.html">漢</a>
+							<a class="nav-link" href="about.html">En</a>
 					</li>
 			</ul>
 		</div>
@@ -113,7 +114,7 @@
 					<div class="dialog-content" id="content" style="background-color:#222">
 
 						<div id="welcome" class='dialog-list'>
-							<div class='dialog dialog-left'>Good day, I'm <b>Aaron</b>, a UI designer. Nice to meet you, shall we talk?</div>
+							<div class='dialog dialog-left'>你好啊，<b>我是智榕</b>，目前從事UI設計的工作，很高興見到你。</div>
 						</div><br>
 
 					</div>
@@ -122,37 +123,34 @@
 					<div style="position: relative;display:inline">
 						<div style="width:22%;float: left;margin:1.5%">
 							<div id="question1">
-								<button class="btn btn-question"> Experiences</button>
+								<button class="btn btn-question">過去經驗</button>
 							</div>
 						</div>
 						<div style="width:22%;float: left;margin:1.5%">
 							<div id="question2">
-								<button class="btn btn-question">Skills</button>
+								<button class="btn btn-question">技能點</button>
 							</div>
 						</div>
 						<div style="width:19%;float:left;margin:1.5%">
 							<div id="question3">
-								<button class="btn btn-question">Self-learning</button>
+								<button class="btn btn-question">工作之餘</button>
 							</div>
 						</div>
 						<div style="width:25%;float:left;margin:1.5%">
 							<div id="question4">
-								<button class="btn btn-question">Resume and Contact</button>
+								<button class="btn btn-question">簡歷與聯絡方式</button>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div id="about-mobile">
 
-					<h3><b>Aaron Hsu, UI Designer </h3>
-					<p>Have 7 years of user interface design experience and highly skilled in web and mobile UX, interaction design,
-						and prototyping. Besides my job, I also join some conferences and workshops to broaden my horizon (ex:
-						H.spectrum,
-						HPX, IXDA, UX days Tokyo...).<br>Please feel free to download my resume or contact me.⬇️</p>
+					<h3><b>我是智榕，是一位UI設計師 </h3>
+					<p>從事 UI 設計多年，經手過的案子包含[1]商用軟體系統(虛擬化桌面/檔案加密管理系統)的 UI/GUI 設計、[2]手機 App( iOS/Android )的 UI/GUI 設計、[3]管理後台Web的設計。我會在設計的過程加入低高擬真的原型設計，利用的工具包含:HTML / CSS / jQuery與 Origami Stuio，與利害關係人溝通想法。另外也會測試關鍵體驗流程的易用性，確保產品的可用性。</p>
 					<hr>
 					<div class="download">
-						<a href="files/aaron_resume.pdf" target="_blank"><button class="btn btn-dark download">🧾 My Resume</button></a><br><br>
-						<a href="mailto:aaron.zl.hsu@gmail.com"><button class="btn btn-dark download">📮 Contact me</button></a>
+						<a href="files/aaron_resume.pdf" target="_blank"><button class="btn btn-dark download">🧾 我的簡歷</button></a><br><br>
+						<a href="mailto:aaron.zl.hsu@gmail.com"><button class="btn btn-dark download">📮 聯絡我</button></a>
 					</div>
 				</div>
 
@@ -161,7 +159,7 @@
 		</div>
 
 		<div class="row">
-			<h2 style="margin:0 auto;color:white" id="work">👨‍💻 Work</h2>
+			<h2 style="margin:0 auto;color:white" id="work">👨‍💻 工作經驗</h2>
 			<div class="col-sm-12" style="padding-left:0;">
 
 			</div>
@@ -171,40 +169,39 @@
 						<li>
 							<h5><b>iXensor</b>, UI Designer</h5>
 						</li>
-						<li class="list-year">Oct. 2016 - Present</li>
+						<li class="list-year">2016/10月 - 現在</li>
 						<hr>
 						<li>
-							<h6><a href="poct.html" target="_blank">Point of Care Test Project<a>
-										<h6>
+							<h5>定點照護血液檢驗系統 / Point of Care Test Project <a href="poct.html" target="_blank">[了解更多]<a>
+										<h5>
 						</li>
-						<li class="list-item">- Design Mobile Device User Interface ( Android )</li>
-						<li class="list-item">- Design Web System User Interface</li>
-						<li class="list-item">- Design Product Webpage</li>
-						<li class="list-item">- Design Interactive Prototype</li>
-						<li class="list-item">- Conduct Usability Test and Users interview</li>
+						<li class="list-item">- 設計手持裝置的 UI/GUI</li>
+						<li class="list-item">- 設計管理後台的 UI/GUI</li>
+						<li class="list-item">- 設計產品網頁</li>
+						<li class="list-item">- 設計可操作的高擬真原型，以 Origami Studio/Bootstrap製作</li>
+						<li class="list-item">- 規劃與分析使用者訪談與易用性測試</li>
 					</ul><br>
 					<ul>
 						<li>
-							<h6><a href="lh.html">Women Fertility (LH) Test Project<a>
-										<h6>
+							<h5>女性黃體檢測系統 / Women Fertility (LH) Test Project <a href="lh.html">[了解更多]<a>
+										<h5>
 						</li>
-						<li class="list-item">- Mobile Device User Interface ( iOS / Android )</li>
-						<li class="list-item">- Web System Interface</li>
-						<li class="list-item">- Deliver App Prototype for testing / demo</li>
-						<li class="list-item">- Usability Test</li>
-						<li>- Patent <a href="https://patents.google.com/patent/WO2018166533A1/" target="_blank">(WO2018166533A1 /
+						<li class="list-item">- 設計行動裝置UI/GUI，包含 iOS 與 Android 平台</li>
+						<li class="list-item">- 設計分析平台 UI/GUI</li>
+						<li class="list-item">- 利用Origami Studio 製作原型展示給利害關係人，並作為開發前測試用 </li>
+						<li class="list-item">- 規劃與分析易用性實驗</li>
+						<li>- 專利 <a href="https://patents.google.com/patent/WO2018166533A1/" target="_blank">(WO2018166533A1 /
 								TW201840293A)</a></li>
-						<li>- Awards : <a href="http://awardsarchive.babytechsummit.com/bestof2018/eveline-smart-fertility-system/"
+						<li>- 獲獎 : <a href="http://awardsarchive.babytechsummit.com/bestof2018/eveline-smart-fertility-system/"
 							 target="_blank">CES Baby Tech 2018</a>, <a href="https://www.g-mark.org/award/describe/44849" target="_blank">G-Mark
 								2017</a></li>
 					</ul><br>
 					<ul>
 						<li>
-							<h6>Glucose Monitor Project
-								<h6>
+							<h5>血糖監測實驗專案<h5><p>分析糖尿病患在人工提醒與系統提醒下，量測的行為差異</p>
 						</li>
-						<li class="list-item">- Mobile Device User Interface ( iOS )</li>
-						<li class="list-item">- Web System Interface</li>
+						<li class="list-item">- 設計行動裝置介面( iOS )</li>
+						<li class="list-item">- 設計管理後台Web UI/GUI</li>
 					</ul>
 				</div>
 
@@ -213,26 +210,26 @@
 				<div class="card2">
 					<ul>
 						<li>
-							<h5><b>Foxconn (Hon Hai) Group</b>, UI Designer</h5>
+							<h5><b>鴻海集團</b>, UI Designer</h5>
 						</li>
 						<li class="list-year">Dec. 2012 - Jul. 2016 <li>
 							<hr>
 						<li>
-							<h6>Virtual Desktop Infra- structure Project<a></h6>
+							<h5>虛擬化桌面系統 / Virtual Desktop Infra- structure Project<a></h5>
 						</li>
-						<li class="list-item">- Design Windows User Interface / Flow / GUI</li>
+						<li class="list-item">- 設計桌面系統的 UI/GUI </li>
 					</ul><br>
 					<ul>
 						<li>
-							<h6>Data Encryption System Project</h6>
+							<h5>檔案加密管理系統/Data Encryption System Project</h5>
 						</li>
-						<li class="list-item">- Design Windows User Interface / Flow / GUI</li>
+						<li class="list-item">- 設計網頁平台的 UI/GUI</li>
 					</ul><br>
 					<ul>
 						<li>
-							<h6>Support Exhibition</h6>
+							<h5>專利送件系統</h5>
 						</li>
-						<li class="list-item"> - PATENT INFORMATION FAIR & CONFERENCE | 2015@Tokyo</li>
+						<li class="list-item"> - 設計網頁平台的 UI/GUI</li>
 					</ul>
 				</div>
 
@@ -242,13 +239,13 @@
 		<br>
 		<div class="row" >
 			<div class="col-sm-12">
-				<h2 class="text-center" style="color:white">📖 Education</h2>
+				<h2 class="text-center" style="color:white">📖 教育背景</h2>
 				<div class="card2">
 					<ul>
 						<li>
-							<h5><b>Master Degree</b></h5>
+							<h5><b>研究所</b></h5>
 						</li>
-						<li>National Taiwan University of Sci. and Tech. - Graduate School of Design <li>
+						<li>國立臺灣科技大學，設計所<li>
 						<li class="list-year">2008 - 2011</li>
 						<li class="list-item"><a href="http://www.emuseum.com.tw/site/artist/artwork_get.aspx?SiteID=G300_AA_004310&F_ID=G300_AP_012531"
 							 target="_blank">- Ming Dynasty Chair</a>, 11th Taoyuan Contemporary Art Award (2011) </li>
@@ -259,9 +256,9 @@
 				<div class="card2">
 					<ul>
 						<li>
-							<h5><b>Bachelor Degree</b></h5>
+							<h5><b>大學</b></h5>
 						</li>
-						<li>National Taiwan University of Sci. and Tech. - Major in Industrial Design <li>
+						<li>國立臺灣科技大學，工商業設計系/工業設計組 <li>
 						<li class="list-year">2004 - 2008</li>
 
 					</ul>
@@ -269,13 +266,13 @@
 				<div class="card2">
 					<ul>
 						<li>
-							<h5><b>Oversea Scholarship Program</b></h5>
+							<h5><b>教育部設計菁英海外留學計畫</b></h5>
 						</li>
-						<li>Musashino Art University, Tokyo - Major in Industrial Design <li>
+						<li>日本武藏野美術大學 <li>
 						<li class="list-year">2009 - 20010</li>
-						<li class="list-item">- Kyocera Industry-Academy Project</li>
+						<li class="list-item">- 京瓷產學合作專案</li>
 						<li class="list-item"><a href="https://astamuse.com/ja/published/JP/No/2011176646" target="_blank">- 2011-176646,
-								Japan Patent</a></li>
+								日本專利</a></li>
 					</ul><br>
 				</div>
 
@@ -286,7 +283,7 @@
 		<!--Edu end-->
 		<br>
 		<div class="row">
-			<h2 style="margin:0 auto;color:white" id="skills">🤹 Skills</h2>
+			<h2 style="margin:0 auto;color:white" id="skills">🤹 技能</h2>
 			<div class="col-sm-12">
 				<div class="card2">
 					<ul>
@@ -303,7 +300,7 @@
 		<!--skill-->
 		<br>
 		<div class="row">
-			<h2 style="margin:0 auto;color:white">⚒️ Tools</h2>
+			<h2 style="margin:0 auto;color:white">⚒️ 使用工具</h2>
 			<div class="col-sm-12">
 				<div class="card2">
 					<ul>
@@ -325,14 +322,14 @@
 	<div>
 		<div class="row" style="background-color:black;">
 			<div class="col-6 ">
-				<a href="index.html">
+				<a href="cht.html">
 					<div class="text-center previous-project">
-						<span style="float:left;padding-left:16px;color:white"><img src="images/arrow_white_l.svg" style="height:24px;width:24px;"></span>Home
+						<span style="float:left;padding-left:16px;color:white"><img src="images/arrow_white_l.svg" style="height:24px;width:24px;"></span>首頁
 					</div>
 				</a>
 			</div>
 			<div class="col-6">
-				<a href="poct.html">
+				<a href="poct_cht.html">
 					<div class="text-center next-project" style="float:right;color:white">
 						<span style="float:right;padding-right:16px;"><img src="images/arrow_white_r.svg" style="height:24px;width:24px;"></span>Project
 						POCT
