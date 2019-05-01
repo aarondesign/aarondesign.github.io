@@ -112,15 +112,16 @@
         <div class="row">
             <div class="col-sm-12">
                     
-                <h1 class="text-left title">定點照護血液檢驗系統 / Point of Care Test
-                    </h1>
+                
             </div>
             <div class="col-sm-6">
                 <img class="lazy img-fluid " data-original="images/poct/poct_intro.png">
             </div>
             <div class="col-sm-6">
+                    <h1 class="text-left title">定點照護血液檢驗系統 / Point of Care Test
+                        </h1>
                 <p class="text-left">
-    
+
                         定點照護血液檢驗系統 / Point of Care Test(下稱POCT)，整個專案在用戶端包含了一個手持式裝置以及一個網頁平台。這產品的目標
                         在提供小型醫療院所或是藥局，即時為客戶量測血液中的脂值( Lipid，包含膽固醇及三酸甘油酯)以及糖化血色素( HbA1c )的數值，免去客戶來去
                         往來醫院的舟車勞頓以及等候報告出爐的時間。這專案我負則的主要工作為，根據需求規劃介面的架構流程以及視覺設計。<br><br>
@@ -170,6 +171,7 @@
                 <h3>UI 流程圖</h3>
                 <p>
                     這張流程圖顯示關鍵體驗的流程，從初始化的設定到量測的過程。
+                    我以頁面為單位，說明頁面中有哪些功能，以及點選該功能後的流程。
                 </p>
             </div>
         </div>
@@ -183,11 +185,11 @@
             </div>
             <div class="col-sm-12">
                 <h3>設計概念</h3>
-                <p class="column">
+                <p >
                     在我開始動手設計前，我會去收集資料分析這個產品的介面，由誰並且在何種環境下操作的。這個產品雖然是手持的裝置，
                     然而主要的使用情境是放置於桌面上，距離使用者的眼睛約為1到1.5公尺(推估桌子的高度在70-110cm之間)，因此在字型與按鈕需要較行動裝置大，
                     例如在按鈕的標籤字體就選用24dp。
-                    <br>
+                    <br><br>
                     在顏色的挑選上，文字與背景採用高對比的黑色與白色，方便醫護人員辨識。而在主色的挑選上避免使用紅黃綠，為了避免誤解為正常或危險。
                     最後挑選了亮藍色作為主色。
                     
@@ -205,7 +207,7 @@
             </div>
             <div class="col-sm-12">
                 <h3>易用性測試</h3>
-                <p class="column">
+                <p >
                     
                     在產品開發的階段，我前往醫院參與了生化實驗，並順便觀察與訪談使用者。在醫院的實驗，我們邀請使用者自行在指尖札針，接著用毛細管採血並滴在試片上，並操作機器量測出值。
                     在他操作的過程中，我在旁邊觀察他們的操作行為，並於操作結束後針對剛剛觀察到的現象，訪問使用者為何如何操作，遇到的問題為何。在最後請他們填寫易用性量表（ SUS / 
@@ -220,9 +222,9 @@
         </div>
         <div class="row" style="background-color:whitesmoke">
             <div class="col-sm-12">
-                <h3>UI Design</h3>
-                <p>Including screenshots of setting up, home, measure and misc. For more information, please check
-                    prototype movie.⬇️ </p>
+                <h3>UI 設計</h3>
+                <p> 包含初始化設定流程的畫面、首頁、量測畫面、關機、充電中畫面等等。詳細的流程可以參考以下的動畫⬇️。
+                 </p>
                 <img class="lazy img-fluid" style="padding-bottom:8px" data-original="images/poct/poct_ui_system.png">
                 <div>
                     <div style="width:50%;float: left;position: relative;">
@@ -233,35 +235,38 @@
                     </div>
 
                     <h5>4dp Baseline</h5>
-                    <p>Type and icons aligns to 4dp baseline grid</p>
+                    <p>在設計編排時，元件或文字的間距都設定在4dp的倍數，保持畫面的整齊與一致性。</p>
                 </div>
+                <hr>
                 <div class="card2">
                     <img class="lazy img-fluid" style="padding-bottom:8px" data-original="images/poct/poct_screenshot_1.png">
-                    <h5>Initializing</h5>
-                    <p>Settings steps for on boarding.</p>
+                    <h5>初始化</h5>
+                    <p>當使用者首次開機，或是重置系統後，會邀請使用者一步一步的進行基本設定。包括語言、時區、網路、量測單位。</p>
                 </div>
                 <div class="card2">
                     <img class="lazy img-fluid" style="padding-bottom:8px" data-original="images/poct/poct_screenshot_2.png">
-                    <h5>Home</h5>
-                    <p>Home screen and show status to calibrate device or version update. </p>
+                    <h5>首頁</h5>
+                    <p>顯示機器的基本狀態，包含時間、網路、聲音，另外可連結到詳細的設定頁面。如果有軟體更新的通知或是機械校正的需求，也會在首頁上顯示。</p>
                 </div>
                 <div class="card2">
                     <img class="lazy img-fluid" style="padding-bottom:8px" data-original="images/poct/poct_screenshot_3.png">
-                    <h5>Prepare for measurement</h5>
-                    <p>Input patients' ID or scan membership card, then select which biomarker to measure.</p>
+                    <h5>量測的準備程序</h5>
+                    <p>輸入或是掃描客戶的ID，選擇要檢驗的項目(Lipid / A1c)，確認試片的項目以及試片的基本資訊。</p>
                 </div>
                 <div class="card2">
                     <img class="lazy img-fluid" style="padding-bottom:8px" data-original="images/poct/poct_screenshot_4.png">
-                    <h5>Measurement</h5>
-                    <p>Insert the test strip into the device and drop the patient's blood on the test, then tap the
-                        measure button. Wait a moment, the device will show the result.
+                    <h5>量測</h5>
+                    <p>
+                        透過介面上的步驟引導，指示量測人員將撥桿推到指定位置，插入式片並將血液滴到試片上，等待出值。
                     </p>
                 </div>
 
                 <div class="card2">
                     <img class="lazy img-fluid" style="padding-bottom:8px" data-original="images/poct/poct_screenshot_5.png">
-                    <h5>Misc.</h5>
-                    <p>Low battery status / Charging / Power menu / Dialog</p>
+                    <h5>其他頁面</h5>
+                    <p>
+                        低電量狀態、充電中狀態、關機選單以及對話視窗的UI
+                    </p>
                 </div>
 
 
@@ -275,10 +280,11 @@
         </div>
         <div class="row">
             <div class="col-sm-6">
-                <h3>App Prototyping</h3>
-                <p>Design this prototype with Origami Studio,
-                    for making sure the flow and add some animation effects,
-                    check the video to see the prototype.
+                <h3>App 原型設計
+                </h3>
+                <p>
+                    在產品開發前，我會利用Origami Studio等原型工具模擬產品的主線功能以及些動態效果，向工程師或是相關人員展示產品開發後理想的樣態。
+                    另外，製作原型的另一項目的是提供公司高層或是業務發展部門，向外部展示產品概念的工具。
                 </p>
                 <img class="lazy img-fluid" data-original="images/poct/poct_origami.gif" style="border-radius:8px">
             </div>
@@ -295,11 +301,11 @@
                 <img class="lazy img-fluid" style="padding-bottom:8px" data-original="images/poct/poct_app_changed.png">
             </div>
             <div class="col-sm-6">
-                <h3>Design Review</h3>
-                <p>When designing the user interface of the medical device, the most important thing is not what it
-                    look but the regulation. The first version UI show the different color according to the different
-                    level of result. After an interview with stakeholders, they suggest the result page show the number
-                    only because the device should not diagnose the result, but the doctors or pharmacists do it.
+                <h3>設計回顧與修正</h3>
+                <p>
+                    在設計醫療產品的UI時，最重要一件事是法規。醫療器材產品要上市前，要通過當地的主管機關審查，因此如果有審查上的建議就需要因應修改。
+                    舉例來說，第一個版本的出值頁面UI有判斷數值的正常/警示/危險，但根據主管機關的要求，診斷只能交給專業的人士進行，建議機器只顯示數值，
+                    不提示正常或危險。最後根據審查委員的建議，修改UI上面的呈現模式。
                 </p>
             </div>
         </div>
@@ -307,29 +313,30 @@
         <hr>
 
         <div class="row">
-            <h1 class="mx-auto d-block title">Web Platform</h1>
+            <h1 class="mx-auto d-block title">網頁平台設計</h1>
             <p class="text-center">
-                After testing, the analyzed data will sync to the web platform immediately.
-                The pharmacies could use this web to read the data and present to the customer their health situation.
-                Finally, print the test results and health advice for customs.
+                
+                客戶端的網頁平台，用來讓護理人員觀看客戶的量測紀錄，查詢客戶基本資料之用。當量測完成後，在手持裝置的量測結果會透過網路同步到後台網頁。
+                ，護理人員會透過網頁平台來展示給客戶當次與歷史的量測資訊，並提供建議的保健資訊。
             </p>
             <div class="col-sm-12">
                 <img class="lazy img-fluid" data-original="images/poct/poct_web_flow.png">
             </div>
             <div class="col-sm-6 col-12" style="margin-top:24px">
-                <h3>UI Flow</h3>
-                <p>This flowchart shows the steps from the login page to the personal result page. Here only reveal
-                    parts of flow.
+                <h3>UI 流程</h3>
+                <p>
+                     這張流程圖顯示從登入頁面到用戶個人資訊的步驟。對我來說流程圖是一個整理思緒，以及與工程人員溝通建立共識的工具。
                 </p>
             </div>
         </div>
         <hr>
         <div class="row" id="ui2">
             <div class="col-sm-6 col-12">
-                <h3>Web UI and Prototypes</h3>
-                <p>Here show the web app screenshots and HTML prototypes. I like to layout the web by using
-                    HTML/CSS/bootstrap/jquery to mark the interactive prototype. It not only shows the idea but also
-                    can provide engineers to implement the products basing on it. Suggest using desktop play it.</p>
+                <h3>網頁 UI 與互動原型</h3>
+                <p>
+                    在這個部分呈現關於網頁平台的數個畫面，以及利用HTML攥寫而成的互動式原型。在開發前，時間允許的話我會利用HTML/CSS/jQuery製作出可互動的原型，
+                    與工程師檢討可行性與確定效果的樣式。透過這個方式，可以確保最終產品與設計的一致性。
+                </p>
             </div>
             <div class="col-sm-6 col-12">
                 <img class="lazy img-fluid" data-original="images/poct/poct_web_imac.png">
@@ -337,11 +344,10 @@
             <div class="col-sm-12 card">
 
                 <h5>
-                    Web System pages
+                    網頁平台畫面
                 </h5>
-                <p>It include the three parts : Login page/ Main ( Del Member ) / Member's detail records.</p>
-                <a href="poct_web.html" target="_blank"><button class="btn btn-dark ">Learn
-                        more about it</button></a><br>
+                <p>包括登入畫面、客戶端後台以及客戶端前台。</p>
+                <a href="poct_web.html" target="_blank"><button class="btn btn-dark ">觀看細節</button></a><br>
                 <a href="poct_web.html" target="_blank"><img class="lazy img-fluid mx-auto d-block" data-original="images/poct/poct_web_members.png"></a>
                 <br>
 
@@ -351,26 +357,22 @@
     </div>
     <div class="row" style="background-color:#4390FC">
         <div class="col-sm-12 card" style="margin:16px">
-            <h3>What I learn from this project</h3>
+            <h3>專案中獲的啟發</h3><br>
 
-            <p>1⃣ <span style="color:black">Domain Knowledge</span>:<br>What is Hab1c / Lipid / POCT stand for? When I
-                join this project in the
-                beginning, I am so confused with the jargons. Google these words, reading some relevant articles,
-                searching related products, and ask my colleagues.
-                Having basic knowledge helps me to design the product with confidence.
+            <p>1⃣<span style="color:black">知識就是力量。</span><br>
+                在執行專案前，補足該領域的專業知識是首要步驟，否則將很難與相關的人士溝通。當我一開始接觸此專案時，
+                對於一些專有名詞的內容只知其然，而不明其內涵。只能透過詢問相關人員以及網路資訊，補足一些基礎知識與內涵。當我瞭解了這些背景後，
+                才有辦法自信地設計出有關的產出，免於陷入囫圇吞棗的窘境。
             </p><br>
-            <p>2️⃣ <span style="color:black">Who I design for</span>:<br>There are kinds of users in this project,
-                including pharmacists, nurses,
-                consumers, salespersons, distributors. My role is to design the interface for them, but I rarely
-                have the chance to interviews with them. Luckily, I have an opportunity to participate in a program
-                to observe users using this product and discussion with participants, and I got some feedback and
-                insights from them. In the end, I report to the stakeholders about what we should improve our
-                product.</p><br>
-            <p>3️⃣ <span style="color:black">Engineers is my friends</span>:<br>They would remind you that the flow or
-                UI design will confront some
-                technical issues, discuss with them frequently before delivering the design . In this project,
-                there is a signal issue when the camera read the test strip. Cause the bright color background of
-                UI to affect the signals, I switch the background to the dark color and the issue was resolved.
+            <p>2️⃣ <span style="color:black">為誰而設計。</span><br>
+                在一個產品中，可能不會只有一種類型的使用者。他們可能包含了業務員、經銷商、護理人員以及前往診所量測的顧客。在設計思考流程的起手式就是同理心，
+                了解誰會在怎樣的情境下使用這項產品或服務，是身為產品開發相關的人都應該要了解的。幸運的是，在開發這項產品的過程中有機會前往醫院參與一整天的實驗，
+                近距離的觀察與訪談使用者，了解他們的想法跟他們在操作上的行為，我得到了ㄧ些回饋，並且改善了部分的設計。作為一個UI設計師，要考慮的點除了螢幕內的事，
+                更要去了解螢幕以外的世界。
+                </p><br>
+            <p>3️⃣ <span style="color:black">跟工程師當好朋友。</span><br>
+                在設計的過程與開發前，一定要與密切的與工程師討論細節，而不是設計直接交付開發。在工程上會有技術上的限制以及時間上的壓力，
+                需要與工程單位以及產品經理詳細的討論細節，減少設計交付後來回修改的時間。
             </p>
         </div>
     </div>
@@ -380,16 +382,16 @@
             <div class="col-6 ">
                 <a href="about.html">
                     <div class="text-center previous-project">
-                        <span style="float:left;padding-left:16px;"><img src="images/arrow_left.png" style="height:24px;width:24px;"></span>about
-                        me
+                        <span style="float:left;padding-left:16px;"><img src="images/arrow_left.png" style="height:24px;width:24px;"></span>
+                        關於我
                     </div>
                 </a>
             </div>
             <div class="col-6">
                 <a href="lh.html">
                     <div class="text-center next-project" style="float:right">
-                        <span style="float:right;padding-right:16px;"><img src="images/arrow_right.png" style="height:24px;width:24px;"></span>Project
-                        LH
+                        <span style="float:right;padding-right:16px;"><img src="images/arrow_right.png" style="height:24px;width:24px;"></span>黃體素檢測專案
+                        
                     </div>
                 </a>
             </div>
