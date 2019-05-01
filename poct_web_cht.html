@@ -1,0 +1,132 @@
+<!--Welcome to check the page-->
+<!--May you have a nice day-->
+<!--copyright@aaron.zl.hsu@gmail.com-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Aaron Hsu - Poct Web</title>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="scripts/jquery.lazyload.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131020506-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-131020506-1');
+    </script>
+    <script>
+
+        $(document).on('click', 'a[href^="#"]', function (event) {
+            event.preventDefault();
+
+            $('html, body').animate({
+                scrollTop: $($.attr(this, 'href')).offset().top
+                ,
+                easing: "easeinOutCubic"
+            }, 1000);
+        });
+    </script>
+
+
+</head>
+
+<body>
+    <div class="container-fluid">
+            
+        <div class="row" style="background-color:whitesmoke">
+            <div class="co-sm-12">
+                    <h1>網頁管理後台</h1>
+                    <ul>
+                        <li>包含三個子項目：</li>
+                        <li>1.登入</li>
+                        <li>2.使用者列表</li>
+                        <li>3.使用者個人頁面</li>
+                    </ul>
+            </div>
+            <div class="col-sm-12 card">
+                    <h5>登入</h5>
+                    <p>顯示正常的登入狀況</p>
+                    <p></p> <a href="prototype/poct/login/poct_login.html" target="_blank"><button class="btn btn-dark ">原型網頁
+                            </button></a>
+                    <br>
+                    <img class="lazy img-fluid" style="padding-bottom:0px;box-shadow: 0 0 10px 0 lightgrey;border-radius:8px;"
+                    data-original="images/poct/web/login_01.png"><br><p>尚未輸入資訊的狀態</p><br>
+                    <img class="lazy img-fluid" style="padding-bottom:0px;box-shadow: 0 0 10px 0 lightgrey;border-radius:8px;"
+                    data-original="images/poct/web/login_02.png"><br><p>輸入資訊的狀態</p><br>
+                    <img class="lazy img-fluid" style="padding-bottom:0px;box-shadow: 0 0 10px 0 lightgrey;border-radius:8px;"
+                    data-original="images/poct/web/login_03.png"><br><p>帳號或密碼錯誤</p><br>
+                    
+    
+                    <br><hr>
+                    <h5>重置密碼</h5><br>
+                    <img class="lazy img-fluid" style="padding-bottom:0px;box-shadow: 0 0 10px 0 lightgrey;border-radius:8px;"
+                    data-original="images/poct/web/login_04.png"><br><p>輸入 Eamil</p><br> 
+                    <img class="lazy img-fluid" style="padding-bottom:0px;box-shadow: 0 0 10px 0 lightgrey;border-radius:8px;"
+                    data-original="images/poct/web/login_05.png"><br><p>驗證信箱</p><br>
+                    <img class="lazy img-fluid" style="padding-bottom:0px;box-shadow: 0 0 10px 0 lightgrey;border-radius:8px;"
+                    data-original="images/poct/web/login_06.png"><br><p>重置密碼，系統會顯示密碼強度</p><br>
+                    <img class="lazy img-fluid" style="padding-bottom:0px;box-shadow: 0 0 10px 0 lightgrey;border-radius:8px;"
+                    data-original="images/poct/web/login_07.png"><br><p>錯誤訊息</p><br>
+                    <img class="lazy img-fluid" style="padding-bottom:0px;box-shadow: 0 0 10px 0 lightgrey;border-radius:8px;"
+                    data-original="images/poct/web/login_08.png"><br><p>重置完成，直接帶入系統</p><br>
+            </div>
+            <div class="col-sm-12 card">
+                    <h5>主畫面</h5>
+                    <p>
+                        顯示會員的列表，以及會員的基本資訊、最近的量測紀錄。
+                    </p>
+                    <img class="lazy img-fluid" style="padding-bottom:0px;box-shadow: 0 0 10px 0 lightgrey;border-radius:8px;"
+                    data-original="images/poct/web/home_1.png"><br>
+                    <p>
+                        主畫面
+                    </p><a href="prototype/poct/login/poct_management.html" target="_blank"><button class="btn btn-dark">網頁原型</button></a><br><hr>
+                    <img class="lazy img-fluid" style="padding-bottom:0px;box-shadow: 0 0 10px 0 lightgrey;border-radius:8px;"
+                    data-original="images/poct/web/home_2.png"><br><p>編輯或是刪除會員</p><br>
+                    <img class="lazy img-fluid" style="padding-bottom:0px;box-shadow: 0 0 10px 0 lightgrey;border-radius:8px;"
+                    data-original="images/poct/web/home_3.png"><br><p>確認刪除</p><br>
+                    <img class="lazy img-fluid" style="padding-bottom:0px;box-shadow: 0 0 10px 0 lightgrey;border-radius:8px;"
+                    data-original="images/poct/web/home_4.png"><br><p>刪除前的最後確認</p><br>
+            </div>
+            <div class="col-sm-12 card">
+                    <h5>會員資訊頁面</h5>
+                    <p>會員的量測歷史紀錄，健康指南以及營養品建議資訊</p>
+                    <a href="prototype/poct/login/mypage.html" target="_blank"><button class="btn btn-dark">網頁原型
+                            </button></a><br>
+                    <a href="prototype/poct/login/mypage.html" target="_blank"><img class="lazy img-fluid mx-auto d-block  project-image"
+                            data-original="images/poct/poct_web_person.png"></a>
+                    
+                </div>
+            
+        </div>
+    </div>
+
+    <footer>
+        <img src="images/aaron_logo.png" alt="logo" style="width:24px;opacity:.5;"> aaron.zl.hsu@gmail.com
+    </footer>
+</body>
+
+</html>
+<script>
+    $("img.lazy").lazyload({
+        effect: "fadeIn"
+
+    });
+    $(function () {
+        $('.lazy').lazy({
+            placeholder: "data:image/gif;base64,R0lGODlhEALAPQAPzl5uLr9Nrl8e7..."
+        });
+    });
+
+</script>
