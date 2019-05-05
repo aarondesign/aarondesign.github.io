@@ -1,0 +1,496 @@
+<!--Welcome to check the page-->
+<!--May you have a nice day-->
+<!--copyright@aaron.zl.hsu@gmail.com-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Aaron Hsu - Project LH</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="scripts/jquery.lazyload.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131020506-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-131020506-1');
+    </script>
+    <script>
+
+        $(document).on('click', 'a[href^="#"]', function (event) {
+            event.preventDefault();
+
+            $('html, body').animate({
+                scrollTop: $($.attr(this, 'href')).offset().top
+                ,
+                easing: "easeinOutCubic"
+            }, 1000);
+        });
+    </script>
+    <style>
+        /* scrollbar*/
+		/* width */
+		::-webkit-scrollbar-track
+		{
+			
+			border-radius: 10px;
+			background-color: black;
+		}
+		
+		::-webkit-scrollbar
+		{
+			width: 12px;
+			background-color:black;
+		}
+		
+		::-webkit-scrollbar-thumb
+		{
+			border-radius: 10px;
+			
+			background-color: #FCBAD3;
+		}
+	
+	/*Scrollbar*/
+    </style>
+
+</head>
+
+<body>
+    
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top" style="background-color:rgba(0,0,0,.8) !important">
+        <div id="nav_desktop">
+            <a class="navbar-brand" href="index.html">
+                <img class="logo" src="images/aaron_logo.png" alt="logo">
+            </a>
+            <a class="navbar-brand " href="index.html">Aaron Hsu</a>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-center" id="collapsibleNavbar">
+            <ul class="navbar-nav text-center" style="margin:0 auto;">
+                    <li class="nav-item">
+							<a class="nav-link" href="about_cht.html">關於我</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link   " href="poct.html"><b>定點照護血液檢驗系統</b></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link  active " href="lh.html">女性黃體檢測系統</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="sideprojects.html">其他小專案</a>
+						</li>
+            </ul>
+        </div>
+    </nav>
+    <a href="lh.html"><img class="img-fluid" src="images/home/eveline_banner.jpg"></a>
+    <div class="container-fluid" style="margin-top:56px;">
+        <div class="row">
+            <div class="col-12">
+                    <h1 class="text-left title">女性黃體素檢測</h1>
+            </div>
+            <div class="col-sm-5">
+                <p class="text-left">
+                    
+                    透過相機的前鏡頭檢測女性尿液中的黃體素濃度，當檢測完成後App會告知使用者目前受孕的機率為何。在這項專案中，我負責的項目是規劃與設計手機介面的操作流程以及設計
+                    GUI。此外我也負責進行易用性測試以及規劃使用者訪談，將使用者的聲音帶進產品開發的流程。
+                </p>
+                <h5>我負責的項目</h5>
+                <ul>
+                    <li> 1. <a href="#ui1">iOS / Android App設計</a></li>
+                    <li> 2. <a href="#ui2">Redesign APP UI/UX</a></li>
+                    <li> 3. <a href="#ui3">Web Platform UI/UX</a></li>
+                </ul><br>
+                <h5>獲得的成就</h5>
+                <ul>
+
+                    <li>- 專利:<br>用於改善生理檢測之可用性及精確度的方法 <a href="https://patents.google.com/patent/WO2018166533A1/" target="_blank"> (WO2018166533A1
+                            /
+                            TW201840293A)</a></li><br>
+                    <li>- 得獎 :<br> <a href="http://awardsarchive.babytechsummit.com/bestof2018/eveline-smart-fertility-system/"
+                            target="_blank">CES Baby Tech 2018</a>, <a href="https://www.g-mark.org/award/describe/44849"
+                            target="_blank">G-Mark
+                            2017</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-7">
+                <img class="lazy img-fluid" data-original="images/lh/lh_top.png">
+            </div>
+        </div>
+        <div class="row " style="background-color:#FCBAD3">
+            <div class="col-sm-12 text-center">
+                <h3 style="color:white"><i>設計女性排卵檢測產品，對一個男性來說是一個艱難的挑戰。
+                    </i></h3>
+            </div>
+        </div>
+
+  
+
+
+
+    <div class="row">
+        <div class="col-sm-8">
+            <img class="lazy img-fluid" data-original="images/lh/lh_journey.png">
+        </div>
+        <div class="col-sm-4">
+            <h1>使用者旅程</h1>
+            <p >
+                
+                準備懷孕的女性會嘗試使用各式的方法與偏方，其中一項科學的方式就是檢測尿液中的黃體濃度。在這個專案的旅程中，使用者首先會在藥局購買一盒試片。
+                然後下載專用的手機應用程式，應用程式會根據使用者輸入的週期資訊，告知使用者何時該使用試片進行量測。<br><br>
+                在開始檢測前，使用者先得去廁所採集尿液，並且將試片浸泡在尿液中，等候試片反應。接著，根據手機應用程式的說明與引導，將試片與底座卡上手機的前，
+                透過手機的前鏡頭分析，手機應用程式會告知現在的受孕率高低。經過數次的檢驗與行動後，使用者有機會在數個月後迎接他們家庭的新成員。
+
+
+            </p>
+        </div>
+    </div>
+
+    <div class="row" style="background-color:whitesmoke">
+        <div class="col-sm-12 ">
+            <h1>App 設計</h1>
+            <h3 id="ui1">現行版本的設計(2017) </h3>
+            <p><a href="#redesign">below</a>.<br>
+                可以透過以下連結下載：<a href="https://play.google.com/store/apps/details?id=com.ixensor.lh&hl=zh_TW"
+                    target="_blank">Android</a> / <a href="https://itunes.apple.com/tw/app/eveline-ovulation-cycle-track/id1234496685"
+                    target="_blank">iOS</a>.<br><br>
+                以下顯示的Android版本的UI設計。
+            </p>
+            <div class="card2">
+                <img class="lazy img-fluid" style="padding-bottom:8px" data-original="images/lh/lh_current/onboarding.png">
+                <h5>首次使用</h5>
+                <p>簡單說明產品功能</p>
+            </div>
+            <div class="card2">
+                <img class="lazy img-fluid" style="padding-bottom:8px" data-original="images/lh/lh_current/signup.png">
+                <h5>註冊</h5>
+                <p>
+                    使用者需要透過Email作為帳號註冊，並且需要從信箱接收驗證碼認證。這個步驟將導致使用者中斷App的使用，並且是一個進入使用的障礙。
+                    如果要改善的話，我的建議是使用手機號碼作為驗證工具，對於註冊的便利性會比Email更高。
+                </p>
+            </div>
+            <div class="card2">
+                <img class="lazy img-fluid" style="padding-bottom:8px" data-original="images/lh/lh_current/basic info.png">
+                <h5>基本資訊</h5>
+                <p>
+                     收集使用者的基本資料，但在初次使用產品時，建議只需要詢問使用者必要的問題。其他的問題詢問，可以在情境的脈絡下，跟使用者溝通請他們提供些資訊。
+                </p>
+            </div>
+            <div class="card2">
+                <img class="lazy img-fluid" style="padding-bottom:8px" data-original="images/lh/lh_current/home.png">
+                <h5>首頁</h5>
+                <p>
+                    跟使用者說明距離下一個週期開始還有幾天，或是距離下一個受孕期還有幾天。使用者也可以從此頁面連結到日曆、量測紀錄、設定頁面。
+                    現行版本使用上比較不順的地方在於，日曆、量測紀錄、設定頁面的切換，如果改成Bottom Tab的形式，會比較順手。
+                </p>
+            </div>
+            <div class="card2">
+                <img class="lazy img-fluid" style="padding-bottom:8px" data-original="images/lh/lh_current/finger.png">
+                <h5>引導使用者將試片放置在正確的位置</h5>
+                <p>Android 手機的前鏡頭位置不同的型號，位置都不同。況且Android手機的款式實在太多，無法透過公司內有限的資源去了解每一支手機。
+                    因此僅能透過使用者的幫忙，請他們指出手機前鏡頭正確的位置為何，以便我們利用前鏡頭分析試片。然而，目前Android手機為了達到更大的螢幕顯示面積，
+                    在前鏡頭的配置下了很多心思，這對這個產品而言無疑是一項新的挑戰。
+                </p>
+            </div>
+            <div class="card2">
+                <img class="lazy img-fluid" style="padding-bottom:8px" data-original="images/lh/lh_current/measure.png">
+                <h5>量測</h5>
+                <p>引導使用者將試片卡放到指定位置，點選量測出值。這個步驟可以說是難度最高的一步，很多使用者都在這邊迷茫失誤。由於在產品開發初期，
+                    軟硬體是分開進行，當硬體設計完成後軟體再來配合硬體的使用。當硬體有一些易用性上的瑕疵時，僅能透過介面上的說明，盡可能的減少使用上的不便。
+                </p>
+            </div>
+            <div class="card2">
+                <img class="lazy img-fluid" style="padding-bottom:8px" data-original="images/lh/lh_current/calendar.png">
+                <h5>日曆</h5>
+                <p>
+                    使用者可在日曆中點選特定日期，去紀錄日當日的活動紀錄，包含基礎體溫、行房...等等。
+                 </p>
+            </div>
+            <div class="card2 " id="redesign">
+                <img class="lazy img-fluid" style="padding-bottom:8px" data-original="images/lh/lh_current/records.png">
+                <h5>紀錄</h5>
+                <p>檢視歷史紀錄</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="row" style="background-color:whitesmoke">
+            <div class="col-sm-6 ">
+                <img class="lazy img-fluid" data-original="images/lh/lh_usability_test.png">
+                
+            </div>
+            <div class="col-sm-6 ">
+                   
+                    <img class="lazy img-fluid" data-original="images/lh/lh_test_matrix.png">
+                </div>
+            <div class="col-sm-12 col-12">
+                <h3>易用性測試</h3>
+                <p>
+                    再開始提案前，先公司內進行簡單的使用者測試。在測試前我先給予使用者一個使用情境，讓他們了解狀況。接著給予他們將試片量測出值的任務，
+                    在他們執行任務的期間我要求受測者放聲思考，方便我們了解與紀錄他們目前腦中的想法。在他們執行任務期間，我在旁邊紀錄他們在每個步驟中發生的狀況，
+                    事後在根據表格分析，看使用者在哪個步驟上發上最多問題。另外透過錄影的方式，分析使用者分別在哪些步驟上花了多少時間。之後再根據嚴重性與修改的難易度，排定修改與開發時程。
+                </p>
+            </div>
+        </div>
+        
+  
+    <div class="row" id="ui2">
+
+        <div class="col-sm-12">
+            <h1>UI 再設計提案</h1>
+            <p>
+                現行的版本是兩年前所設計，在設計上有些許的問題需要改善，因此我提出了一個新的UI設計構想。
+            </p>
+            <img class="lazy img-fluid" data-original="images/lh/lh_flow.png" style="padding-bottom:16px">
+            <h3>UI 流程</h3>
+            <p>
+                這個流程圖表示使用者從首次使用的流程，包括基本資訊設定到量測的主要流程。
+            </p>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-sm-4  order-sm-1 order-12 ">
+            <h3>設計概念</h3>
+            <p>
+                這個應用程式的主要功能為量測試片，並且告知使用者是否為最佳受孕期。在流程上我簡化了首次使用的步驟，只詢問系統計算週期必要的資訊，
+                降低使用者進入的門檻。在顏色的選擇上，首次登入以及日曆、設定、等頁面選用淺灰色的底色；而在量測的頁面上則選用深色，目的是為了對比，
+                讓使用者了解進到了量測的流程當中，以便跟一般頁面區隔。
+
+             </p>
+        </div>
+        <div class="col-sm-8  order-sm-12 order-1">
+            <img class="lazy img-fluid" data-original="images/lh/lh_concept.png">
+        </div>
+    </div>
+    
+
+    <div class="row" style="background-color:whitesmoke">
+        <hr>
+        <div class="col-sm-12 ">
+            <h3>UI 設計</h3>
+            <p>設計包含初始化設定、首頁、量測等等頁面，詳細內容請參考此
+                <a href="#movie1">影片</a>⬇️ </p>
+            <img class="lazy img-fluid" style="padding-bottom:8px" data-original="images/lh/lh_ui_elements.png">
+            <div class="card2">
+                <img class="lazy img-fluid" style="padding-bottom:8px" data-original="images/lh/lh_screenshots_1.png">
+                <h5>介紹頁面</h5>
+                <p>介紹產品的使用目的，有加入一些微小的動畫，詳細請參考<a href="#movie1">原型</a></p>
+            </div>
+            <div class="card2">
+                <img class="lazy img-fluid" style="padding-bottom:8px" data-original="images/lh/lh_screenshots_2.png">
+                <h5>初始化設計</h5>
+                <p>請求使用者提供必要的資料，用以預測最近一次的量測日。</p>
+            </div>
+
+            <div class="card2">
+                <img class="lazy img-fluid" style="padding-bottom:8px" data-original="images/lh/lh_screenshots_3.png">
+                <h5>首頁</h5>
+                <p>顯示今日的狀態：受孕期\經期\量測結果，並且可以記錄當天的健康資訊。</p>
+            </div>
+            <div class="card2">
+                <img class="lazy img-fluid" style="padding-bottom:8px" data-original="images/lh/lh_screenshots_4.png">
+                <h5>量測準備</h5>
+                <p>
+                   量測的準備工作，指引使用者一步步地將試片放置在指定區域，用以確保相機前鏡頭能正確出值。
+                    </p>
+            </div>
+            <div class="card2">
+                <img class="lazy img-fluid" style="padding-bottom:8px" data-original="images/lh/lh_screenshots_5.png">
+                <h5>結果</h5>
+                <p>顯示不同狀態的量測結果，高/中/低的受孕狀態。</p>
+            </div>
+            <div class="card2">
+                <img class="lazy img-fluid" style="padding-bottom:8px" data-original="images/lh/lh_screenshots_8.png">
+                <h5>日常紀錄</h5>
+                <p>記錄每天的身體狀態，包含基礎體溫等資訊。</p>
+            </div>
+            <div class="card2">
+                <img class="lazy img-fluid" style="padding-bottom:8px" data-original="images/lh/lh_screenshots_6.png">
+                <h5>其他</h5>
+                <p>量測紀錄 / 日曆 / 推播訊息 / 設定</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="row" style="background-color:whitesmoke">
+            <div class="col-sm-4 col-4">
+                <img class="lazy img-fluid" data-original="images/lh/lh hand.png">
+            </div>
+            <div class="col-sm-8 col-8">
+                <img class="lazy img-fluid" data-original="images/lh/lh_place.png">
+            </div>
+            <div class="col-sm-4 col-0"></div>
+            <div class="col-sm-8 col-12">
+                <h3>設計檢討</h3>
+                <p>量測試片是這個應用程式最核心的體驗，因此團隊花了很多時間在討論，如何讓使用者正確無誤量測試片。根據外部使用者、業務以及公司內部的測試的反應，
+                    多次修正流程與指引方式，最後修訂了較佳的解法，但還是有硬體的易用性問題較難以迴避。
+                </p>
+            </div>
+        </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <h3>App 高擬真原型</h3>
+            <p>
+                在提案的最後階段，我會利用 Origami Studio 製作跟高擬真的互動原型。目的是為了更詳盡的描述設計的細節，
+                包含動畫、手勢、音效、觸覺效果(Haptic)。除了內部提案外，製作高擬真的互動原型也提供業務與客戶開發部門，向外部人士提案之用。
+            </p>
+            <img class="lazy img-fluid" data-original="images/poct/poct_origami.gif" style="border-radius:8px">
+        </div>
+
+        <div class="col-sm-6" id="movie1">
+            <iframe src="https://player.vimeo.com/video/318485835" width="100%" height="480" frameborder="0"
+                webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <h3>Ａpp 原型設計 - 利用手指定位前鏡頭位置</h3>
+            <p>
+                為了讓我們的產品能夠支援所有Android的機型，以便使用者量測。但這世界上的Android手機款是有數千種，且他們的前鏡頭位置也都不一樣，
+                團隊沒有那麼多的資源與能力去了解所有的 Andriod 手機，是故我們邀請使用者來幫助我們了解，他們手機的前鏡頭位置在哪裡。因此我設計了
+                一套利用使用者的手指，去幫助我們比對前鏡頭位置的方法，這方法也獲得公司的青睞，遞交了專利申請(TW201840293A)。
+                <br><br>然而，這個方法在目前手機廠商追求畫面最大化目標，在前鏡頭的機構設計上做了很多巧思，
+                這對於我們團隊而言無疑是一項艱鉅的挑戰。
+            </p>
+            <img class="lazy img-fluid" data-original="images/lh/lh_screenshots_7.png" style="border-radius:8px">
+        </div>
+
+        <div class="col-sm-6">
+            <iframe src="https://player.vimeo.com/video/318485747" width="100%" height="480" frameborder="0"
+                webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+    </div>
+   
+    <div class="row" style="background-color:whitesmoke">
+            <div class="col-sm-12 ">
+                    <h3>與目前UI的比較 </h3><br>
+                    <ul style="list-style-type: circle;">
+                        <li>簡化首次使用的流程，僅詢問使用者必要的資訊，降低使用者入門的障礙。</li>
+                        <li>在量測的流程中，使用暗色系的背景，讓使用者區別量測與一般的頁面。</li>
+                        <li>在首頁上顯示今天量測的狀況，讓使用者不需要回想，剛才的測量結果為何。 </li>
+                        <li>直接在首頁上紀錄當天的身體資訊，不需要再點選日曆進去紀錄，減少使用者的操作步驟。</li>
+                        <li>將量測紀錄以週期做為區隔，讓使用者更容易比對量測資料。</li>
+                    </ul>
+            </div>
+       
+    </div>
+    <div class="row" >
+        <div class="col-sm-12 " id="ui3">
+            <h1>網頁平台</h1>
+            <p>
+                在這個專案中，共計有兩項網頁平台設計<br>
+                1. 為消費者端的設計，讓使用者可以在網頁平台上分析他們的量測紀錄、基礎體溫的趨勢、每天的健康資訊紀錄等等<br>
+                2. 為公司內部的利害關係人設計，方便他們利用系統分析使用者的量測習慣。<br>
+
+            </p>
+            <div class="card2">
+                <div class="row" style="padding:32px 0">
+                    <div class="col-sm-6">
+                        <h5>每日量測紀錄網頁平台</h5>
+                        <p>
+                            受制於螢幕的尺寸，使用者無在手機上比較過去的量測資訊。因此我們規劃了一個網頁平台，讓使用者可以查詢過去的每日健康紀錄，
+                            包含量測資訊、基礎體溫、日記等等資料。使用者也可以將此資料分享給另一半，或是提供醫生做為診斷的參考。
+                        </p>
+                    </div>
+                    <div class="col-sm-6"><img class="lazy img-fluid" style="padding-bottom:8px" data-original="images/lh/lh_analyze_intro.png"></div>
+                </div>
+
+                <hr>
+                <img class="lazy img-fluid" style="padding-bottom:8px" data-original="images/lh/lh_chart.png">
+                <img class="lazy img-fluid" style="padding-bottom:8px" data-original="images/lh/lh_chart2.png">
+            </div>
+            <div class="card2">
+                <div class="row" style="padding:32px 0">
+                    <div class="col-sm-6">
+                        <h5>使用者資料分析平台</h5>
+                        <p>為了利害關係人打造的使用者分析後台，可以分析基本資料、量測行為等資訊，最為後續產品開發的方針</p>
+                        <a href="lh_analytics.html" target="_blank"><button class="btn btn-dark">了解更多</button></a>
+                    </div>
+
+                    <div class="col-sm-6"><img class="lazy img-fluid" style="padding-bottom:8px" data-original="images/lh/lh_analyze_intro_2.png"></div>
+
+                </div>
+                <a href="lh_analytics.html" target="_blank"><img class="lazy img-fluid" style="padding-bottom:0px"
+                        data-original="images/lh/lh_analyze/dashboard_1.jpg"></a>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    </div>
+    <div class="row" style="background-color:#FCBAD3">
+        <div class="col-sm-12 card" style="margin:16px">
+            <h3>專案中的收穫</h3>
+
+            <p>1⃣ <span style="color:black">向使用者學習：</span><br>
+                我們雖然要為使用者提供服務，但其實使用者比我們想像中知道的更多，需要從他們身上了解學習才能幫助我們推出體驗更好的服務。
+                在我們要改善產品前，我負責在網路上招聘使用者以及規劃訪談內容，並且順便分析回收的報名問券。使用者告訴了我們很多他們備孕的故事，包括使用的偏方、另一半在
+                這過程中扮演的腳色。另外，我也在論壇上爬文，觀看使用者分享他們成功的受孕經驗，或是有些使用者會將他們驗黃體素的試片貼在論壇上
+                ，請網友幫忙分析試片的結果代表的意涵為何。
+                </p><br>
+
+            <p> 2️⃣ <span style="color:black">測試、測試與測試：</span><br>
+                很重要所以說三次。我們都有盲點也不是真的使用者，雖然在設計上都說為了設計更好的使用體驗，但當看到使用者活生生的在你面前操作時，
+                才知道很多狀況並不是都那麼的單純。在做使用者測試時，我才發現到有些受測者並不會真的照UI上的指示去操作，他們會根據過往的經驗去執行任務。
+                我也發現，有些步驟我們以為使用者應該知道，但其實不然。比如說，試片上有一個防塵蓋，當初我們認為使用者應該會在量測前，自行拆除然後卡上底座。
+                我們在測試的時候才發現，有使用者沒有拔除背蓋，死命的要將試片卡在底座上，最後還是需要我們從旁提醒才發現。在設計產品時，我們都很熟悉產品但卻對使用者很陌生，
+                多找些不同的使用者進行測試，將有助於團隊消除盲點。
+
+                </p>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-6 ">
+            <a href="poct.html">
+                <div class="text-center previous-project">
+                    <span style="float:left;margin-left:16px;"><img src="images/arrow_left.png" style="height:24px;width:24px;"></span>
+                    定點照護血液檢驗系統
+                </div>
+            </a>
+        </div>
+        <div class="col-6">
+            <a href="sideprojects.html">
+                <div class="text-center next-project" style="float:right">
+                    <span style="float:right;margin-right:16px;"><img src="images/arrow_right.png" style="height:24px;width:24px;"></span>
+                    Side Projects
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+    <footer>
+        <img src="images/aaron_logo.png" alt="logo" style="width:24px;opacity:.5;"> aaron.zl.hsu@gmail.com
+    </footer>
+</body>
+
+</html>
+<script>
+    $("img.lazy").lazyload({
+        effect: "fadeIn"
+
+    });
+    $(function () {
+        $('.lazy').lazy({
+            placeholder: "data:image/gif;base64,R0lGODlhEALAPQAPzl5uLr9Nrl8e7..."
+        });
+    });
+
+</script>
