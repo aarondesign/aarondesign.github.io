@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Shop info</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap"
+        rel="stylesheet">
+
+</head>
+<style>
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: 'Roboto Slab', serif;
+        font-weight: 400;
+        margin: 8px 0;
+        color: #008ba3;
+
+    }
+
+    a {
+        color: inherit;
+    }
+
+    h1 {
+        line-height: 16px;
+    }
+
+    p,
+    li {
+        font-family: 'Roboto', sans-serif;
+        line-height: 18px;
+        font-size: 13px;
+        font-weight: 200;
+        color: #546e7a;
+    }
+
+    ul {
+        padding: 0 0 0 14px;
+        margin: 0;
+    }
+
+
+    td {}
+
+    .font-grey {
+        color: darkolivegreen;
+    }
+
+    .font-lightgrey {
+        color: grey;
+    }
+
+    body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: #FAFAFA;
+        font: 12pt "Tahoma";
+        -webkit-print-color-adjust: exact;
+    }
+
+    .navi {
+        width: 100%;
+        height: 56px;
+        background-color: rgba(255, 255, 255, 0.8);
+        position: fixed;
+        top: 0;
+        border-bottom: 1px solid lightgrey;
+        z-index: 999;
+    }
+
+    .print {
+        float: right;
+        margin: 12px;
+        height: 32px;
+        background-color: #6eba34;
+        outline: none;
+        border: 0;
+        color: white;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    * {
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+    }
+
+    .page {
+        width: 210mm;
+        min-height: 297mm;
+        padding: 20mm;
+        margin: 5mm auto;
+        border: 1px #D3D3D3 solid;
+        border-radius: 5px;
+        border-top:.1cm solid #008ba3 !important;
+        background: white;
+        box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+        top: 64px;
+        position: relative;
+    }
+
+    .subpage {
+        border: 1px solid white;
+        height: 256mm;
+        outline: 2cm white solid;
+        overflow: hidden;
+    }
+
+    .w-25 {
+        width: 25%;
+
+    }
+
+    .w-33 {
+        width: 33.33%;
+
+    }
+
+    .text-right {
+        text-align: right;
+    }
+
+    @page {
+        size: A4;
+        margin: 0;
+    }
+
+    @media print {
+
+        html,
+        body {
+            width: 210mm;
+            height: 297mm;
+        }
+
+        .navi {
+            display: none;
+        }
+
+        .page {
+            margin: 0;
+            border: initial;
+            border-radius: initial;
+            width: initial;
+            min-height: initial;
+            box-shadow: initial;
+            background: initial;
+            page-break-after: always;
+            top: 0;
+        }
+
+
+
+    }
+</style>
+
+<body style="background-color:whitesmoke">
+    <div class="navi">
+        <div style="width:210mm;margin: 0 auto">
+            <h3 style="left:12px;position: relative;">Aaron Hsu Resume</h3><button style="position:relative;top:-60px"
+                onclick="myFunction()" class="print">Print</button>
+        </div>
+    </div>
+
+    <script>
+        function myFunction() {
+            window.print();
+        }
+    </script>
+
+    <div class="book">
+
+        <div class="page">
+
+            <div class="subpage">
+
+                <table style="width:100%">
+                    <tr class="w-100">
+                        <td>
+                            <h1>Aaron <span style="font-weight:700">Hsu</span></h1><br>
+
+                        </td>
+
+                        <td class="w-25">
+
+                            <p><a href="https://aaronhsu.me/">aaronhsu.me</a></p>
+
+                        </td>
+                        <td class="w-25 text-right ">
+                            <p>aaron.zl.hsu@gmail.com</p>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td valign="baseline">
+
+
+                        </td>
+
+                    </tr>
+                </table>
+
+
+                <h4 class="font-grey">Works</h4>
+                <hr style="border:1px dotted #008ba3;">
+                <table>
+
+                    <tr style="width:50%">
+                        <td>
+                            <h3>iXensor <br><span style="font-size:60%" class="font-lightgrey"> Oct. 2016 - present
+                                </span></h3>
+
+                        </td>
+                        <td style="width:50%">
+                            <h3>Foxconn <br> <span style="font-size:60%" class="font-lightgrey"> Dec. 2012 - Jul. 2016
+                                </span></h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="baseline">
+                            <h5><a href="https://aaronhsu.me/poct.html">Point of Care Test Project</a> </h5>
+                            <ul>
+                                <li>
+                                    Design Mobile Device User Interface
+                                </li>
+                                <li>
+                                    Design Web System User Interface
+                                </li>
+                                <li>
+                                    Design Product Webpage
+                                </li>
+                                <li>
+                                    Design Interactive Prototype
+                                </li>
+                                <li>
+                                    Conduct Usability Test and Users interview
+                                </li>
+
+                            </ul>
+                            <br>
+                            <h5><a href="https://aaronhsu.me/lh.html">Women Fertility Test Project</a></h5>
+                            <ul>
+                                <li>Mobile Device User Interface ( iOS / Android )</li>
+                                <li>Web System Interface</li>
+                                <li>Deliver App Prototype for testing / demo </li>
+                                <li>Conduct Usability Test</li>
+                                <li>Patent:<a href="https://patents.google.com/patent/WO2018166533A1/" target="_blank">
+                                        WO2018166533A1 / TW201840293A</a></li>
+                                <li>Awards : <a href="http://awardsarchive.babytechsummit.com/bestof2018/eveline-smart-fertility-system/"
+                                        target="_blank">CES Baby Tech 2018</a> / <a href="https://www.g-mark.org/award/describe/44849"
+                                        target="_blank">G-Mark 2017</a></li>
+
+                            </ul>
+                            <br>
+                            <h5>Glucose Monitor Project</h5>
+                            <ul>
+                                <li>Mobile Device User Interface</li>
+                                <li>Web System Interface</li>
+                            </ul>
+                            <br>
+                            <h5> Incubator Program</h5>
+                            <ul>
+                                <li>H.spectrum, Jan. 2018 - Jul. 2018 </li>
+                            </ul>
+
+
+
+                        </td>
+                        <td valign="top">
+                            <h5> Virtual Desktop Infra- structure Project</h5>
+                            <ul>
+                                <li>Design Windows User Interface / Flow / GUI</li>
+                            </ul>
+
+                            <br>
+                            <h5> Data Encryption System Project</h5>
+                            <ul>
+                                <li> Design Windows User Interface / Flow / GUI</li>
+                            </ul>
+                            <br>
+
+                            <h5>Support Exhibition</h5>
+                            <ul>
+                                <li> PATENT INFORMATION FAIR & CONFERENCE | 2015@Tokyo </li>
+                            </ul>
+                        </td>
+
+                    </tr>
+
+                </table>
+                <br>
+                <h4 class="font-grey">Educations</h4>
+                <hr style="border:1px dotted #008ba3">
+                <table style="width:100%;">
+                    <tr>
+                        <td class="w-33">
+                            <h5>Master <br><span style="font-size:60%" class="font-lightgrey"> Sep. 2008 - Jul. 2011
+                                </span></h5>
+                        </td>
+                        <td class="w-33">
+                            <h5>Oversea Scholarship <br><span style="font-size:60%" class="font-lightgrey"> Sep. 2009 -
+                                    Jul. 2010 </span></h5>
+                        </td>
+                        <td class="w-33">
+                            <h5>Bachalor<br> <span style="font-size:60%" class="font-lightgrey"> Sep. 2004 - Jul. 2008
+                                </span></h5>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4>National Taiwan Univ. of <br> Science and Technology </h4>
+                            <h5 class="font-grey">Graduate School of Design</h5>
+
+                        </td>
+                        <td>
+                            <h4>Musashino Art Unvi.<br>Tokyo,Japan </h4>
+                            <h5 class="font-grey">Dept. of Industrial Design</h5>
+
+                        </td>
+                        <td>
+                            <h4>National Taiwan Univ. of <br>Science and Technology </h4>
+                            <h5 class="font-grey">Dept. of Industrial Design</h5>
+
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li><a href="http://www.emuseum.com.tw/site/artist/artwork_get.aspx?SiteID=G300_AA_004310&F_ID=G300_AP_012531">
+                                        <b>Ming Dynasty Chair </b></a> <br>11th Taoyuan Contemporary Art Award (2011)</li>
+                                <br>
+                                <li><a href="https://www.yankodesign.com/2011/03/01/saved-by-the-glow/">
+                                    <b>Light-emitting
+                                        Door</b></a> <br>Red Dot Award, 2010 <br> TISDC Sliver Award, 2010</li>
+                            </ul>
+                        </td>
+                        <td valign="top">
+                            <ul>
+                                <li><b>Kyocera Industry-Academy Project</b></li>
+                                <li><a href="https://astamuse.com/ja/published/JP/No/2011176646">011-176646, Japan
+                                        Patent</a></li>
+                            </ul>
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+
+                </table>
+
+            </div>
+
+        </div>
+
+
+    </div>
+</body>
+
+</html>
