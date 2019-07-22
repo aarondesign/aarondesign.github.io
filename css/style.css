@@ -67,7 +67,12 @@
 		font-weight:200;
 		margin-top:-4px;
 	}
-
+	.t-white{
+		color:white;
+	}
+	.t-grey{
+		color:whitesmoke !important;
+	}
 	.row{
 		padding:96px 56px; 
 	}
