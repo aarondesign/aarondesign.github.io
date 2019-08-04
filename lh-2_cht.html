@@ -1,0 +1,213 @@
+<!--Welcome to check the page-->
+<!--May you have a nice day-->
+<!--copyright@aaron.zl.hsu@gmail.com-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Aaron Hsu - Project LH</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <script src="scripts/load-effect.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="scripts/jquery.lazyload.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131020506-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-131020506-1');
+    </script>
+    <script>
+
+        $(document).on('click', 'a[href^="#"]', function (event) {
+            event.preventDefault();
+
+            $('html, body').animate({
+                scrollTop: $($.attr(this, 'href')).offset().top
+                ,
+                easing: "easeinOutCubic"
+            }, 1000);
+        });
+    </script>
+    <style>
+        /* scrollbar*/
+		/* width */
+		::-webkit-scrollbar-track
+		{
+			
+			border-radius: 10px;
+			background-color: black;
+		}
+		
+		::-webkit-scrollbar
+		{
+			width: 12px;
+			background-color:black;
+		}
+		
+		::-webkit-scrollbar-thumb
+		{
+			border-radius: 10px;
+			
+			background-color: #FCBAD3;
+		}
+	
+	/*Scrollbar*/
+    </style>
+
+</head>
+
+<body>
+    <script src="scripts/nav-cht.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#menu-4').addClass('active animated fadeInDown' );
+        });
+       
+    </script>
+
+
+    <img class="lazy img-fluid " data-original="images/home/lh-v2.png">
+    <div class="container-fluid" style="margin-top:56px;">
+        <div class="row">
+            <div class="col-sm-6">
+                <h1 class="text-left title">女性黃體素檢測 App 再設計 - 實現版本</h1>
+                <p>舊版的App上線使用經過了兩年，根據這段期間內收集一些使用者數據、使用者訪談以及內外部的利害關係人回饋資訊，於是將整體的UI做個總整理改善使用經驗。</p>
+            </div>
+            <div class="col-sm-6"><br>
+                <p><b>改版主要的目標為：</b></p>
+                <ol>
+                    <li>首次使用與註冊流程的改善 - 降低使用者的進入門檻</li>
+                    <li>重新建立 UI system - 確保使用上的ㄧ致性</li>
+                    <li>調整 Layout - 重新編排資訊的呈現</li>
+                    <li>增加輔助功能 - 幫助使用者了解產品</li>
+                </ol>
+                <p><b>伴隨改版完成的事項：</b></p>
+                <ol>
+                    <li>產品介紹頁面的再設計</li>
+                </ol><br>
+                <p><b>檔案下載</b></p>
+                <ul style=" margin: 0;
+                    padding: 4px;
+                    overflow: hidden;">
+                    <li style="float: left;margin-right: 8px"><a href="https://apps.apple.com/tw/app/%E6%8E%92%E5%8D%B5%E9%80%B1%E6%9C%9F%E6%AA%A2%E6%B8%AC%E8%A8%88%E7%AE%97-eveline%E4%BC%8A%E5%BF%85%E6%B8%AC/id1234496685"
+                            target="_blank"> <img src="images/lh-2/apple-store-badge.png"> </a></li>
+                    <li style="float: left;"><a href="https://play.google.com/store/apps/details?id=com.ixensor.lh&hl=zh_TW"
+                            target="_blank"><img src="images/lh-2/play-store-badge.png"></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <h1>流程</h1>
+                <h3>App流程概要</h3>
+                <p>App的流程主要項目：</p>
+                <ol>
+                    <li>首次使用 ( Onboarding )</li>
+                    <li>首頁</li>
+                    <li>量測紀錄</li>
+                    <li>日曆</li>
+                    <li>設定</li>
+                    <li>量測</li>
+                    <li>登入與註冊</li>
+                </ol>
+            </div>
+            <div class="col-sm-8">
+
+                <img src="images/lh-2/lh-v2-flow.png" class="img-fluid loadEffect" style="cursor:pointer" data-toggle="modal"
+                    data-target="#flow">
+                <p class="text-center" style="font-size:10px"> （ 點擊可以放大 ）</p>
+
+            </div>
+        </div>
+
+        <!-- The Modal -->
+        <div class="modal" id="flow">
+            <div class="modal-dialog modal-full">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">App 流程</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <img src="images/lh-2/lh-v2-flow.png" class="img-fluid">
+
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <img src="images/lh-2/flow-onboarding.jpg" class="img-fluid">
+            </div>
+            <div class="col-sm-6">
+                <h3>首次與註冊使用流程的改善</h3>
+                <p>減少使用者首次使用的門檻</p>
+                <br>
+                <h5>TL;DR</h5>
+                <p>上一個版本的首次使用 ( Onboarding ) 流程相當的繁瑣，包含住註冊、填寫經期資訊、個人基本資料。步驟之多，尤其當填寫完帳號之後需要離開App，打開信箱App查閱驗證碼，接著再回到App。
+                    這段過程需要花費許多時間，有些沒有耐性的使用者應該已經悻悻然的關掉App。
+                </p>
+                <h5>降低門檻</h5>
+                <p>首次使用只詢問兩項必要資訊：<b>週期天數</b>以及<b>上次經期的初始日</b>，這兩個資訊為系統計算受孕期的必要條件。<br>
+                    而註冊流程以及基本資料的填寫流程，將他置於使用者使用系統後，滿滿的引導使用者註冊並填寫基本資料
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-6 ">
+            <a href="poct.html">
+                <div class="text-center previous-project">
+                    <span style="float:left;margin-left:16px;"><img src="images/arrow_left.png" style="height:24px;width:24px;"></span>Project
+                    POCT
+                </div>
+            </a>
+        </div>
+        <div class="col-6">
+            <a href="sideprojects.html">
+                <div class="text-center next-project" style="float:right">
+                    <span style="float:right;margin-right:16px;"><img src="images/arrow_right.png" style="height:24px;width:24px;"></span>Side
+                    Projects
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <img src="images/aaron_logo.png" alt="logo" style="width:24px;opacity:.5;"> aaron.zl.hsu@gmail.com
+    </footer>
+</body>
+
+</html>
+<script>
+    $("img.lazy").lazyload({
+        effect: "fadeIn"
+
+    });
+    $(function () {
+        $('.lazy').lazy({
+            placeholder: "data:image/gif;base64,R0lGODlhEALAPQAPzl5uLr9Nrl8e7..."
+        });
+    });
+
+</script>

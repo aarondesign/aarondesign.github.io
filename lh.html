@@ -39,73 +39,42 @@
     </script>
     <style>
         /* scrollbar*/
-		/* width */
-		::-webkit-scrollbar-track
-		{
-			
-			border-radius: 10px;
-			background-color: black;
-		}
-		
-		::-webkit-scrollbar
-		{
-			width: 12px;
-			background-color:black;
-		}
-		
-		::-webkit-scrollbar-thumb
-		{
-			border-radius: 10px;
-			
-			background-color: #FCBAD3;
-		}
-	
-	/*Scrollbar*/
+        /* width */
+        ::-webkit-scrollbar-track {
+
+            border-radius: 10px;
+            background-color: black;
+        }
+
+        ::-webkit-scrollbar {
+            width: 12px;
+            background-color: black;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+
+            background-color: #FCBAD3;
+        }
+
+        /*Scrollbar*/
     </style>
 
 </head>
 
 <body>
-    
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top" style="background-color:rgba(0,0,0,.8) !important">
-        <div id="nav_desktop">
-            <a class="navbar-brand" href="index.html">
-                <img class="logo" src="images/aaron_logo.png" alt="logo">
-            </a>
-            <a class="navbar-brand " href="index.html">Aaron Hsu</a>
-        </div>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse text-center" id="collapsibleNavbar">
-            <ul class="navbar-nav text-center" style="margin:0 auto;">
-                <li class="nav-item">
-                    <a class="nav-link " href="about.html">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="poct.html">Project:POCT</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link  active" href="lh.html">Project:LH</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="sideprojects.html">Side Projects</a>
-                </li>
-            </ul>
-            <ul class="navbar-nav" >
-					<li class="nav-item" style="border-bottom:1px solid grey;">
-							<a class="nav-link" href="lh_cht.html">漢</a>
-					</li>
-			</ul>
-        </div>
-    </nav>
+    <script src="scripts/nav-en.js"></script>
+    <script>
+        $("#language").attr("href", "lh_cht.html");
+        $('#menu-3').addClass('active animated fadeInDown');
+    </script>
     <a href="lh.html"><img class="img-fluid" src="images/home/eveline_banner.jpg"></a>
     <div class="container-fluid" style="margin-top:56px;">
         <div class="row">
             <div class="col-12">
-                    <h1 class="text-left title">Luteinizing Hormone
-                            Test Project</h1>
+                <h1 class="text-left title">Luteinizing Hormone
+                    Test Project</h1>
             </div>
             <div class="col-sm-5">
                 <p class="text-left">
@@ -124,7 +93,8 @@
                 <h5>Achievements</h5>
                 <ul>
 
-                    <li>- Patent:Method for improving usability and accuracy for physiological measurement<a href="https://patents.google.com/patent/WO2018166533A1/" target="_blank">(WO2018166533A1
+                    <li>- Patent:Method for improving usability and accuracy for physiological measurement<a href="https://patents.google.com/patent/WO2018166533A1/"
+                            target="_blank">(WO2018166533A1
                             /
                             TW201840293A)</a></li><br>
                     <li>- Awards : <a href="http://awardsarchive.babytechsummit.com/bestof2018/eveline-smart-fertility-system/"
@@ -154,7 +124,7 @@
         </div>
         <div class="col-sm-4">
             <h1>User's Journey</h1>
-            <p >
+            <p>
                 A woman who prepares for pregnancy will try kinds of method. One of that is testing the LH level in
                 the urine. In this project, the users will buy the test strip from the pharmacies in the first
                 step. Before test the urine, they should download the application then input the period data to
@@ -263,12 +233,12 @@
     <div class="row">
         <div class="col-sm-6 ">
             <img class="lazy img-fluid" data-original="images/lh/lh_usability_test.png">
-            
+
         </div>
         <div class="col-sm-6 ">
-               
-                <img class="lazy img-fluid" data-original="images/lh/lh_test_matrix.png">
-            </div>
+
+            <img class="lazy img-fluid" data-original="images/lh/lh_test_matrix.png">
+        </div>
         <div class="col-sm-12 col-12">
             <h3>Usability Test</h3>
             <p>Before releasing the formal version, I will find some test in our organization.<br>
@@ -389,7 +359,7 @@
                 start date/ Pink: test result/ Hollow purple: upcoming perid day.</li>
         </ul>
     </div>
-    <div class="row" >
+    <div class="row">
         <div class="col-sm-12 " id="ui3">
             <h1>Web Platform</h1>
             <p>

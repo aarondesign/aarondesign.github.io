@@ -13,7 +13,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131020506-1"></script>
@@ -44,90 +44,63 @@
         });
     </script-->
     <style>
-            /* scrollbar*/
-            /* width */
-            ::-webkit-scrollbar-track
-            {
-                
-                border-radius: 10px;
-                background-color: black;
-            }
-            
-            ::-webkit-scrollbar
-            {
-                width: 12px;
-                background-color:black;
-            }
-            
-            ::-webkit-scrollbar-thumb
-            {
-                border-radius: 10px;
-                
-                background-color: #4390FC;
-            }
-        
+        /* scrollbar*/
+        /* width */
+        ::-webkit-scrollbar-track {
+
+            border-radius: 10px;
+            background-color: black;
+        }
+
+        ::-webkit-scrollbar {
+            width: 12px;
+            background-color: black;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+
+            background-color: #4390FC;
+        }
+
         /*Scrollbar*/
-        </style>
+    </style>
 
 </head>
 
 <body>
-   
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top" style="background-color:rgba(0,0,0,.8) !important">
-        <div id="nav_desktop">
-            <a class="navbar-brand" href="cht.html">
-                <img class="logo" src="images/aaron_logo.png" alt="logo">
-            </a>
-            <a class="navbar-brand " href="cht.html">Aaron Hsu</a>
-        </div>
+    <script src="scripts/nav-cht.js"></script>
+    <script>
+            $(document).ready(function () {
+                $('#menu-2').addClass('active animated fadeInDown' );
+                $("#language").attr("href", "poct.html");
+            });
+           
+        </script>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse text-center" id="collapsibleNavbar">
-            <ul class="navbar-nav text-center" style="margin:0 auto;">
-                    <li class="nav-item">
-							<a class="nav-link" href="about_cht.html">關於我</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link  active " href="poct.html"><b>定點照護血液檢驗系統</b></a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link  " href="lh_cht.html">女性黃體檢測系統</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="sideprojects_cht.html">其他小專案</a>
-						</li>
-            </ul>
-            <ul class="navbar-nav" >
-					<li class="nav-item" style="border-bottom:1px solid grey;">
-							<a class="nav-link" href="poct.html">En</a>
-					</li>
-			</ul>
-        </div>
-    </nav>
+
     <img class="lazy img-fluid " data-original="images/home/POCT_banner.jpg">
     <div class="container-fluid" style="margin-top:56px;">
-           
+
         <div class="row">
             <div class="col-sm-12">
-                    
-                
+
+
             </div>
             <div class="col-sm-6">
                 <img class="lazy img-fluid " data-original="images/poct/poct_intro.png">
             </div>
             <div class="col-sm-6">
-                    <h1 class="text-left title">定點照護血液檢驗系統 / Point of Care Test
-                        </h1>
+                <h1 class="text-left title">定點照護血液檢驗系統 / Point of Care Test
+                </h1>
                 <p class="text-left">
 
-                        定點照護血液檢驗系統 / Point of Care Test(下稱POCT)，整個專案在用戶端包含了一個手持式裝置以及一個網頁平台。這產品的目標
-                        在提供小型醫療院所或是藥局，即時為客戶量測血液中的脂值( Lipid，包含膽固醇及三酸甘油酯)以及糖化血色素( HbA1c )的數值，免去客戶來去
-                        往來醫院的舟車勞頓以及等候報告出爐的時間。這專案我負則的主要工作為，根據需求規劃介面的架構流程以及視覺設計。<br><br>
-                        除了設計外，我也前往醫院參與使用者測試與訪談，並且分析內容，進行產品改善。
+                    定點照護血液檢驗系統 / Point of Care Test(下稱POCT)，整個專案在用戶端包含了一個手持式裝置以及一個網頁平台。這產品的目標
+                    在提供小型醫療院所或是藥局，即時為客戶量測血液中的脂值( Lipid，包含膽固醇及三酸甘油酯)以及糖化血色素( HbA1c )的數值，免去客戶來去
+                    往來醫院的舟車勞頓以及等候報告出爐的時間。這專案我負則的主要工作為，根據需求規劃介面的架構流程以及視覺設計。<br><br>
+                    除了設計外，我也前往醫院參與使用者測試與訪談，並且分析內容，進行產品改善。
 
-                        
+
                 </p>
                 <h5>我所負責的項目：</h5>
                 <ul>
@@ -138,7 +111,8 @@
         </div>
         <div class="row" style="background-color:#4390FC">
             <div class="col-sm-12">
-                <h3 class="text-center" style="color:white"><i>要有好的產品輸出首先要有好的需求輸入，在專案前期如能做更詳細的市場及用戶研究，可以減少產品開發及上市後的風險。</i> </h3>
+                <h3 class="text-center" style="color:white"><i>要有好的產品輸出首先要有好的需求輸入，在專案前期如能做更詳細的市場及用戶研究，可以減少產品開發及上市後的風險。</i>
+                </h3>
             </div>
         </div>
         <div class="row" style="background-color:whitesmoke;padding-top:24px;">
@@ -146,11 +120,13 @@
                 <img class="lazy img-fluid" data-original="images/poct/poct_jounery.png">
             </div>
             <div class="col-sm-4">
-                <h1 >使用者旅程</h1><h5>(藥師/護理人員及客戶）</h5><br>
+                <h1>使用者旅程</h1>
+                <h5>(藥師/護理人員及客戶）</h5><br>
                 <p style="background-color: white;padding:8px;border-bottom:4px solid #4a90e2">
-                    
+
                     在開始動手設計前，首先要了解這項產品是被誰使用(Who/How)，以及是在是在怎樣的情況下(When/Where)，並且了解這樣的產品對於使用者帶來的價值為何(Jobs)。
-                    在這項產品中，地方的藥局或診所會購買 POCT 等待用戶上門，幫用戶量測他們的他們的血液中的指數，包含膽固醇/三酸甘油酯以及糖化血色數)。當量測的結果出來後，藥師可以根據客戶的健康狀況，建議相對的營養品。
+                    在這項產品中，地方的藥局或診所會購買 POCT
+                    等待用戶上門，幫用戶量測他們的他們的血液中的指數，包含膽固醇/三酸甘油酯以及糖化血色數)。當量測的結果出來後，藥師可以根據客戶的健康狀況，建議相對的營養品。
                     並且對於亞健康的族群，藥師可以根據他們的資料邀請用戶再度前來追蹤狀況，強化藥局/診所與客戶間的黏著度。
 
                 </p>
@@ -185,14 +161,14 @@
             </div>
             <div class="col-sm-12">
                 <h3>設計概念</h3>
-                <p >
+                <p>
                     在我開始動手設計前，我會去收集資料分析這個產品的介面，由誰並且在何種環境下操作的。這個產品雖然是手持的裝置，
                     然而主要的使用情境是放置於桌面上，距離使用者的眼睛約為1到1.5公尺(推估桌子的高度在70-110cm之間)，因此在字型與按鈕需要較行動裝置大，
                     例如在按鈕的標籤字體就選用24dp。
                     <br><br>
                     在顏色的挑選上，文字與背景採用高對比的黑色與白色，方便醫護人員辨識。而在主色的挑選上避免使用紅黃綠，為了避免誤解為正常或危險。
                     最後挑選了亮藍色作為主色。
-                    
+
                 </p>
 
             </div>
@@ -207,10 +183,10 @@
             </div>
             <div class="col-sm-12">
                 <h3>易用性測試</h3>
-                <p >
-                    
+                <p>
+
                     在產品開發的階段，我前往醫院參與了生化實驗，並順便觀察與訪談使用者。在醫院的實驗，我們邀請使用者自行在指尖札針，接著用毛細管採血並滴在試片上，並操作機器量測出值。
-                    在他操作的過程中，我在旁邊觀察他們的操作行為，並於操作結束後針對剛剛觀察到的現象，訪問使用者為何如何操作，遇到的問題為何。在最後請他們填寫易用性量表（ SUS / 
+                    在他操作的過程中，我在旁邊觀察他們的操作行為，並於操作結束後針對剛剛觀察到的現象，訪問使用者為何如何操作，遇到的問題為何。在最後請他們填寫易用性量表（ SUS /
                     System Usability Scale )。<br><br>
                     易用性量表分析的結果，分數大約落在70分上下，算是個及格的易用性。然而實際上觀察的現象其實是，如果要讓使用者自行一個人操作此機器其實是有些技術上的難度。
                     還是需要由專業的人，幫忙採血與量測。
@@ -224,7 +200,7 @@
             <div class="col-sm-12">
                 <h3>UI 設計</h3>
                 <p> 包含初始化設定流程的畫面、首頁、量測畫面、關機、充電中畫面等等。詳細的流程可以參考以下的動畫⬇️。
-                 </p>
+                </p>
                 <img class="lazy img-fluid" style="padding-bottom:8px" data-original="images/poct/poct_ui_system.png">
                 <div>
                     <div style="width:50%;float: left;position: relative;">
@@ -315,7 +291,7 @@
         <div class="row">
             <h1 class="mx-auto d-block title">網頁平台設計</h1>
             <p class="text-center">
-                
+
                 客戶端的網頁平台，用來讓護理人員觀看客戶的量測紀錄，查詢客戶基本資料之用。當量測完成後，在手持裝置的量測結果會透過網路同步到後台網頁。
                 ，護理人員會透過網頁平台來展示給客戶當次與歷史的量測資訊，並提供建議的保健資訊。
             </p>
@@ -325,7 +301,7 @@
             <div class="col-sm-6 col-12" style="margin-top:24px">
                 <h3>UI 流程</h3>
                 <p>
-                     這張流程圖顯示從登入頁面到用戶個人資訊的步驟。對我來說流程圖是一個整理思緒，以及與工程人員溝通建立共識的工具。
+                    這張流程圖顯示從登入頁面到用戶個人資訊的步驟。對我來說流程圖是一個整理思緒，以及與工程人員溝通建立共識的工具。
                 </p>
             </div>
         </div>
@@ -369,7 +345,7 @@
                 了解誰會在怎樣的情境下使用這項產品或服務，是身為產品開發相關的人都應該要了解的。幸運的是，在開發這項產品的過程中有機會前往醫院參與一整天的實驗，
                 近距離的觀察與訪談使用者，了解他們的想法跟他們在操作上的行為，我得到了ㄧ些回饋，並且改善了部分的設計。作為一個UI設計師，要考慮的點除了螢幕內的事，
                 更要去了解螢幕以外的世界。
-                </p><br>
+            </p><br>
             <p>3️⃣ <span style="color:black">跟工程師當好朋友。</span><br>
                 在設計的過程與開發前，一定要與密切的與工程師討論細節，而不是設計直接交付開發。在工程上會有技術上的限制以及時間上的壓力，
                 需要與工程單位以及產品經理詳細的討論細節，減少設計交付後來回修改的時間。
@@ -391,7 +367,7 @@
                 <a href="lh_cht.html">
                     <div class="text-center next-project" style="float:right">
                         <span style="float:right;padding-right:16px;"><img src="images/arrow_right.png" style="height:24px;width:24px;"></span>黃體素檢測專案
-                        
+
                     </div>
                 </a>
             </div>

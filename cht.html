@@ -11,9 +11,10 @@
     <link rel="shortcut icon" type="image/png" href="images/favicon.ico" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-
+    <script src="scripts/load-effect.js"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131020506-1"></script>
@@ -75,28 +76,27 @@
             });
         });
     </script>
+   
 
 
 </head>
 
-<body style="background-color:black">
+<body style="background-color:whitesmoke" class="t-dark">
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K88K22L" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
     <div class="col-sm-4 home-nav-left">
         <div class="row" style="height:70vh;  ">
-            <div class="col-12 text-center" style="z-index:999;color:white">
-                <h3 class="text-left ">嗨，您好啊!</h3>
-                <h1 class="text-left "> 我是 許智榕</h1>
-                <h5 class="text-left" style="font-weight:100;line-height:32px  ">
+            <div class="col-12 text-center" style="z-index:999;">
+                <h1 class="text-left "> 我是，許智榕</h1>
+                <p class="text-left" style="font-weight:100;line-height:32px  ">
                     我是一個數位產品的設計師，曾參與多種平台的軟體設計，包括移動裝置( iOS/Android
-                    )，Web系統/Windows系統。參與的設計流程包含前期的訪談，中期的UI設計、低高擬真的原型，及開發前後的易用性測試。</h5><br>
+                    )，Web系統/Windows系統。參與的設計流程包含前期的訪談，中期的UI設計、低高擬真的原型，及開發前後的易用性測試。</p><br>
                 <div class="text-left">
-                    <a href="about_cht.html" style="color:white"><button class="btn btn-dark center">進一步了解
+                    <a href="about_cht.html"><button class="btn btn-dark center">進一步了解
                         </button></a>
-                    <a href="files/aaron_resume.pdf" style="color:white;margin-left:12px ;" target="_blank"><button
-                            class="btn btn-dark center">下載簡歷
+                    <a href="files/aaron_resume.pdf" style="margin-left:12px ;" target="_blank"><button class="btn btn-dark center">下載簡歷
                         </button></a>
                 </div><br>
 
@@ -107,10 +107,10 @@
     <div class="col-sm-8" style="float:right;">
         <div class="row">
             <div class="col-sm-12">
-                <a href="poct_cht.html"><img class="img-fluid" src="images/home/POCT_banner.jpg"></a>
+                <a href="poct_cht.html"><img class="img-fluid border-radius-16 shadow" src="images/home/POCT_banner.jpg"></a>
             </div>
             <div class="col-sm-12">
-                <h1 class=" t-white"> 定點照護檢驗 / Point of Care System(POCT)</h1>
+                <h1 class=" t-dark"> 定點照護檢驗 / Point of Care System(POCT)</h1>
                 <p class="t-grey">這個產品是提供給小型診所或是藥局，幫客戶做快速血液檢測的工具。我在這項專案內負責的項目包含手持裝置的UI、客戶端的管理平台Web、公司內部的銷售管理平台Web。除了設計外，也曾到醫院參與訪談以及觀察使用者操作，根據分析結果做產品的改善。.</p>
                 <hr>
                 <a href="poct_cht.html" style="color:white;position: relative;bottom:0"><button class="btn btn-dark center">了解更多
@@ -119,12 +119,27 @@
 
 
         </div>
+        <!--
         <div class="row">
             <div class="col-sm-12">
-                <a href="lh_cht.html"><img class="img-fluid" src="images/home/eveline_banner.jpg"></a>
+                <a href="lh-2_cht.html"><img class="img-fluid loadEffect border-radius-16 shadow" src="images/home/lh-v2.png"></a>
             </div>
+            <div class="col-sm-12 loadEffect">
+                <h1 class="t-dark">婦女黃體素檢測系統 Luteinizing Hormone (LH) <span>Re-designed</span></h1>
+                <p class="t-grey">改善首次使用以及註冊的流程、整理UI保持一至性、調整Layout以及增加輔助性說明，希望藉此改善App的使用體驗並提升產品滿意度。</p>
+                <hr>
+                <a href="lh-2_cht.html" style="color:white;position: relative;bottom:0"><button class="btn btn-dark center">了解更多
+                    </button></a>
+
+            </div>
+        
+        </div>-->
+        <div class="row">
             <div class="col-sm-12">
-                <h1 class="t-white">婦女黃體素檢測系統 Luteinizing Hormone (LH) <span>V.1</span></h1>
+                <a href="lh_cht.html"><img class="img-fluid loadEffect border-radius-16 shadow" src="images/home/eveline_banner.jpg"></a>
+            </div>
+            <div class="col-sm-12 loadEffect">
+                <h1 class="t-dark">婦女黃體素檢測系統 Luteinizing Hormone (LH) <span>V.1</span></h1>
                 <p class="t-grey">透過手機的前鏡頭檢測黃體素檢測試片，減少使用者判讀上曖昧不明之處，用以幫助使用者找出最佳受孕期。我在此項專案負責的是iOS/android的介面設計，以及數據分析後台網頁的設計。除了設計外，我也負責規劃訪談，以及做易用性測試，根據結果進行產品的改善。</p>
                 <hr>
                 <a href="lh_cht.html" style="color:white;position: relative;bottom:0"><button class="btn btn-dark center">了解更多
@@ -134,11 +149,11 @@
 
         </div>
         <div class="row">
-            <div class="col-sm-12">
-                <a href="sideprojects_cht.html"><img class="img-fluid" src="images/home/sideprojects_banner.jpg"></a>
+            <div class="col-sm-12 loadEffect">
+                <a href="sideprojects_cht.html"><img class="img-fluid loadEffect border-radius-16 shadow" src="images/home/sideprojects_banner.jpg"></a>
             </div>
             <div class="col-sm-12">
-                <h1 class="t-white">Sideprojects</h1>
+                <h1 class="t-dark">Sideprojects</h1>
                 <p class="t-grey">在工作之外學習新的工具與技術，包含Framer/Svg Animation/AE/jQuery，用以提升自我能力。 </p>
                 <hr>
                 <a href="sideprojects_cht.html" style="color:white;"><button class="btn btn-dark center"> 了解更多
@@ -146,14 +161,10 @@
             </div>
 
         </div>
-        <footer style="display:none">
-
-                <img src="images/aaron_logo.png" alt="logo" style="width:24px;opacity:.5;"> aaron.zl.hsu@gmail.com
-            </footer>
-
-
+       
     </div>
-    </div>
+    
+
     <div class="container-fluid">
 
 
@@ -164,7 +175,9 @@
                         id="close-msg"></div>
             </div>
         </div>
-        
+
+
+
 </body>
 
 </html>

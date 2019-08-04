@@ -29,22 +29,26 @@
 				$("#content").append(" <div class='dialog-list'><div class='dialog dialog-right'>Tell me about your job.</div></div><br>");
 				$("#content").append(" <div id='1111' class='dialog-list'><div class='dialog dialog-left'>Have 7 years of user interface design experience and highly skilled in web and mobile UX, interaction design, and prototyping, <b><a href='#work'>Click</a> to learn more.</b> </div></div><br>");
 				$("#content").scrollTop(100000);
+				$(this).fadeOut();
 			});
 			$("#question2").click(function () {
 				$("#content").append(" <div class='dialog-list'><div class='dialog dialog-right'>What kinds of skills do you have?</div></div><br>");
 				$("#content").append(" <div class='dialog-list'><div class='dialog dialog-left'>I like to make prototypes to validate my ideas, and I learn essential<b> code skill to make prototypes </b>more interested, <a href='#skills'>click</a> to know more.</div></div><br>");
 				$("#content").scrollTop(100000);
+				$(this).fadeOut();
 			});
 			$("#question3").click(function () {
 				$("#content").append(" <div class='dialog-list'><div class='dialog dialog-right'>How do you improve yourself ?</div></div><br>");
 				$("#content").append(" <div class='dialog-list'><div class='dialog dialog-left'>In my spare time, I will go to <b>meetups or attend workshops</b> (ex: HPX, IXDA) to learn more about new things and share that with my colleagues. In the first half of 2018, I join H.Sptrum, an incubator program to learn about bio start-ups knowledge.  </div></div><br>");
 				$("#content").scrollTop(100000);
+				$(this).fadeOut();
 			});
 			$("#question4").click(function () {
 				$("#content").append(" <div class='dialog-list'><div class='dialog dialog-right'>How to contact with you?</div></div><br>");
 				$("#content").append(" <div class='dialog-list'><div class='dialog dialog-left'> My email address is : <a  class='mailtoui' href='mailto:aaron.zl.hsu@gmail.com' >aaron.zl.hsu@gmail.com</a>, please feel free to contact with me.</a> </div></div><br>");
 				$("#content").append(" <div class='dialog-list'><div class='dialog dialog-left'>You also could download my <a href='files/aaron_resume.pdf' target='_blank'>resume.</a> </div></div><br>");
 				$("#content").scrollTop(100000);
+				$(this).fadeOut();
 			});
 		});
 	</script>
@@ -60,48 +64,17 @@
 			}, 1000);
 		});
 	</script>
-	<style>
 	
-	</style>
 </head>
 
-<body style="background:black">
-	<div style="position:fixed;width:100%;height:56px;background:rgba(0,0,0,.8);top:0;z-index:999;text-align: center;">
-		<p style="line-height:56px !important;color:white !important">Aaron Hsu</p>
-	</div>
-	<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top" style="background-color:black !important">
-		<div id="nav_desktop">
-			<a class="navbar-brand" href="index.html">
-				<img class="logo" src="images/aaron_logo.png" alt="logo">
-			</a>
-			<a class="navbar-brand " href="index.html">Aaron Hsu</a>
-		</div>
-
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse text-center" id="collapsibleNavbar">
-			<ul class="navbar-nav text-center" style="margin:0 auto;">
-				<li class="nav-item">
-					<a class="nav-link active" href="about.html">About</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="poct.html">Project:POCT</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="lh.html">Project:LH</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="sideprojects.html">Side Projects</a>
-				</li>
-			</ul>
-			<ul class="navbar-nav" >
-					<li class="nav-item" style="border-bottom:1px solid grey;">
-							<a class="nav-link" href="about_cht.html">漢</a>
-					</li>
-			</ul>
-		</div>
-	</nav>
+<body >
+	<script src="scripts/nav-en.js"></script>
+	<script>
+			$("#language").attr("href", "about_cht.html");
+			$('#menu-1').addClass('active animated fadeInDown');
+		</script>
+ 
+	
 	<div class="container-fluid">
 		<div class="row align-middle ">
 			<div class="col-sm-4 align-middle">
@@ -110,7 +83,7 @@
 			<div class="col-sm-8 ">
 				<br>
 				<div id="about-desktop">
-					<div class="dialog-content" id="content" style="background-color:#222">
+					<div class="dialog-content" id="content" style="background-color:whitesmoke">
 
 						<div id="welcome" class='dialog-list'>
 							<div class='dialog dialog-left'>Good day, I'm <b>Aaron</b>, a UI designer. Nice to meet you, shall we talk?</div>
@@ -161,7 +134,7 @@
 		</div>
 
 		<div class="row">
-			<h2 style="margin:0 auto;color:white" id="work">👨‍💻 Work</h2>
+			<h2 style="margin:0 auto;" id="work">👨‍💻 Work</h2>
 			<div class="col-sm-12" style="padding-left:0;">
 
 			</div>
@@ -174,8 +147,8 @@
 						<li class="list-year">Oct. 2016 - Present</li>
 						<hr>
 						<li>
-							<h6><a href="poct.html" target="_blank">Point of Care Test Project<a>
-										<h6>
+								<a href="poct.html"><h6>Point of Care Test Project
+								</h6></a>
 						</li>
 						<li class="list-item">- Design Mobile Device User Interface ( Android )</li>
 						<li class="list-item">- Design Web System User Interface</li>
@@ -185,8 +158,8 @@
 					</ul><br>
 					<ul>
 						<li>
-							<h6><a href="lh.html">Women Fertility (LH) Test Project<a>
-										<h6>
+								<a href="lh.html"><h6>Women Fertility (LH) Test Project
+								</h6></a>
 						</li>
 						<li class="list-item">- Mobile Device User Interface ( iOS / Android )</li>
 						<li class="list-item">- Web System Interface</li>
@@ -197,6 +170,14 @@
 						<li>- Awards : <a href="http://awardsarchive.babytechsummit.com/bestof2018/eveline-smart-fertility-system/"
 							 target="_blank">CES Baby Tech 2018</a>, <a href="https://www.g-mark.org/award/describe/44849" target="_blank">G-Mark
 								2017</a></li>
+					</ul>
+					<ul style=" margin: 0;
+                    padding: 4px;
+                    overflow: hidden;">
+						<li style="float: left;margin-right: 8px"><a href="https://apps.apple.com/tw/app/%E6%8E%92%E5%8D%B5%E9%80%B1%E6%9C%9F%E6%AA%A2%E6%B8%AC%E8%A8%88%E7%AE%97-eveline%E4%BC%8A%E5%BF%85%E6%B8%AC/id1234496685"
+							 target="_blank"> <img src="images/lh-2/apple-store-badge.png"> </a></li>
+						<li style="float: left;"><a href="https://play.google.com/store/apps/details?id=com.ixensor.lh&hl=zh_TW" target="_blank"><img
+								 src="images/lh-2/play-store-badge.png"></a></li><br><br>
 					</ul><br>
 					<ul>
 						<li>
@@ -242,7 +223,7 @@
 		<br>
 		<div class="row" >
 			<div class="col-sm-12">
-				<h2 class="text-center" style="color:white">📖 Education</h2>
+				<h2 class="text-center">📖 Education</h2>
 				<div class="card2">
 					<ul>
 						<li>
@@ -286,7 +267,7 @@
 		<!--Edu end-->
 		<br>
 		<div class="row">
-			<h2 style="margin:0 auto;color:white" id="skills">🤹 Skills</h2>
+			<h2 style="margin:0 auto;" id="skills">🤹 Skills</h2>
 			<div class="col-sm-12">
 				<div class="card2">
 					<ul>
@@ -303,7 +284,7 @@
 		<!--skill-->
 		<br>
 		<div class="row">
-			<h2 style="margin:0 auto;color:white">⚒️ Tools</h2>
+			<h2 style="margin:0 auto;">⚒️ Tools</h2>
 			<div class="col-sm-12">
 				<div class="card2">
 					<ul>
@@ -322,25 +303,25 @@
 		</div>
 		<!--tools-->
 	</div>
-	<div>
-		<div class="row" style="background-color:black;">
+	<div class="row">
 			<div class="col-6 ">
 				<a href="index.html">
 					<div class="text-center previous-project">
-						<span style="float:left;padding-left:16px;color:white"><img src="images/arrow_white_l.svg" style="height:24px;width:24px;"></span>Home
+						<span style="float:left;padding-left:16px;"><img src="images/arrow_left.png" style="height:24px;width:24px;"></span>
+						Home
 					</div>
 				</a>
 			</div>
 			<div class="col-6">
 				<a href="poct.html">
-					<div class="text-center next-project" style="float:right;color:white">
-						<span style="float:right;padding-right:16px;"><img src="images/arrow_white_r.svg" style="height:24px;width:24px;"></span>Project
-						POCT
+					<div class="text-center next-project" style="float:right">
+						<span style="float:right;padding-right:16px;"><img src="images/arrow_right.png" style="height:24px;width:24px;"></span>POCT
+	
 					</div>
 				</a>
 			</div>
 		</div>
-	</div>
+	
 	<footer>
 		<img src="images/aaron_logo.png" alt="logo" style="width:24px;opacity:.5;"> aaron.zl.hsu@gmail.com
 	</footer>

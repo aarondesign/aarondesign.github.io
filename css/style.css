@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
-@import url('https://fonts.googleapis.com/css?family=PT+Serif');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,700,900|Noto+Serif+TC:400,500,600,700,900|Raleway:400,500,600,700,800,900|Roboto:400,500,700,700i,900&display=swap');
 	
 	:root {
 		--primary-color:#00bcd4;
@@ -18,7 +17,15 @@
 		position: fixed !important;
 		
 	}
+	.active{
+		font-weight: 600;
+		color:black;
+	}
+	.nav-link{
+		color:lightgrey;
+	}
 
+	
 	.logo{
 		width: 36px;
 		font-family:'PT Serif','Sans Serif';
@@ -45,51 +52,66 @@
 		padding:0;
 		margin-left:0px;
 	}
-	h1,h2,h3,h4,h5{
-		font-family: 'Source Sans Pro', 'Sans Serif';
+	h1,h2,h3,h4,h5,h6{
+		font-family: 'Raleway','Noto Serif TC', 'Sans Serif';
 		font-weight: 800;
 		margin-top: 16px;
 	}
 
 	h1{
-		font-weight:900;
+		font-weight:600;
 	}
 
 	h2{
-		font-weight:900;
+		font-weight:600;
 	}
 
-	p,ul,li{
-		font-family: 'Source Sans Pro',sans-Serif !important;
+	p,ul,li,a{
+		font-family: 'Roboto','Noto Sans TC',sans-Serif !important;
 		color:var(--grey-dark) !important;
 		font-size: 18px !important;
 		line-height: 30px !important;
 		font-weight:200;
 		margin-top:-4px;
 	}
+    .t-dark{
+		color:Black;
+	}
+
 	.t-white{
 		color:white;
 	}
 	.t-grey{
-		color:whitesmoke !important;
+		color:#29434e !important;
 	}
+
+	.border-radius-16{
+		border-radius: 16px;
+	}
+	
+	.shadow{
+		box-shadow: 0 0 10px 0  #546e7a; 
+	}
+
 	.row{
 		padding:96px 56px; 
 	}
-
+    .navbar-dark .navbar-toggler-icon {
+		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+	  }
 	/* scrollbar*/
 		/* width */
 		::-webkit-scrollbar-track
 		{
 			-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 			border-radius: 10px;
-			background-color: black;
+			background-color: white;
 		}
 		
 		::-webkit-scrollbar
 		{
 			width: 12px;
-			background-color:black;
+			background-color:white;
 		}
 		
 		::-webkit-scrollbar-thumb
@@ -488,15 +510,32 @@
 	}
   footer{
     height: 64px;
-    background-color: black;
-    color:rgba(255,255,255,.5);
+    
+    color:grey;
     text-align: center;
     line-height: 64px;
     font-weight: 100;
 
   }
 
+  .modal-full {
+    min-width: 100%;
+    margin: 0;
+}
+
+.modal-full .modal-content {
+    min-height: 100vh;
+}
+
 	@media screen and (max-width: 992px) {
+		.navbar-collapse ul {
+			top:25vh;
+			position: relative;
+			height: calc(100vh - 50px);
+			overflow-y: hidden;
+			z-index: 999;
+			
+		  }
 
 	  .home-nav-left{float: left;position: relative !important;}
 	
