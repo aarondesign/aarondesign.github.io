@@ -58,10 +58,18 @@
 		{
 			border-radius: 10px;
 			
-			background-color: #FCBAD3;
+			background-color: #19D2D2;
 		}
 	
 	/*Scrollbar*/
+    .palette{
+        height: 72px;
+        width:72px;
+        border-radius:36px;
+        position: relative;
+        display: inline-block;
+        margin:8px;
+    }
     </style>
 
 </head>
@@ -70,32 +78,32 @@
     <script src="scripts/nav-cht.js"></script>
     <script>
         $(document).ready(function () {
-            $('#menu-4').addClass('active animated fadeInDown' );
+            $('#menu-4').addClass('active animated fadeInDown');
         });
-       
+
     </script>
 
 
     <img class="lazy img-fluid " data-original="images/home/lh-v2.png">
     <div class="container-fluid" style="margin-top:56px;">
         <div class="row">
-            <div class="col-sm-6">
-                <h1 class="text-left title">女性黃體素檢測 App 再設計 - 實現版本</h1>
-                <p>舊版的App上線使用經過了兩年，根據這段期間內收集一些使用者數據、使用者訪談以及內外部的利害關係人回饋資訊，於是將整體的UI做個總整理改善使用經驗。</p>
+            <div class="col-12 ">
+                <h1>女性黃體素檢測 App 再設計 </h1>
+                <p>舊版的App上線使用經過了兩年，根據這段期間內收集一些使用者數據、<br>使用者訪談以及內外部的利害關係人回饋資訊，將 UI 的流程及整理改善使用經驗。</p>
             </div>
-            <div class="col-sm-6"><br>
-                <p><b>改版主要的目標為：</b></p>
+            <div class="col-sm-8 justify-content-center align-self-center">
+                <h5>改版主要的目標為：</h5>
                 <ol>
                     <li>首次使用與註冊流程的改善 - 降低使用者的進入門檻</li>
                     <li>重新建立 UI system - 確保使用上的ㄧ致性</li>
                     <li>調整 Layout - 重新編排資訊的呈現</li>
                     <li>增加輔助功能 - 幫助使用者了解產品</li>
                 </ol>
-                <p><b>伴隨改版完成的事項：</b></p>
+                <h5><b>伴隨改版完成的事項：</b></h5>
                 <ol>
-                    <li>產品介紹頁面的再設計</li>
+                    <li>產品介紹頁面的重新設計</li>
                 </ol><br>
-                <p><b>檔案下載</b></p>
+                <h5><b>檔案下載</b></h5>
                 <ul style=" margin: 0;
                     padding: 4px;
                     overflow: hidden;">
@@ -104,14 +112,25 @@
                     <li style="float: left;"><a href="https://play.google.com/store/apps/details?id=com.ixensor.lh&hl=zh_TW"
                             target="_blank"><img src="images/lh-2/play-store-badge.png"></a></li>
                 </ul>
+
+            </div>
+            <div class="col-sm-4">
+
+                <img class="img-fluid" src="images/lh-2/lh-2-hero.png" style=" display:block;
+                margin:auto;">
+
             </div>
         </div>
 
         <div class="row">
-            <div class="col-sm-4">
+            <div class="col-12 text-center">
                 <h1>流程</h1>
-                <h3>App流程概要</h3>
-                <p>App的流程主要項目：</p>
+                <hr>
+            </div>
+            <div class="col-sm-4">
+
+                <h3>流程概要</h3>
+                <p>App 的流程主要項目：</p>
                 <ol>
                     <li>首次使用 ( Onboarding )</li>
                     <li>首頁</li>
@@ -132,13 +151,13 @@
         </div>
 
         <!-- The Modal -->
-        <div class="modal" id="flow">
+        <div class="modal" id="flow" tabindex="-1">
             <div class="modal-dialog modal-full">
                 <div class="modal-content">
 
                     <!-- Modal Header -->
                     <div class="modal-header">
-                        <h4 class="modal-title">App 流程</h4>
+                        <h3 class="modal-title">App 流程</h3>
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
 
@@ -153,52 +172,233 @@
                 </div>
             </div>
         </div>
+
         <div class="row">
-            <div class="col-sm-6">
-                <img src="images/lh-2/flow-onboarding.jpg" class="img-fluid">
-            </div>
-            <div class="col-sm-6">
+            <div class="col-sm-12">
                 <h3>首次與註冊使用流程的改善</h3>
-                <p>減少使用者首次使用的門檻</p>
-                <br>
-                <h5>TL;DR</h5>
-                <p>上一個版本的首次使用 ( Onboarding ) 流程相當的繁瑣，包含住註冊、填寫經期資訊、個人基本資料。步驟之多，尤其當填寫完帳號之後需要離開App，打開信箱App查閱驗證碼，接著再回到App。
-                    這段過程需要花費許多時間，有些沒有耐性的使用者應該已經悻悻然的關掉App。
-                </p>
-                <h5>降低門檻</h5>
-                <p>首次使用只詢問兩項必要資訊：<b>週期天數</b>以及<b>上次經期的初始日</b>，這兩個資訊為系統計算受孕期的必要條件。<br>
-                    而註冊流程以及基本資料的填寫流程，將他置於使用者使用系統後，滿滿的引導使用者註冊並填寫基本資料
-                </p>
+                <hr>
             </div>
 
-        </div>
-    </div>
+            <div class="col-sm-6  justify-content-center align-self-center">
+                <h5>原流程問題</h5>
+                <p>上一個版本的首次使用 ( Onboarding ) 流程相當的繁瑣，包含 (1) 註冊、填寫 (2) 經期資訊、(3)
+                    個人基本資料。步驟之多，尤其當填寫完帳號之後需要離開App，打開信箱App查閱驗證碼，接著再回到App。
+                    這段過程需要花費許多時間，有些沒有耐性的使用者應該已經悻悻然的關掉App。
+                </p><br>
 
-    <div class="row">
-        <div class="col-6 ">
-            <a href="poct.html">
-                <div class="text-center previous-project">
-                    <span style="float:left;margin-left:16px;"><img src="images/arrow_left.png" style="height:24px;width:24px;"></span>Project
-                    POCT
-                </div>
-            </a>
-        </div>
-        <div class="col-6">
-            <a href="sideprojects.html">
-                <div class="text-center next-project" style="float:right">
-                    <span style="float:right;margin-right:16px;"><img src="images/arrow_right.png" style="height:24px;width:24px;"></span>Side
-                    Projects
-                </div>
-            </a>
-        </div>
-    </div>
+            </div>
+            <div class="col-sm-6">
 
-    <footer>
-        <img src="images/aaron_logo.png" alt="logo" style="width:24px;opacity:.5;"> aaron.zl.hsu@gmail.com
-    </footer>
+                <img height="400" src="images/lh-2/flow-onboarding-ex.png" style="display:block;
+                    margin:auto;">
+
+
+            </div>
+
+
+
+        </div>
+        <div class="row">
+            <div class="col-sm-6 ">
+                <h5>改善 - 降低門檻</h5>
+                <p>首次使用只詢問兩項必要資訊：<br><b>( 1 ) 週期天數</b>以及<b>( 2 ) 上次經期的初始日</b>，這兩個資訊為系統計算受孕期的必要條件。<br>
+                    而註冊流程以及基本資料的填寫流程則置於使用者使用系統後，根據脈絡引導使用者註及填寫基本資料。
+                </p>
+            </div>
+            <div class="col-sm-6">
+                <img src="images/lh-2/flow-onboarding.png" class="img-fluid">
+            </div><br>
+            <div class="col-sm-6">
+
+
+
+                <h5>Onboarding UI 畫面</h5>
+                <p>首次使用的畫面，只需要讓使用者填寫必要資訊。在正式進入到系統之前，規劃了一個歡迎頁面最為一個停頓點，讓使用者知道流程完成，順便告知使者下一次預訂量測的時間。</p>
+
+
+            </div>
+            <div class="col-sm-6">
+                <iframe src="https://player.vimeo.com/video/351851965" width="100%" height="400" frameborder="0" allow="autoplay; fullscreen"
+                    allowfullscreen style="padding:32px 0"></iframe>
+
+
+            </div>
+
+            <div class="col-sm-6">
+
+                <h5>註冊</h5>
+                <p>首次使用的畫面，只需要讓使用者填寫必要資訊。在正式進入到系統之前，規劃了一個歡迎頁面最為一個停頓點，讓使用者知道流程完成，順便告知使者下一次預訂量測的時間。</p>
+
+            </div>
+            <div class="col-sm-6">
+                <iframe src="https://player.vimeo.com/video/352006148" width="100%" height="400" frameborder="0" allow="autoplay; fullscreen"
+                    allowfullscreen style="padding:32px 0"></iframe>
+            </div>
+        </div>
+
+        
+        <div class="row">
+            <div class="col-sm-12">
+                <h3>改善請求手機權限的流程</h3><br>
+                <hr>
+            </div>
+
+            <div class="col-sm-6 justify-content-center align-self-center">
+                <h5>原流程問題</h5>
+                <p>原流程會在使用者開啟手機的第一個畫面，就向使用者要求所有必要的權限，包含 (1) 相機的權限、 (2) 通知權限、(3)
+                    相簿的存取權限。使用者在還不了解App所有功能時，一次性的的要求數個權限，會讓使用者摸不著頭緒。
+                </p><br>
+
+            </div>
+            <div class="col-sm-6">
+
+
+                <img src="images/lh-2/context-permission-ex.png" style="display:block;
+                        margin:auto;"
+                    height="400">
+
+
+            </div>
+            <div class="col-sm-6 justify-content-center align-self-center">
+                <h5>改善 - 在脈絡下要求權限</h5>
+                <p>
+                    <ol>
+                        <li>通知權限：在首次使用的歡迎頁，會出現請求通知的對話。</li>
+                        <li>相機權限：在第一次量測前，會出現請求相機權限的對話。</li>
+                        <li>相簿存取權限：在第一次使用分享功能時，會出現權限的請求對話。</li>
+                    </ol>
+                </p><br>
+
+            </div>
+            <div class="col-sm-6">
+                <img src="images/lh-2/context-permission.png" style="display:block;
+                    margin:auto;"
+                    height="400">
+
+            </div>
+            <div class="col-sm-6 justify-content-center align-self-center">
+
+            </div>
+            <div class="col-sm-6 justify-content-center align-self-center">
+                <div class="row">
+                    <div class="col-sm-4">
+
+                        <img src="images/lh-2/notification-permission.gif" class="img-fluid"><br>
+                        <p class="text-center">通知權限</p>
+
+
+                    </div>
+                    <div class="col-sm-4">
+
+                        <img src="images/lh-2/camera-permission.gif" class="img-fluid">
+                        <p class="text-center">通知權限</p>
+
+
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="images/lh-2/photo-permission.gif" class="img-fluid">
+                        <p class="text-center">通知權限</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <hr>
+
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center">UI system</h1>
+
+            </div>
+            <div class="col-sm-12">
+                <div class="row">
+                    <div class="col-sm-3 justify-content-center align-self-center">
+                        <h5>主要顏色</h5>
+
+                    </div>
+                    <div class="col-sm-3 text-center">
+                        <div class="palette" style="background-color:#19D2D2"></div>
+                        <p>#19D2D2</p>
+                        <h6>主要的 Button 色系</h6>
+                    </div>
+                    <div class="col-sm-3 text-center">
+                        <div class="palette" style="background-color:#FF80A4"></div>
+                        <p>#FF80A4</p>
+                        <h6>量測/排卵期</h6>
+                    </div>
+                    <div class="col-sm-3 text-center">
+                        <div class="palette" style="background-color:#CA61C3"></div>
+                        <p>#CA61C3</p>
+                        <h6>經期</h6>
+                    </div>
+                    <div class="col-sm-3 justify-content-center align-self-center">
+                        <h5>灰階顏色</h5>
+                        <p>用於文字及背景</p>
+
+                    </div>
+                    <div class="col-sm-9 text-center">
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="palette" style="background-color:#000"></div>
+                                <p>#000000</p>
+                            </div>
+                            <div class="col-3">
+                                <div class="palette" style="background-color:#515058"></div>
+                                <p>#515058</p>
+                            </div>
+                            <div class="col-3">
+                                <div class="palette" style="background-color:#B5B4C6"></div>
+                                <p>#B5B4C6</p>
+                            </div>
+                            <div class="col-3">
+                                <div class="palette" style="background-color:#ECEBF7"></div>
+                                <p>#ECEBF7</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6 ">
+                <a href="poct.html">
+                    <div class="text-center previous-project">
+                        <span style="float:left;margin-left:16px;"><img src="images/arrow_left.png" style="height:24px;width:24px;"></span>Project
+                        POCT
+                    </div>
+                </a>
+            </div>
+            <div class="col-6">
+                <a href="sideprojects.html">
+                    <div class="text-center next-project" style="float:right">
+                        <span style="float:right;margin-right:16px;"><img src="images/arrow_right.png" style="height:24px;width:24px;"></span>Side
+                        Projects
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+        <footer>
+            <img src="images/aaron_logo.png" alt="logo" style="width:24px;opacity:.5;"> aaron.zl.hsu@gmail.com
+        </footer>
 </body>
 
+
 </html>
+
+
+
+
+
+
 <script>
     $("img.lazy").lazyload({
         effect: "fadeIn"
