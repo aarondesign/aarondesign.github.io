@@ -26,6 +26,7 @@
 
         gtag('config', 'UA-131020506-1');
     </script>
+    
     <script>
 
         $(document).on('click', 'a[href^="#"]', function (event) {
@@ -59,7 +60,14 @@
 			border-radius: 10px;
 			
 			background-color: #19D2D2;
-		}
+        }
+        .icon{
+            transition: .2s ease-in-out;
+        }
+        .icon:hover{
+            transform: scale(1.5);
+            transition: .5s ease-in-out;
+        }
 	
 	/*Scrollbar*/
     .palette{
@@ -70,9 +78,17 @@
         display: inline-block;
         margin:8px;
     }
+    .card-shadow{
+        box-shadow: 0 0 8px 0 rgba(100,100,100,.4); 
+        margin: 8px;
+    }
+    .col-padding{
+        padding:64px 0;
+    }
     </style>
 
 </head>
+
 
 <body>
     <script src="scripts/nav-cht.js"></script>
@@ -121,7 +137,22 @@
 
             </div>
         </div>
-
+        <div class="row" style="background-color:#19D2D2">
+            <div class="col-sm-12">
+                <h3 class="text-center" style="color:white">
+                    改版不是只有變更外觀，需要呼應公司的產品策略並改變使用者行為。
+                </h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1>改版的使用者故事</h1>
+                <ol>
+                    <li>身為一個使用者，我希望能更快速地進入App的首頁，避免非必要的問答</li>
+                    <li>身為一個使用者，我希望系統能幫助我，一步的完成量測</li>
+                </ol>
+            </div>
+        </div>
         <div class="row">
             <div class="col-12 text-center">
                 <h1>流程</h1>
@@ -175,7 +206,7 @@
 
         <div class="row">
             <div class="col-sm-12">
-                <h3>首次與註冊使用流程的改善</h3>
+                <h3>首次使用與註冊使用流程的改善</h3>
                 <hr>
             </div>
 
@@ -199,45 +230,63 @@
 
         </div>
         <div class="row">
-            <div class="col-sm-6 ">
-                <h5>改善 - 降低門檻</h5>
+            <div class="col-sm-6 justify-content-center align-self-center">
+                <h5>改善 - 預先告知 App 需要搭配試片使用</h5>
+                <p>在首次使用告知使用者，需要先購買試片。並根據Sim卡內的資訊判斷使用者所在的地區，提供相對應的購買資訊連結。</p>
+            </div>
+            <div class="col-sm-6">
+                <img src="images/lh-2/shops-list.png" class="img-fluid"><br><br>
+            </div>
+            <div class="col-sm-6 justify-content-center align-self-center ">
+                <h5>改善 - 降低首次使用門檻</h5>
                 <p>首次使用只詢問兩項必要資訊：<br><b>( 1 ) 週期天數</b>以及<b>( 2 ) 上次經期的初始日</b>，這兩個資訊為系統計算受孕期的必要條件。<br>
                     而註冊流程以及基本資料的填寫流程則置於使用者使用系統後，根據脈絡引導使用者註及填寫基本資料。
                 </p>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-6 justify-content-center align-self-center">
                 <img src="images/lh-2/flow-onboarding.png" class="img-fluid">
             </div><br>
             <div class="col-sm-6">
 
 
 
-                <h5>Onboarding UI 畫面</h5>
+                <h5>首次使用畫面</h5>
                 <p>首次使用的畫面，只需要讓使用者填寫必要資訊。在正式進入到系統之前，規劃了一個歡迎頁面最為一個停頓點，讓使用者知道流程完成，順便告知使者下一次預訂量測的時間。</p>
 
 
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-6 justify-content-center align-self-center">
                 <iframe src="https://player.vimeo.com/video/351851965" width="100%" height="400" frameborder="0" allow="autoplay; fullscreen"
                     allowfullscreen style="padding:32px 0"></iframe>
 
 
             </div>
 
-            <div class="col-sm-6">
+            <div class="col-sm-6 justify-content-center align-self-center">
 
-                <h5>註冊</h5>
-                <p>首次使用的畫面，只需要讓使用者填寫必要資訊。在正式進入到系統之前，規劃了一個歡迎頁面最為一個停頓點，讓使用者知道流程完成，順便告知使者下一次預訂量測的時間。</p>
+                <h5>註冊 - 需要再註冊即可</h5>
+                <p>將註冊流程置於首次使用之後: (1) 在首頁的置頂處，放置一張卡片，提醒使用者註冊。 (2)在量測紀錄頁面。如果使用者想要觀看紀錄，需要先註冊才能檢視。</p>
+                <br>
+                <p>延後註冊的目的，希望使用者先行體驗整個 App的流程與服務，在合理的脈絡下要求使用者註冊。</p>
 
             </div>
             <div class="col-sm-6">
-                <iframe src="https://player.vimeo.com/video/352006148" width="100%" height="400" frameborder="0" allow="autoplay; fullscreen"
-                    allowfullscreen style="padding:32px 0"></iframe>
+                <div class="row">
+                    <div class="col-6 text-center">
+                        <img src="images/lh-2/signup.png" height="400" style="padding:32px 0">
+                        <p>註冊才可查看歷史紀錄。
+                        </p>
+                    </div>
+                    <div class="col-6"><iframe src="https://player.vimeo.com/video/352006148" width="100%" height="400"
+                            frameborder="0" allow="autoplay; fullscreen" allowfullscreen style="padding:32px 0"></iframe>
+                    </div>
+                </div>
             </div>
+
         </div>
 
-        
-        <div class="row">
+
+        <div class="row ">
             <div class="col-sm-12">
                 <h3>改善請求手機權限的流程</h3><br>
                 <hr>
@@ -291,15 +340,122 @@
                     <div class="col-sm-4">
 
                         <img src="images/lh-2/camera-permission.gif" class="img-fluid">
-                        <p class="text-center">通知權限</p>
+                        <p class="text-center">相機權限</p>
 
 
                     </div>
                     <div class="col-sm-4">
                         <img src="images/lh-2/photo-permission.gif" class="img-fluid">
-                        <p class="text-center">通知權限</p>
+                        <p class="text-center">相簿權限</p>
                     </div>
                 </div>
+            </div>
+
+
+        </div>
+        <div class="row bg-grey">
+            <div class="col-sm-12 col-padding">
+                <h3>改善量測流程</h3>
+                <p>量測為App的最核心體驗項目，改善量測的流程與量測結果的顯示，將有助於提升使用經驗，減少客訴。</p>
+                <hr>
+            </div>
+
+
+            <div class="col-sm-6 justify-content-center align-self-center col-padding">
+                <h5>改善 - 提醒量測</h5>
+                <p>
+                    在App的首頁設計一張屬於量測的卡片，讓使用者可以更明確的知道，距離量測日還有幾天以及量測日期。當到了該進行量測的當日，卡片會提醒使用者今天為量測日。
+                </p>
+                <img src="images/lh-2/measure/measur-card.gif" style="display:block;" height="100">
+                <ul>
+                    <li></li>
+                </ul>
+            </div>
+
+            <div class="col-sm-6 col-padding">
+
+            </div>
+
+            <div class="col-sm-12 col-padding">
+                <h5>改善 - 設定前鏡頭位置 ( Android )</h5>
+                <p style="width:50%">試片需要透過手機的前鏡頭進行分析，但是Android
+                    的機型眾多，其前鏡頭位置各有不同。無法透過程式一一設定。因此我們設計了一套方法邀請使用者，在量測前確認前鏡頭的位置。
+                </p>
+                <img src="images/lh-2/set-camera.png" class="img-fluid" data-toggle="modal" data-target="#set-camera">
+                <br><br><br>
+                <ol>
+                    <li>在首次進到首頁，會請求使用者設定相機。</li>
+                    <li>宣告設定的目的，以及說明不支援的機型</li>
+                    <li>請求使用者將手指至於前鏡頭上。<br>(上一個版本的說明圖，手指畫得跟真實比例太接近，在測試時發現有使用者將手指置於圖上。)</li>
+                    <li>請使用者將手指從前鏡頭的位置，向下滑入螢幕。</li>
+                    <li>左右移動拉桿，確定對準前鏡頭。</li>
+                    <li>確認畫面，跟使用傳達相機的設定已經完成，達到良好的溝通。</li>
+                </ol>
+
+            </div>
+            <div class="modal" id="set-camera" tabindex="-1">
+                <div class="modal-dialog modal-full">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h3 class="modal-title">App 流程</h3>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <img src="images/lh-2/set-camera.png" class="img-fluid">
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-padding">
+                <h5>改善 - 分段指引使用者放置試片 ( Android )</h5>
+                <p>放置試片是App功能中的關鍵體驗，但涉及到與硬體的互動，所以行為上又更為複雜些。</p>
+                <img src="images/lh-2/place-strip.png" class="img-fluid" data-toggle="modal" data-target="#place-strip">
+                <br><br><br>
+                <ol>
+                    <li>一步一步的引導使用者準備試片，放置到指定位置。</li>
+                    <li>在使用者測試時，發現使用者會將試片直接推到底，造成試片量測失敗。<br>
+                        這次改版，請使用者兩段式的將試片放置到指定位置，減少試片推到底的機會。
+                    </li>
+                    <li>增加觸覺 (Haptic )回饋。當使用者將試片推至正確位置，除了視覺上的回饋外，也加上了觸覺與聽覺的回饋。</li>
+                </ol>
+
+            </div>
+
+
+
+            <div class="col-sm-6 justify-content-center align-self-center col-padding">
+                <h5>改善 - 將當日結果顯示於首頁</h5>
+                <p>
+                    ❌ 在原先的流程上，當量測完畢，回到首頁後就像啥事都沒發生一樣，使用者需要到量測紀錄找尋今日的結果。<br><br>
+                    ✅ 流程修正後，當量測完成，回到首頁會顯示今日的結果，並顯示相關的說明文章，幫助使用者更了解量測所代表的意義為何。
+                </p>
+
+            </div>
+
+            <div class="col-sm-6 col-padding">
+                <div class="row">
+                    <div class="col-6">
+                        <img src="images/lh-2/measure/measure-flow.gif" style="display:block;
+                            margin:auto;"
+                            height="400">
+                    </div>
+                    <div class="col-6">
+                        <img src="images/lh-2/measure/measur-result.gif" style="display:block;
+                            margin:auto;"
+                            height="400">
+                    </div>
+                </div>
+
+
             </div>
 
 
@@ -313,31 +469,39 @@
             </div>
             <div class="col-sm-12">
                 <div class="row">
-                    <div class="col-sm-3 justify-content-center align-self-center">
+                    <div class="col-sm-3 justify-content-center align-self-center col-padding">
                         <h5>主要顏色</h5>
 
                     </div>
-                    <div class="col-sm-3 text-center">
-                        <div class="palette" style="background-color:#19D2D2"></div>
-                        <p>#19D2D2</p>
-                        <h6>主要的 Button 色系</h6>
+
+                    <div class="col-sm-9 text-center col-padding">
+                        <div class="row">
+                            <div class="col-sm-4 text-center">
+                                <div class="palette" style="background-color:#19D2D2"></div>
+                                <p>#19D2D2</p>
+                                <h6>主要的 Button 色系</h6>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="palette" style="background-color:#FF80A4"></div>
+                                <p>#FF80A4</p>
+                                <h6>量測/排卵期</h6>
+                            </div>
+                            <div class="col-sm-4 text-center">
+                                <div class="palette" style="background-color:#CA61C3"></div>
+                                <p>#CA61C3</p>
+                                <h6>經期</h6>
+                            </div>
+                        </div>
+
+
                     </div>
-                    <div class="col-sm-3 text-center">
-                        <div class="palette" style="background-color:#FF80A4"></div>
-                        <p>#FF80A4</p>
-                        <h6>量測/排卵期</h6>
-                    </div>
-                    <div class="col-sm-3 text-center">
-                        <div class="palette" style="background-color:#CA61C3"></div>
-                        <p>#CA61C3</p>
-                        <h6>經期</h6>
-                    </div>
-                    <div class="col-sm-3 justify-content-center align-self-center">
+
+                    <div class="col-sm-3 justify-content-center align-self-center col-padding">
                         <h5>灰階顏色</h5>
                         <p>用於文字及背景</p>
 
                     </div>
-                    <div class="col-sm-9 text-center">
+                    <div class="col-sm-9 text-center col-padding">
                         <div class="row">
                             <div class="col-3">
                                 <div class="palette" style="background-color:#000"></div>
@@ -358,6 +522,60 @@
                         </div>
 
                     </div>
+                    <div class="col-sm-4 justify-content-center align-self-center col-padding">
+                        <h5>Icons</h5>
+                        <p>Icon 設計完成後打包成一套iconfont，方便工程師引用，也無需根據大小及顏色切圖，減少維護成本。</p>
+
+                    </div>
+                    <div class="col-sm-8 text-left col-padding">
+                        <div style="margin:0 auto;position: relative;">
+                                <img src="images/lh-2/icon/icon-1.svg" height='36' style="margin:8px;" class="icon">
+                                <img src="images/lh-2/icon/icon-2.svg" height='36' style="margin:8px" class="icon">
+                                <img src="images/lh-2/icon/icon-3.svg" height='36' style="margin:8px" class="icon">
+                                <img src="images/lh-2/icon/icon-4.svg" height='36' style="margin:8px" class="icon">
+                                <img src="images/lh-2/icon/icon-5.svg" height='36' style="margin:8px" class="icon">
+                                <img src="images/lh-2/icon/icon-6.svg" height='36' style="margin:8px" class="icon">
+                                <img src="images/lh-2/icon/icon-7.svg" height='36' style="margin:8px" class="icon">
+                                <img src="images/lh-2/icon/icon-8.svg" height='36' style="margin:8px" class="icon">
+                                <img src="images/lh-2/icon/icon-9.svg" height='36' style="margin:8px" class="icon" >
+                                <img src="images/lh-2/icon/icon-10.svg" height='36' style="margin:8px" class="icon">
+                                <img src="images/lh-2/icon/icon-11.svg" height='36' style="margin:8px" class="icon">
+                                <img src="images/lh-2/icon/icon-12.svg" height='36' style="margin:8px" class="icon">
+                                <img src="images/lh-2/icon/icon-13.svg" height='36' style="margin:8px" class="icon">
+                                <img src="images/lh-2/icon/icon-14.svg" height='36' style="margin:8px" class="icon">
+                                <img src="images/lh-2/icon/icon-15.svg" height='36' style="margin:8px" class="icon">
+                                <img src="images/lh-2/icon/icon-16.svg" height='36' style="margin:8px" class="icon">
+                                <img src="images/lh-2/icon/icon-17.svg" height='36' style="margin:8px" class="icon">
+                                <img src="images/lh-2/icon/icon-18.svg" height='36 ' style="margin:8px" class="icon">
+                                <img src="images/lh-2/icon/icon-19.svg" height='36' style="margin:8px" class="icon">
+                                <img src="images/lh-2/icon/icon-20.svg" height='36' style="margin:8px" class="icon">
+                                <img src="images/lh-2/icon/icon-21.svg" height='36' style="margin:8px" class="icon">
+                                <img src="images/lh-2/icon/icon-22.svg" height='36' style="margin:8px" class="icon">
+                                <img src="images/lh-2/icon/icon-23.svg" height='36' style="margin:8px" class="icon">
+                                <img src="images/lh-2/icon/icon-24.svg" height='36' style="margin:8px" class="icon">
+                                <img src="images/lh-2/icon/icon-25.svg" height='36' style="margin:8px" class="icon">
+                        </div>
+                        
+
+                    </div><br><br>
+                    <div class="col-sm-3 justify-content-center align-self-center ">
+                        <h5>Cards</h5>
+                        <p>在首頁、量測紀錄、輔助說明的部分多以卡片呈現，除了方便使用者了解內容外，也便於程式開發與維護。</p>
+
+                    </div>
+                    <div class="col-sm-9 text-left">
+                        <div class="row" style="
+                        margin:auto;">
+                            <div class="col-sm-4  text-center"> <img src="images/lh-2/card/daily.png" class="card-shadow img-fluid">
+                            </div>
+                            <div class="col-sm-4 text-center"> <img src="images/lh-2/card/measure.png" class="card-shadow img-fluid"></div>
+                            <div class="col-sm-4 text-center"> <img src="images/lh-2/card/period.png" class="card-shadow img-fluid"></div>
+                            <div class="col-sm-4 text-center"><img src="images/lh-2/card/tips.png" class="card-shadow img-fluid"></div>
+                            <div class="col-sm-4 text-center"><img src="images/lh-2/card/peak.png" class="card-shadow img-fluid"></div>
+                            <div class="col-sm-4 text-center"><img src="images/lh-2/card/how-to.png" class="card-shadow img-fluid"></div>
+                        </div>
+                    </div>
+
                 </div>
 
 
@@ -365,13 +583,64 @@
 
             </div>
         </div>
+        <hr>
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center">Layout Redesigned</h1>
+            </div>
+            
+            <div class="col-sm-6 col-padding"> 
+                <img src="images/lh-2/layout.jpg" height="400">
+            </div>
+            <div class="col-sm-6 justify-content-center align-self-center col-padding" >
+                <h5>首頁</h5>
+                <p>首頁是乘載最重要資訊，以及與使用者互動最為頻繁的頁面。重新調整版面，為的是讓資訊的呈現更為明確，。</p>
+            </div>
+
+            <div class="col-sm-6 col-padding"> 
+                    <img src="images/lh-2/layout-records.jpg" height="400">
+                </div>
+                <div class="col-sm-6 justify-content-center align-self-center col-padding" >
+                    <h5>量測紀錄頁面</h5>
+                    <ul>
+                        <li>❌ 上一個版本的量測紀錄頁面的排序，僅為依照時間的排列，由新到舊。</li><br>
+                        <li>✅ 新版本的量測頁面，將同一週期內所量測的紀錄放置在同一張卡片內，並且標示週期的初始日期。
+                            如此整理，方便使用者閱讀以及比較過往的量測紀錄。
+                        </li>
+                        
+                    </ul>
+                </div>
+        </div>
+       
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center">增加的功能</h1>
+                評價、版本更新、使用條款更新
+
+            </div>
+        </div>
+        <div class="row" style="background-color:#19D2D2">
+            <div class="col-sm-12 card" style="margin:16px">
+                <h3>專案中獲的啟發</h3><br>
+
+                <p>1⃣<span style="color:black">知識就是力量。</span><br>
+
+                </p><br>
+                <p>2️⃣ <span style="color:black">為誰而設計。</span><br>
+
+                </p><br>
+                <p>3️⃣ <span style="color:black">跟工程師當好朋友。</span><br>
+
+                </p>
+            </div>
+        </div>
 
         <div class="row">
             <div class="col-6 ">
-                <a href="poct.html">
+                <a href="lh_cht.html">
                     <div class="text-center previous-project">
                         <span style="float:left;margin-left:16px;"><img src="images/arrow_left.png" style="height:24px;width:24px;"></span>Project
-                        POCT
+                        LH V.1
                     </div>
                 </a>
             </div>

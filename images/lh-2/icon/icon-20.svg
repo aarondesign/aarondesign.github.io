@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.3 (81716) - https://sketch.com -->
+    <title>icon-20</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M4.59373307,2.10940039 L5.70313346,0.445299804 C5.88859924,0.167101135 6.20083057,6.14196842e-17 6.53518376,0 L11.4648162,0 C11.7991694,-6.14196842e-17 12.1114008,0.167101135 12.2968665,0.445299804 L13.4062669,2.10940039 C13.7771985,2.66579773 14.4016611,3 15.0703675,3 L17,3 C17.5522847,3 18,3.44771525 18,4 L18,13 C18,13.5522847 17.5522847,14 17,14 L1,14 C0.44771525,14 6.76353751e-17,13.5522847 0,13 L0,4 C-6.76353751e-17,3.44771525 0.44771525,3 1,3 L2.92963248,3 C3.59833886,3 4.22280151,2.66579773 4.59373307,2.10940039 Z M9,12 C11.209139,12 13,10.209139 13,8 C13,5.790861 11.209139,4 9,4 C6.790861,4 5,5.790861 5,8 C5,10.209139 6.790861,12 9,12 Z M9,11 C7.34314575,11 6,9.65685425 6,8 C6,6.34314575 7.34314575,5 9,5 C10.6568542,5 12,6.34314575 12,8 C12,9.65685425 10.6568542,11 9,11 Z" id="path-1"></path>
+    </defs>
+    <g id="icon-20" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="color/black-copy" transform="translate(3.000000, 5.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Mask" fill="#000000" xlink:href="#path-1"></use>
+            <g id="color/black" mask="url(#mask-2)" fill="#000000">
+                <g transform="translate(-3.000000, -5.000000)" id="Rectangle">
+                    <rect x="0" y="0" width="24" height="24"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

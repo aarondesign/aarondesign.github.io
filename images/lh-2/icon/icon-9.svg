@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.3 (81716) - https://sketch.com -->
+    <title>icon-9</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M4,2 L3,2 C2.44771525,2 2,1.55228475 2,1 C2,0.44771525 2.44771525,3.65416674e-15 3,3.55271368e-15 L11,3.55271368e-15 C11.5522847,3.45126062e-15 12,0.44771525 12,1 C12,1.55228475 11.5522847,2 11,2 L10,2 L10,5 L10,6.48174794 C10,6.82163644 10.086621,7.1559178 10.2516854,7.45303381 L13.3492856,13.0287141 C13.5143501,13.3258301 13.6009711,13.6601115 13.6009711,14 C13.6009711,15.1045695 12.7055406,16 11.6009711,16 L2.39902892,16 C2.05914042,16 1.72485906,15.913379 1.42774306,15.7483146 C0.462175593,15.2118882 0.114287998,13.9942816 0.650714368,13.0287141 L3.74831455,7.45303381 C3.913379,7.1559178 4,6.82163644 4,6.48174794 L4,5 L4,2 Z" id="path-1"></path>
+    </defs>
+    <g id="icon-9" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="color/black" transform="translate(5.000000, 4.000000)">
+            <g>
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
+                <g mask="url(#mask-2)" fill="#000000" id="Rectangle">
+                    <g transform="translate(-5.000000, -4.000000)">
+                        <rect x="0" y="0" width="24" height="24"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <rect id="Rectangle" fill="#FFFFFF" transform="translate(13.500000, 8.000000) rotate(90.000000) translate(-13.500000, -8.000000) " x="11.5" y="7.5" width="4" height="1" rx="0.5"></rect>
+    </g>
+</svg>

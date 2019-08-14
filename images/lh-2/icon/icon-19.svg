@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.3 (81716) - https://sketch.com -->
+    <title>icon-19</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M7.5,1.5 L3.25,1.5 C3.11192881,1.5 3,1.61192881 3,1.75 C3,1.88807119 3.11192881,2 3.25,2 L17,2 C17.5522847,2 18,2.44771525 18,3 L18,13 C18,13.5522847 17.5522847,14 17,14 L1,14 C0.44771525,14 0,13.5522847 0,13 L0,1 C0,0.44771525 0.44771525,0 1,0 L5.58578644,0 C5.85100293,-1.0479202e-15 6.10535684,0.10535684 6.29289322,0.292893219 L7.5,1.5 Z" id="path-1"></path>
+    </defs>
+    <g id="icon-19" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="color/black" transform="translate(3.000000, 5.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Mask" fill="#000000" xlink:href="#path-1"></use>
+            <g mask="url(#mask-2)" fill="#000000" id="Rectangle">
+                <g transform="translate(-3.000000, -5.000000)">
+                    <rect x="0" y="0" width="24" height="24"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

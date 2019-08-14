@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.3 (81716) - https://sketch.com -->
+    <title>icon-18</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M10,6 L11.1055728,5.4472136 C11.6686278,5.1656861 12.3313722,5.1656861 12.8944272,5.4472136 L14,6 L14,17 L12.8944272,17.5527864 C12.3313722,17.8343139 11.6686278,17.8343139 11.1055728,17.5527864 L10,17 L10,6 Z M12,22 L10,18 L11.1055728,18.5527864 C11.6686278,18.8343139 12.3313722,18.8343139 12.8944272,18.5527864 L14,18 L12,22 Z M11,3 L13,3 C13.5522847,3 14,3.44771525 14,4 L14,5 L12.8944272,4.4472136 C12.3313722,4.1656861 11.6686278,4.1656861 11.1055728,4.4472136 L10,5 L10,4 C10,3.44771525 10.4477153,3 11,3 Z" id="path-1"></path>
+    </defs>
+    <g id="icon-18" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Mask" fill="#000000" transform="translate(12.000000, 12.500000) rotate(45.000000) translate(-12.000000, -12.500000) " xlink:href="#path-1"></use>
+    </g>
+</svg>
