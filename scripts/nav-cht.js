@@ -32,3 +32,16 @@ document.write( '                </li>\n' );
 document.write( '            </ul>\n' );
 document.write( '        </div>\n' );
 document.write( '    </nav>' );
+
+var lastScrollTop = 0;
+$(window).scroll(function (event) {
+    var st = $(this).scrollTop();
+    if (st > lastScrollTop) {
+        $('.navbar').addClass('navbar-padding-up').removeClass('navbar-padding-down');
+        
+    } else {
+        $('.navbar').removeClass('navbar-padding-up').addClass('navbar-padding-down');
+      
+    }
+    lastScrollTop = st;
+});
