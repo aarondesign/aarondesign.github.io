@@ -44,43 +44,40 @@
         });
     </script-->
     <style>
-            /* scrollbar*/
-            /* width */
-            ::-webkit-scrollbar-track
-            {
-                
-                border-radius: 10px;
-                background-color: black;
-            }
-            
-            ::-webkit-scrollbar
-            {
-                width: 12px;
-                background-color:black;
-            }
-            
-            ::-webkit-scrollbar-thumb
-            {
-                border-radius: 10px;
-                
-                background-color: #4390FC;
-            }
-        
+        /* scrollbar*/
+        /* width */
+        ::-webkit-scrollbar-track {
+
+            border-radius: 10px;
+            background-color: black;
+        }
+
+        ::-webkit-scrollbar {
+            width: 12px;
+            background-color: black;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+
+            background-color: #4390FC;
+        }
+
         /*Scrollbar*/
-        </style>
+    </style>
 
 </head>
 
 <body>
-    
-        <script src="scripts/nav-en.js"></script>
-        <script>
-            $(document).ready(function () {
-                $('#menu-2').addClass('active animated fadeInDown');
-                $("#language").attr("href", "poct_cht.html");
-            });
-    
-        </script>
+
+    <script src="scripts/nav-en.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#menu-2').addClass('active animated fadeInDown');
+            $("#language").attr("href", "poct_cht.html");
+        });
+
+    </script>
     <img class="lazy img-fluid " data-original="images/home/POCT_banner.jpg">
     <div class="container-fluid" style="margin-top:56px;">
 
@@ -364,22 +361,18 @@
     </div>
     <div>
 
-        <div class="row">
-            <div class="col-6 ">
-                <a href="about.html">
-                    <div class="text-center previous-project">
-                        <span style="float:left;padding-left:16px;"><img src="images/arrow_left.png" style="height:24px;width:24px;"></span>about
-                        me
-                    </div>
-                </a>
+        <div class="row no-gutters " style="margin:0;padding:0px 0; ">
+            <div class="col-sm-6  next-project  justify-content-center align-self-center  text-center" onclick="javascript:location.href='about.html'">
+                <div>
+                    <h6 style="line-height:192px !important"> <img src="images/arrow_left.png" style="height:32px;width:32px;margin:-4px 8px 0 0;padding:4px">
+                        About  </h6>
+                </div>
             </div>
-            <div class="col-6">
-                <a href="lh.html">
-                    <div class="text-center next-project" style="float:right">
-                        <span style="float:right;padding-right:16px;"><img src="images/arrow_right.png" style="height:24px;width:24px;"></span>Project
-                        LH
-                    </div>
-                </a>
+            <div class="col-sm-6 next-project  justify-content-center align-self-center  text-center" onclick="javascript:location.href='lh.html'">
+                <div>
+                    <h6 style="line-height:192px !important">
+                       LH Test<img src="images/arrow_right.png" style="height:32px;width:32px;margin:-4px 0px 0 8px;padding:4px "></h6>
+                </div>
             </div>
         </div>
     </div>

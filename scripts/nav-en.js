@@ -33,3 +33,15 @@ document.write( '            </ul>\n' );
 document.write( '        </div>\n' );
 document.write( '    </nav>' );
 document.write('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">');
+var lastScrollTop = 0;
+$(window).scroll(function (event) {
+    var st = $(this).scrollTop();
+    if (st > lastScrollTop) {
+        $('.navbar').addClass('navbar-padding-up').removeClass('navbar-padding-down');
+        
+    } else {
+        $('.navbar').removeClass('navbar-padding-up').addClass('navbar-padding-down');
+      
+    }
+    lastScrollTop = st;
+});

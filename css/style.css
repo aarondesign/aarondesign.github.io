@@ -13,6 +13,9 @@
 		--grey-light:#819ca9;
 
 	}
+	.container-fluid{
+		margin: 0;padding:0;
+	}
 
 	#nav_desktop{
 		position: fixed !important;
@@ -51,6 +54,8 @@
 	   
 	  }
 	a{ color:var(--primary-color);}
+
+	
 	@media screen and (max-width: 800px) {
 		#nav_desktop{
 		  position: relative !important;
@@ -479,29 +484,59 @@
 
 
     /* projects*/
-    .next-project,.previous-project{
-		height:72px;
-        position: relative;
-        bottom:0px;
+    .next-project{
+		
         cursor: pointer;
 		transition: 1s ease-in-out;
-		line-height: 72px;
-		width:180px;
-		border-radius:64px;
-		
+	
     }
 
-    .previous-project:hover{
-        background-color:var(--primary-color-light);
-		transition: 1s ease-in-out;
-		box-shadow: 0 20px 20px -10px rgba(0,0,0,.2);
-	}
+
+	.next-project {
+		z-index: 1;
+		position: relative;
+		font-size: inherit;
+		font-family: inherit;
+		color: white;
+		padding: 0.5em 1em;
+		outline: none;
+		border: none;
+		background-color: whitesmoke;
+		overflow: hidden;
+		transition: color 0.4s ease-in-out;
+	  }
+	  
+	  .next-project::before {
+		content: '';
+		z-index: -1;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 1em;
+		height: 1em;
+		border-radius: 50%;
+		background-color: white;
+		transform-origin: center;
+		transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
+		transition: transform 0.45s ease-in-out;
+	  }
+	  
+	  .next-project:hover {
+		cursor: pointer;
+		color: #161616;
+	  }
+	  
+	  .next-project:hover::before {
+		transform: translate3d(-50%, -50%, 0) scale3d(125, 125, 125);
+	  }
+	  
+   
 	
 	
 	.next-project:hover{
-        background-color:var(--secondary-color);
+        background-color:white;
 		transition: 1s ease-in-out;
-		box-shadow: 0 20px 20px -10px rgba(0,0,0,.2);
+		
 	}
 
 
@@ -510,10 +545,6 @@
 		font-weight:800;
 	}
 
-
-	.previous-project{
-		color:grey;
-	}
 
     /*projects end*/
 
@@ -551,7 +582,7 @@
 	}
   footer{
     height: 64px;
-    
+    background: whitesmoke;
     color:grey;
     text-align: center;
     line-height: 64px;

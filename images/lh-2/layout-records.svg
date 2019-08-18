@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="1120px" height="957px" viewBox="0 0 1120 957" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 56.3 (81716) - https://sketch.com -->
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
     <title>Records</title>
     <desc>Created with Sketch.</desc>
     <defs>
@@ -18,112 +18,112 @@
             <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
             <use fill="#ECECEC" fill-rule="evenodd" xlink:href="#path-1"></use>
         </g>
-        <rect id="Rectangle-Copy-16" fill="#ECECEC" x="679" y="593" width="320" height="204" rx="4"></rect>
+        <rect id="Rectangle-Copy-16" fill="#ECECEC" x="679" y="592" width="320" height="204" rx="4"></rect>
         <g id="list-/-records" transform="translate(114.000000, 256.000000)">
             <rect id="Rectangle" fill="#FFFFFF" fill-rule="evenodd" x="0" y="0" width="328" height="56" rx="4"></rect>
             <text id="Peak" font-family="Roboto-Regular, Roboto" font-size="16" font-weight="normal" fill="#000000">
-                <tspan x="24.1445312" y="36">Peak</tspan>
+                <tspan x="24.3085938" y="34">Peak</tspan>
             </text>
         </g>
         <g id="list-/-records" transform="translate(114.000000, 512.000000)">
             <rect id="Rectangle" fill="#FFFFFF" fill-rule="evenodd" x="0" y="0" width="328" height="56" rx="4"></rect>
             <text id="Peak" font-family="Roboto-Regular, Roboto" font-size="16" font-weight="normal" fill="#000000">
-                <tspan x="27.078125" y="36">Low</tspan>
+                <tspan x="27.1210938" y="34">Low</tspan>
             </text>
         </g>
         <g id="list-/-records" transform="translate(687.000000, 256.000000)">
             <rect id="Rectangle" fill="#FFFFFF" fill-rule="evenodd" x="0" y="0" width="304" height="56" rx="4"></rect>
             <text id="Peak" font-family="Roboto-Regular, Roboto" font-size="16" font-weight="normal" fill="#000000">
-                <tspan x="21.0713605" y="36">Peak</tspan>
+                <tspan x="21.235423" y="34">Peak</tspan>
             </text>
         </g>
-        <g id="list-/-records" transform="translate(687.000000, 602.000000)">
+        <g id="list-/-records" transform="translate(687.000000, 601.000000)">
             <rect id="Rectangle" fill="#FFFFFF" fill-rule="evenodd" x="0" y="0" width="304" height="56" rx="4"></rect>
             <text id="Peak" font-family="Roboto-Regular, Roboto" font-size="16" font-weight="normal" fill="#000000">
-                <tspan x="24.0049543" y="36">Low</tspan>
+                <tspan x="24.047923" y="34">Low</tspan>
             </text>
         </g>
         <g id="list-/-records" transform="translate(114.000000, 320.000000)">
             <rect id="Rectangle" fill="#FFFFFF" fill-rule="evenodd" x="0" y="0" width="328" height="56" rx="4"></rect>
             <text id="Peak" font-family="Roboto-Regular, Roboto" font-size="16" font-weight="normal" fill="#000000">
-                <tspan x="25.1835938" y="36">High</tspan>
+                <tspan x="25.4609375" y="34">High</tspan>
             </text>
         </g>
         <g id="list-/-records" transform="translate(114.000000, 576.000000)">
             <rect id="Rectangle" fill="#FFFFFF" fill-rule="evenodd" x="0" y="0" width="328" height="56" rx="4"></rect>
             <text id="Peak" font-family="Roboto-Regular, Roboto" font-size="16" font-weight="normal" fill="#000000">
-                <tspan x="24.1445312" y="36">Peak</tspan>
+                <tspan x="24.3085938" y="34">Peak</tspan>
             </text>
         </g>
         <g id="list-/-records" transform="translate(687.000000, 320.000000)">
             <rect id="Rectangle" fill="#FFFFFF" fill-rule="evenodd" x="0" y="0" width="304" height="56" rx="4"></rect>
             <text id="Peak" font-family="Roboto-Regular, Roboto" font-size="16" font-weight="normal" fill="#000000">
-                <tspan x="22.110423" y="36">High</tspan>
+                <tspan x="22.3877668" y="34">High</tspan>
             </text>
         </g>
-        <g id="list-/-records" transform="translate(687.000000, 666.000000)">
+        <g id="list-/-records" transform="translate(687.000000, 665.000000)">
             <rect id="Rectangle" fill="#FFFFFF" fill-rule="evenodd" x="0" y="0" width="304" height="56" rx="4"></rect>
             <text id="Peak" font-family="Roboto-Regular, Roboto" font-size="16" font-weight="normal" fill="#000000">
-                <tspan x="24.0049543" y="36">Low</tspan>
+                <tspan x="24.047923" y="34">Low</tspan>
             </text>
         </g>
         <g id="list-/-records" transform="translate(114.000000, 384.000000)">
             <rect id="Rectangle" fill="#FFFFFF" fill-rule="evenodd" x="0" y="0" width="328" height="56" rx="4"></rect>
             <text id="Peak" font-family="Roboto-Regular, Roboto" font-size="16" font-weight="normal" fill="#000000">
-                <tspan x="27.078125" y="36">Low</tspan>
+                <tspan x="27.1210938" y="34">Low</tspan>
             </text>
         </g>
         <g id="list-/-records" transform="translate(114.000000, 640.000000)">
             <rect id="Rectangle" fill="#FFFFFF" fill-rule="evenodd" x="0" y="0" width="328" height="56" rx="4"></rect>
             <text id="Peak" font-family="Roboto-Regular, Roboto" font-size="16" font-weight="normal" fill="#000000">
-                <tspan x="27.078125" y="36">Low</tspan>
+                <tspan x="27.1210938" y="34">Low</tspan>
             </text>
         </g>
         <g id="list-/-records" transform="translate(687.000000, 384.000000)">
             <rect id="Rectangle" fill="#FFFFFF" fill-rule="evenodd" x="0" y="0" width="304" height="56" rx="4"></rect>
             <text id="Peak" font-family="Roboto-Regular, Roboto" font-size="16" font-weight="normal" fill="#000000">
-                <tspan x="24.0049543" y="36">Low</tspan>
+                <tspan x="24.047923" y="34">Low</tspan>
             </text>
         </g>
-        <g id="list-/-records" transform="translate(687.000000, 730.000000)">
+        <g id="list-/-records" transform="translate(687.000000, 729.000000)">
             <rect id="Rectangle" fill="#FFFFFF" fill-rule="evenodd" x="0" y="0" width="304" height="56" rx="4"></rect>
             <text id="Peak" font-family="Roboto-Regular, Roboto" font-size="16" font-weight="normal" fill="#000000">
-                <tspan x="21.0713605" y="36">Peak</tspan>
+                <tspan x="21.235423" y="34">Peak</tspan>
             </text>
         </g>
         <g id="list-/-records" transform="translate(114.000000, 448.000000)">
             <rect id="Rectangle" fill="#FFFFFF" fill-rule="evenodd" x="0" y="0" width="328" height="56" rx="4"></rect>
             <text id="Peak" font-family="Roboto-Regular, Roboto" font-size="16" font-weight="normal" fill="#000000">
-                <tspan x="27.078125" y="36">Low</tspan>
+                <tspan x="27.1210938" y="34">Low</tspan>
             </text>
         </g>
         <g id="list-/-records" transform="translate(114.000000, 704.000000)">
             <rect id="Rectangle" fill="#FFFFFF" fill-rule="evenodd" x="0" y="0" width="328" height="56" rx="4"></rect>
             <text id="Peak" font-family="Roboto-Regular, Roboto" font-size="16" font-weight="normal" fill="#000000">
-                <tspan x="25.1835938" y="36">High</tspan>
+                <tspan x="25.4609375" y="34">High</tspan>
             </text>
         </g>
         <g id="list-/-records" transform="translate(687.000000, 448.000000)">
             <rect id="Rectangle" fill="#FFFFFF" fill-rule="evenodd" x="0" y="0" width="304" height="56" rx="4"></rect>
             <text id="Peak" font-family="Roboto-Regular, Roboto" font-size="16" font-weight="normal" fill="#000000">
-                <tspan x="24.0049543" y="36">Low</tspan>
+                <tspan x="24.047923" y="34">Low</tspan>
             </text>
         </g>
         <rect id="Rectangle-Copy-11" fill="#B49EE6" x="687" y="512" width="304" height="56" rx="4"></rect>
         <text font-family="Roboto-Regular, Roboto" font-size="24" font-weight="normal" fill="#000000">
-            <tspan x="130.304688" y="228">Records</tspan>
+            <tspan x="131.113281" y="225">Records</tspan>
         </text>
         <text id="Records-Copy" font-family="Roboto-Regular, Roboto" font-size="24" font-weight="normal" fill="#000000">
-            <tspan x="691.304688" y="228">Records</tspan>
+            <tspan x="692.113281" y="225">Records</tspan>
         </text>
         <text id="Period-Start-Date" font-family="Roboto-Regular, Roboto" font-size="16" font-weight="normal" fill="#100033">
-            <tspan x="711" y="548">Period Start Date</tspan>
+            <tspan x="711" y="546">Period Start Date</tspan>
         </text>
         <text id="Previous" font-family="Roboto-Bold, Roboto" font-size="36" font-weight="bold" fill="#000000">
-            <tspan x="207.34375" y="88">Previous</tspan>
+            <tspan x="207.220703" y="83">Previous</tspan>
         </text>
         <text id="Redesigned" font-family="Roboto-Bold, Roboto" font-size="36" font-weight="bold" fill="#000000">
-            <tspan x="743.288086" y="88">Redesigned</tspan>
+            <tspan x="743.15625" y="83">Redesigned</tspan>
         </text>
     </g>
 </svg>
