@@ -95,7 +95,10 @@
     <script>
         $(document).ready(function () {
             $('#menu-4').addClass('active animated fadeInDown');
+            $('#language').attr('href', '')
         });
+
+         
 
     </script>
 
@@ -118,6 +121,7 @@
                 <h5><b>伴隨改版完成的事項：</b></h5>
                 <ol>
                     <li>產品介紹頁面的重新設計</li>
+                    <li>App 驗證碼通知郵件的版面設計</li>
                 </ol><br>
                 <h5><b>檔案下載</b></h5>
                 <ul style=" margin: 0;
@@ -144,18 +148,10 @@
                 </h3>
             </div>
         </div>
+      
         <div class="row">
             <div class="col-12 text-center">
-                <h1>改版的使用者故事</h1>
-                <ol>
-                    <li>身為一個使用者，我希望能更快速地進入App的首頁，避免非必要的問答</li>
-                    <li>身為一個使用者，我希望系統能幫助我，一步的完成量測</li>
-                </ol>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12 text-center">
-                <h1>流程</h1>
+                <h1>流程改善</h1>
                 <hr>
             </div>
             <div class="col-sm-4">
@@ -230,12 +226,13 @@
 
         </div>
         <div class="row">
+
+            <div class="col-sm-6 ">
+                <img src="images/lh-2/shops-list.png" height="360" style="display:block;margin:auto"><br><br>
+            </div>
             <div class="col-sm-6 justify-content-center align-self-center col-padding">
                 <h5>改善 - 預先告知 App 需要搭配試片使用</h5>
                 <p>在首次使用告知使用者，需要先購買試片。並根據Sim卡內的資訊判斷使用者所在的地區，提供相對應的購買資訊連結。</p>
-            </div>
-            <div class="col-sm-6 col-padding">
-                <img src="images/lh-2/shops-list.png" height="360" style="display:block;margin:auto"><br><br>
             </div>
             <div class="col-sm-6 justify-content-center align-self-center ">
                 <h5>改善 - 降低首次使用門檻</h5>
@@ -246,18 +243,19 @@
             <div class="col-sm-6 justify-content-center align-self-center">
                 <img src="images/lh-2/flow-onboarding.png" class="img-fluid">
             </div><br>
+
+            <div class="col-sm-6 justify-content-center align-self-center">
+                <iframe src="https://player.vimeo.com/video/351851965" width="100%" height="400" frameborder="0" allow="autoplay; fullscreen"
+                    allowfullscreen style="padding:32px 0"></iframe>
+
+
+            </div>
             <div class="col-sm-6 justify-content-center align-self-center">
 
 
 
                 <h5>首次使用畫面</h5>
                 <p>首次使用的畫面，只需要讓使用者填寫必要資訊。在正式進入到系統之前，規劃了一個歡迎頁面最為一個停頓點，讓使用者知道流程完成，順便告知使者下一次預訂量測的時間。</p>
-
-
-            </div>
-            <div class="col-sm-6 justify-content-center align-self-center">
-                <iframe src="https://player.vimeo.com/video/351851965" width="100%" height="400" frameborder="0" allow="autoplay; fullscreen"
-                    allowfullscreen style="padding:32px 0"></iframe>
 
 
             </div>
@@ -308,6 +306,13 @@
 
 
             </div>
+
+            <div class="col-sm-6">
+                <img src="images/lh-2/context-permission.png" style="display:block;
+                    margin:auto;"
+                    height="400">
+
+            </div>
             <div class="col-sm-6 justify-content-center align-self-center">
                 <h5>改善 - 在脈絡下要求權限</h5>
                 <p>
@@ -319,15 +324,7 @@
                 </p><br>
 
             </div>
-            <div class="col-sm-6">
-                <img src="images/lh-2/context-permission.png" style="display:block;
-                    margin:auto;"
-                    height="400">
 
-            </div>
-            <div class="col-sm-6 justify-content-center align-self-center">
-
-            </div>
             <div class="col-sm-6 justify-content-center align-self-center">
                 <div class="row">
                     <div class="col-sm-4">
@@ -349,6 +346,9 @@
                         <p class="text-center">相簿權限</p>
                     </div>
                 </div>
+            </div>
+            <div class="col-sm-6 justify-content-center align-self-center">
+
             </div>
 
 
@@ -415,10 +415,10 @@
                 </div>
             </div>
 
-            <div class="col-sm-12 col-padding">
+            <div class="col-sm-12  col-padding  ">
                 <h5>改善 - 分段指引使用者放置試片 ( Android )</h5>
                 <p>放置試片是App功能中的關鍵體驗，但涉及到與硬體的互動，所以行為上又更為複雜些。</p>
-                <img src="images/lh-2/place-strip.png" class="img-fluid" data-toggle="modal" data-target="#place-strip">
+                <img src="images/lh-2/place-strip.png" class="img-fluid " data-toggle="modal" data-target="#place-strip">
                 <br><br><br>
                 <ol>
                     <li>一步一步的引導使用者準備試片，放置到指定位置。</li>
@@ -474,7 +474,7 @@
 
                     </div>
 
-                    <div class="col-sm-9 text-center col-padding">
+                    <div class="col-sm-9 text-center card ">
                         <div class="row">
                             <div class="col-sm-4 text-center">
                                 <div class="palette" style="background-color:#19D2D2"></div>
@@ -496,12 +496,12 @@
 
                     </div>
 
-                    <div class="col-sm-3 justify-content-center align-self-center col-padding">
+                    <div class="col-sm-3 justify-content-center align-self-center ">
                         <h5>灰階顏色</h5>
                         <p>用於文字及背景</p>
 
                     </div>
-                    <div class="col-sm-9 text-center col-padding">
+                    <div class="col-sm-9 text-center card ">
                         <div class="row">
                             <div class="col-3">
                                 <div class="palette" style="background-color:#000"></div>
@@ -522,12 +522,13 @@
                         </div>
 
                     </div>
-                    <div class="col-sm-4 justify-content-center align-self-center col-padding">
+                    <div class="col-sm-3 justify-content-center align-self-center ">
                         <h5>Icons</h5>
                         <p>Icon 設計完成後打包成一套iconfont，方便工程師引用，也無需根據大小及顏色切圖，減少維護成本。</p>
 
                     </div>
-                    <div class="col-sm-8 text-left col-padding">
+
+                    <div class="col-sm-9 text-left col-padding card">
                         <div style="margin:0 auto;position: relative;">
                             <img src="images/lh-2/icon/icon-1.svg" height='36' style="margin:8px;" class="icon">
                             <img src="images/lh-2/icon/icon-2.svg" height='36' style="margin:8px" class="icon">
@@ -558,12 +559,13 @@
 
 
                     </div><br><br>
+
                     <div class="col-sm-3 justify-content-center align-self-center ">
                         <h5>Cards</h5>
                         <p>在首頁、量測紀錄、輔助說明的部分多以卡片呈現，除了方便使用者了解內容外，也便於程式開發與維護。</p>
 
                     </div>
-                    <div class="col-sm-9 text-left">
+                    <div class="col-sm-9 text-left card">
                         <div class="row" style="
                         margin:auto;">
                             <div class="col-sm-4  text-center"> <img src="images/lh-2/card/daily.png" class="card-shadow img-fluid">
@@ -620,46 +622,41 @@
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-12">
-                <h1 class="text-center">增加的功能</h1>
-                評價、版本更新、使用條款更新
 
-            </div>
-        </div>
         <div class="row" style="background-color:#19D2D2">
             <div class="col-sm-12 card" style="margin:16px">
                 <h3>專案中獲的啟發</h3><br>
 
-                <p>1⃣<span style="color:black">知識就是力量。</span><br>
-
+                <p>1️⃣<span style="color:black">別忘了 UI 以外的 feature</span><br>
+                    在設計App時會埋首於產品主要面向的流程與UI設計，但有些不常用但必要的功能需要同時被考慮進來。包括：(1)新版的的更新提醒、(2)邀約評價，需要安排使用者最滿意的當下邀請使用者給產品開發者一些鼓勵、(3)使用條款、隱私政策的變更流程、
+                    (4)設計關鍵指標，衡量產品的成功與否、(5)設計 App 商店搜尋最佳化(ASO)，要確保使用者能透過熱門且適合的關鍵字找到 App，提高被下載的能見度。
                 </p><br>
-                <p>2️⃣ <span style="color:black">為誰而設計。</span><br>
-
+                <p>2️⃣ <span style="color:black">降低進入門檻</span><br>
+                        養、套、殺。在數位產產品的設計上，會希望儘可能的大量獲取夠多的使用者，讓他們無痛的開始使用產品，並且持續地與產品互動，未使用者帶來價值為服務提供者創造利潤。
+                        因此，在產品的首次使用體驗就是一個勝負的關鍵。在這次的 App 改版於首次登入使用的流程做很很大的改變，只詢問必要的資訊，且將註冊流程挪到進入 App 之後。目的在於
+                        讓使用者熟悉系統，等到使用者量測完成要查詢歷史資訊時，才需要註冊。
                 </p><br>
-                <p>3️⃣ <span style="color:black">跟工程師當好朋友。</span><br>
-
-                </p>
+               
             </div>
         </div>
-        
+
         <div class="row no-gutters " style="margin:0;padding:0px 0; ">
-            <div class="col-sm-6  next-project  justify-content-center align-self-center  text-center"  onclick="javascript:location.href='lh_cht.html'"  >
-                <div >
+            <div class="col-sm-6  next-project  justify-content-center align-self-center  text-center" onclick="javascript:location.href='lh_cht.html'">
+                <div>
                     <h6 style="line-height:192px !important"> <img src="images/arrow_left.png" style="height:32px;width:32px;margin:-4px 8px 0 0;padding:4px">LH
                         - v.1</h6>
                 </div>
             </div>
             <div class="col-sm-6 next-project  justify-content-center align-self-center  text-center" onclick="javascript:location.href='sideprojects_cht.html'">
-                    <div >
-                        <h6 style="line-height:192px !important"> 
-                            Side Projects<img src="images/arrow_right.png" style="height:32px;width:32px;margin:-4px 0px 0 8px;;padding:4px "></h6>
-                    </div>
+                <div>
+                    <h6 style="line-height:192px !important">
+                        Side Projects<img src="images/arrow_right.png" style="height:32px;width:32px;margin:-4px 0px 0 8px;;padding:4px "></h6>
                 </div>
+            </div>
         </div>
 
     </div>
-   
+
     <footer>
         <img src="images/aaron_logo.png" alt="logo" style="width:24px;opacity:.5;"> aaron.zl.hsu@gmail.com
     </footer>
