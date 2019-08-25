@@ -87,13 +87,22 @@
 		font-weight:600;
 	}
 
-	p,ul,li,a{
+	p,ul,li{
 		font-family: 'Roboto','Noto Sans TC',sans-Serif !important;
 		color:var(--grey-dark) !important;
 		font-size: 18px !important;
 		line-height: 33px !important;
 		font-weight:200;
 		margin-top:-4px;
+	}
+
+	a{
+		text-decoration: underline;
+		color:var(--grey-dark) !important;
+	}
+
+	nav a{
+		text-decoration:none;
 	}
     .t-dark{
 		color:Black;
@@ -441,8 +450,9 @@
 		}
 
 		.card{
-			margin:32px 0;border:solid lightgrey 1px;
+			margin:32px 0;border:solid white 0px;
 			padding-bottom:24px;border-radius:8px;background-color:white;
+			box-shadow: 0 0 1px 0 lightgrey;
 			transition:.5s ease-in-out;
 		}
 		
