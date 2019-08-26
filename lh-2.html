@@ -1,0 +1,691 @@
+<!--Welcome to check the page-->
+<!--May you have a nice day-->
+<!--copyright@aaron.zl.hsu@gmail.com-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Aaron Hsu - Project LH</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <script src="scripts/load-effect.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="scripts/jquery.lazyload.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131020506-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-131020506-1');
+    </script>
+
+    <script>
+
+        $(document).on('click', 'a[href^="#"]', function (event) {
+            event.preventDefault();
+
+            $('html, body').animate({
+                scrollTop: $($.attr(this, 'href')).offset().top
+                ,
+                easing: "easeinOutCubic"
+            }, 1000);
+        });
+    </script>
+    <style>
+        /* scrollbar*/
+		/* width */
+		::-webkit-scrollbar-track
+		{
+			
+			border-radius: 10px;
+			background-color: black;
+		}
+		
+		::-webkit-scrollbar
+		{
+			width: 12px;
+			background-color:black;
+		}
+		
+		::-webkit-scrollbar-thumb
+		{
+			border-radius: 10px;
+			
+			background-color: #19D2D2;
+        }
+        .icon{
+            transition: .2s ease-in-out;
+        }
+        .icon:hover{
+            transform: scale(1.5);
+            transition: .5s ease-in-out;
+        }
+	
+	/*Scrollbar*/
+    .palette{
+        height: 72px;
+        width:72px;
+        border-radius:36px;
+        position: relative;
+        display: inline-block;
+        margin:8px;
+    }
+    .card-shadow{
+        box-shadow: 0 0 8px 0 rgba(100,100,100,.4); 
+        margin: 8px;
+    }
+    .col-padding{
+        padding:64px 0;
+    }
+    </style>
+
+</head>
+
+
+<body>
+    <script src="scripts/nav-en.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#menu-4').addClass('active animated fadeInDown');
+            $('#language').attr('href', '')
+        });
+
+
+
+    </script>
+
+    <br><br>
+
+    <div class="container-fluid" style="margin-top:56px;">
+        <div class="row">
+            <div class="co-sm-12 text-center" style="margin:0 auto">
+                <h1>Redesign the App of LH Project </h1>
+                <p>Previous version App was launched two years ago. According to the usage data and the feedback from
+                    stakeholders and users', I planned the new flow and appearance to improve the experience.
+
+            </div>
+            <img src="images/lh-2/screenshots.png" class="img-fluid">
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6  justify-content-center align-self-center">
+                <h5>The goals of the desgin：</h5>
+                <ul>
+                    <li>✔︎ Improved the flow of onboarding and signup - To minimize the barriers.</li>
+                    <li>✔︎ Built UI system - To consist the elements of the UI components. </li>
+                    <li>✔︎ Re-arranged the Layout - Guide the user by visual design</li>
+                    <li>✔︎ Add context-sensitive help - Support users to understand the product.</li>
+                </ul><br>
+                <h5><b>Compeleted by the way</b></h5>
+                <ul>
+                    <li>✔︎ Designed the product introducing page, including writing HTML / CSS /jQuery.</li>
+                    <li>✔︎ Redesigned the layout of the verification email</li>
+                </ul><br>
+                <h5>What I done：</h5>
+                <ul>
+                    <li>✔︎ Designed App flow </li>
+                    <li>✔︎ Designed App interface</li>
+                </ul>
+
+
+            </div><br><br>
+            <div class="col-sm-6 justify-content-center align-self-center ">
+
+                <img height="300" src="images/lh-2/lh-2-hero.png" style=" display:block;
+                    margin:auto;"><br>
+                <div style="margin:0 auto;text-align: center">
+                    <a href="https://apps.apple.com/tw/app/%E6%8E%92%E5%8D%B5%E9%80%B1%E6%9C%9F%E6%AA%A2%E6%B8%AC%E8%A8%88%E7%AE%97-eveline%E4%BC%8A%E5%BF%85%E6%B8%AC/id1234496685"
+                        target="_blank"> <img src="images/lh-2/apple-store-badge.png"> </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.ixensor.lh&hl=zh_TW" target="_blank"><img
+                            src="images/lh-2/play-store-badge.png"></a>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="row" style="background-color:#19D2D2">
+            <div class="col-sm-12">
+                <h3 class="text-center" style="color:white">
+                    Change not only the look but also align the strategy of the product.
+                </h3>
+            </div>
+        </div>
+        <div class="row bg-grey">
+            <img class="img-fluid" src="images/lh-2/app-task.png" style="margin:0 auto">
+            <div class="col-12  col-sm-6 offset-sm-3 text-center">
+                <h3>Users' Tasks</h3>
+                <p>
+                    There are four different phases of preparing for pregnancy. I designed different tasks in order to
+                    communicate with users then App could help the achive the goal.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="row bg-grey">
+
+            <div class="col-sm-4  col-padding loadEffect">
+
+                <h3>Flow Overview</h3>
+                <p>The main items</p>
+                <ol>
+                    <li>Onboarding</li>
+                    <li>Home Screen</li>
+                    <li>Records</li>
+                    <li>Calendar</li>
+                    <li>Settings </li>
+                    <li>Measure</li>
+                    <li>Login and Sign up</li>
+                </ol>
+            </div>
+            <div class="col-sm-8 justify-content-center align-self-center ">
+
+                <img src="images/lh-2/lh-v2-flow.png" class="img-fluid loadEffect" style="cursor:pointer;border-radius:16px "
+                    data-toggle="modal" data-target="#flow">
+                <p class="text-center" style="font-size:10px !important"> <br>（ Click to enlarge it ）</p>
+            </div>
+        </div>
+
+        <!-- The Modal -->
+        <div class="modal" id="flow" tabindex="-1">
+            <div class="modal-dialog modal-full">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h3 class="modal-title">App Flow</h3>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <img src="images/lh-2/lh-v2-flow.png" class="img-fluid">
+
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <h3>Improved the flow of signup and onboarding steps</h3>
+                <hr>
+            </div>
+
+            <div class="col-sm-6  justify-content-center align-self-center ">
+                <h5>The problems of previous flow</h5>
+                <p> Previous onboarding flow was very complicated, including signup, filling cycle info, and personal
+                    info. Especially, the App should validate the account by Email. Users must check the validation
+                    code in their inbox and then go back to the App. It took some time to finished these tasks, and
+                    some users would give up and leave our App.
+                </p><br>
+
+            </div>
+            <div class="col-sm-6 ">
+                <img height="400" src="images/lh-2/flow-onboarding-ex.png" style="display:block;
+                    margin:auto;">
+            </div>
+
+
+
+        </div>
+        <div class="row">
+
+            <div class="col-sm-6  col-padding">
+                <img class="loadEffect" src="images/lh-2/shops-list.png" height="360" style="display:block;margin:auto"><br><br>
+            </div>
+            <div class="col-sm-6 justify-content-center align-self-center col-padding">
+                <h5>Improved - Info user this app should has to go with test strip </h5>
+                <p>In the past version, App didn't tell users that it should be used width test strips. Therefore, the
+                    latest version shows that the App should be used with strips and tell users the shop info according
+                    to their sim card information. </p>
+            </div>
+            <div class="col-sm-6 justify-content-center align-self-center">
+                <h5>Improved - To minimize the onboarding barriers </h5>
+                <p>
+                    Just query two essential questions:＃1 Average Cycle days and #2 The first day of last period.
+                    According to the information, the App will suggest users when to measure. I planned the signup
+                    process after users using this App, and the trigger is that users should sign up then they could
+                    check the measure records.
+                </p>
+            </div>
+            <div class="col-sm-6 justify-content-center align-self-center  ">
+                <img src="images/lh-2/flow-onboarding.png" class="img-fluid">
+            </div><br>
+
+            <div class="col-sm-6 justify-content-center align-self-center col-padding">
+
+                <div class="row" style="padding:8px">
+                    <div class="col"> <img src="images/lh-2/welcome.jpeg" height="400" style="padding:32px 0"></div>
+                    <div class="col"><iframe src="https://player.vimeo.com/video/351851965" width="100%" height="400"
+                            frameborder="0" allow="autoplay; fullscreen" allowfullscreen style="padding:32px 0"></iframe></div>
+
+                </div>
+
+
+
+            </div>
+            <div class="col-sm-6 justify-content-center align-self-center">
+                <h5>首次使用畫面</h5>
+                <p>首次使用的畫面，只需要讓使用者填寫必要資訊。在正式進入到系統之前，規劃了一個歡迎頁面最為一個停頓點，讓使用者知道流程完成，順便告知使者下一次預訂量測的時間。</p>
+            </div>
+
+            <div class="col-sm-6 justify-content-center align-self-center col-padding">
+
+                <h5>想看歷史紀錄？-請先註冊</h5>
+                <p>將註冊流程置於首次使用之後: (1) 在首頁的置頂處，放置一張卡片，提醒使用者註冊。 (2)在量測紀錄頁面。如果使用者想要觀看紀錄，需要先註冊才能檢視。</p>
+                <br>
+                <p>延後註冊的目的，希望使用者先行體驗整個 App的流程與服務，在合理的脈絡下要求使用者註冊。</p>
+
+            </div>
+            <div class="col-sm-6  col-padding">
+                <div class="row " style="padding:8px">
+                    <div class="col-6"><iframe src="https://player.vimeo.com/video/352006148" width="100%" height="400"
+                            frameborder="0" allow="autoplay; fullscreen" allowfullscreen style="padding:32px 0"></iframe>
+                    </div>
+                    <div class="col-6 text-center ">
+                        <img class="loadEffect" src="images/lh-2/signup.png" height="400" style="padding:32px 0">
+                        <p style="font-size:12px !important">註冊才可查看歷史紀錄。
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="row ">
+            <div class="col-sm-12 text-center">
+                <h3>改善請求手機權限的流程</h3><br>
+                <hr>
+            </div>
+
+            <div class="col-sm-6 justify-content-center align-self-center  col-padding">
+                <h5>原流程問題</h5>
+                <p>原流程會在使用者開啟手機的第一個畫面，就向使用者要求所有必要的權限，包含 (1) 相機的權限、 (2) 通知權限、(3)
+                    相簿的存取權限。使用者在還不了解App所有功能時，一次性的的要求數個權限，會讓使用者摸不著頭緒。
+                </p><br>
+            </div>
+            <div class="col-sm-6 col-padding ">
+                <img src="images/lh-2/context-permission-ex.png" class="loadEffect" style="display:block;
+                        margin:auto;"
+                    height="400">
+            </div>
+            <div class="col-sm-6">
+                <img src="images/lh-2/context-permission.png" class="loadEffect img-fluid" style="display:block;
+                    margin:auto;"
+                    height="400">
+            </div>
+            <div class="col-sm-6 justify-content-center align-self-center ">
+                <h5>改善 - 在脈絡下要求權限</h5>
+                <p>
+                    <ol>
+                        <li>通知權限：在首次使用的歡迎頁，會出現請求通知的對話。</li>
+                        <li>相機權限：在第一次量測前，會出現請求相機權限的對話。</li>
+                        <li>相簿存取權限：在第一次使用分享功能時，會出現權限的請求對話。</li>
+                    </ol>
+                </p><br>
+            </div>
+            <div class="col-sm-6 justify-content-center align-self-center">
+                <div class="row " style="padding:8px">
+                    <div class="col-sm-4">
+                        <img src="images/lh-2/notification-permission.gif" class="img-fluid loadEffect"><br>
+                        <p class="text-center">通知權限</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="images/lh-2/camera-permission.gif" class="img-fluid loadEffect">
+                        <p class="text-center">相機權限</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="images/lh-2/photo-permission.gif" class="img-fluid loadEffect">
+                        <p class="text-center">相簿權限</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 justify-content-center align-self-center">
+
+            </div>
+
+
+        </div>
+        <div class="row bg-grey">
+            <div class="col-sm-12 col-padding text-center">
+                <h3>改善量測流程</h3>
+                <p>量測為App的最核心體驗項目，改善量測的流程與量測結果的顯示，將有助於提升使用經驗，減少客訴。</p>
+                <hr>
+            </div>
+
+
+            <div class="col-sm-6 justify-content-center align-self-center  ">
+                <h5>改善 - 提醒量測</h5>
+                <p>
+                    在App的首頁設計一張屬於量測的卡片，讓使用者可以更明確的知道，距離量測日還有幾天以及量測日期。當到了該進行量測的當日，卡片會提醒使用者今天為量測日。
+                </p>
+
+                <ul>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="col-sm-6 justify-content-center align-self-center ">
+                <img class="loadEffect " src="images/lh-2/measure/measur-card.gif" style="display:block;margin:0 auto"
+                    height="100">
+            </div>
+            <div class="col-sm-12 col-padding ">
+                <hr style="border:1px lightgrey dotted ;margin: 16px;"><br><br>
+                <h5 class="text-center">改善 - 設定前鏡頭位置 ( Android )</h5>
+                <p class="text-center" style="width:50%;margin: 0 auto">試片需要透過手機的前鏡頭進行分析，但是Android
+                    的機型眾多，其前鏡頭位置各有不同。無法透過程式一一設定。因此我們設計了一套方法邀請使用者，在量測前確認前鏡頭的位置。
+                </p>
+                <img src="images/lh-2/set-camera.png" class="img-fluid loadEffect" data-toggle="modal" data-target="#set-camera">
+                <br>
+                <ol class="card "><br>
+                    <li>在首次進到首頁，會請求使用者設定相機。</li>
+                    <li>宣告設定的目的，以及說明不支援的機型</li>
+                    <li>請求使用者將手指至於前鏡頭上。<br>(上一個版本的說明圖，手指畫得跟真實比例太接近，在測試時發現有使用者將手指置於圖上。)</li>
+                    <li>請使用者將手指從前鏡頭的位置，向下滑入螢幕。</li>
+                    <li>左右移動拉桿，確定對準前鏡頭。</li>
+                    <li>確認畫面，跟使用傳達相機的設定已經完成，達到良好的溝通。</li>
+                </ol>
+            </div>
+            <div class="modal" id="set-camera" tabindex="-1">
+                <div class="modal-dialog modal-full">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h3 class="modal-title">App 流程</h3>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <img src="images/lh-2/set-camera.png" class="img-fluid">
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12    "><br>
+                <hr><br><br>
+                <h5 class="text-center">改善 - 分段指引使用者放置試片 ( Android )</h5>
+                <p class="text-center">放置試片是App功能中的關鍵體驗，但涉及到與硬體的互動，所以行為上又更為複雜些。</p>
+                <img src="images/lh-2/place-strip.png" class="img-fluid loadEffect " data-toggle="modal" data-target="#place-strip">
+                <br>
+                <ol class="card  "><br>
+                    <li>一步一步的引導使用者準備試片，放置到指定位置。</li>
+                    <li>在使用者測試時，發現使用者會將試片直接推到底，造成試片量測失敗。<br>
+                        這次改版，請使用者兩段式的將試片放置到指定位置，減少試片推到底的機會。
+                    </li>
+                    <li>增加觸覺 (Haptic )回饋。當使用者將試片推至正確位置，除了視覺上的回饋外，也加上了觸覺與聽覺的回饋。</li>
+                </ol>
+
+            </div>
+
+
+
+            <div class="col-sm-6 justify-content-center align-self-center col-padding">
+                <h5>改善 - 將當日結果顯示於首頁</h5>
+                <p>
+                    ❌ 在原先的流程上，當量測完畢，回到首頁後就像啥事都沒發生一樣，使用者需要到量測紀錄找尋今日的結果。<br><br>
+                    ✅ 流程修正後，當量測完成，回到首頁會顯示今日的結果，並顯示相關的說明文章，幫助使用者更了解量測所代表的意義為何。
+                </p>
+
+            </div>
+
+            <div class="col-sm-6 col-padding">
+                <div class="row" style="padding:8px">
+                    <div class="col-6">
+                        <img src="images/lh-2/measure/measure-flow.gif" class="loadEffect" style="display:block;
+                            margin:auto;"
+                            height="400">
+                    </div>
+                    <div class="col-6">
+                        <img src="images/lh-2/measure/measur-result.gif" class="loadEffect" style="display:block;
+                            margin:auto;"
+                            height="400">
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center">UI system</h1>
+
+            </div>
+            <div class="col-sm-12">
+                <div class="row" style="padding:8px">
+                    <div class="col-sm-3 justify-content-center align-self-center ">
+                        <h5>Theme Colors</h5>
+
+                    </div>
+
+                    <div class="col-sm-9 text-center card  loadEffect">
+                        <div class="row" style="padding:8px">
+                            <div class="col-sm-4 text-center">
+                                <div class="palette" style="background-color:#19D2D2"></div>
+                                <p>#19D2D2</p>
+                                <h6>UI Control / Button</h6>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="palette" style="background-color:#FF80A4"></div>
+                                <p>#FF80A4</p>
+                                <h6>Measure / Fertile Window</h6>
+                            </div>
+                            <div class="col-sm-4 text-center">
+                                <div class="palette" style="background-color:#CA61C3"></div>
+                                <p>#CA61C3</p>
+                                <h6>Period</h6>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="col-sm-3 justify-content-center align-self-center ">
+                        <h5>Neutral Colors</h5>
+                        <p>Text / Background </p>
+
+                    </div>
+                    <div class="col-sm-9 text-center card loadEffect ">
+                        <div class="row" style="padding:8px">
+                            <div class="col-3">
+                                <div class="palette" style="background-color:#000"></div>
+                                <p>#000000</p>
+                            </div>
+                            <div class="col-3">
+                                <div class="palette" style="background-color:#515058"></div>
+                                <p>#515058</p>
+                            </div>
+                            <div class="col-3">
+                                <div class="palette" style="background-color:#B5B4C6"></div>
+                                <p>#B5B4C6</p>
+                            </div>
+                            <div class="col-3">
+                                <div class="palette" style="background-color:#ECEBF7"></div>
+                                <p>#ECEBF7</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-3 justify-content-center align-self-center ">
+                        <h5>Icons</h5>
+                        <p>Icon 設計完成後打包成一套iconfont，方便工程師引用，也無需根據大小及顏色切圖，減少維護成本。</p>
+
+                    </div>
+
+                    <div class="col-sm-9 text-left  card loadEffect">
+                        <div style="margin:0 auto;position: relative;">
+                            <img src="images/lh-2/icon/icon-1.svg" height='36' style="margin:8px;" class="icon">
+                            <img src="images/lh-2/icon/icon-2.svg" height='36' style="margin:8px" class="icon">
+                            <img src="images/lh-2/icon/icon-3.svg" height='36' style="margin:8px" class="icon">
+                            <img src="images/lh-2/icon/icon-4.svg" height='36' style="margin:8px" class="icon">
+                            <img src="images/lh-2/icon/icon-5.svg" height='36' style="margin:8px" class="icon">
+                            <img src="images/lh-2/icon/icon-6.svg" height='36' style="margin:8px" class="icon">
+                            <img src="images/lh-2/icon/icon-7.svg" height='36' style="margin:8px" class="icon">
+                            <img src="images/lh-2/icon/icon-8.svg" height='36' style="margin:8px" class="icon">
+                            <img src="images/lh-2/icon/icon-9.svg" height='36' style="margin:8px" class="icon">
+                            <img src="images/lh-2/icon/icon-10.svg" height='36' style="margin:8px" class="icon">
+                            <img src="images/lh-2/icon/icon-11.svg" height='36' style="margin:8px" class="icon">
+                            <img src="images/lh-2/icon/icon-12.svg" height='36' style="margin:8px" class="icon">
+                            <img src="images/lh-2/icon/icon-13.svg" height='36' style="margin:8px" class="icon">
+                            <img src="images/lh-2/icon/icon-14.svg" height='36' style="margin:8px" class="icon">
+                            <img src="images/lh-2/icon/icon-15.svg" height='36' style="margin:8px" class="icon">
+                            <img src="images/lh-2/icon/icon-16.svg" height='36' style="margin:8px" class="icon">
+                            <img src="images/lh-2/icon/icon-17.svg" height='36' style="margin:8px" class="icon">
+                            <img src="images/lh-2/icon/icon-18.svg" height='36 ' style="margin:8px" class="icon">
+                            <img src="images/lh-2/icon/icon-19.svg" height='36' style="margin:8px" class="icon">
+                            <img src="images/lh-2/icon/icon-20.svg" height='36' style="margin:8px" class="icon">
+                            <img src="images/lh-2/icon/icon-21.svg" height='36' style="margin:8px" class="icon">
+                            <img src="images/lh-2/icon/icon-22.svg" height='36' style="margin:8px" class="icon">
+                            <img src="images/lh-2/icon/icon-23.svg" height='36' style="margin:8px" class="icon">
+                            <img src="images/lh-2/icon/icon-24.svg" height='36' style="margin:8px" class="icon">
+                            <img src="images/lh-2/icon/icon-25.svg" height='36' style="margin:8px" class="icon">
+                        </div>
+
+
+                    </div><br><br>
+
+                    <div class="col-sm-3 justify-content-center align-self-center ">
+                        <h5>Cards</h5>
+                        <p>在首頁、量測紀錄、輔助說明的部分多以卡片呈現，除了方便使用者了解內容外，也便於程式開發與維護。</p>
+
+                    </div>
+                    <div class="col-sm-9 text-left card">
+                        <div class="row" style="
+                        margin:auto;padding:8px">
+                            <div class="col-sm-4  text-center"> <img src="images/lh-2/card/daily.png" class="card-shadow img-fluid">
+                            </div>
+                            <div class="col-sm-4 text-center"> <img src="images/lh-2/card/measure.png" class="card-shadow img-fluid"></div>
+                            <div class="col-sm-4 text-center"> <img src="images/lh-2/card/period.png" class="card-shadow img-fluid"></div>
+                            <div class="col-sm-4 text-center"><img src="images/lh-2/card/tips.png" class="card-shadow img-fluid"></div>
+                            <div class="col-sm-4 text-center"><img src="images/lh-2/card/peak.png" class="card-shadow img-fluid"></div>
+                            <div class="col-sm-4 text-center"><img src="images/lh-2/card/how-to.png" class="card-shadow img-fluid"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+        <div class="row bg-grey">
+            <div class="col-12">
+                <h1 class="text-center">Layout Redesigned</h1>
+            </div>
+
+
+            <div class="col-sm-6 justify-content-center align-self-center ">
+                <h5>首頁</h5>
+                <p>首頁是乘載最重要資訊，以及與使用者互動最為頻繁的頁面。重新調整版面目的在，提供使用者足夠的脈絡完成任務。</p>
+                <ol>
+                    <li>① 日期指顯示當日年月日，改版後變為卡片形式，點擊可以連結到當日健康紀錄</li><br>
+                    <li>② 指示使用者距離經期開始/受孕期還有多久，從原本單一圓圈的形式改變為兩張卡片。一張為距離下次經期開始，另一張為距離下一次受孕期，距離較近的卡片放置在上方。</li><br>
+                    <li>③ 將量測的按鈕與放置到 Bottom Tab 的位階。</li><br>
+                    <li>將主要的頁面切換，由原本的存粹按鈕的形式，變更為Bottom Tab，方便使用者在主要的頁面中切換：首頁、④紀錄、⑤日曆、⑦設定</li><br>
+                    <li>取消歷史訊息的頁面⑥。App的訊息通知為提醒量測、提醒記錄經期，這兩項通知整合到②的卡片上，而且歷史的通知訊息對於使用者來說並無太多意義，因此將此功能取消。</li>
+                </ol>
+            </div>
+            <div class="col-sm-6 col-padding justify-content-center align-self-center">
+                <img src="images/lh-2/layout.svg" class="img-fluid loadEffect" height="400" style="display:block;margin:auto">
+            </div>
+
+            <div class="col-sm-6 col-padding justify-content-center align-self-center">
+                <img src="images/lh-2/layout-records.svg" class="img-fluid loadEffect" height="400" style="display:block;margin:auto">
+            </div>
+            <div class="col-sm-6 justify-content-center align-self-center ">
+                <h5>量測紀錄頁面</h5>
+                <ul>
+                    <li>❌ 上一個版本的量測紀錄頁面的排序，僅為依照時間的排列，由新到舊。</li><br>
+                    <li>✅ 新版本的量測頁面，將同一週期內所量測的紀錄放置在同一張卡片內，並且標示週期的初始日期。
+                        如此整理，方便使用者閱讀以及比較過往的量測紀錄。
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="row" style="background-color:#19D2D2">
+            <div class="col-sm-12 card" style="margin:16px">
+                <h3>專案中獲的啟發</h3><br>
+
+                <p>1️⃣<span style="color:black">別忘了 UI 以外的 feature</span><br>
+                    在設計App時會埋首於產品主要面向的流程與UI設計，但有些不常用但必要的功能需要同時被考慮進來。包括：(1)新版的的更新提醒、(2)邀約評價，需要安排使用者最滿意的當下邀請使用者給產品開發者一些鼓勵、(3)使用條款、隱私政策的變更流程、
+                    (4)設計關鍵指標，衡量產品的成功與否、(5)設計 App 商店搜尋最佳化(ASO)，要確保使用者能透過熱門且適合的關鍵字找到 App，提高被下載的能見度。
+                </p><br>
+                <p>2️⃣ <span style="color:black">降低進入門檻</span><br>
+                    養、套、殺。在數位產產品的設計上，會希望儘可能的大量獲取夠多的使用者，讓他們無痛的開始使用產品，並且持續地與產品互動，未使用者帶來價值為服務提供者創造利潤。
+                    因此，在產品的首次使用體驗就是一個勝負的關鍵。在這次的 App 改版於首次登入使用的流程做很很大的改變，只詢問必要的資訊，且將註冊流程挪到進入 App 之後。目的在於
+                    讓使用者熟悉系統，等到使用者量測完成要查詢歷史資訊時，才需要註冊。
+                </p><br>
+
+            </div>
+        </div>
+
+        <div class="row no-gutters " style="margin:0;padding:0px 0; ">
+            <div class="col-sm-6  next-project  justify-content-center align-self-center  text-center" onclick="javascript:location.href='lh_cht.html'">
+                <div>
+                    <h6 style="line-height:192px !important"> <img src="images/arrow_left.png" style="height:32px;width:32px;margin:-4px 8px 0 0;padding:4px">LH
+                        - v.1</h6>
+                </div>
+            </div>
+            <div class="col-sm-6 next-project  justify-content-center align-self-center  text-center" onclick="javascript:location.href='sideprojects_cht.html'">
+                <div>
+                    <h6 style="line-height:192px !important">
+                        Side Projects<img src="images/arrow_right.png" style="height:32px;width:32px;margin:-4px 0px 0 8px;;padding:4px "></h6>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <img src="images/aaron_logo.png" alt="logo" style="width:24px;opacity:.5;"> aaron.zl.hsu@gmail.com
+    </footer>
+</body>
+
+
+</html>
+
+
+
+
+
+
+<script>
+    $("img.lazy").lazyload({
+        effect: "fadeIn"
+
+    });
+    $(function () {
+        $('.lazy').lazy({
+            placeholder: "data:image/gif;base64,R0lGODlhEALAPQAPzl5uLr9Nrl8e7..."
+        });
+    });
+
+</script>
