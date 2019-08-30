@@ -23,6 +23,47 @@
 	</script>
 
 </head>
+<style>
+		.bubbles{
+			position: absolute;
+			width: 100%;
+		}
+		#bubble-1{
+			background-color: #ffbb93;
+			height:40px;
+			width: 40px;
+			margin: 0 auto;
+			border-radius:50%;
+			position: relative;
+			left:53px;
+			top:100px;
+			animation:ani-bubble-1 2s ease-in-out infinite;
+		}
+		#bubble-2{
+			background-color:#62efff;
+			height:40px;
+			width: 40px;
+			margin: 0 auto;
+			border-radius:50%;
+			position: relative;
+			left:60px;
+			top:60px;
+			animation:ani-bubble-2 3s ease-in-out infinite;
+		}
+	
+		@keyframes ani-bubble-1{
+			0%{top:100px;opacity:1;transform: scale(.2)}
+			25%{top:80px;opacity:.8;transform: scale(.4)}
+			100%{top:0px;opacity: 0;transform: scale(1)}
+		}
+		@keyframes ani-bubble-2{
+			0%{top:60px;opacity:1;transform: scale(.2)}
+			25%{top:40px;opacity:.8;transform: scale(.4)}
+			100%{top:0px;opacity: 0;transform: scale(1)}
+		}
+	
+		
+	</style>
 
 <body style="background-color:whitesmoke">
 	<!---<div style="width:100vw;height:100vh;z-index:1;opacity:.5;position: fixed;">
@@ -56,6 +97,10 @@
 	<div class="container-fluid">
 		<div class="row" style="padding-top:15vh;">
 			<div class="col-sm-12 text-center  ">
+					<div class="bubbles">
+							<div id="bubble-1"></div>
+							<div id="bubble-2"></div>
+						</div>
 				<img class="img-fluid" style="text-align:center" src="images/sideprojects/sideproject_image.png" width="200px"
 				 height="auto">
 				<h1 class="text-center">Side Projects</h1>

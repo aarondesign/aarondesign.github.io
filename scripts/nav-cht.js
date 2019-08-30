@@ -45,3 +45,37 @@ $(window).scroll(function (event) {
     }
     lastScrollTop = st;
 });
+
+$(document).ready(function () {
+   
+    $('#menu-5').mouseover(function(){
+        $('#menu-1,#menu-2,#menu-3,#menu-4').addClass('nav-opacity').removeClass('nav-opacity-reverse');
+    });
+    $('#menu-5').mouseleave(function(){
+        $('#menu-1,#menu-2,#menu-3,#menu-4').removeClass('nav-opacity').addClass('nav-opacity-reverse');
+    });
+    $('#menu-1').mouseover(function(){
+        $('#menu-2,#menu-3,#menu-4,#menu-5').addClass('nav-opacity').removeClass('nav-opacity-reverse');
+    });
+    $('#menu-1').mouseleave(function(){
+        $('#menu-2,#menu-3,#menu-4,#menu-5').removeClass('nav-opacity').addClass('nav-opacity-reverse');
+    });
+    $('#menu-2').mouseover(function(){
+        $('#menu-3,#menu-4,#menu-5,#menu-1').addClass('nav-opacity').removeClass('nav-opacity-reverse');
+    });
+    $('#menu-2').mouseleave(function(){
+        $('#menu-3,#menu-4,#menu-5,#menu-1').removeClass('nav-opacity').addClass('nav-opacity-reverse');
+    });
+    $('#menu-3').mouseover(function(){
+        $('#menu-4,#menu-2,#menu-5,#menu-1').addClass('nav-opacity').removeClass('nav-opacity-reverse');
+    });
+    $('#menu-3').mouseleave(function(){
+        $('#menu-4,#menu-2,#menu-5,#menu-1').removeClass('nav-opacity').addClass('nav-opacity-reverse');
+    });
+    $('#menu-4').mouseover(function(){
+        $('#menu-3,#menu-2,#menu-5,#menu-1').addClass('nav-opacity').removeClass('nav-opacity-reverse');
+    });
+    $('#menu-4').mouseleave(function(){
+        $('#menu-3,#menu-2,#menu-5,#menu-1').removeClass('nav-opacity').addClass('nav-opacity-reverse');
+    });
+});

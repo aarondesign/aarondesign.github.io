@@ -22,38 +22,69 @@
 	</script>
 
 </head>
+<style>
+	.bubbles{
+		position: absolute;
+		width: 100%;
+	}
+	#bubble-1{
+		background-color: #ffbb93;
+		height:40px;
+		width: 40px;
+		margin: 0 auto;
+		border-radius:50%;
+		position: relative;
+		left:53px;
+		top:100px;
+		animation:ani-bubble-1 2s ease-in-out infinite;
+	}
+	#bubble-2{
+		background-color:#62efff;
+		height:40px;
+		width: 40px;
+		margin: 0 auto;
+		border-radius:50%;
+		position: relative;
+		left:60px;
+		top:60px;
+		animation:ani-bubble-2 3s ease-in-out infinite;
+	}
+
+	@keyframes ani-bubble-1{
+		0%{top:100px;opacity:1;transform: scale(.2)}
+		25%{top:80px;opacity:.8;transform: scale(.4)}
+		100%{top:0px;opacity: 0;transform: scale(1)}
+	}
+	@keyframes ani-bubble-2{
+		0%{top:60px;opacity:1;transform: scale(.2)}
+		25%{top:40px;opacity:.8;transform: scale(.4)}
+		100%{top:0px;opacity: 0;transform: scale(1)}
+	}
+
+	
+</style>
 
 <body style="background-color:whitesmoke">
-	<!--div style="width:100vw;height:100vh;z-index:1;opacity:.5;position: fixed;">
-		<div id="circle">
-		</div>
-	</div>-->
-	<script>
-		var text = "";
-		var i;
-		var n;
-		var d = new Date();
-		var s = d.getSeconds();
-
-		for (i = 0; i < 40; i++) {
-			for (n = 0; n < 54; n++) {
-				text += "<div class='circle' style='width:" + (i + n % i) + "px;height:" + n * 20 / n + "px;left:" + i * 50 + "px;top:" + n * 50 + "px;transform: rotate(" + i * n / 2 + "deg);transform-origin:" + 50 + "% " + 50 + "%;background-color:rgba(" + n % i * 10 + ",0," + i * n + "," + (i % n) * 4 / (n * i) + "); '></div>";
-			}
-		}
-		document.getElementById("circle").innerHTML = text;
-	</script>
+	
 	<script src="scripts/nav-en.js"></script>
 	<script>
 		$(document).ready(function () {
 			$('#menu-5').addClass('active animated fadeInDown');
 			$("#language").attr("href", "sideprojects_cht.html");
+
+			
 		});
 
 	</script>
 	<div class="container-fluid">
 		<div class="row" style="padding-top:15vh;">
 			<div class="col-sm-12 text-center  ">
-				<img class="img-fluid" style="text-align:center" src="images/sideprojects/sideproject_image.png" width="200px"
+				<div class="bubbles">
+					<div id="bubble-1"></div>
+					<div id="bubble-2"></div>
+					<div id="bubble-3"></div>
+				</div>
+				<img  style="text-align:center" src="images/sideprojects/sideproject_image.png" width="200px"
 				 height="auto">
 				<h1 class="text-center">Side Projects</h1>
 				<p class="text-center">In my spare time, I practice some tools to improve my ability.<br>
@@ -255,10 +286,10 @@
 		</div>
 	</div>
 	<div class="row no-gutters " style="margin:0;padding:0px 0; ">
-            <div class="col-sm-6  next-project  justify-content-center align-self-center  text-center"  onclick="javascript:location.href='lh.html'"  >
+            <div class="col-sm-6  next-project  justify-content-center align-self-center  text-center"  onclick="javascript:location.href='lh-2.html'"  >
                 <div >
                     <h6 style="line-height:192px !important"> <img src="images/arrow_left.png" style="height:32px;width:32px;margin:-4px 8px 0 0;padding:4px">LH
-                        - v.1</h6>
+                        - v.2</h6>
                 </div>
             </div>
             <div class="col-sm-6 next-project  justify-content-center align-self-center  text-center" onclick="javascript:location.href='index.html'">
