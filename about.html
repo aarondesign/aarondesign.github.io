@@ -65,7 +65,44 @@
 		});
 	</script>
 
+
 </head>
+<style>
+		#dialog{height:56px;width:128px;background:#00bcd4;position: relative;top:16px;border-radius:28px 28px 8px 28px;
+		margin:0 auto;left: -140px;top:30px}
+		
+		.dialog-bubble{
+			height:16px;width:16px;border-radius:8px;background:white;display: inline-block;position: absolute;left:30px;margin:20px 8px;
+			
+		}
+		#bubble-1{animation: bubble1 1s ease-in-out alternate-reverse  infinite;
+		}
+		#bubble-2{animation: bubble1 2s ease-in-out alternate-reverse  infinite;
+		}
+		#bubble-3{animation: bubble1 3s ease-in-out alternate-reverse  infinite;
+		}
+		#bubble-4{animation: bubble1 4s ease-in-out alternate-reverse  infinite;
+		}
+		.bubble-ani{
+			animation: opacity 1s ease-in-out;
+		}
+
+		@keyframes bubble1{
+			0%{opacity:0;margin-left: 0;top:0px }
+			25%{opacity:.3;margin-left: 16px;top:0px  }
+			75%{opacity:.5;margin-left: 32px;top:0px  }
+			100%{opacity: 1;margin-left:48px;top:0px }
+		}
+		@keyframes bubble2{
+			0%{top:0;opacity:.5;}
+			100%{top:20px 16px;opacity:1;}
+		}
+		@keyframes opacity{
+			0%{opacity:1;}
+			50%{opacity:.2;}
+			100%{opacity: 1;}
+		}
+	</style>
 
 <body>
 	<script src="scripts/nav-en.js"></script>
@@ -78,7 +115,16 @@
 	<div class="container-fluid" style="background:whitesmoke">
 		<div class="row align-middle ">
 			<div class="col-sm-4 align-middle">
-				<img class="img-fluid align-middle profile-image" style="border-radius:50%; " src="images/about/profile.png">
+					<div id='dialog'>
+							<div style="text-align: center;vertical-align: middle; ">
+									<div class="dialog-bubble" id="bubble-1"></div>
+									<div class="dialog-bubble" id="bubble-2"></div>
+									<div class="dialog-bubble" id="bubble-3"></div>
+									<div class="dialog-bubble" id="bubble-4"></div>
+							</div>
+							
+						</div>
+				<img class="img-fluid justify-content-center align-self-center profile-image" style="border-radius:50%; " src="images/about/profile.png" width='200' >  
 			</div>
 			<div class="col-sm-8 ">
 				<br>
@@ -280,7 +326,7 @@
 						<li class="list-item">- Visual Design</li>
 						<li class="list-item">- Web / Mobile Design</li>
 						<li class="list-item">- Usability Test</li>
-						<li class="list-item">- Japansese / JLPT N1</li>
+						<li class="list-item">- Japanese / JLPT N1</li>
 					</ul>
 				</div>
 
@@ -295,7 +341,7 @@
 						<li class="list-item">- Framer</li>
 						<li class="list-item">- Origami</li>
 						<li class="list-item">- Sketch / Abstract</li>
-						<li class="list-item">- Wordpress</li>
+						<li class="list-item">- WordPress</li>
 					</ul>
 				</div>
 

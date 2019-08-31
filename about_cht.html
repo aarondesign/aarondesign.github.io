@@ -27,24 +27,28 @@
 		$(document).ready(function () {
 			$("#welcome").fadeIn();
 			$("#question1").click(function () {
+				$('#dialog').toggleClass('bubble-ani');
 				$("#content").append(" <div class='dialog-list'><div class='dialog dialog-right'>可以跟我說說你的工作經驗嗎？</div></div><br>");
 				$("#content").append(" <div id='1111' class='dialog-list'><div class='dialog dialog-left'>從事 UI 設計多年，經手過的案子包含[1]商用軟體系統(虛擬化桌面/檔案加密管理系統)的 UI/GUI 設計、[2]手機 App( iOS/Android )的 UI/GUI 設計、[3]管理後台Web的設計。<b><a href='#work'>點我</a>了解我的工作經驗.</b> </div></div><br>");
 				$("#content").scrollTop(100000);
 				$(this).fadeOut();
 			});
 			$("#question2").click(function () {
+				$('#dialog').toggleClass('bubble-ani');
 				$("#content").append(" <div class='dialog-list'><div class='dialog dialog-right'>你會用的工具？</div></div><br>");
 				$("#content").append(" <div class='dialog-list'><div class='dialog dialog-left'>我會在設計的過程加入低高擬真的原型設計，利用的工具包含:HTML / CSS / jQuery與 Origami Stuio，與利害關係人溝通想法。另外也會測試關鍵體驗流程的易用性，確保產品的可用性。 </div></div><br>");
 				$("#content").scrollTop(100000);
 				$(this).fadeOut();
 			});
 			$("#question3").click(function () {
+				$('#dialog').toggleClass('bubble-ani');
 				$("#content").append(" <div class='dialog-list'><div class='dialog dialog-right'>平常如何自我學習？</div></div><br>");
 				$("#content").append(" <div class='dialog-list'><div class='dialog dialog-left'>在工作之餘，會參加相關社群所舉辦的聚會或工作坊如:HPX、IXDA、Agile Community，並帶回公司內分享給同事。  </div></div><br>");
 				$("#content").scrollTop(100000);
 				$(this).fadeOut();
 			});
 			$("#question4").click(function () {
+				$('#dialog').toggleClass('bubble-ani');
 				$("#content").append(" <div class='dialog-list'><div class='dialog dialog-right'>如何聯絡你</div></div><br>");
 				$("#content").append(" <div class='dialog-list'><div class='dialog dialog-left'> 我的Email是 <a  class='mailtoui' href='mailto:aaron.zl.hsu@gmail.com' >aaron.zl.hsu@gmail.com</a>如有任何需要，歡迎聯絡我</a> </div></div><br>");
 				$("#content").append(" <div class='dialog-list'><div class='dialog dialog-left'>你也可以下載我的<a href='files/aaron_resume.pdf' target='_blank'>簡歷</a> </div></div><br>");
@@ -66,7 +70,40 @@
 		});
 	</script>
 	<style>
+		#dialog{height:56px;width:128px;background:#00bcd4;position: relative;top:16px;border-radius:28px 28px 8px 28px;
+		margin:0 auto;left: -100px;top:30px}
+		
+		.dialog-bubble{
+			height:16px;width:16px;border-radius:8px;background:white;display: inline-block;position: absolute;left:30px;margin:20px 8px;
+			
+		}
+		#bubble-1{animation: bubble1 1s ease-in-out alternate-reverse  infinite;
+		}
+		#bubble-2{animation: bubble1 2s ease-in-out alternate-reverse  infinite;
+		}
+		#bubble-3{animation: bubble1 3s ease-in-out alternate-reverse  infinite;
+		}
+		#bubble-4{animation: bubble1 4s ease-in-out alternate-reverse  infinite;
+		}
+		.bubble-ani{
+			animation: opacity 1s ease-in-out;
+		}
 
+		@keyframes bubble1{
+			0%{opacity:0;margin-left: 0;top:0px }
+			25%{opacity:.3;margin-left: 16px;top:0px  }
+			75%{opacity:.5;margin-left: 32px;top:0px  }
+			100%{opacity: 1;margin-left:48px;top:0px }
+		}
+		@keyframes bubble2{
+			0%{top:0;opacity:.5;}
+			100%{top:20px 16px;opacity:1;}
+		}
+		@keyframes opacity{
+			0%{opacity:1;}
+			50%{opacity:.2;}
+			100%{opacity: 1;}
+		}
 	</style>
 </head>
 
@@ -83,10 +120,20 @@
 
 	<div class="container-fluid" style="background:white">
 		<div class="row align-middle ">
-			<div class="col-sm-4 align-middle">
-				<img class="img-fluid justify-content-center align-self-center profile-image" style="border-radius:50%; " src="images/about/profile.png">
+			<div class="col-sm-4 align-middle"><br><br>
+				<div id='dialog'>
+						<div style="text-align: center;vertical-align: middle; ">
+								<div class="dialog-bubble" id="bubble-1"></div>
+								<div class="dialog-bubble" id="bubble-2"></div>
+								<div class="dialog-bubble" id="bubble-3"></div>
+								<div class="dialog-bubble" id="bubble-4"></div>
+						</div>
+						
+					</div>
+				<img class="img-fluid justify-content-center align-self-center profile-image" style="border-radius:50%;display: block;margin: auto" src="images/about/profile.png" width="200">
+           
 			</div>
-			<div class="col-sm-8 ">
+			<div class="col-sm-8 justify-content-center align-self-center">
 				<br>
 				<div id="about-desktop">
 					<div class="dialog-content" id="content" style="background-color:white">
@@ -126,7 +173,7 @@
 					<h3><b>我是智榕，是一位UI設計師 </h3>
 					<p>從事 UI 設計多年，經手過的案子包含[1]商用軟體系統(虛擬化桌面/檔案加密管理系統)的 UI/GUI 設計、[2]手機 App( iOS/Android )的 UI/GUI
 						設計、[3]管理後台Web的設計。我會在設計的過程加入低高擬真的原型設計，利用的工具包含:HTML / CSS / jQuery與 Origami
-						Stuio，與利害關係人溝通想法。另外也會測試關鍵體驗流程的易用性，確保產品的可用性。</p>
+						Studio，與利害關係人溝通想法。另外也會測試關鍵體驗流程的易用性，確保產品的可用性。</p>
 					<hr>
 					<div class="download">
 						<a href="files/aaron_resume.pdf" target="_blank"><button class="btn btn-dark download">🧾 我的簡歷</button></a><br><br>
@@ -167,7 +214,7 @@
 						</li>
 						<li class="list-item">- 設計行動裝置UI/GUI，包含 iOS 與 Android 平台</li>
 						<li class="list-item">- 設計分析平台 UI/GUI</li>
-						<li class="list-item">- 利用Origami Studio 製作原型展示給利害關係人，並作為開發前測試用 </li>
+						<li class="list-item">- 利用Origami Studio 製作原型，作為開發前測試用 </li>
 						<li class="list-item">- 規劃與分析易用性實驗</li>
 						<li>- 專利 <a href="https://patents.google.com/patent/WO2018166533A1/" target="_blank">(WO2018166533A1 /
 								TW201840293A)</a></li>
@@ -191,7 +238,11 @@
 						<li class="list-item">- 設計行動裝置介面( iOS )</li>
 						<li class="list-item">- 設計管理後台Web UI/GUI</li>
 					</ul>
+					<ul>
+						<li>參加永寧基金會 H.spectrum 的孵化器培訓計畫(2018-2 / 2018-7)</li>
+					</ul>
 				</div>
+
 
 			</div>
 			<div class="col-sm-12 col-lg-12 ">
@@ -209,7 +260,7 @@
 					</ul><br>
 					<ul>
 						<li>
-							<h5>檔案加密管理系統/Data Encryption System Project</h5>
+							<h5>檔案加密管理系統 / Data Encryption System Project</h5>
 						</li>
 						<li class="list-item">- 設計網頁平台的 UI/GUI</li>
 					</ul><br>
@@ -294,7 +345,7 @@
 						<li class="list-item">- Visual Design</li>
 						<li class="list-item">- Web / Mobile Design</li>
 						<li class="list-item">- Usability Test</li>
-						<li class="list-item">- Japansese / JLPT N1</li>
+						<li class="list-item">- Japanese / JLPT N1</li>
 					</ul>
 					<br>
 					<br>
@@ -311,7 +362,7 @@
 						<li class="list-item">- Framer</li>
 						<li class="list-item">- Origami Studio</li>
 						<li class="list-item">- Sketch / Abstract</li>
-						<li class="list-item">- Wordpress</li>
+						<li class="list-item">- WordPress</li>
 					</ul>
 				</div>
 
