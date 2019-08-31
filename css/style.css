@@ -59,7 +59,7 @@
 
 
 	  .nav-opacity{
-		opacity: .5 !important;
+		opacity: .15 !important;
 		-webkit-transition: all 0.5s ease;
 		-moz-transition: all 0.5s ease;
 		-o-transition: all 0.5s ease;
