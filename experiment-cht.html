@@ -1,0 +1,371 @@
+<!--Welcome to check the page-->
+<!--May you have a nice day-->
+<!--copyright@aaron.zl.hsu@gmail.com-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Aaron Hsu - Project LH</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <script src="scripts/load-effect.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="scripts/jquery.lazyload.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131020506-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-131020506-1');
+    </script>
+
+    <script>
+
+        $(document).on('click', 'a[href^="#"]', function (event) {
+            event.preventDefault();
+
+            $('html, body').animate({
+                scrollTop: $($.attr(this, 'href')).offset().top
+                ,
+                easing: "easeinOutCubic"
+            }, 1000);
+        });
+    </script>
+    <style>
+        /* scrollbar*/
+        /* width */
+        ::-webkit-scrollbar-track {
+
+            border-radius: 10px;
+            background-color: black;
+        }
+
+        ::-webkit-scrollbar {
+            width: 12px;
+            background-color: black;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+
+            background-color: #19D2D2;
+        }
+
+        .icon {
+            transition: .2s ease-in-out;
+        }
+
+        .icon:hover {
+            transform: scale(1.5);
+            transition: .5s ease-in-out;
+        }
+
+        /*Scrollbar*/
+        .palette {
+            height: 72px;
+            width: 72px;
+            border-radius: 36px;
+            position: relative;
+            display: inline-block;
+            margin: 8px;
+        }
+
+        .card-shadow {
+            box-shadow: 0 0 8px 0 rgba(100, 100, 100, .4);
+            margin: 8px;
+        }
+
+        .col-padding {
+            padding: 64px 0;
+        }
+
+        .alert {
+            background-color: #FF3A00;
+            color: white;
+            cursor: pointer;
+            transition: .5s;
+            outline: #FF3A00 1px;
+        }
+
+        .alert:hover {
+            opacity: .8;
+            transition: .5s;
+        }
+
+
+
+        .alert::after {
+            content: "call";
+            display: inline-block;
+            padding-left: 4px;
+        }
+
+        .alert::before {
+            content: url(images/clinical/alert.svg);
+            display: inline-block;
+
+        }
+
+
+        .called {
+
+            animation: call .5s ease-in-out;
+            animation-fill-mode: forwards;
+        }
+
+        .called::after {
+            content: "";
+        }
+
+        .called::before {
+            content: url(images/clinical/checked.svg);
+            animation: call-op 1s ease-in-out;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes call {
+            from {
+                width: 96px;
+                background-color: #FF3A00;
+            }
+
+            to {
+                width: 48px;
+                background-color: #19D2D2
+            }
+        }
+
+        @keyframes call-op {
+            from {
+                opacity: 0;
+                transform: rotate(90deg);
+            }
+
+            to {
+                opacity: 1;
+                transform: rotate(0deg);
+            }
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <script src="scripts/nav-cht.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#menu-4-2').addClass('active animated fadeInDown');
+            $('#language').attr('href', 'experiment-cht.html')
+        });
+
+
+
+    </script>
+
+    <br><br>
+
+    <footer>
+        <img src="images/aaron_logo.png" alt="logo" style="width:24px;opacity:.5;"> aaron.zl.hsu@gmail.com
+    </footer>
+</body>
+<div class="container-fluid" style="margin-top:56px;">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="text-center">臨床實驗管理後台</h1>
+            <p class="text-center">此實驗為<a href="lh-2_cht.html">LH App-2.0 </a>的延伸計畫。受測者下載App，使用實驗專用的ID登入，實驗管理者透過後台觀察受測者行為。</p>
+
+            <img src="images/clinical/theme-image.png" class="img-fluid">
+        </div>
+
+    </div>
+    <div class="row bg-grey">
+        <div class="col-sm-6 justify-content-center align-self-center">
+            <h2>核心流程-管理量測異常受測者</h2>
+            <p>
+                實驗管理者登入系統，查閱昨日量測異常清單。如有未按照建議量測的受測者，管理者需聯絡受測者並關懷提醒要按時量測。<br><br>
+                聯絡完成後標記已聯絡，並於受測者頁面中紀錄訪談的要項。
+            </p>
+        </div>
+        <div class="col-sm-6">
+            <img class="img-fluid" src="images/clinical/flow.png">
+        </div>
+
+    </div>
+    <div class="row bg-grey">
+
+        <h2 class="text-center" style="margin:16px auto;width:100%">異常管理 UI 畫面<br></h2>
+        <div class="col-sm-8 offset-sm-2">
+            <img class="img-fluid" src="images/clinical/home-alert.png" style="border:1px solid lightgrey">
+            <p class="text-center"><br>實驗管理員登入畫面後，在左側的列表中會顯示昨日沒有依照 App 建議量測的受測者名單。</p><br><br>
+        </div>
+
+        <div class="col-sm-8 offset-sm-2">
+            <img class="img-fluid" src="images/clinical/home-done.png" style="border:1px solid lightgrey">
+            <br><br>
+            <div style="margin: auto;width: 100%;display: flex;
+            justify-content: center">
+                <div id="call" class="alert" style="height:48px;width:96px;display: flex;
+                    justify-content: center;border-radius:16px"></div>
+            </div>
+            <p class="text-center">聯絡後，管理者可以點選"Call"，按鈕會變更狀態為打勾，方便管理者註記。(點擊按鈕，試看看吧)</p>
+
+
+            <br><br>
+        </div>
+        <script>
+            $(document).ready(function () {
+                $('#call').click(function () {
+                    $('#call').toggleClass('called');
+                });
+
+            });
+
+
+
+        </script>
+        <div class="col-sm-8 offset-sm-2">
+            <img class="img-fluid" src="images/clinical/alert-note.png" style="border:1px solid lightgrey">
+            <p class="text-center"><br>紀錄訪談內容，方便其他管理者了解受測者狀況</p><br><br>
+        </div>
+
+        <div class="col-sm-8 offset-sm-2">
+            <img class="img-fluid" src="images/clinical/home-no-alert.png" style="border:1px solid lightgrey">
+            <p class="text-center"><br>如受測者都依照建議量測，則顯示此畫面。</p><br><br>
+        </div>
+
+        <div class="col-sm-8 offset-sm-2">
+            <img class="img-fluid" src="images/clinical/home-dropdown.png" style="border:1px solid lightgrey">
+            <p class="text-center"><br>透過下拉選單，查閱最近7天的量測異常名單。</p><br><br>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6 justify-content-center align-self-center">
+            <h2>管理受測者 - 新增、編輯、退出</h2>
+            <ol>
+                <li>新增-當有新的受測者加入實驗，系統會自動生成實驗ID，管理者僅需要填入姓名與電話欄位</li>
+                <li>編輯-受測者的資料有變更或是輸入錯誤，可以修改受測者資訊，但實驗ID不可被修改。</li>
+                <li>退出-受測者因為個人因素退出實驗。</li>
+            </ol>
+
+
+        </div>
+        <div class="col-sm-6">
+            <img class="img-fluid" src="images/clinical/flow-users.png">
+        </div>
+
+    </div>
+    <div class="row">
+
+        <h2 class="text-center" style="margin:16px auto;width:100%">受測者管理 UI 畫面<br></h2>
+        <div class="col-sm-8 offset-sm-2">
+            <img class="img-fluid" src="images/clinical/onboarding-confirm.png" style="border:1px solid lightgrey"><br><br>
+            <img class="img-fluid" src="images/clinical/first-user.png" style="border:1px solid lightgrey">
+            <h4 class="text-center">新增受測者-首次使用系統</h4>
+            <p class="text-center">(上）當管理者第一次使用系統，邀請建立第一位受測者。<br>
+                (下）第一位受測者，尚未有量測紀錄。
+            </p>
+            <hr><br><br>
+        </div>
+        <div class="col-sm-8 offset-sm-2">
+            <img class="img-fluid" src="images/clinical/new-user.png" style="border:1px solid lightgrey"><br><br>
+            <img class="img-fluid" src="images/clinical/new-user-dialog.png" style="border:1px solid lightgrey">
+            <h4 class="text-center">新增受測者</h4>
+            <p class="text-center">(上）點選左上新增使用者。<br>
+                (下）填入使者資訊。
+            </p>
+            <hr><br><br>
+        </div>
+
+        <div class="col-sm-8 offset-sm-2">
+            <img class="img-fluid" src="images/clinical/edit-user.png" style="border:1px solid lightgrey"><br><br>
+            <img class="img-fluid" src="images/clinical/edit-user-modal.png" style="border:1px solid lightgrey">
+            <h4 class="text-center">編輯使用者資訊。</h4>
+            <p class="text-center">可以編輯姓名與聯絡方式。<br>
+            </p>
+            <hr><br><br>
+        </div>
+        <div class="col-sm-8 offset-sm-2">
+            <img class="img-fluid" src="images/clinical/drop-out.png" style="border:1px solid lightgrey"><br><br>
+            <img class="img-fluid" src="images/clinical/drop-out-reason.png" style="border:1px solid lightgrey"><br><br>
+            <img class="img-fluid" src="images/clinical/drop-out-resume.png" style="border:1px solid lightgrey">
+            <h4 class="text-center">受測者退出實驗</h4>
+            <p class="text-center">(上)點選退出。<br>(中)填寫退出理由，確保管理者不會誤刪受測者。<br>(下)退出實驗的受測者，會列在名單的最下。點選“Resume"，可讓受測者回到實驗的名單內。
+            </p>
+            <hr><br><br>
+        </div>
+
+    </div>
+
+    <div class="row bg-grey">
+        <h2 class="text-center" style="margin:16px auto;width:100%">其他UI特點<br><br><br><br></h2>
+
+        <div class="col-sm-4 justify-content-center align-self-center ">
+            <img height="300" src="images/clinical/record-list.png"><br><br>
+
+        </div>
+        <div class="col-sm-8 justify-content-center align-self-center ">
+            <h4 class="text-left">列表以週末做分隔</h4>
+            <p class="text-left">標注週末方便管理者區別假日與平日。
+            </p>
+        </div>
+        <hr>
+        <div class="col-sm-4  justify-content-center align-self-center">
+            <h4 class="text-left">隱藏受測者列表</h4>
+            <p class="text-left">不需捲動，可以一次閱覽更多的受測者量測資訊。
+            </p>
+        </div>
+        <div class="col-sm-8">
+            <img class="img-fluid" src="images/clinical/hide-sidemenu.png">
+        </div>
+
+
+    </div>
+</div>
+</div>
+<div class="row no-gutters " style="margin:0;padding:0px 0; ">
+    <div class="col-sm-6  next-project  justify-content-center align-self-center  text-center" onclick="javascript:location.href='lh-2_cht.html'">
+        <div>
+            <h6 style="line-height:192px !important"> <img src="images/arrow_left.png" style="height:32px;width:32px;margin:-4px 8px 0 0;padding:4px">LH
+                - v.2</h6>
+        </div>
+    </div>
+    <div class="col-sm-6 next-project  justify-content-center align-self-center  text-center" onclick="javascript:location.href='sideprojects_cht.html'">
+        <div>
+            <h6 style="line-height:192px !important">
+                Side Projects<img src="images/arrow_right.png" style="height:32px;width:32px;margin:-4px 0px 0 8px;;padding:4px "></h6>
+        </div>
+    </div>
+</div>
+<footer>
+    <img src="images/aaron_logo.png" alt="logo" style="width:24px;opacity:.5;"> aaron.zl.hsu@gmail.com
+</footer>
+
+
+</html>
+
+
+
+
+
+
+<script>
+    $("img.lazy").lazyload({
+        effect: "fadeIn"
+
+    });
+    $(function () {
+        $('.lazy').lazy({
+            placeholder: "data:image/gif;base64,R0lGODlhEALAPQAPzl5uLr9Nrl8e7..."
+        });
+    });
+
+</script>
