@@ -103,29 +103,31 @@
     <!-- End Google Tag Manager (noscript) -->
 
     <div class="col-sm-4 home-nav-left">
-            <div style="height:100vh;z-index:1;opacity:.2;position: fixed;">
-                    <div id="circle">
-                    </div>
-                </div>
-                <script>
-                    var text = "";
-                    var i;
-                    var n;
-                    var d = new Date();
-                    var s = d.getSeconds();
-            
-                    for (i = 0; i < 40; i++) {
-                        for (n = 0; n < 54; n++) {
-                            text += "<div class='circle' style='width:" + (i + n % i) + "px;height:" + n * 5/ n + "px;left:" + i * 20 + "px;top:" + n * 50 + "px;transform: rotate(" + i * n / .8 + "deg);transform-origin:" + 10 + "% " + 50 + "%;background-color:rgba(" + n % i * 10 + ",0," + i * n + "," + (i % n) * 4 / (n * i) + "); '></div>";
-                        }
-                    }
-                    document.getElementById("circle").innerHTML = text;
-                </script>
+        <div style="height:100vh;z-index:1;opacity:.2;position: fixed;">
+            <div id="circle">
+            </div>
+        </div>
+        <script>
+            var text = "";
+            var i;
+            var n;
+            var d = new Date();
+            var s = d.getSeconds();
+
+            for (i = 0; i < 40; i++) {
+                for (n = 0; n < 54; n++) {
+                    text += "<div class='circle' style='width:" + (i + n % i) + "px;height:" + n * 5 / n + "px;left:" + i * 20 + "px;top:" + n * 50 + "px;transform: rotate(" + i * n / .8 + "deg);transform-origin:" + 10 + "% " + 50 + "%;background-color:rgba(" + n % i * 10 + ",0," + i * n + "," + (i % n) * 4 / (n * i) + "); '></div>";
+                }
+            }
+            document.getElementById("circle").innerHTML = text;
+        </script>
         <div class="row" style="height:100vh; padding:96px 56px;  ">
             <div class="col-12 text-center" style="z-index:999;">
                 <h1 class="text-left"> I'm Aaron</h1>
-                <p class="t-grey text-left" style="font-weight:100;line-height:32px  "> I have seven years of user interface design experience and highly skilled in web and mobile UX, interaction design, and prototyping.
-                    </p><br>
+                <p class="t-grey text-left" style="font-weight:100;line-height:32px  "> I have seven years of user
+                    interface design experience and highly skilled in web and mobile UX, interaction design, and
+                    prototyping.
+                </p><br>
                 <div class="text-left " style="background:whitesmoke;padding:18px 18px 8px 18px;border-radius:8px ">
                     <ul>
                         <li style="padding:0;margin:0"> <a href="files/aaron_resume.pdf" target="_blank">🧾 Resume </a></li>
@@ -151,12 +153,45 @@
     </div>
     <div class="col-sm-8" style="float:right;border-left:1px dotted lightgrey">
         <div class="container-fluid">
-            <div class="row " style="padding:96px 56px; ">
-                <div class="col-sm-12">
+            <div class="row" style="padding:56px 32px; ">
+                <div class="col-sm-6 justify-content-center align-self-center">
+                    <a href="lh-2.html"><img class="img-fluid border-radius-16 shadow" src="images/home/lh-v2.png"></a>
+                </div>
+                <div class="col-sm-6">
+                    <h2 class="t-dark">Luteinizing Hormone (LH) Test Project <span>V.2</span></h2>
+                    <p class="t-grey">Using the phone camera to read the test strip that absorbs the woman's urine,
+                        then the
+                        application
+                        will show the level of luteinizing hormone to info user when is the best fertile window.</p>
+                    <hr>
+                    <a href="lh-2.html" style="color:white;position: relative;bottom:0"><button class="btn btn-dark center">Learn
+                            More</button></a>
+                         
+
+                </div>
+
+            </div>
+
+
+            <div class="row" style="padding:56px 32px; ">
+                <div class="col-sm-6 justify-content-center align-self-center">
+                    <a href="sideprojects.html"><img class="img-fluid border-radius-16 shadow" src="images/home/sideprojects_banner.jpg"></a>
+                </div>
+                <div class="col-sm-6">
+                    <h2 class="t-dark">Sideprojects</h2>
+                    <p class="t-grey">In my spare time, I practice some tools to improve my ability. </p>
+                    <hr>
+                    <a href="sideprojects.html" style="color:white;"><button class="btn btn-dark center"> Learn More
+                        </button></a>
+                </div>
+
+            </div>
+            <div class="row " style="padding:56px 32px; ">
+                <div class="col-sm-6 justify-content-center align-self-center">
                     <a href="poct.html"><img class="img-fluid border-radius-16 shadow" src="images/home/POCT_banner.jpg"></a>
                 </div>
-                <div class="col-sm-12">
-                    <h1 class="t-dark">Point of Care System ( POCT )</h1>
+                <div class="col-sm-6">
+                    <h2 class="t-dark">Point of Care System ( POCT )</h2>
                     <p class="t-grey">POCT includes mobile device and web platform, it provides pharmacies to measure
                         customs' lipid
                         and
@@ -168,12 +203,12 @@
 
 
             </div>
-            <div class="row" style="padding:96px 56px; ">
-                <div class="col-sm-12">
+            <div class="row" style="padding:56px 32px; ">
+                <div class="col-sm-6 justify-content-center align-self-center">
                     <a href="lh.html"><img class="img-fluid border-radius-16 shadow" src="images/home/eveline_banner.jpg"></a>
                 </div>
-                <div class="col-sm-12">
-                    <h1 class="t-dark">Luteinizing Hormone (LH) Test Project <span>V.1</span></h1>
+                <div class="col-sm-6">
+                    <h2 class="t-dark">Luteinizing Hormone (LH) Test Project <span>V.1</span></h2>
                     <p class="t-grey">Using the phone camera to read the test strip that absorbs the woman's urine,
                         then the
                         application
@@ -186,38 +221,7 @@
 
             </div>
 
-            <div class="row" style="padding:96px 56px; ">
-                <div class="col-sm-12">
-                    <a href="lh-2.html"><img class="img-fluid border-radius-16 shadow" src="images/home/lh-v2.png"></a>
-                </div>
-                <div class="col-sm-12">
-                    <h1 class="t-dark">Luteinizing Hormone (LH) Test Project <span>V.2</span></h1>
-                    <p class="t-grey">Using the phone camera to read the test strip that absorbs the woman's urine,
-                        then the
-                        application
-                        will show the level of luteinizing hormone to info user when is the best fertile window.</p>
-                    <hr>
-                    <a href="lh-2.html" style="color:white;position: relative;bottom:0"><button class="btn btn-dark center">Learn
-                            More</button></a>
 
-                </div>
-
-            </div>
-
-
-            <div class="row" style="padding:96px 56px; ">
-                <div class="col-sm-12">
-                    <a href="sideprojects.html"><img class="img-fluid border-radius-16 shadow" src="images/home/sideprojects_banner.jpg"></a>
-                </div>
-                <div class="col-sm-12">
-                    <h1 class="t-dark">Sideprojects</h1>
-                    <p class="t-grey">In my spare time, I practice some tools to improve my ability. </p>
-                    <hr>
-                    <a href="sideprojects.html" style="color:white;"><button class="btn btn-dark center"> Learn More
-                        </button></a>
-                </div>
-
-            </div>
 
             <!--<img src="images/home/home_welcome.png"  width="auto" height="200px" style="margin:0 auto" >-->
 

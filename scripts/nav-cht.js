@@ -22,7 +22,7 @@ document.write( '                <li class=\"nav-item\">\n' );
 document.write( '                    <a id=\"menu-4\" class=\"nav-link  \" href=\"lh-2_cht.html\">LH Test App-v2</a>\n' );
 document.write( '                </li>\n' );
 document.write( '                <li class=\"nav-item\">\n' );
-document.write( '                    <a id=\"menu-4-2\" class=\"nav-link  \" href=\"experiment-cht.html\">Clinical Test</a>\n' );
+document.write( '                    <a id=\"menu-4-2\" class=\"nav-link  \" href=\"experiment-cht.html\">Clinical Trial</a>\n' );
 document.write( '                </li>\n' );
 document.write( '                <li class=\"nav-item\">\n' );
 document.write( '                    <a id=\"menu-5\" class=\"nav-link\" href=\"sideprojects_cht.html\">Side Projects</a>\n' );
