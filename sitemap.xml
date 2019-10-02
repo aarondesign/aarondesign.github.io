@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>https://aaronhsu.me/</loc>
+  <lastmod>2019-09-30T14:13:40+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://aaronhsu.me/files/aaron_resume.pdf</loc>
+  <lastmod>2019-09-30T14:13:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://aaronhsu.me/about.html</loc>
+  <lastmod>2019-09-30T14:13:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://aaronhsu.me/lh-2.html</loc>
+  <lastmod>2019-09-30T14:13:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://aaronhsu.me/sideprojects.html</loc>
+  <lastmod>2019-09-30T14:13:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://aaronhsu.me/poct.html</loc>
+  <lastmod>2019-09-30T14:13:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://aaronhsu.me/lh.html</loc>
+  <lastmod>2019-09-30T14:13:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://aaronhsu.me/files/sideprojects/Clock.htm</loc>
+  <lastmod>2019-09-30T14:13:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://aaronhsu.me/files/sideprojects/login.htm</loc>
+  <lastmod>2019-09-30T14:13:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://aaronhsu.me/files/sideprojects/calc.htm</loc>
+  <lastmod>2019-09-30T14:13:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://aaronhsu.me/svg.html</loc>
+  <lastmod>2019-09-30T14:13:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://aaronhsu.me/logo.html</loc>
+  <lastmod>2019-09-30T14:13:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://aaronhsu.me/poct_web.html</loc>
+  <lastmod>2019-09-30T14:13:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://aaronhsu.me/lh_analytics.html</loc>
+  <lastmod>2019-09-30T14:13:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://aaronhsu.me/prototype/poct/login/poct_login.html</loc>
+  <lastmod>2019-09-30T14:13:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://aaronhsu.me/prototype/poct/login/poct_management.html</loc>
+  <lastmod>2019-09-30T14:13:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://aaronhsu.me/prototype/poct/login/mypage.html</loc>
+  <lastmod>2019-09-30T14:13:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
+</urlset>
