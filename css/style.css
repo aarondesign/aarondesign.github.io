@@ -250,7 +250,7 @@
 	  
 	  button:hover {
 		cursor: pointer;
-		color: #161616;
+		color: white;
 	  }
 	  
 	  button:hover::before {

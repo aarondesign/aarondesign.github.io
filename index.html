@@ -4,6 +4,7 @@
     <title>Aaron Hsu</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta title="">
     <link rel="shortcut icon" type="image/png" href="images/favicon.ico" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -176,6 +177,30 @@
                 opacity: 1;
             }
         }
+
+        
+        .clip-circle{
+            clip-path: circle(25% at 30% 50%);
+            animation: clip-c 8s ease-in-out  infinite ;
+            animation-direction: alternate;
+        }
+
+        @keyframes clip-c{
+            0%{
+                clip-path: circle(20% at 30% 50%);
+                
+            }
+            30%{
+                clip-path: circle(25% at 40% 50%);
+                
+            }
+           100%{
+                clip-path: circle(20% at 70% 50%);
+                
+            }
+        }
+
+       
     </style>
 
 </head>
@@ -192,9 +217,9 @@
             </div>
         </div>
         <div class="Name" style="position: relative;width: 100%; ">
-            <div class="row">
-                <div class="col-sm-12">
-                    <h1 id="aaron" class="justify-content-center text-center " style="vertical-align: middle; ;font-size:10em"><span
+            <div class="row" >
+                <div class="col-sm-12" >
+                    <h1 id="aaron" class="justify-content-center text-center " style="vertical-align: middle; ;font-size:10em;"><span
                             style="text-shadow: 1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;">Aaron</span>
                         <span style="color:rgba(255, 255, 255, .9);font-weight:900;text-shadow: 2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;">
                            Hsu</span></h1>
@@ -257,7 +282,7 @@
                     <br>
                     <h6><span style="font-weight: 800">Projects</span></h6>
                     <div class="card3 " id="first-card">
-                        <a href="poct.html"><img class=" border-radius-16 shadow" height="200" src="images/home/POCT_banner.jpg"></a>
+                        <a href="poct.html"><img class=" border-radius-16 shadow clip-circle" height="200" src="images/home/POCT_banner.jpg" style=""></a>
                         <h5>Point of care (POCT)</h5>
                         <h6 class="t-grey">POCT includes mobile device and web platform, it provides pharmacies to
                             measure customs' lipid and Hba1c. The system will show the results in a few minutes.</h6>
@@ -266,7 +291,7 @@
                                 More</button></a>
                     </div><br>
                     <div class="card3">
-                        <a href="lh-2.html"><img class=" border-radius-16 shadow" height="200" src="images/home/lh-v2.png"></a>
+                        <a href="lh-2.html"><img class=" border-radius-16 shadow clip-circle" height="200" src="images/home/lh-v2.png"></a>
                         <h5 class="t-dark">Luteinizing Hormone (LH) Test Project V.2</h5>
                         <h6 class="t-grey">Using the phone camera to read the test strip that absorbs the woman's
                             urine,
@@ -278,7 +303,7 @@
                                 More</button></a>
                     </div><br>
                     <div class="card3">
-                        <a href="lh.html"><img class=" border-radius-16 shadow" height="200" src="images/home/eveline_banner.jpg"></a>
+                        <a href="lh.html"><img class=" border-radius-16 shadow clip-circle" height="200" src="images/home/eveline_banner.jpg"></a>
                         <h5 class="t-dark">Luteinizing Hormone (LH) Test Project V.1</h5>
                         <h6 class="t-grey">Using the phone camera to read the test strip that absorbs the woman's
                             urine,
@@ -290,7 +315,7 @@
                                 More</button></a>
                     </div><br>
                     <div class="card3 ">
-                        <a href="sideprojects.html"><img class=" border-radius-16 shadow" height="200" src="images/home/sideprojects_banner.jpg"></a>
+                        <a href="sideprojects.html"><img class=" border-radius-16 shadow clip-circle" height="200" src="images/home/sideprojects_banner.jpg"></a>
                         <h5>Side projects</h5>
                         <h6 class="t-grey">In my spare time, I practice some tools to improve my ability.</h6>
                         <hr>
@@ -372,7 +397,7 @@
                     <a href="https://medium.com/@aaron.zl.hsu/">
                         <h3  class="title2">Medium</h3>
                     </a>
-                    <h3  class="title2">aaron.zl.hsu@gmail.com</h3>
+                    <h3  class="title2" >aaron.zl.hsu@gmail.com</h3>
 
                 </div>
 
