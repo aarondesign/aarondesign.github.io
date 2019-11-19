@@ -24,7 +24,8 @@
     </script>
     <script>
         $(document).ready(function () {
-
+            
+          
             $(window).scroll(function () {
                 var remaining = $(this).scrollTop();
                 var text = "";
@@ -48,7 +49,7 @@
 
                 $("body").css({ "background": "hsla(" + 90 + remaining / 10 + ",40%,50%,50%)" });
                 $(".first-card").css({ "opacity": "" + (remaining / 200 + .1) + "" });
-                $("#nav").css({ "opacity": "" + (remaining / 300 +0) + "" });
+                $("#nav").css({ "opacity": "" + (remaining / 300 + 0) + "" });
                 $(".title2").css({ "color": "hsl(" + 90 + remaining / 10 + ",70%,20%)" });
                 $(".title3").css({ "color": "hsl(" + 90 + remaining / 10 + ",80%,10%)" });
                 $(".card3").css({ "background-color": "hsla(" + 90 + remaining / 10 + ",70%,20%,10%)", "padding": "24px" });
@@ -113,19 +114,7 @@
             border: 1px solid rgba(255, 255, 255, 0);
         }
 
-        @keyframes cirA {
-            0% {
-                border: 1px solid rgba(255, 255, 255, .5);
-            }
-
-            50% {
-                border: 1px solid rgba(255, 255, 255, .4);
-            }
-
-            100% {
-                border: 1px solid rgba(255, 255, 255, .5);
-            }
-        }
+        
 
         html {
             scroll-behavior: smooth;
@@ -178,35 +167,24 @@
             }
         }
 
+        #hi{
+            clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+            animation: hi2 1s ease-in-out infinite alternate ;
+            animation-delay: 2s;
+            
+        }
+
+        @keyframes hi2{
+            0%{clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);}
+            100%{clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 60% 100%, 50% 75%, 0% 75%);}
+        }
         
-        .clip-circle{
-            clip-path: circle(25% at 30% 50%);
-            animation: clip-c 8s ease-in-out  infinite ;
-            animation-direction: alternate;
-        }
-
-        @keyframes clip-c{
-            0%{
-                clip-path: circle(20% at 30% 50%);
-                
-            }
-            30%{
-                clip-path: circle(25% at 40% 50%);
-                
-            }
-           100%{
-                clip-path: circle(20% at 70% 50%);
-                
-            }
-        }
-
-       
     </style>
 
 </head>
 
 <body style=" overflow-x:hidden">
-    
+
     <div id="container">
         <div class="row d-flex justify-content-center" style="width:100%;margin:0 auto;position: fixed; vertical-align:middle;">
             <div id="circle2" class="" style="top:20vh;position:relative;width: 100px;height: 100px;">
@@ -217,47 +195,47 @@
             </div>
         </div>
         <div class="Name" style="position: relative;width: 100%; ">
-            <div class="row" >
-                <div class="col-sm-6" >
-                    <h1 id="aaron" class=" text-left " style="vertical-align: middle; ;font-size:7em;"><span
-                            style="text-shadow: 1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;">Aaron</span>
+            <div class="row">
+                <div class="col-sm-6">
+                        <div id="hi" class="text-center" style="height:48px;width: 72px;background-color:white;"><h6 class="title2" style="line-height:32px;">I'm</h6></div>
+                    <h1 id="aaron" class=" text-left " style="vertical-align: middle; ;font-size:7em;"><span style="text-shadow: 1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;">Aaron</span>
                         <span style="color:rgba(255, 255, 255, .9);font-weight:900;text-shadow: 2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;">
-                           Hsu</span></h1>
+                            Hsu</span></h1>
 
 
                 </div>
                 <div class="col-sm-6">
 
-                        <div id="aaron2">
-                            <hr>
-                                <h1 id="ui">Senior UI Designer</h1>
-                                <h4 class="t-grey text-left" style="font-weight:100;line-height:32px  "> I have seven years of
-                                    user
-                                    interface design experience and<br> highly skilled in web and mobile UX, interaction
-                                    design,
-                                    and
-                                    prototyping.
-                                </h4><br>
-                                <div style="display:inline">
-                                    <button class="btn btn-dark" onclick="javascript:location.href='files/aaron_resume.pdf' "
-                                        target="_blank">Download Resume</button> <button class="btn btn-dark" onclick="javascript:location.href='#contact' ">
-                                        Contact me</button>
-                                </div>
-                            </div><br>
-                            <hr>
+                    <div id="aaron2">
+                        <hr>
+                        <h1 id="ui">Senior UI Designer</h1>
+                        <h4 class="t-grey text-left" style="font-weight:100;line-height:32px  "> I have seven years of
+                            user
+                            interface design experience and<br> highly skilled in web and mobile UX, interaction
+                            design,
+                            and
+                            prototyping.
+                        </h4><br>
+                        <div style="display:inline">
+                            <button class="btn btn-dark" onclick="javascript:location.href='files/aaron_resume.pdf' "
+                                target="_blank">Download Resume</button> <button id="contact_btn" class="btn btn-dark" onclick="javascript:location.href='#contact' ">
+                                Contact me</button>
+                        </div>
+                    </div><br>
+                    <hr>
                 </div>
             </div>
 
         </div>
         <div id="exp" style="position: relative;width: 100%; ">
-            
+
             <div class="row" style="padding:32px 32px;">
                 <div class="col-sm-4 justify-content-center align-self-center">
                     <img src="http://astrosage.github.io/pic/banner_300_job.svg" class="img-fluid center">
 
 
                 </div>
-                <div class="col-sm-8">
+                <div class="col-sm-8 ">
                     <h1 class="title2 first-card">Works and Projects</h1>
                     <hr>
                     <h5 class="title2 first-card"> iXensor Co., LTD <span class="bg-color">2016
@@ -265,73 +243,102 @@
                     <h3 class="first-card"><span style="font-weight: 800">Senior UI Designer</span></h3>
                     <ul class="first-card">
                         <h6 class="title3">✔︎ H.spectrum Incubator Program <span class="bg-color">2018
-                              </span> </h6>
+                            </span> </h6>
                         <h6 class="title3">✔︎ Patent <a class="title3" href="https://patents.google.com/patent/WO2018166533A1/"
                                 target="_blank">(WO2018166533A1
                                 /
                                 TW201840293A)</a></h6>
                         <h6 class="title3">✔︎ Awards : <a href="https://awards.babytechsummit.com/eveline-smart-fertility-system/"
                                 target="_blank">CES Baby Tech <span class="bg-color">2018
-                                    </span></a>, <a href="https://www.g-mark.org/award/describe/44849"
-                                target="_blank">G-Mark
+                                </span></a>, <a href="https://www.g-mark.org/award/describe/44849" target="_blank">G-Mark
                                 <span class="bg-color">2017
-                                    </span></a></h6>
+                                </span></a></h6>
                     </ul>
                     <br>
-                    <h6><span style="font-weight: 800">Projects</span></h6>
-                    <div class="card3 " id="first-card">
-                        <a href="poct.html"><img class=" border-radius-16 shadow clip-circle" height="200" src="images/home/POCT_banner.jpg" style=""></a>
-                        <h5>Point of care (POCT)</h5>
-                        <h6 class="t-grey">POCT includes mobile device and web platform, it provides pharmacies to
-                            measure customs' lipid and Hba1c. The system will show the results in a few minutes.</h6>
-                        <hr>
-                        <a href="poct.html" style="color:white;position: relative;bottom:0"><button class="btn btn-dark">Learn
-                                More</button></a>
+                    <h6 class="first-card"><span style="font-weight: 800">Projects</span></h6>
+                    <div class="card3 row first-card" >
+
+                        <div class="col-sm-6">
+
+                            <h5>Point of care (POCT)</h5>
+                            <h6 class="t-grey">POCT includes mobile device and web platform, it provides pharmacies to
+                                measure customs' lipid and Hba1c. The system will show the results in a few minutes.</h6>
+                            <hr>
+                            <a href="poct.html" style="color:white;position: relative;bottom:0"><button class="btn btn-dark">Learn
+                                    More</button></a>
+                        </div>
+                        <div class="col-sm-6">
+                            <a href="poct.html"><img class="img-fluid border-radius-16 shadow " height="200" src="images/home/POCT_banner.jpg"
+                                    style=""></a>
+                        </div>
+
                     </div><br>
-                    <div class="card3">
-                        <a href="lh-2.html"><img class=" border-radius-16 shadow clip-circle" height="200" src="images/home/lh-v2.png"></a>
-                        <h5 class="t-dark">Luteinizing Hormone (LH) Test Project V.2</h5>
-                        <h6 class="t-grey">Using the phone camera to read the test strip that absorbs the woman's
-                            urine,
-                            then the
-                            application
-                            will show the level of luteinizing hormone to info user when is the best fertile window.</h6>
-                        <hr>
-                        <a href="lh-2.html" style="color:white;position: relative;bottom:0"><button class="btn btn-dark">Learn
-                                More</button></a>
+                    <div class="card3 row">
+
+                        <div class="col-sm-6">
+                            <h5 class="t-dark">Luteinizing Hormone (LH) Test Project V.2</h5>
+                            <h6 class="t-grey">Using the phone camera to read the test strip that absorbs the woman's
+                                urine,
+                                then the
+                                application
+                                will show the level of luteinizing hormone to info user when is the best fertile
+                                window.</h6>
+                            <hr>
+                            <a href="lh-2.html" style="color:white;position: relative;bottom:0"><button class="btn btn-dark">Learn
+                                    More</button></a>
+                        </div>
+                        <div class="col-sm-6">
+                            <a href="lh-2.html"><img class="img-fluid border-radius-16 shadow " src="images/home/lh-v2.png"></a>
+                        </div>
+
+
                     </div><br>
-                    <div class="card3">
-                        <a href="lh.html"><img class=" border-radius-16 shadow clip-circle" height="200" src="images/home/eveline_banner.jpg"></a>
-                        <h5 class="t-dark">Luteinizing Hormone (LH) Test Project V.1</h5>
-                        <h6 class="t-grey">Using the phone camera to read the test strip that absorbs the woman's
-                            urine,
-                            then the
-                            application
-                            will show the level of luteinizing hormone to info user when is the best fertile window.</h6>
-                        <hr>
-                        <a href="lh.html" style="color:white;position: relative;bottom:0"><button class="btn btn-dark">Learn
-                                More</button></a>
+                    <div class="card3 row ">
+                        <div class="col-sm-6">
+                            <h5 class="t-dark">Luteinizing Hormone (LH) Test Project V.1</h5>
+                            <h6 class="t-grey">Using the phone camera to read the test strip that absorbs the woman's
+                                urine,
+                                then the
+                                application
+                                will show the level of luteinizing hormone to info user when is the best fertile
+                                window.</h6>
+                            <hr>
+                            <a href="lh.html" style="color:white;position: relative;bottom:0"><button class="btn btn-dark">Learn
+                                    More</button></a>
+                        </div>
+                        <div class="col-sm-6">
+                            <a href="lh.html"><img class=" border-radius-16 shadow img-fluid " src="images/home/eveline_banner.jpg"></a>
+                        </div>
+
+
                     </div><br>
-                    <div class="card3 ">
-                        <a href="sideprojects.html"><img class=" border-radius-16 shadow clip-circle" height="200" src="images/home/sideprojects_banner.jpg"></a>
-                        <h5>Side projects</h5>
-                        <h6 class="t-grey">In my spare time, I practice some tools to improve my ability.</h6>
-                        <hr>
-                        <a href="sideprojects.html" style="color:white;position: relative;bottom:0"><button class="btn btn-dark">Learn
-                                More</button></a>
+                    <div class="card3 row">
+                        <div class="col-sm-6">
+
+                            <h5>Side projects</h5>
+                            <h6 class="t-grey">In my spare time, I practice some tools to improve my ability.</h6>
+                            <hr>
+                            <a href="sideprojects.html" style="color:white;position: relative;bottom:0"><button class="btn btn-dark">Learn
+                                    More</button></a>
+                        </div>
+                        <div class="col-sm-6">
+                            <a href="sideprojects.html"><img class=" border-radius-16 shadow  img-fluid" height="200"
+                                    src="images/home/sideprojects_banner.jpg"></a>
+                        </div>
+
                     </div><br>
                     <br><br>
                     <h5 class="title2"> Foxconn Group <span class="bg-color">2012
                             - 2016</span> </h5>
                     <h3><span style="font-weight: 800">UI Designer</span></h3>
                     <h6>Projects:</h6>
-                    <div class="card3 ">
+                    <div class="card3 row" style="display:block">
                         <h5 class="title2">Virtual Desktop Infra- structure Project</h5>
-                        <h6 class="title3"> Design Windows User Interface / Flow / GUI</h6><br>
+                        <h6 class="title3"> Design Windows User Interface / Flow / GUI</h6>
                     </div><br>
-                    <div class="card3 ">
+                    <div class="card3 row "  style="display:block">
                         <h5 class="title2">Data Encryption System Project</h5>
-                        <h6 class="title3"> Design Windows User Interface / Flow / GUI</h6><br>
+                        <h6 class="title3"> Design Windows User Interface / Flow / GUI</h6>
                     </div>
                 </div>
 
@@ -367,12 +374,12 @@
                     <h3 class="title3"><span style="font-weight: 800">Department of Industrial Design</span>, Musashino
                         Art
                         University, Tokyo</h3>
-                   
-                        <h6 class=" title3">✔︎ Kyocera Industry-Academy Project</h6>
-                        <h6 class=" title3">✔︎ <a href="https://astamuse.com/ja/published/JP/No/2011176646" target="_blank">
-                                2011-176646,
-                                Japan Patent</a></h6>
-                    
+
+                    <h6 class=" title3">✔︎ Kyocera Industry-Academy Project</h6>
+                    <h6 class=" title3">✔︎ <a href="https://astamuse.com/ja/published/JP/No/2011176646" target="_blank">
+                            2011-176646,
+                            Japan Patent</a></h6>
+
                     <br>
                     <h5 class="title2"> Undergraduate <span class="bg-color">2004
                             - 2008</span> </h5>
@@ -391,12 +398,13 @@
 
 
                 </div>
-                <div class="col-sm-8 justify-content-center align-self-center">
+                <div class="col-sm-8 justify-content-center align-self-center" id="contact">
+                        <div id="hi" class="text-center" style="height:48px;width: 72px;background-color:white;"><h6 style="line-height:32px;">Hello</h6></div>
                     <a href="https://medium.com/@aaron.zl.hsu/">
-                        <h3  class="title2">Medium</h3>
+                        <h3 class="title2">Medium</h3>
                     </a>
-                    <h3  class="title2" >aaron.zl.hsu@gmail.com</h3>
-
+                    <h3 class="title2">aaron.zl.hsu@gmail.com</h3>
+                   
                 </div>
 
             </div>
