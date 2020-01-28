@@ -1,10 +1,13 @@
-<html>
+<!--Welcome to check the page~-->
+<!--May you have a nice day-->
+<!--copyright@aaron.zl.hsu@gmail.com-->
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <title>Aaron Hsu</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta title="">
     <link rel="shortcut icon" type="image/png" href="images/favicon.ico" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -22,514 +25,153 @@
 
         gtag('config', 'UA-131020506-1');
     </script>
+    <!-- Hotjar Tracking Code for aaronhsu.me -->
     <script>
-        $(document).ready(function () {
-
-
-            $(window).scroll(function () {
-                var remaining = $(this).scrollTop();
-                var text = "";
-                $('#debug').text(remaining);
-                //$('.circle').css({ "height": remaining/2, "width": remaining/2,"top":100% - remaining/2,"background":"rgba("+remaining/10+",200,200,1)" });
-                if (remaining < 1000) {
-                    // $('.circle').css({ "transform": "scale("+remaining/300+")","background":"rgba("+remaining/10+",200,200,1)" });
-                    $("#circle2").css({ "left": "calc(( 50vw - " + remaining / 3.3 + "px))" });
-                    $("#lookdown").css({ "border-radius": "" + 50 - remaining / 20 + "%", "transform": "rotate(" + remaining / -6 + "deg)", "opacity": "" + 1 - remaining / 500 + "" });
-                    for (i = 0; i < remaining / 30; i++) {
-                        text += "<div class='cir2 justify-content-center' style=height:" + 300 + "px;width:" + 300 + "px;transform:rotate(" + i * 30 + "deg);transform-origin:" + remaining / 10 + "% " + i * 10 + "%;border: 1px solid hsl(" + remaining / 10 + ",100%,50%);></div>";
-                    }
-                } else {
-                    for (i = 0; i < 12; i++) {
-                        text += "<div class='cir2 justify-content-center' style=height:" + 300 + "px;width:" + 300 + "px;transform:rotate(" + i * 30 + "deg);transform-origin:" + 100 + "% " + i * 10 + "%;></div>";
-                    }
-                    $("#circle2").css({ "left": "calc(( 50vw - " + 300 + "px))" });
-                }
-
-
-
-                $("body").css({ "background": "hsla(" + 90 + remaining / 10 + ",40%,50%,50%)" });
-                $(".first-card").css({ "opacity": "" + (remaining / 200 + .1) + "" });
-                $("#nav").css({ "opacity": "" + (remaining / 300 + 0) + "" });
-                $(".title2").css({ "color": "hsl(" + 90 + remaining / 10 + ",70%,20%)" });
-                $(".title3").css({ "color": "hsl(" + 90 + remaining / 10 + ",80%,10%)" });
-                $(".card3").css({ "background-color": "hsla(" + 90 + remaining / 10 + ",70%,20%,10%)", "padding": "24px" });
-                $(".bg-color").css({ "background": "hsla(" + 90 + remaining / 10 + ",70%,20%,10%)" });
-                $("#aaron").css({ "opacity": "" + 1 - remaining / 200 + "", "transform": "skewX(" + remaining / 10 + "deg)" });
-                $("#aaron2").css({ "opacity": "" + 1 - remaining / 300 + "", "transform": "skewX(" + remaining / -10 + "deg)", "margin-top": "" + remaining * -.5 + "px" });
-                $("#avatar").css({ "opacity": "" + 1 - remaining / 20 + "", "letter-spacing": ""+remaining/2+"px" });
-
-
-
-
-                document.getElementById("circle2").innerHTML = text;
-            }).scroll();
-        });
-
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+            h._hjSettings = { hjid: 1207934, hjsv: 6 };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script'); r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
     </script>
 
-    <style>
-        #container {
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-K88K22L');</script>
+    <!-- End Google Tag Manager -->
+    <script>
+        /*$(window).scroll(function () {
+            last = $("body").height() - $(window).height() - 50;
 
-            width: 100vw;
-            overflow-y: hidden;
-            overflow-x: hidden;
-            z-index: 1;
-
-        }
-
-        #content {
-            height: 300vh;
-        }
-
-        #debug {
-            position: fixed;
-            top: 10px;
-            left: 10px;
-        }
-
-        .circle {
-            width: 100px;
-            height: 100px;
-            position: relative;
-            z-index: 999;
-            border-radius: 50%;
-            transition: 1s ease-in-out;
-            transform-origin: 50% 50%;
-            top: calc((100vh - 100px)/2);
-
-        }
-
-        .cir2 {
-            position: absolute;
-            background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, .1));
-            transition: 1s ease-in-out;
-            border-radius: 50%;
-            margin: 0 auto;
-            border: 1px solid rgba(255, 255, 255, .5);
-            animation: cirA 2s ease-in-out;
-            animation-iteration-count: infinite;
-        }
-
-        .cir2:hover {
-            border: 1px solid rgba(255, 255, 255, 0);
-        }
-
-
-
-        html {
-            scroll-behavior: smooth;
-
-        }
-
-        i {
-            border: solid white;
-            border-width: 0 6px 6px 0;
-            display: inline-block;
-            padding: 12px;
-            border-radius: 1px;
-
-            animation: arrow 2s ease-in-out infinite;
-        }
-
-        .down {
-            transform: rotate(45deg);
-            -webkit-transform: rotate(45deg);
-        }
-
-        .center {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 50%;
-        }
-
-        .card3 {
-
-            border-radius: 8px;
-        }
-
-        .bg-color {
-            padding: 4px 8px;
-            font-size: 14px;
-            margin-bottom: 20px;
-            border-radius: 20px;
-        }
-
-        @keyframes arrow {
-            0% {
-                margin-top: 0px;
-                opacity: .5;
+            if ($(window).scrollTop() >= 100) {
+                $("nav").animate({ opacity: ".8" }, 100);
+                $("#aaron_logo").fadeIn();
+                $("#aaron_logo_2").hide();
             }
 
-            100% {
-                margin-top: 12px;
-                opacity: 1;
-            }
-        }
-
-        #hi {
-            clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
-            animation: hi2 1s ease-in-out infinite alternate;
-            animation-delay: 2s;
-
-        }
-
-        @keyframes hi2 {
-            0% {
-                clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
-                margin-bottom: 10px;
+            else {
+                $("nav").animate({ opacity: "1" }, 100);
+                $("#aaron_logo").fadeOut();
+                $("#aaron_logo_2").show();
             }
 
-            100% {
-                clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 50% 100%, 50% 75%, 0% 75%);
-                margin-bottom: 0px;
+        });*/
+
+        $(window).scroll(function () {
+            last = $("body").height() - $(window).height() - 50;
+
+            if ($(window).scrollTop() >= last) {
+                $("footer").fadeIn(1000);
             }
-        }
-    </style>
+
+
+        });
+
+        $(document).on('click', 'a[href^="#"]', function (event) {
+            event.preventDefault();
+
+            $('html, body').animate({
+                scrollTop: $($.attr(this, 'href')).offset().top
+                ,
+                easing: "easeinOutCubic"
+            }, 1000);
+        });
+
+
+        $(document).ready(function () {
+            $("#close-msg").click(function () {
+                $(".mobile-alert").fadeOut();
+            });
+        });
+    </script>
+
 
 </head>
 
-<body style=" overflow-x:hidden">
-   <div style="position: absolute;font-size: 8px;" id="avatar">
-      <!-- IMAGE BEGINS HERE -->
-<font  >
-    <pre>                                                                                                    
-                                   `:+osyyo/+:::/::-`                                                   
-                                `:smmmmmmmmmmddddddhs+:-.`                                              
-                              -+ydmmmmmmmmmmmmmmmmmdddhhs/:-`                                           
-                            `/ydmmmmmNmmmmmmmmmmmmmmmddddhhhyo.                                         
-                           `.ydmmmmmNmmNNNmmmmmmmmNNmmmddhdddhy/`                                       
-                          ./sdmmNNNNNNNmmNmmmmdmmmmmmmmmmdhhhhhh+`                                      
-                        `/ydmmmmNNNNNNNNmmmdddddmmddddddmmmdhhhhho`                                     
-                        +hdddmmmmmdhhyyyyssosssyyyhhhdddddmmhhhhhh-                                     
-                       :hddmmmmmhyso++++///////+++oossyhdddmmdhhdd+                                     
-                       yddmmmddyso+////:::----::::///+ooyhddmddddds                                     
-                      .hdmmmdhyso++/:::::----------::://+osyhdhhhhh`                                    
-                      `ydmmmysso++/::::---------------::://oyyyyhhs`                                    
-                       oddmdsooo+//::---.------------:::::::+sssyys                                     
-                       .ydmho+++++++//::::::://+ooo+///+/:--::+syys                                     
-                        .hhs//ossyyyysoo++//ossssso+//+oso//::+yyhs                                     
-                         +y/:+ossssssssyyso+oyyyyyyysoo+sdhooo+sys/.`                                   
-                         .y+oysoyhhdhysyddhydd//ossso+++/h///::/yo/+:                                   
-                          -ddy+oyysysooohd+:oh+//+o+++/::s----::oo//-                                   
-                          +oso`:+ooooo++hy/-./o+/////://+:----::/+/:.                                   
-                          :o:o::+oo+++osh+/-..-+++++////-------::::-                                    
-                           /://+ooosssys+++/:::--:+++/:--------::---                                    
-                            -::/+oooo+s+oyhysssyo/::::::-------::--.                                    
-                            `:::/+++/+ossso++/:------::::::::-:::-.`                                    
-                             -::/++++++///////::::--:::::::::::/:`                                      
-                             `://++++o++ossssoooo+oooo/:::/::///:                                       
-                              -/++++osydsosso+/:://:-://::::////+/`                                     
-                               ./+++oooo++sssoo+//::::://///++o+dds`                                    
-                                `:++ooo+++osoo++//:::::::/+ossooddho`                                   
-                                  `-++++++ooo++//::::::/osyyso+omddhs-                                  
-                                    ./+++++oooo+++++++osyssoo++ymdddhy+.                                
-                                   :hs//+ossyyyyyyyyyyyssooo+/odddddddhy+.                              
-                                 -sdmm+//+osyyyyyyyysssooo+++ydmddddddddhy:                             
-                               `/hmmmmh//+ossyyyyyssssooo++sdmmmddddddddhhy.                            
-                              .sdmmmNNs+/++osyyyyyysssoooohmmmmmddddddddddhs:.                          
-                           `-/hdmmmNNdoy+/+osyyyyyyyssooydmmmmmdddddddddddhhhyo:.                       
-                       .-/osydmmmNNNNhsdy//+oyyyyyyssoshmmmmmmmmmmdddddddddddhhhyo/.`                   
-                     -oyhhhhdmmmmNNNNm/dd//+osyyyss+/odmmmmmmmmmmmmmdddddddddddddhhys/-`                
-                   .ohhhhhhdmmmmNNNNNm/:oo++ooo+/::/ydmmmmmmmmmmmmmmmmmmddmmddddddddhhhyo:.             
-                 `:yhhhhhddmmNNNNNNNNhs-.-://::::/sdmmmmmmmmmmmmmmmmmmmddmmmmmmmddddddddhhyo/-`         
-                `shhhddmmmmmNNNNNNNNds+/.-------/yddmmmmmmmmmmmmmmmmmmmdmmmmmmmmmmddddddddddhhy+.       
-     
-    </pre></font>
-    <!-- IMAGE ENDS HERE -->
-    
-   </div>
-    <div id="container">
-        <div class="row d-flex justify-content-center" style="width:100%;margin:0 auto;position: fixed; vertical-align:middle;">
-            <div id="circle2" class="" style="top:20vh;position:relative;width: 100px;height: 100px;">
+<body>
 
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K88K22L" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+
+    <div class="col-sm-12" style="float:right;border-left:1px dotted ">
+
+        <div class="container-fluid">
+            <div class="row" style="padding:32px 32px;">
+                <div class="col-sm-12 ">
+                    <h3 class="text-left">Aaron Hsu</h3>
+                    <h5 class="text-left"><a href="profile.html">Profile</a></h5><br>
+                    <p class="text-left">aaron.zl.hsu@gmail.com</p>
+                </div>
             </div>
-            <div class="circle">
-                <!--div id="debug"></div>-->
-            </div>
-        </div>
-        <div class="Name" style="position: relative;width: 100%; ">
-            <div class="row">
-                <div class="col-sm-6">
-                    <!--div id="hi" class="text-center title2" style="height:48px;width: 72px;background-color:white;">
-                        <h6 style="line-height:32px;">I'm</h6>
-                    </div-->
-                    <!--h1 id="aaron" class=" text-left " style="vertical-align: middle; ;font-size:7em;"><span style="text-shadow: 1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;">Aaron</span>
-                        <span style="color:rgba(255, 255, 255, .9);font-weight:900;text-shadow: 2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;">
-                            Hsu</span></h1-->
+            <div class="row" style="padding:56px 32px; ">
+                <div class="col-sm-6 justify-content-center align-self-center">
+                    <a href="lh-2.html"><img class="img-fluid border-radius-16 shadow" src="images/home/lh-v2.png"></a>
+                    <h2 class="t-dark"><a href="lh-2.html">Luteinizing Hormone (LH) Test Project <span>V.2</span></a></h2>
+                    <p class="t-grey">Using the phone camera to read the test strip that absorbs the woman's urine,
+                        then the
+                        application
+                        will show the level of luteinizing hormone to info user when is the best fertile window.</p>
 
 
                 </div>
                 <div class="col-sm-6">
-                      <div id="hi" class="text-center title2" style="height:48px;width: 72px;background-color:white;">
-                        <h6 style="line-height:32px;">I'm</h6>
-                    </div>
-                    <h1 id="aaron" class=" text-left " style="vertical-align: middle; ;font-size:4em;"><span style="text-shadow: 1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;">Aaron</span>
-                        <span style="color:rgba(255, 255, 255, .9);font-weight:900;text-shadow: 2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;">
-                            Hsu</span></h1>
-                    <div id="aaron2">
-                        <hr>
-                        <h1 id="ui">Senior UI Designer</h1>
-                        <h4 class="t-grey text-left" style="font-weight:100;line-height:32px  "> I have seven years of
-                            user
-                            interface design experience and<br> highly skilled in web and mobile UX, interaction
-                            design,
-                            and
-                            prototyping.
-                        </h4><br>
-                        <div style="display:inline">
-                            <button class="btn btn-dark" onclick="javascript:location.href='files/aaron_resume.pdf' "
-                                target="_blank">Download Resume</button> <button id="contact_btn" class="btn btn-dark"
-                                onclick="javascript:location.href='#contact' ">
-                                Contact me</button>
-                        </div>
-                    </div><br>
-                    <hr>
-                </div>
-            </div>
-
-        </div>
-        <div id="exp" style="position: relative;width: 100%; ">
-
-            <div class="row" style="padding:32px 32px;">
-                <div class="col-sm-4 justify-content-center align-self-center">
-                    <img src="http://astrosage.github.io/pic/banner_300_job.svg" class="img-fluid center">
+                    <a href="poct.html"><img class="img-fluid border-radius-16 shadow" src="images/home/POCT_banner.jpg"></a>
+                    <h2 class="t-dark"><a href="poct.html">Point of Care System ( POCT )</a></h2>
+                    <p class="t-grey">POCT includes mobile device and web platform, it provides pharmacies to measure
+                        customs' lipid
+                        and
+                        Hba1c. The system will show the results in a few minutes.</p>
 
 
-                </div>
-                <div class="col-sm-8 ">
-                    <h1 class="title2 first-card">Works and Projects</h1>
-                    <hr>
-                    <h5 class="title2 first-card"> iXensor Co., LTD <span class="bg-color">2016
-                            - Current</span> </h5>
-                    <h3 class="first-card"><span style="font-weight: 800">Senior UI Designer</span></h3>
-                    <ul class="first-card">
-                        <h6 class="title3">✔︎ H.spectrum Incubator Program <span class="bg-color">2018
-                            </span> </h6>
-                        <h6 class="title3">✔︎ Patent <a class="title3" href="https://patents.google.com/patent/WO2018166533A1/"
-                                target="_blank">(WO2018166533A1
-                                /
-                                TW201840293A)</a></h6>
-                        <h6 class="title3">✔︎ Awards : <a href="https://awards.babytechsummit.com/eveline-smart-fertility-system/"
-                                target="_blank">CES Baby Tech <span class="bg-color">2018
-                                </span></a>, <a href="https://www.g-mark.org/award/describe/44849" target="_blank">G-Mark
-                                <span class="bg-color">2017
-                                </span></a></h6>
-                    </ul>
-                    <br>
-                    <h6 class="first-card"><span style="font-weight: 800">Projects</span></h6>
-                    <div class="card3 row first-card" style="margin:0 8px">
-
-                        <div class="col-sm-12">
-
-                            <h5 class="title3">Point of care (POCT)</h5>
-                            <h6 class="title2" style="font-weight:100">POCT includes mobile device and web platform, it
-                                provides pharmacies to
-                                measure customs' lipid and Hba1c. The system will show the results in a few minutes.</h6>
-                            <hr>
-                            <a href="poct.html" style="color:white;position: relative;bottom:0"><button class="btn btn-dark">Learn
-                                    More</button></a>
-                        </div>
-                       
-
-                    </div><br>
-                    <div class="card3 row" style="margin:0 8px">
-
-                        <div class="col-sm-12">
-                            <h5 class="title3">Luteinizing Hormone (LH) Test Project V.2</h5>
-                            <h6 class="title2" style="font-weight:100">Using the phone camera to read the test strip
-                                that absorbs the woman's
-                                urine,
-                                then the
-                                application
-                                will show the level of luteinizing hormone to info user when is the best fertile
-                                window.</h6>
-                            <hr>
-                            <a href="lh-2.html" style="color:white;position: relative;bottom:0"><button class="btn btn-dark">Learn
-                                    More</button></a>
-                        </div>
-                        
-
-
-                    </div><br>
-                    <div class="card3 row " style="margin:0 8px">
-                        <div class="col-sm-12">
-                            <h5 class="title3">Luteinizing Hormone (LH) Test Project V.1</h5>
-                            <h6 class="title2" style="font-weight:100">Using the phone camera to read the test strip
-                                that absorbs the woman's
-                                urine,
-                                then the
-                                application
-                                will show the level of luteinizing hormone to info user when is the best fertile
-                                window.</h6>
-                            <hr>
-                            <a href="lh.html" style="color:white;position: relative;bottom:0"><button class="btn btn-dark">Learn
-                                    More</button></a>
-                        </div>
-                       
-
-
-                    </div><br>
-                    <div class="card3 row" style="margin:0 8px">
-                        <div class="col-sm-12">
-
-                            <h5 class="title3">Side projects</h5>
-                            <h6 class="title2" style="font-weight:100">In my spare time, I practice some tools to
-                                improve my ability.</h6>
-                            <hr>
-                            <a href="sideprojects.html" style="color:white;position: relative;bottom:0"><button class="btn btn-dark">Learn
-                                    More</button></a>
-                        </div>
-                        
-
-                    </div><br>
-                    <br>
-                    <div style="text-align: center">
-
-                        <div class="bg-color" style="height:16px;width:16px;clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);display: inline-block;"></div>
-                        <div class="bg-color" style="height:16px;width:16px;clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);display: inline-block;"></div>
-                        <div class="bg-color" style="height:16px;width:16px;clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);display: inline-block;"></div>
-                        <div class="bg-color" style="height:16px;width:16px;clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);display: inline-block;"></div>
-                    </div><br>
-                    <h5 class="title2"> Foxconn Group (Hon Hai Precision and PatentCloud ) <span class="bg-color">2012
-                            - 2016</span> </h5>
-                    <h3><span style="font-weight: 800">UI Designer</span></h3>
-                    <h6>Projects:</h6>
-                    <div class="card3 row" style="display:block;margin:0 8px">
-                        <div class="col-sm-6">
-                            <h5 class="title2">Virtual Desktop Infra- structure Project</h5>
-                            <h6 class="title3" style="font-weight:100"> Design Windows User Interface / Flow / GUI</h6>
-                            <hr>
-                            <h6>✔︎ <a href="files/snapshot.pdf" style="color:white;position: relative;bottom:0">Case
-                                    Study - VM snapshot(pdf)</a></h6>
-                        </div>
-
-                    </div><br>
-                    <div class="card3 row " style="display:block;margin:0 8px">
-                        <div class="col-sm-6">
-                            <h5 class="title2">Data Encryption System Project</h5>
-                            <h6 class="title3" style="font-weight:100"> Design Windows User Interface / Flow / GUI</h6>
-                            <hr>
-                            <h6>✔︎ <a href="vimvault/case_study_data-sync.html" style="color:white;position: relative;bottom:0">Case
-                                    Study - Data Sync UI</a></h6>
-                            <h6>✔︎ <a href="files/data-management.pdf">Case Study - Management system ui (pdf)</a></h6>
-                        </div>
-
-
-                    </div><br>
-                    <div class="card3 row" style="display:block;margin:0 8px">
-                        <div class="col-sm-6">
-                            <h5 class="title2">Patent Apply System</h5>
-                            <h6 class="title3" style="font-weight:100"> Design Windows User Interface / Flow / GUI</h6><hr>
-                            <h6>✔︎ <a href="patent.html">Case Study - UI Redesign</a></h6>
-                        </div>
-
-                    </div><br>
-                    <div class="card3 row" style="display:block;margin:0 8px">
-                        <div class="col-sm-6">
-                            <h5 class="title2">Chemical Related Patent Apply System</h5>
-                            <h6 class="title3" style="font-weight:100">Define Specs and Design Web User Interface /
-                                Flow / GUI</h6>
-                        </div>
-
-                    </div><br>
-                    <div class="card3 row" style="display:block;margin:0 8px">
-                        <div class="col-sm-6">
-                            <h5 class="title2">CIS Design</h5>
-                            <h6 class="title3" style="font-weight:100"><a href="https://lihi1.cc/c8HWd" target="_blank">Patentcloud</a></h6>
-                            <h6 class="title3" style="font-weight:100"><a href="https://lihi1.cc/68LDy" target="_blank">ScienbizIP</a></h6>
-                            <h6 class="title3" style="font-weight:100"><a href="https://lihi1.cc/wxUE9" target="_blank">Miics & partners</a></h6>
-                            
-                        </div>
-
-                    </div><br>
-                </div>
-
-            </div>
-
-        </div>
-
-        <div id="edu" style="position: relative;width: 100%; ">
-            <div class="row" style="padding:32px 32px;">
-                <div class="col-sm-4 justify-content-center align-self-center">
-                    <img src="http://astrosage.github.io/pic/banner_300_school.svg" class="img-fluid center">
-
-
-                </div>
-
-                <div class="col-sm-8">
-                    <div style="text-align: center">
-                        <div class="bg-color" style="height:16px;width:16px;clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);display: inline-block;"></div>
-                        <div class="bg-color" style="height:16px;width:16px;clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);display: inline-block;"></div>
-                        <div class="bg-color" style="height:16px;width:16px;clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);display: inline-block;"></div>
-                        <div class="bg-color" style="height:16px;width:16px;clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);display: inline-block;"></div>
-                    </div><br><br>
-                    <h1 class="title2">Educations</h1>
-                    <hr>
-                    <h5 class="title2"> Graduate School <span class="bg-color">2008
-                            - 2011</span> </h5>
-                    <h3 class="title3"><span style="font-weight: 800">Graduate School of Design</span>, National Taiwan
-                        University of
-                        Science and Tech., Taipei</h3>
-
-                    <h6 class=" title3">✔︎<a href="http://www.emuseum.com.tw/site/artist/artwork_get.aspx?SiteID=G300_AA_004310&F_ID=G300_AP_012531"
-                            target="_blank"> Ming Dynasty Chair</a>, 11th Taoyuan Contemporary Art Award <span class="bg-color">2011</span>
-                    </h6>
-                    <h6 class=" title3"> ✔︎<a href="https://www.yankodesign.com/2011/03/01/saved-by-the-glow/" target="_blank">
-                            Light-emitting
-                            Door</a>, Red Dot Award <span class="bg-color">2010</span></h6>
-
-                    <br>
-                    <h5 class="title2"> Oversea Study <span class="bg-color">2009
-                            - 2010</span> </h5>
-                    <h3 class="title3"><span style="font-weight: 800">Department of Industrial Design</span>, Musashino
-                        Art
-                        University, Tokyo</h3>
-
-                    <h6 class=" title3">✔︎ Kyocera Industry-Academy Project</h6>
-                    <h6 class=" title3">✔︎ <a href="https://astamuse.com/ja/published/JP/No/2011176646" target="_blank">
-                            2011-176646,
-                            Japan Patent</a></h6>
-
-                    <br>
-                    <h5 class="title2"> Undergraduate <span class="bg-color">2004
-                            - 2008</span> </h5>
-                    <h3 class="title3"><span style="font-weight: 800">Department of Industrial Design</span>, National
-                        Taiwan
-                        University of Science and Tech., Taipei</h3>
-                </div>
-
-            </div>
-
-        </div>
-        <div id="contact" style="position: relative;width: 100%; ">
-            <div class="row" style="padding:32px 32px;">
-                <div class="col-sm-4 justify-content-center align-self-center">
-                    <img src="http://astrosage.github.io/pic/banner_300_mail.svg" class="img-fluid center">
-
-
-                </div>
-                <div class="col-sm-8 justify-content-center align-self-center" id="contact">
-                    <div style="text-align: center">
-                            <div class="bg-color" style="height:16px;width:16px;clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);display: inline-block;"></div>
-                            <div class="bg-color" style="height:16px;width:16px;clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);display: inline-block;"></div>
-                            <div class="bg-color" style="height:16px;width:16px;clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);display: inline-block;"></div>
-                            <div class="bg-color" style="height:16px;width:16px;clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);display: inline-block;"></div>
-                    </div><br><br>
-                    <div id="hi" class="text-center" style="height:48px;width: 72px;background-color:white;">
-                        <h6 style="line-height:32px;">Hello</h6>
-                    </div>
-                    <a href="https://medium.com/@aaron.zl.hsu/">
-                        <h3 class="title2">Medium</h3>
-                    </a>
-                    <h3 class="title2">aaron.zl.hsu@gmail.com</h3>
 
                 </div>
 
             </div>
 
+
+            <div class="row" style="padding:56px 32px; ">
+                <div class="col-sm-6 ">
+                    <a href="sideprojects.html"><img class="img-fluid border-radius-16 shadow" src="images/home/sideprojects_banner.jpg"></a>
+                    <h2 class="t-dark"> <a href="sideprojects.html">Sideprojects</a></h2>
+                    <p class="t-grey">In my spare time, I practice some tools to improve my ability. </p><br>
+
+
+                </div>
+                <div class="col-sm-6 ">
+                    <a href="lh.html"><img class="img-fluid border-radius-16 shadow" src="images/home/eveline_banner.jpg"></a>
+                    <h2 class="t-dark"> <a href="lh.html">Luteinizing Hormone (LH) Test Project <span>V.1</span></a></h2>
+                    <p class="t-grey">Using the phone camera to read the test strip that absorbs the woman's urine,
+                        then the
+                        application
+                        will show the level of luteinizing hormone to info user when is the best fertile window.</p>
+
+
+                </div>
+
+            </div>
+
+
         </div>
 
+    </div>
+
+
+    <div class="mobile-alert">
+        <div class="row">
+            <div class="col-9">Suggest use desktop or laptop see more information and get a better experience.</div>
+            <div class="col-3"><img src="images/home/cancel.png" style="background-color:rgba(255,255,255,.5);width:32px;height:32px;float:right;border-radius:16px"
+                    id="close-msg"></div>
+        </div>
     </div>
 
 
